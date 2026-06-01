@@ -1,6 +1,6 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
-const base = import.meta.env.BASE_URL;
+const base = import.meta.env.BASE_URL.endsWith("/") ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
 ---
 <BaseLayout title="Vídeo demo entrenado | RouteWonder" description="Vídeo vertical de prueba mejorado localmente. No publicado en redes.">
   <p class="badge">DRAFT LOCAL · SOCIAL_PUBLISHING_ENABLED=false</p>
