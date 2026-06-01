@@ -1,0 +1,5 @@
+---
+const { items = [] } = Astro.props;
+const data = {"@context":"https://schema.org","@type":"FAQPage", mainEntity: items.map((i:any)=>({"@type":"Question", name:i.q, acceptedAnswer:{"@type":"Answer", text:i.a}}))};
+---
+<script is:inline type="application/ld+json" set:html={JSON.stringify(data)} />

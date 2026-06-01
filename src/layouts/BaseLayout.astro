@@ -1,0 +1,21 @@
+---
+import CookieBanner from "../components/CookieBanner.astro";
+const { title = "Hermes Media", description = "Sitio estático en modo draft" } = Astro.props;
+---
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={description} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>{title}</title>
+    <link rel="stylesheet" href="/src/styles/global.css" />
+  </head>
+  <body>
+    <header><a href="/">Inicio</a> <a href="/blog/">Blog</a> <a href="/about/">Sobre</a> <a href="/contact/">Contacto</a></header>
+    <main><slot /></main>
+    <CookieBanner />
+  </body>
+</html>

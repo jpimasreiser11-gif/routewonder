@@ -1,0 +1,8 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+export function getStaticPaths() { return [{params:{slug:'placeholder'}}]; }
+const { slug } = Astro.params;
+---
+<BaseLayout title={`Artículo ${slug} | RouteWonder`} description="Artículo placeholder">
+<h1>{slug}</h1><p>Placeholder hasta contenido aprobado.</p>
+</BaseLayout>
