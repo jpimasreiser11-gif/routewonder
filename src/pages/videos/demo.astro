@@ -2,20 +2,34 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 ---
 <BaseLayout title="Vídeo demo entrenado | RouteWonder" description="Vídeo vertical de prueba mejorado localmente. No publicado en redes.">
-  <p class="badge">DRAFT LOCAL · SOCIAL_PUBLISHING_ENABLED=false</p>
-  <h1>RouteWonder — vídeo demo mejorado</h1>
-  <p>Este vídeo usa fotografías libres, guion corto, voz sintética en español y estructura de hook/valor/CTA. Sigue siendo un borrador de prueba, no una pieza final de canal.</p>
-  <video controls playsinline width="360" poster="/videos/routewonder-demo-poster.jpg">
-    <source src="/videos/routewonder-trained-demo-short.mp4" type="video/mp4" />
-    <source src="/videos/routewonder-demo-short.mp4" type="video/mp4" />
-    Tu navegador no puede reproducir este MP4.
-  </video>
-  <h2>Qué valida este demo</h2>
-  <ul>
-    <li>Vídeo 9:16 compatible con Shorts/Reels/TikTok.</li>
-    <li>Fotografías descargadas desde fuentes libres y guardadas como demo local.</li>
-    <li>Ruta pública local desde Astro.</li>
-    <li>Modo DRAFT: ninguna subida social.</li>
-  </ul>
-  <p><a href="/demo/">Volver a demo</a></p>
+  <main class="mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:px-8">
+    <p class="font-ui text-xs font-bold uppercase tracking-[0.28em] text-rw-horizon">pieza social lista para revisión</p>
+    <h1 class="mt-3 font-display text-4xl font-black text-rw-ink sm:text-6xl">RouteWonder — Short editorial</h1>
+    <p class="mt-4 max-w-2xl font-ui text-lg leading-relaxed text-rw-ocean/75">
+      Vídeo vertical 9:16 con fotografías libres, voz en español, música de fondo suave, hook inicial, criterio editorial y llamada a la web.
+    </p>
+    <div class="mt-8 grid gap-8 lg:grid-cols-[420px_1fr] lg:items-start">
+      <video class="w-full rounded-3xl border border-rw-mist/20 shadow-2xl" controls playsinline poster="/videos/routewonder-demo-poster.jpg">
+        <source src="/videos/routewonder-trained-demo-short.mp4" type="video/mp4" />
+        <source src="/videos/routewonder-demo-short.mp4" type="video/mp4" />
+        Tu navegador no puede reproducir este MP4.
+      </video>
+      <section class="rounded-3xl border border-rw-mist/20 bg-rw-white p-6 shadow-sm">
+        <h2 class="font-display text-3xl font-bold text-rw-ink">Descripción sugerida</h2>
+        <p class="mt-4 font-ui text-sm leading-relaxed text-rw-ocean/75">
+          No todo destino viral merece un viaje. En RouteWonder filtramos rutas con mapa, contexto, coste aproximado y una pregunta sencilla: ¿esto ayuda a decidir mejor?
+        </p>
+        <div class="mt-5 rounded-2xl bg-rw-sand p-4 font-ui text-sm">
+          <strong>Link principal:</strong> https://routewonder.studio/<br />
+          <strong>Hashtags:</strong> #viajes #geografia #rutas #travelshorts #routewonder
+        </div>
+        <ul class="mt-5 grid gap-3 font-ui text-sm text-rw-ocean/75">
+          <li>Formato: 1080x1920, 24 segundos.</li>
+          <li>Uso recomendado: publicar primero como privado, revisar audio/subtítulos y programar.</li>
+          <li>CTA: planificador y guías en RouteWonder.</li>
+        </ul>
+        <a class="mt-6 inline-flex rounded-full bg-rw-horizon px-5 py-3 font-ui text-sm font-bold text-white" href="/demo/">Volver al panel</a>
+      </section>
+    </div>
+  </main>
 </BaseLayout>
