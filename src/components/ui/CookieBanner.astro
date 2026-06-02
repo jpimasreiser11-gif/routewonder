@@ -1,0 +1,65 @@
+---
+---
+<div
+  id="cookie-banner"
+  class="fixed bottom-3 left-3 right-3 md:left-auto md:right-4 md:max-w-sm z-50 bg-rw-white/92 dark:bg-rw-ink/95 border border-rw-mist/20 dark:border-rw-mist/10 backdrop-blur-md p-4 rounded-xl shadow-xl border-t-2 border-t-rw-horizon translate-y-24 opacity-0 transition-all duration-500 ease-out pointer-events-none"
+  role="alert"
+>
+  <h3 class="font-subtitle text-base font-bold text-rw-ink dark:text-rw-white mb-1">Privacidad</h3>
+  <p class="font-ui text-xs text-rw-ocean/85 dark:text-rw-mist/85 mb-3 leading-relaxed">
+    Cookies esenciales y analítica solo si aceptas. Puedes seguir explorando sin bloquear la web.
+  </p>
+  <div class="grid grid-cols-2 gap-2">
+    <button
+      id="btn-cookies-essential"
+      class="min-h-10 px-3 py-2 text-xs font-semibold font-ui text-rw-ocean/80 dark:text-rw-mist/85 hover:text-rw-horizon border border-rw-mist/35 rounded-lg transition-colors hover:bg-rw-horizon/5"
+    >
+      Solo esenciales
+    </button>
+    <button
+      id="btn-cookies-accept"
+      class="min-h-10 px-3 py-2 text-xs font-semibold font-ui text-rw-white bg-rw-horizon hover:bg-rw-horizon/90 rounded-lg shadow-sm shadow-rw-horizon/20 transition-all active:scale-95"
+    >
+      Aceptar todas
+    </button>
+  </div>
+</div>
+
+<script>
+  function setupCookieBanner() {
+    const banner = document.getElementById('cookie-banner');
+    const acceptBtn = document.getElementById('btn-cookies-accept');
+    const essentialBtn = document.getElementById('btn-cookies-essential');
+
+    if (!banner || !acceptBtn || !essentialBtn) return;
+
+    // Check if user has already made a choice
+    const cookieChoice = localStorage.getItem('cookie-consent');
+
+    if (!cookieChoice) {
+      // Show the banner with a slight delay
+      setTimeout(() => {
+        banner.classList.remove('translate-y-24', 'opacity-0', 'pointer-events-none');
+        banner.classList.add('translate-y-0', 'opacity-100');
+      }, 1500);
+    } else {
+      banner.style.display = 'none';
+    }
+
+    const dismissBanner = (choice: string) => {
+      localStorage.setItem('cookie-consent', choice);
+      banner.classList.add('translate-y-24', 'opacity-0', 'pointer-events-none');
+      banner.classList.remove('translate-y-0', 'opacity-100');
+      setTimeout(() => {
+        banner.style.display = 'none';
+      }, 500);
+    };
+
+    acceptBtn.addEventListener('click', () => dismissBanner('all'));
+    essentialBtn.addEventListener('click', () => dismissBanner('essential'));
+  }
+
+  // Run on initial load and view transitions
+  setupCookieBanner();
+  document.addEventListener('astro:after-swap', setupCookieBanner);
+</script>

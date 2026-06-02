@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">RouteWonder compass route mark</title>
+  <desc id="desc">A coral compass where the north needle is drawn as a winding travel route.</desc>
+  <defs>
+    <linearGradient id="rw-coral" x1="42" y1="168" x2="150" y2="28" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F4A261"/>
+      <stop offset=".58" stop-color="#E94560"/>
+      <stop offset="1" stop-color="#B91C3C"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="10" flood-color="#E94560" flood-opacity=".18"/>
+    </filter>
+  </defs>
+  <circle cx="100" cy="100" r="88" stroke="url(#rw-coral)" stroke-width="5" opacity=".24"/>
+  <circle cx="100" cy="100" r="66" stroke="#1A1A2E" stroke-width="1.5" opacity=".18"/>
+  <g stroke="#E94560" stroke-width="3" stroke-linecap="round">
+    <path d="M100 20v12"/>
+    <path d="M100 168v12"/>
+    <path d="M20 100h12"/>
+    <path d="M168 100h12"/>
+  </g>
+  <g font-family="DM Sans, Arial, sans-serif" font-weight="800" font-size="14" fill="#E94560">
+    <text x="100" y="18" text-anchor="middle">N</text>
+    <text x="100" y="194" text-anchor="middle" opacity=".55">S</text>
+    <text x="10" y="105" text-anchor="middle" opacity=".55">O</text>
+    <text x="190" y="105" text-anchor="middle" opacity=".55">E</text>
+  </g>
+  <g filter="url(#soft)">
+    <path d="M98 155C107 141 77 135 91 119c15-18 39-7 28-29-7-15-33-10-22-29 6-10 18-12 19-24" stroke="url(#rw-coral)" stroke-width="8" stroke-linecap="round" fill="none"/>
+    <path d="M119 34l-17 11 16 8 14-31-13 12z" fill="#E94560"/>
+  </g>
+  <circle cx="100" cy="100" r="8" fill="#1A1A2E"/>
+  <circle cx="100" cy="100" r="3" fill="#FAFAFA"/>
+  <g fill="#F4A261">
+    <circle cx="91" cy="119" r="4"/>
+    <circle cx="116" cy="84" r="4"/>
+    <circle cx="101" cy="61" r="4"/>
+  </g>
+</svg>

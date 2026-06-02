@@ -1,0 +1,19 @@
+---
+export interface Props {
+  program?: string;
+}
+
+const { program = "enlaces de afiliados" } = Astro.props;
+---
+
+<div class="my-8 p-5 bg-rw-gold/5 dark:bg-rw-gold/10 border-l-4 border-rw-gold rounded-r-xl select-none font-ui text-sm text-rw-ocean/85 dark:text-rw-mist/85">
+  <div class="flex items-start gap-3">
+    <span class="text-lg leading-none mt-0.5">ℹ️</span>
+    <div class="flex flex-col gap-1">
+      <p class="font-bold text-rw-ink dark:text-rw-white">Aviso de afiliación</p>
+      <p class="leading-relaxed">
+        Este artículo contiene {program}. Si compras un producto o servicio a través de ellos, recibiremos una pequeña comisión sin coste adicional para ti. Esto nos ayuda a financiar nuestras crónicas de exploración independiente sin depender de banners molestos.
+      </p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" fill="none" role="img" aria-label="RouteWonder vertical video cover">
+  <rect width="1080" height="1920" fill="#16213E"/>
+  <circle cx="810" cy="290" r="230" fill="#F4A261" opacity=".32"/>
+  <path d="M0 1220c170-165 322-145 520-268 235-146 350-317 560-210v1178H0v-700z" fill="#1A1A2E"/>
+  <path d="M142 1280c181-180 393 64 558-112 111-118 153-290 300-274" stroke="#E94560" stroke-width="14" stroke-linecap="round" stroke-dasharray="26 34"/>
+  <text x="80" y="210" font-family="Playfair Display, Georgia, serif" font-size="112" font-weight="800" fill="#FAFAFA">Route</text>
+  <text x="80" y="322" font-family="Playfair Display, Georgia, serif" font-size="112" font-weight="800" fill="#E94560">Wonder</text>
+  <text x="84" y="410" font-family="DM Sans, Arial, sans-serif" font-size="31" font-weight="800" letter-spacing="4" fill="#F5F0E8">UN DATO GEOGRAFICO AL DIA</text>
+  <text x="80" y="1675" font-family="Source Serif 4, Georgia, serif" font-size="62" font-style="italic" fill="#F5F0E8">El mundo real</text>
+  <text x="80" y="1745" font-family="Source Serif 4, Georgia, serif" font-size="62" font-style="italic" fill="#F5F0E8">no cabe en una guia</text>
+</svg>

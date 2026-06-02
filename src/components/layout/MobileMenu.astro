@@ -1,0 +1,94 @@
+---
+const base = import.meta.env.BASE_URL.endsWith("/") ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+
+const navLinks = [
+  { href: `${base}`, label: "Inicio", emoji: "🗺️" },
+  { href: `${base}blog/`, label: "Revista", emoji: "📰" },
+  { href: `${base}about/`, label: "Editorial", emoji: "🖋️" },
+  { href: `${base}contact/`, label: "Contacto", emoji: "✉️" },
+];
+---
+
+<div
+  id="mobile-menu"
+  class="hidden fixed inset-0 z-50 bg-rw-white/95 dark:bg-rw-ink/98 backdrop-blur-lg flex-col justify-center px-6 transition-all duration-300 ease-in-out opacity-0 pointer-events-none translate-x-full"
+>
+  <!-- Close Button -->
+  <button
+    id="mobile-menu-close"
+    class="absolute top-6 right-6 p-2 text-rw-ink dark:text-rw-sand focus:outline-none"
+    aria-label="Cerrar menú de navegación"
+  >
+    <svg
+      class="w-6 h-6"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M6 18L18 6M6 6l12 12"
+      ></path>
+    </svg>
+  </button>
+
+  <!-- Navigation Links -->
+  <nav class="flex flex-col gap-6 text-center">
+    {
+      navLinks.map((link) => (
+        <a
+          href={link.href}
+          class="font-display font-bold text-2xl sm:text-3xl text-rw-ink dark:text-rw-white hover:text-rw-horizon dark:hover:text-rw-horizon flex items-center justify-center gap-3 py-2"
+        >
+          <span class="text-xl opacity-80">{link.emoji}</span>
+          <span>{link.label}</span>
+        </a>
+      ))
+    }
+  </nav>
+
+  <!-- Decorative compass graphic in menu background -->
+  <div class="absolute bottom-12 left-1/2 -translate-x-1/2 opacity-5 pointer-events-none select-none">
+    <img src="/logo.svg" alt="" class="w-32 h-32 animate-pulse-slow" />
+  </div>
+</div>
+
+<script>
+  function setupMobileMenu() {
+    const trigger = document.getElementById('mobile-menu-trigger');
+    const closeBtn = document.getElementById('mobile-menu-close');
+    const menu = document.getElementById('mobile-menu');
+
+    if (!trigger || !closeBtn || !menu) return;
+
+    const openMenu = () => {
+      menu.classList.remove('hidden', 'opacity-0', 'pointer-events-none', 'translate-x-full');
+      menu.classList.add('flex', 'opacity-100', 'translate-x-0');
+      trigger.setAttribute('aria-expanded', 'true');
+      document.body.style.overflow = 'hidden'; // Prevent body scroll
+    };
+
+    const closeMenu = () => {
+      menu.classList.remove('flex', 'opacity-100', 'translate-x-0');
+      menu.classList.add('hidden', 'opacity-0', 'pointer-events-none', 'translate-x-full');
+      trigger.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = ''; // Re-enable body scroll
+    };
+
+    trigger.addEventListener('click', openMenu);
+    closeBtn.addEventListener('click', closeMenu);
+
+    // Close menu when clicking navigation links
+    const links = menu.querySelectorAll('a');
+    links.forEach(link => {
+      link.addEventListener('click', closeMenu);
+    });
+  }
+
+  // Run on initial load and view transitions
+  setupMobileMenu();
+  document.addEventListener('astro:after-swap', setupMobileMenu);
+</script>

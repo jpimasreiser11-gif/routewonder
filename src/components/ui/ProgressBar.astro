@@ -1,0 +1,36 @@
+---
+---
+<div
+  id="reading-progress-container"
+  class="fixed top-0 left-0 w-full h-[3px] bg-transparent z-50 pointer-events-none"
+>
+  <div
+    id="reading-progress-bar"
+    class="h-full w-0 bg-rw-horizon transition-all duration-75 ease-out"
+  ></div>
+</div>
+
+<script>
+  function setupProgressBar() {
+    const progressBar = document.getElementById('reading-progress-bar');
+    if (!progressBar) return;
+
+    const updateProgress = () => {
+      const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+      if (scrollHeight > 0) {
+        const progress = (window.scrollY / scrollHeight) * 100;
+        progressBar.style.width = `${progress}%`;
+      } else {
+        progressBar.style.width = '0%';
+      }
+    };
+
+    window.addEventListener('scroll', updateProgress);
+    window.addEventListener('resize', updateProgress);
+    updateProgress();
+  }
+
+  // Run on initial load and view transitions
+  setupProgressBar();
+  document.addEventListener('astro:after-swap', setupProgressBar);
+</script>

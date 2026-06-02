@@ -1,0 +1,77 @@
+---
+export interface Heading {
+  depth: number;
+  slug: string;
+  text: string;
+}
+
+export interface Props {
+  headings: Heading[];
+}
+
+const { headings } = Astro.props;
+
+// Only show h2 and h3 tags
+const filteredHeadings = headings.filter((h) => h.depth === 2 || h.depth === 3);
+
+if (filteredHeadings.length === 0) return null;
+---
+
+<nav class="sticky top-28 self-start max-w-[240px] hidden lg:block font-ui select-none" aria-label="Tabla de contenidos">
+  <h4 class="font-bold text-xs uppercase tracking-widest text-rw-ink dark:text-rw-white mb-4 border-b border-rw-mist/20 pb-2">
+    En este artículo
+  </h4>
+  <ul class="flex flex-col gap-2.5 text-xs text-rw-ocean/70 dark:text-rw-mist/70">
+    {
+      filteredHeadings.map((heading) => (
+        <li class={heading.depth === 3 ? "pl-4" : ""}>
+          <a
+            href={`#${heading.slug}`}
+            class="toc-link hover:text-rw-horizon border-l-2 border-transparent pl-2 block transition-all"
+            data-slug={heading.slug}
+          >
+            {heading.text}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</nav>
+
+<script>
+  function setupScrollSpy() {
+    const links = document.querySelectorAll('.toc-link');
+    const headings = Array.from(document.querySelectorAll('.prose-rw h2, .prose-rw h3'));
+    
+    if (links.length === 0 || headings.length === 0) return;
+
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px 0px -60% 0px',
+      threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const id = entry.target.getAttribute('id');
+          links.forEach((link) => {
+            if (link.getAttribute('data-slug') === id) {
+              link.classList.add('text-rw-horizon', 'border-rw-horizon', 'font-semibold');
+              link.classList.remove('border-transparent');
+            } else {
+              link.classList.remove('text-rw-horizon', 'border-rw-horizon', 'font-semibold');
+              link.classList.add('border-transparent');
+            }
+          });
+        }
+      });
+    }, observerOptions);
+
+    headings.forEach((heading) => observer.observe(heading));
+  }
+
+  // Run on initial load and view transitions
+  setupScrollSpy();
+  document.addEventListener('astro:after-swap', setupScrollSpy);
+</script>

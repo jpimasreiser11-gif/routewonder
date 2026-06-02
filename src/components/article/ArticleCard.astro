@@ -1,0 +1,79 @@
+---
+import type { CollectionEntry } from "astro:content";
+import Badge from "../ui/Badge.astro";
+
+export interface Props {
+  post: CollectionEntry<"blog">;
+  class?: string;
+}
+
+const { post, class: className = "" } = Astro.props;
+const { title, description, publishedDate, author, category, image, imageAlt, readingTime } = post.data;
+
+const formattedDate = new Date(publishedDate).toLocaleDateString("es-ES", {
+  year: "numeric",
+  month: "long",
+  day: "numeric",
+});
+
+const base = import.meta.env.BASE_URL.endsWith("/") ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+---
+
+<article class={`flex flex-col bg-rw-white dark:bg-rw-ink border border-rw-mist/20 dark:border-rw-mist/10 rounded-xl overflow-hidden shadow-sm hover:-translate-y-1.5 hover:shadow-lg hover:shadow-rw-horizon/5 hover:border-rw-horizon/30 transition-all duration-300 group ${className}`}>
+  <!-- Article Image -->
+  <a href={`${base}blog/${post.slug}/`} class="relative block overflow-hidden aspect-video bg-rw-sand select-none" aria-label={`Leer artículo: ${title}`}>
+    {
+      image ? (
+        <img
+          src={image}
+          alt={imageAlt || ""}
+          class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          loading="lazy"
+        />
+      ) : (
+        <div class="w-full h-full flex items-center justify-center text-rw-mist/40 bg-gradient-to-br from-rw-sand to-rw-white dark:from-rw-ink dark:to-rw-white/5">
+          <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+          </svg>
+        </div>
+      )
+    }
+    
+    <!-- Float category badge -->
+    <div class="absolute top-3 left-3 z-10 pointer-events-none">
+      <Badge category={category} linked={false} />
+    </div>
+  </a>
+
+  <!-- Article Info -->
+  <div class="flex-grow flex flex-col p-5 md:p-6">
+    <!-- Meta Info -->
+    <div class="flex items-center gap-3 font-ui text-[11px] font-semibold text-rw-ocean/50 dark:text-rw-mist/60 uppercase tracking-wider mb-2">
+      <time datetime={publishedDate.toISOString()}>{formattedDate}</time>
+      {readingTime && <span>·</span> <span>{readingTime} min de lectura</span>}
+    </div>
+
+    <!-- Title -->
+    <h3 class="font-display font-bold text-xl sm:text-2xl text-rw-ink dark:text-rw-white mb-2 leading-snug group-hover:text-rw-horizon transition-colors">
+      <a href={`${base}blog/${post.slug}/`}>
+        {title}
+      </a>
+    </h3>
+
+    <!-- Excerpt -->
+    <p class="font-ui text-sm text-rw-ocean/75 dark:text-rw-mist/75 mb-6 line-clamp-3 leading-relaxed">
+      {description}
+    </p>
+
+    <!-- Footer Author info -->
+    <div class="mt-auto pt-4 border-t border-rw-mist/10 flex items-center gap-3 select-none">
+      <div class="w-8 h-8 rounded-full bg-rw-horizon/10 border border-rw-horizon/25 flex items-center justify-center font-display font-bold text-xs text-rw-horizon">
+        {author.split(" ").map(n => n[0]).join("")}
+      </div>
+      <div class="font-ui text-xs">
+        <p class="font-bold text-rw-ink dark:text-rw-white leading-none">{author}</p>
+        <p class="text-[10px] text-rw-ocean/50 dark:text-rw-mist/50 tracking-wider uppercase mt-0.5">Explorador &amp; Autor</p>
+      </div>
+    </div>
+  </div>
+</article>

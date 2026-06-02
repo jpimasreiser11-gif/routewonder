@@ -1,0 +1,62 @@
+---
+import SearchBar from "../ui/SearchBar.astro";
+const base = import.meta.env.BASE_URL.endsWith("/") ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+---
+
+<section class="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-rw-ink text-rw-white select-none">
+  <!-- Background Elements (Sinuous route line decoration) -->
+  <div class="absolute inset-0 opacity-15 pointer-events-none select-none z-0">
+    <svg class="w-full h-full" viewBox="0 0 1440 800" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+      <path d="M-100,200 C300,100 400,600 800,400 S1200,700 1600,300" stroke="#E94560" stroke-width="4" stroke-linecap="round" stroke-dasharray="8 8"></path>
+      <circle cx="800" cy="400" r="8" fill="#E94560" class="animate-pulse"></circle>
+      <circle cx="300" cy="150" r="6" fill="#F4A261"></circle>
+    </svg>
+  </div>
+
+  <!-- Content Container -->
+  <div class="relative z-10 max-w-4xl mx-auto px-4 text-center flex flex-col items-center gap-6 md:gap-8">
+    <!-- Badge -->
+    <span class="inline-flex items-center gap-1.5 px-4 py-1 text-xs font-semibold uppercase tracking-widest text-rw-horizon bg-rw-horizon/10 border border-rw-horizon/20 rounded-full animate-fade-in">
+      🧭 Cuaderno de Geografía &amp; Exploración
+    </span>
+
+    <!-- Heading -->
+    <h1 class="font-display font-black text-4xl sm:text-5xl md:text-7xl tracking-tight leading-[1.1] animate-fade-in-up">
+      El mundo es más raro <br />
+      <span class="text-transparent bg-clip-text bg-gradient-to-r from-rw-horizon via-rw-gold to-rw-horizon bg-[length:200%_auto] hover:bg-right transition-all duration-1000">de lo que imaginas</span>
+    </h1>
+
+    <!-- Subtitle -->
+    <p class="font-body italic text-lg sm:text-2xl text-rw-sand/80 max-w-2xl leading-relaxed animate-fade-in-up" style="animation-delay: 200ms;">
+      Crónicas sobre rutas insólitas, pueblos que emergen del agua, fronteras absurdas y rincones olvidados del planeta.
+    </p>
+
+    <div class="w-full animate-fade-in-up" style="animation-delay: 320ms;">
+      <SearchBar />
+    </div>
+
+    <!-- Search/Actions -->
+    <div class="flex flex-col sm:flex-row gap-4 w-full max-w-md mt-4 animate-fade-in-up" style="animation-delay: 400ms;">
+      <a
+        href={`${base}blog/`}
+        class="w-full sm:w-auto px-8 py-3 bg-rw-horizon hover:bg-rw-horizon/95 text-rw-white font-ui font-semibold rounded-lg shadow-lg shadow-rw-horizon/10 hover:shadow-xl active:scale-[0.98] transition-all text-center"
+      >
+        Explorar la Revista
+      </a>
+      <a
+        href={`${base}about/`}
+        class="w-full sm:w-auto px-8 py-3 border border-rw-sand/20 hover:border-rw-horizon hover:text-rw-horizon text-rw-sand font-ui font-semibold rounded-lg bg-rw-sand/5 active:scale-[0.98] transition-all text-center"
+      >
+        Nuestra Filosofía
+      </a>
+    </div>
+  </div>
+
+  <!-- Animated Scroll Down Indicator -->
+  <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-rw-sand/40 select-none pointer-events-none animate-bounce-slow">
+    <span class="font-ui text-[10px] uppercase tracking-widest">Desplazar</span>
+    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+    </svg>
+  </div>
+</section>

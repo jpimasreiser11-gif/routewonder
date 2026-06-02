@@ -1,0 +1,221 @@
+---
+const routePhotos = [
+  {
+    title: "Costa y carretera",
+    text: "Rutas que empiezan con una pregunta: por qué el mapa se curva justo ahí.",
+    image: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1800&q=85",
+    alt: "Paisaje natural al amanecer con ruta de viaje",
+  },
+  {
+    title: "Ciudades raras",
+    text: "Historias urbanas donde una frontera, un río o una estación lo cambian todo.",
+    image: "https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1800&q=85",
+    alt: "Vista editorial de una ciudad entre montañas",
+  },
+  {
+    title: "Mapas con giro",
+    text: "Datos geográficos que sirven para viajar mejor, no solo para ganar una conversación.",
+    image: "https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=1800&q=85",
+    alt: "Mapa físico extendido sobre una mesa",
+  },
+];
+---
+
+<section class="relative overflow-hidden bg-rw-ocean text-rw-white">
+  <div class="absolute inset-0">
+    <img
+      src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=2400&q=90"
+      alt="Vista panorámica de montañas y valle al atardecer"
+      class="h-full w-full object-cover opacity-55"
+      loading="lazy"
+    />
+    <div class="absolute inset-0 bg-gradient-to-r from-rw-ocean via-rw-ocean/80 to-rw-ocean/35"></div>
+  </div>
+
+  <div class="relative mx-auto grid min-h-[760px] max-w-7xl grid-cols-1 items-center gap-10 px-4 py-20 sm:px-6 lg:grid-cols-12 lg:px-8">
+    <div class="lg:col-span-5">
+      <p class="font-ui text-xs font-bold uppercase tracking-[0.3em] text-rw-gold">Route intelligence</p>
+      <h2 class="mt-4 font-display text-4xl font-black leading-tight sm:text-6xl">
+        Un avión 3D para rutas que se sienten vivas.
+      </h2>
+      <p class="mt-5 max-w-xl font-body text-lg leading-relaxed text-rw-sand/85">
+        RouteWonder no solo publica listas. Cada pieza nace de una ruta, una tensión geográfica y una decisión útil:
+        cómo llegar, cuándo ir, qué evitar y qué detalle hace que el destino merezca una historia.
+      </p>
+      <div class="mt-8 grid grid-cols-3 gap-3 font-ui">
+        <div class="border-l border-rw-horizon/80 pl-4">
+          <strong class="block text-3xl font-black text-rw-white">7</strong>
+          <span class="text-xs text-rw-sand/70">clusters editoriales</span>
+        </div>
+        <div class="border-l border-rw-gold/80 pl-4">
+          <strong class="block text-3xl font-black text-rw-white">5</strong>
+          <span class="text-xs text-rw-sand/70">checks antes de publicar</span>
+        </div>
+        <div class="border-l border-rw-forest/80 pl-4">
+          <strong class="block text-3xl font-black text-rw-white">0</strong>
+          <span class="text-xs text-rw-sand/70">rutas sin fuentes</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="relative h-[420px] lg:col-span-7 lg:h-[620px]">
+      <canvas id="rw-flight-canvas" class="absolute inset-0 h-full w-full" aria-label="Escena 3D de avión girando sobre una ruta"></canvas>
+    </div>
+  </div>
+</section>
+
+<section class="bg-rw-white py-16 dark:bg-rw-ink sm:py-24">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="max-w-3xl">
+      <p class="font-ui text-xs font-bold uppercase tracking-[0.28em] text-rw-horizon">Archivo visual</p>
+      <h2 class="mt-3 font-display text-4xl font-black text-rw-ink dark:text-rw-white sm:text-5xl">
+        Imágenes grandes, lectura pausada y criterio editorial.
+      </h2>
+      <p class="mt-4 font-ui text-base leading-relaxed text-rw-ocean/75 dark:text-rw-mist">
+        La web usa fotografía de alta resolución, pero no la deja trabajar sola. Cada imagen acompaña una decisión:
+        mapa, ruta, época, coste aproximado y fuente antes de convertir el tema en publicación.
+      </p>
+    </div>
+
+    <div class="mt-10 grid grid-cols-1 gap-5 lg:grid-cols-3">
+      {
+        routePhotos.map((item) => (
+          <article class="group overflow-hidden rounded-2xl border border-rw-mist/20 bg-rw-sand/40 shadow-sm transition hover:-translate-y-1 hover:shadow-xl dark:bg-rw-ocean/30">
+            <div class="aspect-[4/3] overflow-hidden">
+              <img src={item.image} alt={item.alt} loading="lazy" class="h-full w-full object-cover transition duration-700 group-hover:scale-105" />
+            </div>
+            <div class="p-6">
+              <h3 class="font-display text-2xl font-bold text-rw-ink dark:text-rw-white">{item.title}</h3>
+              <p class="mt-2 font-ui text-sm leading-relaxed text-rw-ocean/75 dark:text-rw-mist">{item.text}</p>
+            </div>
+          </article>
+        ))
+      }
+    </div>
+  </div>
+</section>
+
+<script>
+  async function setupRouteFlight() {
+    const canvas = document.getElementById('rw-flight-canvas');
+    if (!canvas || canvas.dataset.ready === 'true') return;
+    canvas.dataset.ready = 'true';
+
+    const THREE = await import('three');
+
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(45, 1, 0.1, 100);
+    camera.position.set(0, 2.2, 7);
+
+    const renderer = new THREE.WebGLRenderer({ canvas, alpha: true, antialias: true, preserveDrawingBuffer: true });
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+
+    const group = new THREE.Group();
+    scene.add(group);
+
+    const material = new THREE.MeshStandardMaterial({ color: 0xfafafa, metalness: 0.18, roughness: 0.38 });
+    const accent = new THREE.MeshStandardMaterial({ color: 0xe94560, metalness: 0.1, roughness: 0.45 });
+
+    const body = new THREE.Mesh(new THREE.CapsuleGeometry(0.18, 1.9, 8, 16), material);
+    body.rotation.z = Math.PI / 2;
+    group.add(body);
+
+    const nose = new THREE.Mesh(new THREE.ConeGeometry(0.2, 0.55, 24), accent);
+    nose.rotation.z = -Math.PI / 2;
+    nose.position.x = 1.25;
+    group.add(nose);
+
+    const wingShape = new THREE.Shape();
+    wingShape.moveTo(-0.25, 0);
+    wingShape.lineTo(0.25, 0);
+    wingShape.lineTo(0.05, 1.25);
+    wingShape.lineTo(-0.18, 1.2);
+    wingShape.lineTo(-0.25, 0);
+    const wingGeo = new THREE.ExtrudeGeometry(wingShape, { depth: 0.035, bevelEnabled: false });
+    const wingLeft = new THREE.Mesh(wingGeo, material);
+    wingLeft.rotation.x = Math.PI / 2;
+    wingLeft.position.set(0, 0, 0.02);
+    group.add(wingLeft);
+    const wingRight = wingLeft.clone();
+    wingRight.rotation.x = -Math.PI / 2;
+    group.add(wingRight);
+
+    const tail = new THREE.Mesh(new THREE.BoxGeometry(0.32, 0.06, 0.8), accent);
+    tail.position.x = -1.05;
+    group.add(tail);
+
+    const route = new THREE.CatmullRomCurve3([
+      new THREE.Vector3(-3.8, -1.3, -0.8),
+      new THREE.Vector3(-2.2, -0.3, 0.8),
+      new THREE.Vector3(-0.2, -1.0, -0.2),
+      new THREE.Vector3(1.8, 0.6, 0.9),
+      new THREE.Vector3(3.5, -0.4, -0.5),
+    ]);
+    const routeGeo = new THREE.TubeGeometry(route, 80, 0.025, 8, false);
+    group.add(new THREE.Mesh(routeGeo, new THREE.MeshBasicMaterial({ color: 0xf4a261 })));
+
+    const compassRing = new THREE.Mesh(
+      new THREE.TorusGeometry(2.25, 0.018, 8, 120),
+      new THREE.MeshBasicMaterial({ color: 0xe94560 })
+    );
+    compassRing.rotation.x = Math.PI / 2;
+    group.add(compassRing);
+
+    const centerMarker = new THREE.Mesh(
+      new THREE.SphereGeometry(0.16, 24, 16),
+      new THREE.MeshBasicMaterial({ color: 0xf4a261 })
+    );
+    centerMarker.position.set(0, 0, 0);
+    group.add(centerMarker);
+
+    const light = new THREE.DirectionalLight(0xffffff, 2.6);
+    light.position.set(3, 4, 5);
+    scene.add(light);
+    scene.add(new THREE.AmbientLight(0xa8b2d8, 1.1));
+
+    function resize() {
+      const rect = canvas.getBoundingClientRect();
+      renderer.setSize(rect.width, rect.height, false);
+      camera.aspect = rect.width / Math.max(1, rect.height);
+      camera.updateProjectionMatrix();
+    }
+
+    function markCanvasIfNonBlank() {
+      if (canvas.dataset.pixelCheck === 'nonblank') return;
+      const gl = renderer.getContext();
+      const rect = canvas.getBoundingClientRect();
+      canvas.dataset.bufferSize = `${gl.drawingBufferWidth}x${gl.drawingBufferHeight}`;
+      const pixel = new Uint8Array(4);
+      let maxSum = 0;
+      for (let gx = 1; gx <= 9; gx++) {
+        for (let gy = 1; gy <= 9; gy++) {
+          const x = Math.max(0, Math.min(gl.drawingBufferWidth - 1, Math.floor((rect.width * gx / 10) * window.devicePixelRatio)));
+          const y = Math.max(0, Math.min(gl.drawingBufferHeight - 1, Math.floor((rect.height * gy / 10) * window.devicePixelRatio)));
+          gl.readPixels(x, y, 1, 1, gl.RGBA, gl.UNSIGNED_BYTE, pixel);
+          const sum = pixel[0] + pixel[1] + pixel[2] + pixel[3];
+          maxSum = Math.max(maxSum, sum);
+          if (sum > 0) {
+            canvas.dataset.pixelCheck = 'nonblank';
+            return;
+          }
+        }
+      }
+      canvas.dataset.pixelMax = String(maxSum);
+    }
+
+    function animate() {
+      group.rotation.y += 0.008;
+      group.rotation.x = Math.sin(Date.now() * 0.0007) * 0.16;
+      renderer.render(scene, camera);
+      markCanvasIfNonBlank();
+      requestAnimationFrame(animate);
+    }
+
+    resize();
+    animate();
+    window.addEventListener('resize', resize);
+  }
+
+  setupRouteFlight();
+  document.addEventListener('astro:after-swap', setupRouteFlight);
+</script>

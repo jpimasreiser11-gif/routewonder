@@ -1,0 +1,68 @@
+---
+export interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+const url = Astro.url.toString();
+---
+
+<div class="flex items-center gap-3 py-6 my-6 border-y border-rw-mist/10 font-ui text-xs select-none">
+  <span class="font-bold text-rw-ocean/50 dark:text-rw-mist/55 uppercase tracking-wider">Compartir:</span>
+  
+  <!-- Twitter -->
+  <a
+    href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(title)}&url=${encodeURIComponent(url)}`}
+    target="_blank"
+    rel="noopener noreferrer"
+    class="px-3 py-1.5 border border-rw-mist/20 hover:border-rw-horizon/40 rounded-lg hover:text-rw-horizon transition-all"
+  >
+    X (Twitter)
+  </a>
+
+  <!-- Facebook -->
+  <a
+    href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`}
+    target="_blank"
+    rel="noopener noreferrer"
+    class="px-3 py-1.5 border border-rw-mist/20 hover:border-rw-horizon/40 rounded-lg hover:text-rw-horizon transition-all"
+  >
+    Facebook
+  </a>
+
+  <!-- Copy Link -->
+  <button
+    id="btn-copy-link"
+    class="px-3 py-1.5 border border-rw-mist/20 hover:border-rw-horizon/40 rounded-lg hover:text-rw-horizon transition-all flex items-center gap-1 active:scale-95"
+  >
+    <span id="copy-text">Copiar enlace</span>
+  </button>
+</div>
+
+<script>
+  function setupCopyButton() {
+    const copyBtn = document.getElementById('btn-copy-link');
+    const copyText = document.getElementById('copy-text');
+
+    if (!copyBtn || !copyText) return;
+
+    copyBtn.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(window.location.href);
+        copyText.textContent = '¡Copiado!';
+        copyBtn.classList.add('border-rw-forest', 'text-rw-forest');
+        
+        setTimeout(() => {
+          copyText.textContent = 'Copiar enlace';
+          copyBtn.classList.remove('border-rw-forest', 'text-rw-forest');
+        }, 2000);
+      } catch (err) {
+        console.error('Error copying text: ', err);
+      }
+    });
+  }
+
+  // Run on initial load and view transitions
+  setupCopyButton();
+  document.addEventListener('astro:after-swap', setupCopyButton);
+</script>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" fill="none" role="img" aria-label="Retrato editorial ilustrado de Marco Vidal">
+  <rect width="640" height="640" rx="96" fill="#F5F0E8"/>
+  <circle cx="480" cy="160" r="130" fill="#F4A261" opacity=".28"/>
+  <path d="M90 540c36-118 124-176 230-176s194 58 230 176H90z" fill="#16213E"/>
+  <path d="M246 386h148l-18 86c-8 38-104 38-112 0l-18-86z" fill="#C9825D"/>
+  <circle cx="320" cy="270" r="130" fill="#D9966F"/>
+  <path d="M194 271c18-104 65-154 143-154 70 0 112 36 127 101-52-22-103-16-153-4-43 11-78 14-117 57z" fill="#1A1A2E"/>
+  <path d="M239 284c28-10 54-10 78 0M350 284c24-10 48-10 72 0" stroke="#1A1A2E" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="278" cy="313" r="8" fill="#1A1A2E"/>
+  <circle cx="378" cy="313" r="8" fill="#1A1A2E"/>
+  <path d="M325 310c-8 31-10 51-3 61" stroke="#9B5E43" stroke-width="8" stroke-linecap="round"/>
+  <path d="M280 407c30 22 72 22 103 0" stroke="#7A4032" stroke-width="9" stroke-linecap="round"/>
+  <path d="M210 540l48-114 62 82 62-82 48 114H210z" fill="#FAFAFA"/>
+  <path d="M185 540h270l-24-105-61-31-50 86-50-86-61 31-24 105z" fill="#2D6A4F"/>
+  <path d="M128 144c97-82 245-95 369-28" stroke="#E94560" stroke-width="10" stroke-linecap="round" stroke-dasharray="18 24"/>
+</svg>

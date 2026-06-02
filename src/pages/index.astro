@@ -1,12 +1,33 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-const base = import.meta.env.BASE_URL.endsWith("/") ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+import Hero from "../components/home/Hero.astro";
+import CategoryGrid from "../components/home/CategoryGrid.astro";
+import FeaturedArticles from "../components/home/FeaturedArticles.astro";
+import NewsletterSignup from "../components/home/NewsletterSignup.astro";
+import FlightLab from "../components/home/FlightLab.astro";
+import EditorialDesk from "../components/home/EditorialDesk.astro";
+import RoutePlanner from "../components/home/RoutePlanner.astro";
 ---
-<BaseLayout title="RouteWonder | Demo local" description="Viajes curiosos, rutas inteligentes y geografía sorprendente.">
-  <section class="hero">
-    <p class="badge">HERMES MEDIA · DRAFT LOCAL</p>
-    <h1>RouteWonder</h1>
-    <p>Viajes curiosos, rutas inteligentes y geografía sorprendente.</p>
-    <div class="actions"><a href={`${base}demo/`}>Ver demo</a><a href={`${base}videos/demo/`}>Ver vídeo</a><a href={`${base}blog/`}>Ver blog</a></div>
-  </section>
+
+<BaseLayout
+  title="RouteWonder - Viajes Curiosos y Geografía Sorprendente"
+  description="Revista digital independiente sobre exploración geográfica, rutas insólitas, destinos secretos y enigmas cartográficos."
+>
+  <!-- Hero Section -->
+  <Hero />
+
+  <!-- Horizontal Scroll of Category Pills -->
+  <CategoryGrid />
+
+  <RoutePlanner />
+
+  <FlightLab />
+
+  <EditorialDesk />
+
+  <!-- Featured Blog Cards Grid -->
+  <FeaturedArticles />
+
+  <!-- Newsletter Signup CTA -->
+  <NewsletterSignup />
 </BaseLayout>

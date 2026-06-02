@@ -1,0 +1,37 @@
+---
+export interface Props {
+  href?: string;
+  variant?: 'primary' | 'secondary' | 'ghost';
+  class?: string;
+  [key: string]: any;
+}
+
+const {
+  href,
+  variant = 'primary',
+  class: className = '',
+  ...rest
+} = Astro.props;
+
+const baseStyles = 'inline-flex items-center justify-center font-ui font-semibold text-sm px-5 py-2.5 rounded-lg transition-all duration-200 active:scale-[0.98] outline-none focus:ring-2 focus:ring-rw-horizon/40';
+
+const variants = {
+  primary: 'bg-rw-horizon text-rw-white hover:bg-rw-horizon/90 shadow-md shadow-rw-horizon/10 hover:shadow-lg hover:shadow-rw-horizon/20',
+  secondary: 'border border-rw-ocean/20 text-rw-ocean hover:bg-rw-horizon/5 hover:border-rw-horizon/40 hover:text-rw-horizon dark:border-rw-mist/20 dark:text-rw-sand dark:hover:bg-rw-horizon/10 dark:hover:border-rw-horizon/40',
+  ghost: 'text-rw-ocean/80 dark:text-rw-sand/80 hover:bg-rw-horizon/5 hover:text-rw-horizon dark:hover:bg-rw-horizon/10 dark:hover:text-rw-horizon',
+};
+
+const styles = `${baseStyles} ${variants[variant]} ${className}`;
+---
+
+{
+  href ? (
+    <a href={href} class={styles} {...rest}>
+      <slot />
+    </a>
+  ) : (
+    <button class={styles} {...rest}>
+      <slot />
+    </button>
+  )
+}

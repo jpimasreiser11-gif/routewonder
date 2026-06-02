@@ -1,8 +1,77 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+const base = import.meta.env.BASE_URL.endsWith("/") ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
 ---
-<BaseLayout title="Sobre el sitio | RouteWonder" description="Sobre el sitio de RouteWonder en modo draft local-first.">
-  <h1>Sobre el sitio</h1>
-  <p>RouteWonder es un proyecto editorial local-first en modo DRAFT. No se inventan autores, métricas ni experiencias propias; el contenido debe pasar verificación, quality gate y legal gate.</p>
-  <p><strong>Estado:</strong> DRAFT. Revisar y completar datos del titular antes de publicar.</p>
+
+<BaseLayout
+  title="Línea Editorial - Sobre RouteWonder"
+  description="Conoce los principios éticos, de transparencia y de rigor que rigen nuestras crónicas de viaje y geografía curiosa."
+>
+  <section class="relative bg-rw-ink text-rw-white py-16 sm:py-24 overflow-hidden select-none">
+    <div class="relative z-10 max-w-4xl mx-auto px-4 text-center flex flex-col items-center gap-4">
+      <img src="/authors/marco-vidal.svg" alt="Retrato editorial ilustrado de Marco Vidal" width="112" height="112" class="h-28 w-28 rounded-full object-cover border-4 border-rw-horizon/35 shadow-2xl shadow-rw-horizon/20" />
+      <h1 class="font-display font-bold text-4xl sm:text-5xl tracking-tight leading-tight">
+        Línea Editorial &amp; Filosofía
+      </h1>
+      <p class="font-body italic text-base sm:text-xl text-rw-sand/80 max-w-2xl leading-relaxed">
+        Mapas absurdos, fronteras olvidadas y guías documentadas con fuentes públicas, edición humana y criterio editorial.
+      </p>
+    </div>
+  </section>
+
+  <section class="py-12 sm:py-20">
+    <div class="max-w-3xl mx-auto px-4">
+      <div class="prose prose-rw dark:prose-invert">
+        <h2>¿Qué es RouteWonder?</h2>
+        <p>
+          La firma editorial de RouteWonder es <strong>Marco Vidal</strong>: una identidad de marca diseñada para reunir el criterio de investigación, edición y verificación del proyecto bajo una voz reconocible. No fingimos experiencias personales imposibles de comprobar; usamos una voz editorial humana, consistente y revisada.
+        </p>
+        <p>
+          RouteWonder nació en 2026 como una reacción frente al contenido de viajes genérico, los listados de "10 cosas que ver en X" generados por plantillas de IA sin alma, y los blogs llenos de banners publicitarios invasivos.
+        </p>
+        <p>
+          Esta no es una guía de viajes tradicional. Es una <strong>revista digital de geografía curiosa, historia local e inteligencia de rutas</strong>. Nos fascinan los límites: las fronteras absurdas, los pueblos que desaparecen bajo el agua, las carreteras más solitarias y los rincones con historias que superan a la ficción.
+        </p>
+
+        <blockquote>
+          "El mundo real es infinitamente más extraño, complejo e interesante que cualquier cosa que podamos imaginar en un escritorio."
+        </blockquote>
+
+        <h2>Nuestros Tres Pilares de Rigor</h2>
+        <ul>
+          <li>
+            <strong>1. Guías con fundamento:</strong> Todo lo que publicamos debe estar respaldado por investigación geográfica, fuentes oficiales, datos históricos contrastables o referencias verificables.
+          </li>
+          <li>
+            <strong>2. Nada de Hype:</strong> Si un lugar está masificado, decepciona o es inaccesible, te lo diremos. No maquillamos la realidad para conseguir clics.
+          </li>
+          <li>
+            <strong>3. Edición responsable:</strong> Cada artículo debe pasar revisión editorial y factual antes de publicarse. Marco Vidal funciona como firma editorial/persona de marca; no usamos biografías o experiencias no verificadas como prueba de autoridad.
+          </li>
+        </ul>
+
+        <h2>¿Cómo nos financiamos?</h2>
+        <p>
+          Mantener esta revista requiere investigación, edición, diseño y mantenimiento técnico. No queremos llenar las páginas de banners molestos que bloqueen el contenido o ralenticen tu navegador.
+        </p>
+        <p>
+          Por eso, nos financiamos mediante una combinación de:
+        </p>
+        <ol>
+          <li>
+            <strong>Enlaces de afiliación seleccionados:</strong> Podemos recomendar libros de viajes, mapas, seguros o equipamiento cuando la recomendación esté investigada y señalada con disclosure visible. Si compras a través de ellos, podríamos recibir una pequeña comisión sin coste adicional para ti.
+          </li>
+          <li>
+            <strong>Patrocinios transparentes:</strong> Si en el futuro hubiera colaboraciones con marcas del sector o editoriales de mapas, esos contenidos deberán estar siempre señalados de forma explícita al principio del artículo.
+          </li>
+        </ol>
+
+        <div class="mt-12 flex justify-center">
+          <a href={`${base}blog/`} class="inline-flex items-center justify-center font-ui font-semibold text-sm px-6 py-3 rounded-lg bg-rw-horizon text-rw-white hover:bg-rw-horizon/90 shadow-md shadow-rw-horizon/10 active:scale-95 transition-all">
+            Explorar nuestro catálogo &rarr;
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 </BaseLayout>

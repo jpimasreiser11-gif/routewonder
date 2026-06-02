@@ -1,0 +1,78 @@
+---
+import Badge from "../ui/Badge.astro";
+
+export interface Props {
+  title: string;
+  description: string;
+  publishedDate: Date;
+  author: string;
+  category: string;
+  image?: string;
+  imageAlt?: string;
+  readingTime?: number;
+}
+
+const {
+  title,
+  description,
+  publishedDate,
+  author,
+  category,
+  image,
+  imageAlt,
+  readingTime,
+} = Astro.props;
+
+const formattedDate = new Date(publishedDate).toLocaleDateString("es-ES", {
+  year: "numeric",
+  month: "long",
+  day: "numeric",
+});
+---
+
+<header class="relative bg-rw-ink text-rw-white py-16 sm:py-24 overflow-hidden select-none">
+  <!-- If post has image, show as background layer with dark overlay -->
+  {
+    image && (
+      <div class="absolute inset-0 z-0 select-none pointer-events-none">
+        <img src={image} alt="" class="w-full h-full object-cover opacity-25 scale-105 animate-ken-burns" />
+        <div class="absolute inset-0 bg-gradient-to-t from-rw-ink via-rw-ink/90 to-rw-ink/65"></div>
+      </div>
+    )
+  }
+
+  <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 flex flex-col items-center text-center gap-4 sm:gap-6">
+    <!-- Category Badge -->
+    <Badge category={category} class="border-rw-horizon/30 bg-rw-horizon/10" />
+
+    <!-- Title -->
+    <h1 class="font-display font-bold text-3xl sm:text-4.5xl md:text-5.5xl tracking-tight leading-tight max-w-3xl">
+      {title}
+    </h1>
+
+    <!-- Excerpt / Description -->
+    <p class="font-body italic text-base sm:text-xl text-rw-sand/80 max-w-2xl leading-relaxed">
+      {description}
+    </p>
+
+    <!-- Meta Info -->
+    <div class="flex flex-wrap items-center justify-center gap-3 sm:gap-4 font-ui text-xs text-rw-sand/60 mt-2">
+      <div class="flex items-center gap-2">
+        <div class="w-6 h-6 rounded-full bg-rw-horizon/10 border border-rw-horizon/25 flex items-center justify-center font-display font-bold text-[10px] text-rw-horizon select-none">
+          {author.split(" ").map((n) => n[0]).join("")}
+        </div>
+        <span class="font-semibold text-rw-sand">{author}</span>
+      </div>
+      <span class="select-none text-rw-sand/30">|</span>
+      <time datetime={publishedDate.toISOString()}>{formattedDate}</time>
+      {
+        readingTime && (
+          <>
+            <span class="select-none text-rw-sand/30">|</span>
+            <span>{readingTime} min de lectura</span>
+          </>
+        )
+      }
+    </div>
+  </div>
+</header>

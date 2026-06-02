@@ -1,0 +1,73 @@
+---
+export interface Props {
+  title?: string;
+  description?: string;
+  image?: string;
+  publishDate?: Date | string;
+  updateDate?: Date | string;
+  authorName?: string;
+  isArticle?: boolean;
+}
+
+const {
+  title = "RouteWonder",
+  description = "Revista de exploración geográfica e inteligencia de rutas",
+  image = "/og-image.jpg",
+  publishDate,
+  updateDate,
+  authorName = "Marco Vidal",
+  isArticle = false,
+} = Astro.props;
+
+const siteUrl = "https://routewonder.studio";
+const logoUrl = `${siteUrl}/logo.svg`;
+
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": `${siteUrl}/#organization`,
+  "name": "RouteWonder",
+  "url": siteUrl,
+  "logo": {
+    "@type": "ImageObject",
+    "url": logoUrl,
+    "width": "200",
+    "height": "200"
+  },
+  "sameAs": [
+    "https://twitter.com/routewonder",
+    "https://instagram.com/routewonder"
+  ]
+};
+
+const articleSchema = isArticle ? {
+  "@context": "https://schema.org",
+  "@type": "NewsArticle",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": Astro.url.toString()
+  },
+  "headline": title,
+  "description": description,
+  "image": image.startsWith("http") ? image : `${siteUrl}${image}`,
+  "datePublished": publishDate ? new Date(publishDate).toISOString() : undefined,
+  "dateModified": updateDate ? new Date(updateDate).toISOString() : (publishDate ? new Date(publishDate).toISOString() : undefined),
+  "author": {
+    "@type": "Person",
+    "name": authorName,
+    "url": `${siteUrl}/about/`
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "RouteWonder",
+    "logo": {
+      "@type": "ImageObject",
+      "url": logoUrl
+    }
+  }
+} : null;
+
+const schema = isArticle ? articleSchema : organizationSchema;
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(schema)} />

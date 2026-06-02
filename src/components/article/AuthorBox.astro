@@ -1,0 +1,51 @@
+---
+export interface Props {
+  authorName?: string;
+}
+
+const { authorName = "Marco Vidal" } = Astro.props;
+
+const authorInfo = {
+  name: "Marco Vidal",
+  role: "Firma editorial",
+  bio: "Marco Vidal es la firma editorial de RouteWonder: una voz de marca para publicar guías de geografía curiosa y rutas inteligentes basadas en fuentes verificables. Cada pieza debe pasar revisión factual y legal antes de publicarse.",
+  avatar: "/authors/marco-vidal.svg",
+};
+---
+
+<div class="bg-rw-white dark:bg-rw-ink border border-rw-mist/20 dark:border-rw-mist/10 rounded-2xl p-6 sm:p-8 my-12 flex flex-col sm:flex-row gap-6 items-center sm:items-start select-none">
+  <!-- Avatar -->
+  <img
+    src={authorInfo.avatar}
+    alt="Retrato editorial ilustrado de Marco Vidal"
+    width="80"
+    height="80"
+    loading="lazy"
+    class="flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-full object-cover border-2 border-rw-horizon/20 shadow-md bg-rw-sand"
+  />
+
+  <!-- Details -->
+  <div class="flex-grow text-center sm:text-left flex flex-col gap-2">
+    <div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-3">
+      <h3 class="font-display font-bold text-lg text-rw-ink dark:text-rw-white leading-none">
+        {authorInfo.name}
+      </h3>
+      <span class="text-[10px] sm:text-xs font-ui font-semibold uppercase tracking-wider text-rw-horizon bg-rw-horizon/10 px-2.5 py-0.5 rounded-full self-center sm:self-auto">
+        {authorInfo.role}
+      </span>
+    </div>
+    
+    <p class="font-ui text-sm text-rw-ocean/85 dark:text-rw-mist/85 leading-relaxed">
+      {authorInfo.bio}
+    </p>
+
+    <!-- Social links -->
+    <div class="flex gap-4 items-center justify-center sm:justify-start mt-2 font-ui text-xs text-rw-ocean/50 dark:text-rw-mist/55">
+      <a href="https://twitter.com/routewonder" class="hover:text-rw-horizon transition-colors">Twitter</a>
+      <span>·</span>
+      <a href="https://instagram.com/routewonder" class="hover:text-rw-horizon transition-colors">Instagram</a>
+      <span>·</span>
+      <a href="https://routewonder.studio/about/" class="hover:text-rw-horizon transition-colors font-bold">Firma Editorial</a>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2560 1440" fill="none" role="img" aria-label="RouteWonder YouTube banner">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#16213E"/>
+      <stop offset=".46" stop-color="#E94560"/>
+      <stop offset="1" stop-color="#F4A261"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="62%" cy="30%" r="34%">
+      <stop stop-color="#FFF3D2" stop-opacity=".95"/>
+      <stop offset=".38" stop-color="#F4A261" stop-opacity=".45"/>
+      <stop offset="1" stop-color="#F4A261" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="2560" height="1440" fill="url(#sky)"/>
+  <rect width="2560" height="1440" fill="url(#sun)"/>
+  <path d="M0 918C310 790 474 846 690 742c286-138 470-262 774-146 232 88 352 232 593 210 205-19 318-131 503-95v729H0V918z" fill="#16213E" opacity=".92"/>
+  <path d="M0 1064c262-86 443-60 654-135 284-101 490-190 768-70 242 105 403 213 664 160 187-38 331-108 474-65v486H0v-376z" fill="#1A1A2E"/>
+  <path d="M278 990C568 832 879 1122 1156 924c236-169 338-389 641-325 137 29 223 92 306 171" stroke="#FAFAFA" stroke-width="9" stroke-linecap="round" stroke-dasharray="18 28" opacity=".72"/>
+  <circle cx="278" cy="990" r="18" fill="#F4A261"/>
+  <circle cx="2103" cy="770" r="18" fill="#F4A261"/>
+  <g transform="translate(838 512)">
+    <circle cx="126" cy="126" r="108" stroke="#FAFAFA" stroke-width="7" opacity=".35"/>
+    <path d="M124 186C137 166 95 156 114 134c20-25 55-10 39-40-10-21-46-14-31-41 8-14 25-16 27-34" stroke="#FAFAFA" stroke-width="11" stroke-linecap="round"/>
+    <path d="M152 15l-23 16 22 11 20-43-19 16z" fill="#FAFAFA"/>
+  </g>
+  <text x="1080" y="635" font-family="Playfair Display, Georgia, serif" font-size="118" font-weight="800" fill="#FAFAFA">RouteWonder</text>
+  <text x="1088" y="715" font-family="DM Sans, Arial, sans-serif" font-size="34" font-weight="800" letter-spacing="4" fill="#F5F0E8">EL MUNDO ES MAS RARO DE LO QUE IMAGINAS</text>
+  <text x="1088" y="780" font-family="Source Serif 4, Georgia, serif" font-size="34" font-style="italic" fill="#F5F0E8" opacity=".86">Nuevas rutas, mapas y destinos curiosos cada semana</text>
+</svg>

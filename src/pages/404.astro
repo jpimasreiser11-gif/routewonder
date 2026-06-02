@@ -1,0 +1,41 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+const base = import.meta.env.BASE_URL.endsWith("/") ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+---
+
+<BaseLayout
+  title="Página no encontrada - 404"
+  description="Lo sentimos, pero esta ruta no existe en nuestro mapa."
+>
+  <section class="min-h-[75vh] flex items-center justify-center bg-rw-sand/30 dark:bg-rw-ink/10 py-16 px-4">
+    <div class="max-w-md mx-auto text-center flex flex-col items-center gap-6">
+      <div class="relative w-36 h-36 flex items-center justify-center rounded-full bg-rw-horizon/10 text-rw-horizon select-none mb-2">
+        <span class="text-6xl font-display font-black leading-none animate-pulse-slow">404</span>
+        <div class="absolute inset-0 border-2 border-rw-horizon border-dashed rounded-full animate-pulse"></div>
+      </div>
+      
+      <h1 class="font-display font-bold text-3xl text-rw-ink dark:text-rw-white tracking-tight">
+        Ruta Desconocida
+      </h1>
+      
+      <p class="font-body italic text-base text-rw-ocean/70 dark:text-rw-mist/75 max-w-sm leading-relaxed">
+        El lugar al que intentas acceder no figura en nuestras cartas de navegación. Puede que se haya movido o que nunca haya existido.
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-3 w-full justify-center mt-4">
+        <a
+          href={base}
+          class="px-6 py-2.5 bg-rw-horizon text-rw-white font-ui font-semibold text-sm rounded-lg hover:bg-rw-horizon/95 active:scale-95 transition-all text-center"
+        >
+          Volver a la Base (Inicio)
+        </a>
+        <a
+          href={`${base}blog/`}
+          class="px-6 py-2.5 border border-rw-ocean/20 text-rw-ocean hover:text-rw-horizon hover:border-rw-horizon dark:border-rw-mist/20 dark:text-rw-sand dark:hover:text-rw-horizon dark:hover:border-rw-horizon font-ui font-semibold text-sm rounded-lg active:scale-95 transition-all text-center"
+        >
+          Ver Archivo de Rutas
+        </a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

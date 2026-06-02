@@ -1,22 +1,79 @@
 ---
-import CookieBanner from "../components/CookieBanner.astro";
+import SEOHead from "../components/seo/SEOHead.astro";
+import Header from "../components/layout/Header.astro";
+import Footer from "../components/layout/Footer.astro";
+import MobileMenu from "../components/layout/MobileMenu.astro";
+import CookieBanner from "../components/ui/CookieBanner.astro";
+import { ViewTransitions } from "astro:transitions";
 import "../styles/global.css";
-const { title = "Hermes Media", description = "Sitio estático en modo draft" } = Astro.props;
-const base = import.meta.env.BASE_URL.endsWith("/") ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+
+export interface Props {
+  title?: string;
+  description?: string;
+  image?: string;
+  imageAlt?: string;
+  type?: string;
+}
+
+const { title, description, image, imageAlt, type } = Astro.props;
 ---
+
 <html lang="es">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="description" content={description} />
-    <meta property="og:title" content={title} />
-    <meta property="og:description" content={description} />
-    <meta name="twitter:card" content="summary_large_image" />
-    <title>{title}</title>
+    <SEOHead {title} {description} {image} {imageAlt} {type} />
+    <ViewTransitions />
+    
+    <!-- Script to handle dark mode toggle local storage before rendering page -->
+    <script is:inline>
+      const getThemePreference = () => {
+        if (typeof localStorage !== 'undefined' && localStorage.getItem('color-theme')) {
+          return localStorage.getItem('color-theme');
+        }
+        return 'light'; // Default to light mode (sand backgrounds)
+      };
+      
+      const theme = getThemePreference();
+      if (theme === 'dark') {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    </script>
   </head>
-  <body>
-    <header><a href={base}>Inicio</a> <a href={`${base}blog/`}>Blog</a> <a href={`${base}about/`}>Sobre</a> <a href={`${base}contact/`}>Contacto</a></header>
-    <main><slot /></main>
+  <body class="bg-rw-sand text-rw-ink dark:bg-rw-ink dark:text-rw-sand min-h-screen flex flex-col transition-colors duration-300">
+    <!-- Header Navigation -->
+    <Header />
+    
+    <!-- Mobile Menu Drawer Overlay -->
+    <MobileMenu />
+
+    <!-- Main Content -->
+    <main class="flex-grow">
+      <slot />
+    </main>
+
+    <!-- Footer Information -->
+    <Footer />
+
+    <!-- GDPR Consent Banner -->
     <CookieBanner />
+
+    <script is:inline>
+      function setupRevealObserver() {
+        const items = document.querySelectorAll('.reveal');
+        if (!items.length) return;
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('revealed');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.12 });
+        items.forEach((item) => observer.observe(item));
+      }
+      setupRevealObserver();
+      document.addEventListener('astro:after-swap', setupRevealObserver);
+    </script>
   </body>
 </html>

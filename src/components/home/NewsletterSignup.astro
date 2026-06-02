@@ -1,0 +1,56 @@
+---
+---
+<section class="py-16 sm:py-24 bg-rw-white dark:bg-rw-ink transition-colors duration-300">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="relative overflow-hidden bg-gradient-to-br from-rw-ocean to-rw-ink text-rw-white rounded-3xl px-8 py-12 sm:px-16 sm:py-16 shadow-xl border border-rw-mist/10">
+      
+      <!-- Vector Background Accent -->
+      <div class="absolute inset-0 opacity-10 pointer-events-none select-none z-0">
+        <svg class="w-full h-full" viewBox="0 0 800 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="600" cy="100" r="180" stroke="white" stroke-width="2" stroke-dasharray="4 4" />
+          <circle cx="200" cy="300" r="100" stroke="white" stroke-width="1.5" />
+        </svg>
+      </div>
+
+      <!-- Content -->
+      <div class="relative z-10 max-w-2xl mx-auto text-center flex flex-col items-center gap-6">
+        <span class="text-3xl sm:text-4xl animate-pulse-slow">✉️</span>
+        <h2 class="font-display font-bold text-3xl sm:text-4xl leading-tight tracking-tight">
+          Entradas del Cuaderno de Ruta
+        </h2>
+        <p class="font-body italic text-base sm:text-lg text-rw-sand/80 leading-relaxed max-w-xl">
+          Únete a más de 5,000 mentes curiosas. Cada domingo recibirás una crónica geográfica inédita, mapas insólitos y recomendaciones de lectura que no encontrarás en la web.
+        </p>
+
+        <!-- Newsletter form -->
+        <form
+          action="https://formspree.io/f/placeholder"
+          method="POST"
+          class="flex flex-col sm:flex-row gap-3 w-full max-w-md mt-4"
+          id="newsletter-signup-form"
+        >
+          <label for="signup-email" class="sr-only">Correo electrónico</label>
+          <input
+            type="email"
+            id="signup-email"
+            name="email"
+            required
+            placeholder="Introduce tu correo electrónico"
+            class="flex-grow px-4 py-3 text-sm font-ui border border-rw-sand/20 bg-rw-white/10 backdrop-blur-sm text-rw-white rounded-lg focus:outline-none focus:border-rw-horizon focus:ring-1 focus:ring-rw-horizon/30 placeholder-rw-sand/40 transition-all"
+          />
+          <button
+            type="submit"
+            class="px-6 py-3 bg-rw-horizon hover:bg-rw-horizon/95 text-rw-white text-sm font-ui font-semibold rounded-lg shadow-md shadow-rw-horizon/20 active:scale-[0.98] transition-all whitespace-nowrap"
+          >
+            Unirse a la lista
+          </button>
+        </form>
+        
+        <!-- Spam declaration -->
+        <p class="font-ui text-[10px] text-rw-sand/50 mt-1 select-none pointer-events-none">
+          Sin spam. Te puedes dar de baja con un solo clic en cualquier momento.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

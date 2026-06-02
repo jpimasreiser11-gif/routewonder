@@ -1,22 +1,21 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
-const base = import.meta.env.BASE_URL.endsWith("/") ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
 ---
 <BaseLayout title="Vídeo demo entrenado | RouteWonder" description="Vídeo vertical de prueba mejorado localmente. No publicado en redes.">
   <p class="badge">DRAFT LOCAL · SOCIAL_PUBLISHING_ENABLED=false</p>
   <h1>RouteWonder — vídeo demo mejorado</h1>
-  <p>Este vídeo usa slides generados localmente, estructura de hook/valor/CTA y audio sintético libre. Sigue siendo un borrador de prueba, no contenido final.</p>
-  <video controls playsinline width="360" poster="/videos/routewonder-demo-poster.svg">
-    <source src={`${base}videos/routewonder-trained-demo-short.mp4`} type="video/mp4" />
-    <source src={`${base}videos/routewonder-demo-short.mp4`} type="video/mp4" />
+  <p>Este vídeo usa fotografías libres, guion corto, voz sintética en español y estructura de hook/valor/CTA. Sigue siendo un borrador de prueba, no una pieza final de canal.</p>
+  <video controls playsinline width="360" poster="/videos/routewonder-demo-poster.jpg">
+    <source src="/videos/routewonder-trained-demo-short.mp4" type="video/mp4" />
+    <source src="/videos/routewonder-demo-short.mp4" type="video/mp4" />
     Tu navegador no puede reproducir este MP4.
   </video>
   <h2>Qué valida este demo</h2>
   <ul>
     <li>Vídeo 9:16 compatible con Shorts/Reels/TikTok.</li>
-    <li>Assets locales sin copyright de terceros.</li>
+    <li>Fotografías descargadas desde fuentes libres y guardadas como demo local.</li>
     <li>Ruta pública local desde Astro.</li>
     <li>Modo DRAFT: ninguna subida social.</li>
   </ul>
-  <p><a href={`${base}demo/`}>Volver a demo</a></p>
+  <p><a href="/demo/">Volver a demo</a></p>
 </BaseLayout>

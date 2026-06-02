@@ -1,15 +1,21 @@
 {
+  "name": "routewonder",
   "type": "module",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "astro build && pagefind --site dist",
     "preview": "astro preview"
   },
   "dependencies": {
     "@astrojs/rss": "latest",
     "@astrojs/sitemap": "latest",
+    "@astrojs/tailwind": "latest",
     "astro": "latest",
-    "pagefind": "latest",
+    "tailwindcss": "latest",
+    "three": "^0.184.0",
     "typescript": "latest"
+  },
+  "devDependencies": {
+    "pagefind": "^1.5.2"
   }
 }

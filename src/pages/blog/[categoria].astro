@@ -1,8 +1,0 @@
----
-import BaseLayout from "../../layouts/BaseLayout.astro";
-export function getStaticPaths() { return [{params:{categoria:'general'}}]; }
-const { categoria } = Astro.params;
----
-<BaseLayout title={`Categoría ${categoria} | RouteWonder`} description="Listado por categoría">
-<h1>Categoría: {categoria}</h1>
-</BaseLayout>

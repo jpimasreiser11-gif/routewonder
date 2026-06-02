@@ -1,0 +1,106 @@
+---
+const base = import.meta.env.BASE_URL.endsWith("/") ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+
+const legalLinks = [
+  { href: `${base}privacy-policy/`, label: "Privacidad" },
+  { href: `${base}terms-of-service/`, label: "Términos" },
+  { href: `${base}cookie-policy/`, label: "Cookies" },
+  { href: `${base}affiliate-disclosure/`, label: "Afiliación" },
+];
+
+const socialLinks = [
+  { href: "https://youtube.com/@routewonder", label: "YouTube" },
+  { href: "https://www.tiktok.com/@routewonder", label: "TikTok" },
+  { href: "https://instagram.com/routewonder", label: "Instagram" },
+];
+
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="bg-rw-white dark:bg-rw-ink border-t border-rw-mist/20 dark:border-rw-mist/10 py-12 sm:py-16 transition-colors duration-300">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-12">
+      <!-- Col 1: Brand Info -->
+      <div class="col-span-1 md:col-span-5 flex flex-col gap-4">
+        <a href={base} class="flex items-center gap-2 group focus:outline-none" aria-label="RouteWonder Home">
+          <img src="/logo.svg" alt="" class="w-8 h-8 transition-transform group-hover:rotate-12" />
+          <span class="font-display font-extrabold text-lg tracking-tight text-rw-ink dark:text-rw-white">
+            Route<span class="text-rw-horizon">Wonder</span>
+          </span>
+        </a>
+        <p class="font-ui text-sm text-rw-ocean/70 dark:text-rw-mist/75 max-w-sm leading-relaxed">
+          Revista digital independiente dedicada a la exploración de rutas insólitas, ciudades olvidadas y enigmas de la geografía física e histórica.
+        </p>
+        <nav class="flex flex-wrap gap-3 font-ui text-xs font-semibold text-rw-ocean/65 dark:text-rw-mist/70" aria-label="Redes sociales de RouteWonder">
+          {socialLinks.map((link) => (
+            <a href={link.href} class="hover:text-rw-horizon transition-colors">
+              {link.label}
+            </a>
+          ))}
+        </nav>
+      </div>
+
+      <!-- Col 2: Navigation Links -->
+      <div class="col-span-1 sm:col-span-4 md:col-span-3 flex flex-col gap-3">
+        <h4 class="font-ui text-xs font-bold uppercase tracking-wider text-rw-horizon">Revista</h4>
+        <ul class="flex flex-col gap-2 font-ui text-sm">
+          <li>
+            <a href={`${base}blog/`} class="text-rw-ocean/85 dark:text-rw-sand/80 hover:text-rw-horizon transition-colors">Artículos</a>
+          </li>
+          <li>
+            <a href={`${base}about/`} class="text-rw-ocean/85 dark:text-rw-sand/80 hover:text-rw-horizon transition-colors font-semibold">Editorial &amp; Ética</a>
+          </li>
+          <li>
+            <a href={`${base}contact/`} class="text-rw-ocean/85 dark:text-rw-sand/80 hover:text-rw-horizon transition-colors">Contacto</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Col 3: Newsletter form -->
+      <div class="col-span-1 sm:col-span-8 md:col-span-4 flex flex-col gap-3">
+        <h4 class="font-ui text-xs font-bold uppercase tracking-wider text-rw-horizon">Cuaderno de Ruta</h4>
+        <p class="font-ui text-xs text-rw-ocean/70 dark:text-rw-mist/70 leading-relaxed mb-1">
+          Únete a nuestra lista de correo y recibe una ruta o curiosidad geográfica insólita cada domingo.
+        </p>
+        <form
+          action="https://formspree.io/f/placeholder"
+          method="POST"
+          class="flex flex-col sm:flex-row gap-2"
+          id="footer-newsletter-form"
+        >
+          <label for="newsletter-email" class="sr-only">Correo electrónico</label>
+          <input
+            type="email"
+            id="newsletter-email"
+            name="email"
+            required
+            placeholder="tu@email.com"
+            class="flex-grow px-3.5 py-2 text-sm font-ui border border-rw-mist/35 bg-rw-sand/20 dark:bg-rw-ink/40 text-rw-ink dark:text-rw-white rounded-lg focus:outline-none focus:border-rw-horizon focus:ring-1 focus:ring-rw-horizon/30 placeholder-rw-ocean/40 dark:placeholder-rw-mist/40 transition-all"
+          />
+          <button
+            type="submit"
+            class="px-4 py-2 bg-rw-horizon hover:bg-rw-horizon/95 text-rw-white text-sm font-ui font-semibold rounded-lg shadow-sm shadow-rw-horizon/10 transition-all active:scale-[0.98] whitespace-nowrap"
+          >
+            Suscribirse
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Bottom Line -->
+    <div class="mt-12 pt-8 border-t border-rw-mist/15 dark:border-rw-mist/10 flex flex-col sm:flex-row items-center justify-between gap-4 font-ui text-xs text-rw-ocean/55 dark:text-rw-mist/55">
+      <p>&copy; {currentYear} RouteWonder. Todos los derechos reservados.</p>
+      
+      <!-- Legal Links -->
+      <nav class="flex flex-wrap gap-4 sm:gap-6 justify-center">
+        {
+          legalLinks.map((link) => (
+            <a href={link.href} class="hover:text-rw-horizon transition-colors">
+              {link.label}
+            </a>
+          ))
+        }
+      </nav>
+    </div>
+  </div>
+</footer>

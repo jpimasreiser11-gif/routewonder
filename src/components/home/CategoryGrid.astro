@@ -1,0 +1,45 @@
+---
+import CategoryIcon from "../ui/CategoryIcon.astro";
+
+const categories = [
+  { id: 'rutas-sorprendentes', label: 'Rutas Sorprendentes', icon: 'route' },
+  { id: 'ciudades-extranas', label: 'Ciudades Extrañas', icon: 'city' },
+  { id: 'destinos-secretos', label: 'Destinos Secretos', icon: 'island' },
+  { id: 'viaje-economico', label: 'Viaje Económico', icon: 'budget' },
+  { id: 'curiosidades-geograficas', label: 'Curiosidades Geográficas', icon: 'geo' },
+  { id: 'lugares-de-pelicula', label: 'Lugares de Película', icon: 'cinema' },
+  { id: 'viaje-rapido', label: 'Viaje Rápido', icon: 'fast' },
+];
+
+const base = import.meta.env.BASE_URL.endsWith("/") ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+---
+
+<section class="py-8 border-b border-rw-mist/10 bg-rw-white/30 dark:bg-rw-ink/10">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between mb-4">
+      <h2 class="font-ui text-xs font-bold uppercase tracking-widest text-rw-horizon">Explorar por temática</h2>
+      <a href={`${base}blog/`} class="font-ui text-xs font-semibold text-rw-ocean/60 dark:text-rw-mist/60 hover:text-rw-horizon transition-colors">
+        Ver todos los temas &rarr;
+      </a>
+    </div>
+    
+    <!-- Horizontal scroll wrapper for mobile, grid for desktop -->
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-[repeat(7,minmax(0,1fr))] gap-3">
+      {
+        categories.map((cat) => (
+          <a
+            href={`${base}categoria/${cat.id}/`}
+            class="group min-h-[104px] flex flex-col items-center justify-center gap-3 px-3 py-4 bg-rw-white dark:bg-rw-ink border border-rw-mist/20 dark:border-rw-mist/10 rounded-xl hover:border-rw-horizon/40 dark:hover:border-rw-horizon/40 hover:shadow-md hover:translate-y-[-2px] transition-all duration-200 select-none text-center"
+          >
+            <span class="grid place-items-center w-10 h-10 rounded-full bg-rw-horizon/10 text-rw-horizon border border-rw-horizon/15 group-hover:bg-rw-horizon group-hover:text-rw-white transition-colors">
+              <CategoryIcon icon={cat.icon} class="w-5 h-5" />
+            </span>
+            <span class="font-ui text-[11px] sm:text-xs font-semibold leading-tight text-rw-ink dark:text-rw-white text-balance max-w-[9rem]">
+              {cat.label}
+            </span>
+          </a>
+        ))
+      }
+    </div>
+  </div>
+</section>

@@ -1,8 +1,115 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 ---
-<BaseLayout title="Contacto | RouteWonder" description="Contacto de RouteWonder en modo draft local-first.">
-  <h1>Contacto</h1>
-  <p>Para privacidad, derechos de datos, correcciones, licencias o consultas editoriales, usa el canal de contacto configurado por el titular antes de publicación. Email pendiente de configuración humana.</p>
-  <p><strong>Estado:</strong> DRAFT. Revisar y completar datos del titular antes de publicar.</p>
+
+<BaseLayout
+  title="Contacto - RouteWonder"
+  description="Ponte en contacto con el equipo de RouteWonder. Escríbenos para sugerencias de rutas, correcciones históricas o propuestas comerciales."
+>
+  <section class="relative bg-rw-ink text-rw-white py-16 sm:py-24 overflow-hidden select-none">
+    <div class="relative z-10 max-w-4xl mx-auto px-4 text-center flex flex-col items-center gap-4">
+      <span class="text-3xl">✉️</span>
+      <h1 class="font-display font-bold text-4xl sm:text-5xl tracking-tight leading-tight">
+        Hablemos de Rutas
+      </h1>
+      <p class="font-body italic text-base sm:text-xl text-rw-sand/80 max-w-2xl leading-relaxed">
+        ¿Tienes una sugerencia de lugar curioso? ¿Una corrección geográfica? Escríbenos directamente.
+      </p>
+    </div>
+  </section>
+
+  <section class="py-12 sm:py-20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-12 gap-12 sm:gap-16">
+      
+      <!-- Contact Info -->
+      <div class="md:col-span-5 flex flex-col gap-6">
+        <h2 class="font-display font-bold text-2xl text-rw-ink dark:text-rw-white tracking-tight">
+          Información de Contacto
+        </h2>
+        <p class="font-ui text-sm text-rw-ocean/80 dark:text-rw-mist/80 leading-relaxed">
+          Leemos cada correo. Si tienes un destino secreto que deberíamos investigar o una corrección sobre mapas y coordenadas, háznoslo saber.
+        </p>
+
+        <div class="flex flex-col gap-4 font-ui text-sm mt-4">
+          <div class="flex items-center gap-3">
+            <span class="text-lg">📧</span>
+            <div>
+              <p class="font-bold text-rw-ink dark:text-rw-white leading-none">Email General</p>
+              <a href="mailto:info@routewonder.studio" class="text-rw-horizon hover:underline mt-1 block">info@routewonder.studio</a>
+            </div>
+          </div>
+          
+          <div class="flex items-center gap-3">
+            <span class="text-lg">⚡</span>
+            <div>
+              <p class="font-bold text-rw-ink dark:text-rw-white leading-none">Tiempo de Respuesta</p>
+              <p class="text-rw-ocean/70 dark:text-rw-mist/70 mt-1">Normalmente respondemos en menos de 48 horas laborables.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="md:col-span-7 bg-rw-white dark:bg-rw-ink border border-rw-mist/20 dark:border-rw-mist/10 p-6 sm:p-8 rounded-2xl shadow-sm">
+        <form action="https://formspree.io/f/placeholder" method="POST" class="flex flex-col gap-4 sm:gap-5">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div class="flex flex-col gap-1.5">
+              <label for="contact-name" class="font-ui text-xs font-bold text-rw-ink dark:text-rw-white">Tu nombre</label>
+              <input
+                type="text"
+                id="contact-name"
+                name="name"
+                required
+                placeholder="Marco Polo"
+                class="px-3.5 py-2.5 text-sm font-ui border border-rw-mist/30 dark:border-rw-mist/15 bg-rw-sand/10 dark:bg-rw-ink/40 text-rw-ink dark:text-rw-white rounded-lg focus:outline-none focus:border-rw-horizon focus:ring-1 focus:ring-rw-horizon/30 transition-all"
+              />
+            </div>
+            
+            <div class="flex flex-col gap-1.5">
+              <label for="contact-email" class="font-ui text-xs font-bold text-rw-ink dark:text-rw-white">Correo electrónico</label>
+              <input
+                type="email"
+                id="contact-email"
+                name="email"
+                required
+                placeholder="tu@email.com"
+                class="px-3.5 py-2.5 text-sm font-ui border border-rw-mist/30 dark:border-rw-mist/15 bg-rw-sand/10 dark:bg-rw-ink/40 text-rw-ink dark:text-rw-white rounded-lg focus:outline-none focus:border-rw-horizon focus:ring-1 focus:ring-rw-horizon/30 transition-all"
+              />
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-1.5">
+            <label for="contact-subject" class="font-ui text-xs font-bold text-rw-ink dark:text-rw-white">Asunto</label>
+            <input
+              type="text"
+              id="contact-subject"
+              name="subject"
+              required
+              placeholder="Sugerencia de ruta / Propuesta comercial"
+              class="px-3.5 py-2.5 text-sm font-ui border border-rw-mist/30 dark:border-rw-mist/15 bg-rw-sand/10 dark:bg-rw-ink/40 text-rw-ink dark:text-rw-white rounded-lg focus:outline-none focus:border-rw-horizon focus:ring-1 focus:ring-rw-horizon/30 transition-all"
+            />
+          </div>
+
+          <div class="flex flex-col gap-1.5">
+            <label for="contact-message" class="font-ui text-xs font-bold text-rw-ink dark:text-rw-white">Mensaje</label>
+            <textarea
+              id="contact-message"
+              name="message"
+              required
+              rows="5"
+              placeholder="Escribe aquí los detalles..."
+              class="px-3.5 py-2.5 text-sm font-ui border border-rw-mist/30 dark:border-rw-mist/15 bg-rw-sand/10 dark:bg-rw-ink/40 text-rw-ink dark:text-rw-white rounded-lg focus:outline-none focus:border-rw-horizon focus:ring-1 focus:ring-rw-horizon/30 transition-all resize-none"
+            ></textarea>
+          </div>
+
+          <button
+            type="submit"
+            class="mt-2 py-3 bg-rw-horizon hover:bg-rw-horizon/95 text-rw-white text-sm font-ui font-semibold rounded-lg shadow-md shadow-rw-horizon/10 active:scale-[0.98] transition-all text-center"
+          >
+            Enviar Mensaje
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
 </BaseLayout>

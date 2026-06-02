@@ -1,12 +1,141 @@
 ---
+import { getCollection } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
-const base = import.meta.env.BASE_URL.endsWith("/") ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+import ArticleCard from "../../components/article/ArticleCard.astro";
+import CategoryIcon from "../../components/ui/CategoryIcon.astro";
+
+const posts = await getCollection("blog", ({ data }) => {
+  return import.meta.env.PROD ? !data.draft : true;
+});
+
+// Sort by date descending
+const sortedPosts = posts.sort((a, b) => b.data.publishedDate.valueOf() - a.data.publishedDate.valueOf());
+
+const categories = [
+  { id: 'all', label: 'Todos', icon: 'all' },
+  { id: 'rutas-sorprendentes', label: 'Rutas Sorprendentes', icon: 'route' },
+  { id: 'ciudades-extranas', label: 'Ciudades Extrañas', icon: 'city' },
+  { id: 'destinos-secretos', label: 'Destinos Secretos', icon: 'island' },
+  { id: 'viaje-economico', label: 'Viaje Económico', icon: 'budget' },
+  { id: 'curiosidades-geograficas', label: 'Curiosidades Geográficas', icon: 'geo' },
+  { id: 'lugares-de-pelicula', label: 'Lugares de Película', icon: 'cinema' },
+  { id: 'viaje-rapido', label: 'Viaje Rápido', icon: 'fast' },
+];
 ---
-<BaseLayout title="Blog | RouteWonder" description="Artículos en modo draft local">
-  <h1>Blog</h1>
-  <p>Contenido local de prueba. Nada está publicado en producción.</p>
-  <ul>
-    <li><a href={`${base}blog/placeholder/`}>Artículo placeholder validable</a></li>
-    <li><a href={`${base}demo/`}>Página demo de sistema</a></li>
-  </ul>
+
+<BaseLayout
+  title="Revista de Exploración - Archivo de Artículos"
+  description="Explora todo el catálogo de crónicas viajeras, curiosidades cartográficas y guías de viaje alternativo de RouteWonder."
+>
+  <section class="py-12 sm:py-16 bg-rw-sand/20 dark:bg-rw-ink/10 border-b border-rw-mist/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center gap-4">
+      <h1 class="font-display font-bold text-4xl sm:text-5xl text-rw-ink dark:text-rw-white tracking-tight">
+        El Archivo Geográfico
+      </h1>
+      <p class="font-body italic text-base sm:text-lg text-rw-ocean/70 dark:text-rw-mist/75 max-w-xl">
+        Todos nuestros artículos en orden cronológico. Usa los filtros a continuación para buscar por categoría.
+      </p>
+
+      <!-- Category Filter Pills -->
+      <div class="flex flex-wrap items-center justify-center gap-2 mt-4 max-w-3xl">
+        {
+          categories.map((cat) => (
+            <button
+              class="filter-btn min-h-11 inline-flex items-center gap-2 px-4 py-2 text-xs font-semibold font-ui border border-rw-mist/20 dark:border-rw-mist/10 rounded-full bg-rw-white dark:bg-rw-ink text-rw-ink dark:text-rw-sand hover:border-rw-horizon dark:hover:border-rw-horizon hover:text-rw-horizon dark:hover:text-rw-horizon transition-all select-none"
+              data-category={cat.id}
+            >
+              <CategoryIcon icon={cat.icon} class="w-3.5 h-3.5 shrink-0" />
+              <span>{cat.label}</span>
+            </button>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- Article Grid listing -->
+  <section class="py-12 sm:py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {
+        sortedPosts.length === 0 ? (
+          <div class="text-center py-12">
+            <span class="text-4xl">🗺️</span>
+            <p class="font-body italic text-rw-ocean/60 mt-4">Aún no se han publicado artículos en esta sección.</p>
+          </div>
+        ) : (
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="posts-grid">
+            {
+              sortedPosts.map((post) => (
+                <div class="post-card-wrapper" data-category={post.data.category}>
+                  <ArticleCard post={post} />
+                </div>
+              ))
+            }
+          </div>
+        )
+      }
+    </div>
+  </section>
+
+  <script>
+    function setupFiltering() {
+      const buttons = document.querySelectorAll('.filter-btn');
+      const cards = document.querySelectorAll('.post-card-wrapper');
+
+      if (buttons.length === 0 || cards.length === 0) return;
+
+      const filterCategory = (category: string) => {
+        // Update active class on buttons
+        buttons.forEach((btn) => {
+          const btnCat = btn.getAttribute('data-category');
+          if (btnCat === category) {
+            btn.classList.add('bg-rw-horizon', 'text-rw-white', 'border-rw-horizon', 'shadow-sm', 'shadow-rw-horizon/10');
+            btn.classList.remove('bg-rw-white', 'dark:bg-rw-ink', 'text-rw-ink', 'dark:text-rw-sand', 'border-rw-mist/20', 'dark:border-rw-mist/10');
+          } else {
+            btn.classList.remove('bg-rw-horizon', 'text-rw-white', 'border-rw-horizon', 'shadow-sm', 'shadow-rw-horizon/10');
+            btn.classList.add('bg-rw-white', 'dark:bg-rw-ink', 'text-rw-ink', 'dark:text-rw-sand', 'border-rw-mist/20', 'dark:border-rw-mist/10');
+          }
+        });
+
+        // Show/hide cards
+        cards.forEach((card: any) => {
+          const cardCat = card.getAttribute('data-category');
+          if (category === 'all' || cardCat === category) {
+            card.style.display = 'block';
+            card.classList.add('animate-fade-in');
+          } else {
+            card.style.display = 'none';
+            card.classList.remove('animate-fade-in');
+          }
+        });
+      };
+
+      // Set initial state from query string parameter
+      const urlParams = new URLSearchParams(window.location.search);
+      const initialCat = urlParams.get('category') || 'all';
+      filterCategory(initialCat);
+
+      // Add click listeners to buttons
+      buttons.forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const category = btn.getAttribute('data-category') || 'all';
+          
+          // Update URL query parameter without reloading
+          const newUrl = new URL(window.location.href);
+          if (category === 'all') {
+            newUrl.searchParams.delete('category');
+          } else {
+            newUrl.searchParams.set('category', category);
+          }
+          window.history.pushState({}, '', newUrl);
+          
+          filterCategory(category);
+        });
+      });
+    }
+
+    // Run on initial load and view transitions
+    setupFiltering();
+    document.addEventListener('astro:after-swap', setupFiltering);
+  </script>
 </BaseLayout>

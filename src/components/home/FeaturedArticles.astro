@@ -1,0 +1,57 @@
+---
+import { getCollection } from "astro:content";
+import ArticleCard from "../article/ArticleCard.astro";
+
+const posts = await getCollection("blog", ({ data }) => {
+  return import.meta.env.PROD ? !data.draft : true;
+});
+
+// Sort by date descending and filter by featured, fallback to newest posts
+const featuredPosts = posts
+  .filter((post) => post.data.featured)
+  .sort((a, b) => b.data.publishedDate.valueOf() - a.data.publishedDate.valueOf())
+  .slice(0, 3);
+
+// If less than 3 featured posts, fill up with newest posts
+if (featuredPosts.length < 3) {
+  const remainingCount = 3 - featuredPosts.length;
+  const nonFeaturedSorted = posts
+    .filter((post) => !featuredPosts.some((fp) => fp.id === post.id))
+    .sort((a, b) => b.data.publishedDate.valueOf() - a.data.publishedDate.valueOf());
+    
+  featuredPosts.push(...nonFeaturedSorted.slice(0, remainingCount));
+}
+
+const base = import.meta.env.BASE_URL.endsWith("/") ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+---
+
+<section class="py-16 sm:py-24 bg-rw-sand/30 dark:bg-rw-ink/20">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Header -->
+    <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-10 sm:mb-12">
+      <div>
+        <h2 class="font-display font-bold text-3xl sm:text-4xl text-rw-ink dark:text-rw-white tracking-tight">
+          Historias Destacadas
+        </h2>
+        <p class="font-ui text-sm text-rw-ocean/70 dark:text-rw-mist/70 mt-1 leading-relaxed">
+          Nuestras crónicas más leídas e investigaciones de geografía curiosa.
+        </p>
+      </div>
+      <a
+        href={`${base}blog/`}
+        class="inline-flex items-center gap-1.5 px-4 py-2 font-ui font-semibold text-sm text-rw-horizon border border-rw-horizon/20 hover:border-rw-horizon hover:bg-rw-horizon/5 rounded-lg transition-all active:scale-[0.98] whitespace-nowrap self-start sm:self-auto"
+      >
+        Ver todos los artículos &rarr;
+      </a>
+    </div>
+
+    <!-- Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {
+        featuredPosts.map((post) => (
+          <ArticleCard post={post} />
+        ))
+      }
+    </div>
+  </div>
+</section>

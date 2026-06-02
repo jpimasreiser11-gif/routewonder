@@ -1,0 +1,68 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import ArticleCard from "../../components/article/ArticleCard.astro";
+import CategoryIcon from "../../components/ui/CategoryIcon.astro";
+
+export async function getStaticPaths() {
+  return [
+    { id: "rutas-sorprendentes", label: "Rutas Sorprendentes", icon: "route" },
+    { id: "ciudades-extranas", label: "Ciudades Extrañas", icon: "city" },
+    { id: "destinos-secretos", label: "Destinos Secretos", icon: "island" },
+    { id: "viaje-economico", label: "Viaje Económico", icon: "budget" },
+    { id: "curiosidades-geograficas", label: "Curiosidades Geográficas", icon: "geo" },
+    { id: "lugares-de-pelicula", label: "Lugares de Película", icon: "cinema" },
+    { id: "viaje-rapido", label: "Viaje Rápido", icon: "fast" },
+  ].map((category) => ({
+    params: { categoria: category.id },
+    props: { category },
+  }));
+}
+
+const { category } = Astro.props;
+const posts = await getCollection("blog", ({ data }) => {
+  const visible = import.meta.env.PROD ? !data.draft : true;
+  return visible && data.category === category.id;
+});
+const sortedPosts = posts.sort((a, b) => b.data.publishedDate.valueOf() - a.data.publishedDate.valueOf());
+---
+
+<BaseLayout
+  title={`${category.label} | RouteWonder`}
+  description={`Artículos de RouteWonder sobre ${category.label.toLowerCase()}: rutas, lugares y curiosidades geográficas con enfoque práctico.`}
+>
+  <section class="py-14 sm:py-18 bg-rw-sand/25 dark:bg-rw-ink/20 border-b border-rw-mist/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <a href="/blog/" class="font-ui text-sm font-semibold text-rw-horizon hover:underline">Archivo completo</a>
+      <div class="mt-5 flex items-center gap-4">
+        <span class="grid h-14 w-14 shrink-0 place-items-center rounded-2xl bg-rw-horizon/10 text-rw-horizon border border-rw-horizon/15" aria-hidden="true">
+          <CategoryIcon icon={category.icon} class="w-7 h-7" />
+        </span>
+        <div>
+          <h1 class="font-display text-4xl sm:text-5xl font-bold text-rw-ink dark:text-rw-white">{category.label}</h1>
+          <p class="mt-2 font-body text-rw-ocean/75 dark:text-rw-mist/80 max-w-2xl">
+            Una selección editorial de historias y guías pensadas para explorar mejor, gastar con cabeza y mirar el mapa con más curiosidad.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-12 sm:py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {
+        sortedPosts.length === 0 ? (
+          <div class="rounded-xl border border-rw-mist/20 bg-rw-white dark:bg-rw-ink p-8 text-center">
+            <p class="font-ui text-rw-ocean/70 dark:text-rw-mist/80">
+              Esta categoría está preparada, pero todavía no tiene artículos publicados.
+            </p>
+          </div>
+        ) : (
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {sortedPosts.map((post) => <ArticleCard post={post} />)}
+          </div>
+        )
+      }
+    </div>
+  </section>
+</BaseLayout>

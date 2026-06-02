@@ -1,0 +1,87 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+import ArticleHeader from "../components/article/ArticleHeader.astro";
+import TableOfContents from "../components/article/TableOfContents.astro";
+import AuthorBox from "../components/article/AuthorBox.astro";
+import ShareButtons from "../components/article/ShareButtons.astro";
+import AffiliateDisclosure from "../components/article/AffiliateDisclosure.astro";
+import SchemaOrg from "../components/seo/SchemaOrg.astro";
+import ProgressBar from "../components/ui/ProgressBar.astro";
+import Breadcrumbs from "../components/ui/Breadcrumbs.astro";
+import type { CollectionEntry } from "astro:content";
+
+export interface Props {
+  post: CollectionEntry<"blog">;
+  headings: any[];
+}
+
+const { post, headings } = Astro.props;
+const { title, description, publishedDate, updatedDate, author, category, image, imageAlt, readingTime, affiliate, affiliateProgram } = post.data;
+
+const base = import.meta.env.BASE_URL.endsWith("/") ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+
+const breadcrumbItems = [
+  { label: "Artículos", href: `${base}blog/` },
+  { label: title },
+];
+---
+
+<BaseLayout {title} {description} {image} {imageAlt} type="article">
+  <!-- SEO JSON-LD Schema -->
+  <SchemaOrg
+    {title}
+    {description}
+    {image}
+    publishDate={publishedDate}
+    updateDate={updatedDate}
+    authorName={author}
+    isArticle={true}
+  />
+
+  <!-- Reading Progress Bar -->
+  <ProgressBar />
+
+  <!-- Article Banner Header -->
+  <ArticleHeader
+    {title}
+    {description}
+    {publishedDate}
+    {author}
+    {category}
+    {image}
+    {imageAlt}
+    {readingTime}
+  />
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-12">
+    <!-- Breadcrumbs Navigation -->
+    <Breadcrumbs items={breadcrumbItems} />
+
+    <!-- Core Layout Grid (Desktop Sidebar + Main Content) -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 mt-6">
+      
+      <!-- Left Sidebar (TOC) -->
+      <aside class="hidden lg:block lg:col-span-3">
+        <TableOfContents {headings} />
+      </aside>
+
+      <!-- Main Prose Column -->
+      <article class="col-span-1 lg:col-span-9 max-w-none">
+        <!-- Affiliate notice if flagged -->
+        {affiliate && <AffiliateDisclosure program={affiliateProgram} />}
+
+        <!-- Rendered markdown content -->
+        <div class="prose prose-rw dark:prose-invert max-w-3xl">
+          <slot />
+        </div>
+
+        <!-- Social sharing panel -->
+        <ShareButtons {title} />
+
+        <!-- Author bio panel -->
+        <AuthorBox authorName={author} />
+      </article>
+
+    </div>
+  </div>
+</BaseLayout>
