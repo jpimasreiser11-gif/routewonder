@@ -4,17 +4,17 @@ const base = import.meta.env.BASE_URL.endsWith("/") ? import.meta.env.BASE_URL :
 ---
 
 <BaseLayout
-  title="Línea Editorial - Sobre RouteWonder"
-  description="Conoce los principios éticos, de transparencia y de rigor que rigen nuestras crónicas de viaje y geografía curiosa."
+  title="Sobre RouteWonder"
+  description="RouteWonder reúne rutas curiosas, mapas útiles y destinos que ayudan a viajar con más intención."
 >
   <section class="relative bg-rw-ink text-rw-white py-16 sm:py-24 overflow-hidden select-none">
     <div class="relative z-10 max-w-4xl mx-auto px-4 text-center flex flex-col items-center gap-4">
       <img src="/authors/marco-vidal.svg" alt="Retrato editorial ilustrado de Marco Vidal" width="112" height="112" class="h-28 w-28 rounded-full object-cover border-4 border-rw-horizon/35 shadow-2xl shadow-rw-horizon/20" />
       <h1 class="font-display font-bold text-4xl sm:text-5xl tracking-tight leading-tight">
-        Línea Editorial &amp; Filosofía
+        Sobre RouteWonder
       </h1>
       <p class="font-body italic text-base sm:text-xl text-rw-sand/80 max-w-2xl leading-relaxed">
-        Mapas absurdos, fronteras olvidadas y guías documentadas con fuentes públicas, edición humana y criterio editorial.
+        Lugares raros, rutas posibles y mapas que sirven para decidir mejor el próximo viaje.
       </p>
     </div>
   </section>
@@ -22,49 +22,33 @@ const base = import.meta.env.BASE_URL.endsWith("/") ? import.meta.env.BASE_URL :
   <section class="py-12 sm:py-20">
     <div class="max-w-3xl mx-auto px-4">
       <div class="prose prose-rw dark:prose-invert">
-        <h2>¿Qué es RouteWonder?</h2>
+        <h2>Qué encontrarás aquí</h2>
         <p>
-          La firma editorial de RouteWonder es <strong>Marco Vidal</strong>: una identidad de marca diseñada para reunir el criterio de investigación, edición y verificación del proyecto bajo una voz reconocible. No fingimos experiencias personales imposibles de comprobar; usamos una voz editorial humana, consistente y revisada.
+          RouteWonder es una revista de viajes para gente que se aburre con las listas de siempre. Buscamos destinos con una historia, una ruta clara o una rareza geográfica que haga que el viaje tenga sentido antes de reservar nada.
         </p>
         <p>
-          RouteWonder nació en 2026 como una reacción frente al contenido de viajes genérico, los listados de "10 cosas que ver en X" generados por plantillas de IA sin alma, y los blogs llenos de banners publicitarios invasivos.
+          Aquí no basta con decir que un lugar es bonito. Cada guía intenta responder tres preguntas sencillas: por qué ir, cuándo conviene ir y qué evitar para no convertir el viaje en una carrera de checklists.
         </p>
         <p>
-          Esta no es una guía de viajes tradicional. Es una <strong>revista digital de geografía curiosa, historia local e inteligencia de rutas</strong>. Nos fascinan los límites: las fronteras absurdas, los pueblos que desaparecen bajo el agua, las carreteras más solitarias y los rincones con historias que superan a la ficción.
+          Escribimos sobre pueblos bajo el agua, islas sin coches, carreteras lentas, ciudades que se disfrutan mejor fuera del centro y escapadas que se pueden montar sin abrir veinte pestañas.
         </p>
 
         <blockquote>
-          "El mundo real es infinitamente más extraño, complejo e interesante que cualquier cosa que podamos imaginar en un escritorio."
+          "Un buen viaje empieza cuando el mapa deja de parecer plano."
         </blockquote>
 
-        <h2>Nuestros Tres Pilares de Rigor</h2>
+        <h2>Cómo elegimos una ruta</h2>
         <ul>
           <li>
-            <strong>1. Guías con fundamento:</strong> Todo lo que publicamos debe estar respaldado por investigación geográfica, fuentes oficiales, datos históricos contrastables o referencias verificables.
+            <strong>Debe tener un motivo:</strong> una historia, un paisaje, una forma distinta de moverse o una decisión práctica que ayude a viajar mejor.
           </li>
           <li>
-            <strong>2. Nada de Hype:</strong> Si un lugar está masificado, decepciona o es inaccesible, te lo diremos. No maquillamos la realidad para conseguir clics.
+            <strong>Debe poder hacerse:</strong> miramos transporte, temporadas, tiempo real de ruta y alternativas si el plan principal se complica.
           </li>
           <li>
-            <strong>3. Edición responsable:</strong> Cada artículo debe pasar revisión editorial y factual antes de publicarse. Marco Vidal funciona como firma editorial/persona de marca; no usamos biografías o experiencias no verificadas como prueba de autoridad.
+            <strong>Debe ser útil rápido:</strong> la persona que llega a una guía tiene que entender en pocos minutos si ese destino encaja con sus días, su presupuesto y su manera de viajar.
           </li>
         </ul>
-
-        <h2>¿Cómo nos financiamos?</h2>
-        <p>
-          Mantener esta revista requiere investigación, edición, diseño y mantenimiento técnico. No queremos llenar las páginas de banners molestos que bloqueen el contenido o ralenticen tu navegador.
-        </p>
-        <p>
-          Por eso, nos financiamos mediante una combinación de:
-        </p>
-        <ol>
-          <li>
-            <strong>Enlaces de afiliación seleccionados:</strong> Podemos recomendar libros de viajes, mapas, seguros o equipamiento cuando la recomendación esté investigada y señalada con disclosure visible. Si compras a través de ellos, podríamos recibir una pequeña comisión sin coste adicional para ti.
-          </li>
-          <li>
-            <strong>Patrocinios transparentes:</strong> Si en el futuro hubiera colaboraciones con marcas del sector o editoriales de mapas, esos contenidos deberán estar siempre señalados de forma explícita al principio del artículo.
-          </li>
-        </ol>
 
         <div class="mt-12 flex justify-center">
           <a href={`${base}blog/`} class="inline-flex items-center justify-center font-ui font-semibold text-sm px-6 py-3 rounded-lg bg-rw-horizon text-rw-white hover:bg-rw-horizon/90 shadow-md shadow-rw-horizon/10 active:scale-95 transition-all">

@@ -1,135 +1,63 @@
 ---
-import { getCollection } from "astro:content";
+import { originCities, routeDestinations } from "../../data/routePlannerData";
 
-const posts = await getCollection("blog", ({ data }) => {
-  return import.meta.env.PROD ? !data.draft : true;
-});
-
-const normalize = (value = "") =>
-  value
-    .toString()
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .toLowerCase();
-
-const inferBudget = (text: string) => {
-  if (/barato|economico|gratis|sin arruinar|menos de|low cost|mochil/i.test(text)) return "bajo";
-  if (/lujo|caro|noruega|islandia|japon|lofoten|skye|alto/i.test(text)) return "alto";
-  return "medio";
-};
-
-const inferTransport = (text: string, category: string) => {
-  const modes = new Set<string>();
-  if (/avion|vuelo|volar|isla|madeira|malta|corfu|naxos|sicilia|japon/i.test(text)) modes.add("avion");
-  if (/coche|carretera|road|ruta|conducir|pueblos|costa|interior/i.test(text) || category === "rutas-sorprendentes") modes.add("coche");
-  if (/tren|rail|estacion|suiza|utrecht|gante|brujas|oporto/i.test(text) || category === "viaje-rapido") modes.add("tren");
-  if (/ferry|isla|aran|corfu|naxos|menorca|malta/i.test(text)) modes.add("ferry");
-  if (/bus|marruecos|estambul|mostar|sarajevo/i.test(text)) modes.add("bus");
-  if (modes.size === 0) modes.add("avion");
-  return [...modes];
-};
-
-const inferInterests = (text: string, category: string) => {
-  const interests = new Set<string>();
-  if (/playa|isla|costa|lago|mar|cala/i.test(text)) interests.add("playa");
-  if (/bosque|montana|fiordo|lago|naturaleza|picos|lofoten|skye|bled/i.test(text)) interests.add("naturaleza");
-  if (/ciudad|capital|barrios|granada|riga|tallin|vilna|estambul|gante|brujas/i.test(text)) interests.add("cultura");
-  if (/comer|gastronomia|vino|duero|oporto|cadiz|sicilia/i.test(text)) interests.add("gastronomia");
-  if (/raro|extrano|curios|mapa|frontera|fantasma|subterranea|volcan/i.test(text)) interests.add("raro");
-  if (/barato|economico|sin arruinar|menos de/i.test(text) || category === "viaje-economico") interests.add("barato");
-  if (/familia|ninos|sin coches|lento/i.test(text)) interests.add("familia");
-  if (category === "lugares-de-pelicula") interests.add("raro");
-  if (interests.size === 0) interests.add("cultura");
-  return [...interests];
-};
-
-const inferSeason = (text: string) => {
-  const seasons = new Set<string>();
-  if (/primavera|abril|mayo|flores|verde/i.test(text)) seasons.add("primavera");
-  if (/verano|playa|isla|lago/i.test(text)) seasons.add("verano");
-  if (/otono|septiembre|octubre|noviembre|fuera de agosto/i.test(text)) seasons.add("otono");
-  if (/invierno|navidad|frio|nieve/i.test(text)) seasons.add("invierno");
-  if (seasons.size === 0) ["primavera", "otono"].forEach((s) => seasons.add(s));
-  return [...seasons];
-};
-
-const inferCompanions = (text: string) => {
-  const companions = new Set(["pareja", "amigos"]);
-  if (/solo|personal|urbano/i.test(text)) companions.add("solo");
-  if (/familia|ninos|sin coches|tren/i.test(text)) companions.add("familia");
-  return [...companions];
-};
-
-const inferPace = (text: string) => {
-  if (/72 horas|un dia|rapido|fin de semana|capitales/i.test(text)) return "rapido";
-  if (/sin prisa|lento|sin correr|islas sin coches|rural/i.test(text)) return "lento";
-  return "equilibrado";
-};
-
-const inferDays = (text: string) => {
-  const match = text.match(/(\d+)\s*(dias|días|h|horas)/i);
-  if (match) return match[0].replace("h", " horas");
-  if (/fin de semana|72 horas/i.test(text)) return "3 días";
-  if (/japon|cruzar europa/i.test(text)) return "10 días";
-  if (/isla|coche|ruta/i.test(text)) return "5 días";
-  return "4 días";
-};
-
-const guides = posts
-  .sort((a, b) => b.data.publishedDate.valueOf() - a.data.publishedDate.valueOf())
-  .map((post) => {
-    const text = `${post.data.title} ${post.data.description} ${(post.data.tags || []).join(" ")} ${post.data.category}`;
-    const category = post.data.category;
-    const transport = inferTransport(text, category);
-    return {
-      id: post.slug,
-      name: post.data.title.replace(/:.*$/, ""),
-      title: post.data.title,
-      country: (post.data.tags || []).find((tag) => ["espana", "españa", "portugal", "francia", "italia", "grecia", "noruega", "japon", "marruecos", "turquia"].includes(normalize(tag))) || "guía RouteWonder",
-      interests: inferInterests(text, category),
-      transport,
-      budget: inferBudget(text),
-      companions: inferCompanions(text),
-      pace: inferPace(text),
-      seasons: inferSeason(text),
-      days: inferDays(text),
-      route: transport.slice(0, 2).map((item) => item.charAt(0).toUpperCase() + item.slice(1)).join(" + "),
-      image: post.data.image || "/og-default.jpg",
-      alt: post.data.imageAlt || `Imagen editorial para ${post.data.title}`,
-      why: post.data.description,
-      url: `/blog/${post.slug}/`,
-      category,
-    };
-  });
-
-const totalGuides = guides.length;
+const totalDestinations = routeDestinations.length;
+const totalOrigins = originCities.length;
+const totalPlaces = routeDestinations.reduce((sum, item) => sum + item.highlights.length, 0);
 ---
 
 <section id="planificador-rutas" class="bg-rw-sand py-16 dark:bg-rw-ink sm:py-24">
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-    <div class="grid gap-8 lg:grid-cols-[0.95fr_1.45fr] lg:items-start">
+    <div class="grid gap-8 lg:grid-cols-[0.9fr_1.5fr] lg:items-start">
       <div class="lg:sticky lg:top-28">
-        <p class="font-ui text-xs font-bold uppercase tracking-[0.28em] text-rw-horizon">planificador editorial</p>
+        <p class="font-ui text-xs font-bold uppercase tracking-[0.28em] text-rw-horizon">creador de rutas</p>
         <h2 class="mt-3 font-display text-4xl font-black leading-tight text-rw-ink dark:text-rw-white sm:text-5xl">
-          Encuentra una guía real según cómo quieres viajar.
+          Dime desde dónde sales y te preparo opciones con sentido.
         </h2>
         <p class="mt-4 font-ui text-base leading-relaxed text-rw-ocean/75 dark:text-rw-mist">
-          El filtro trabaja con artículos publicados de RouteWonder. Cada resultado abre una guía concreta, con mapa, contexto y próximos pasos.
+          Escribe tu ciudad, elige estilo de viaje y abre cada destino para ver fotos, paradas, comida, zonas para dormir y enlaces útiles.
         </p>
 
         <form class="mt-6 space-y-5 rounded-2xl border border-rw-mist/20 bg-rw-white p-5 shadow-sm dark:bg-rw-ocean/30" id="rw-trip-form">
           <div class="grid gap-4 sm:grid-cols-2">
-            <label class="rw-field">Salida
-              <select id="rw-origin"><option>Barcelona</option><option>Madrid</option><option>Valencia</option><option>Málaga</option><option>Bilbao</option><option>Lisboa</option><option>Otra ciudad</option></select>
+            <label class="rw-field sm:col-span-2">Vivo en
+              <input id="rw-origin" list="rw-origin-cities" value="Barcelona" autocomplete="off" placeholder="Escribe tu ciudad: Madrid, Sevilla, Vigo..." />
+              <datalist id="rw-origin-cities">
+                {originCities.map((city) => <option value={city.name} />)}
+              </datalist>
             </label>
+            <button id="rw-location" class="sm:col-span-2 rounded-2xl border border-rw-horizon/25 bg-rw-horizon/10 px-4 py-3 text-left font-ui text-sm font-bold text-rw-horizon transition hover:bg-rw-horizon hover:text-white" type="button">
+              Usar mi ubicación actual para calcular distancias reales
+            </button>
             <label class="rw-field">Interés principal
-              <select id="rw-interest"><option value="naturaleza">Naturaleza</option><option value="cultura">Cultura</option><option value="playa">Playa</option><option value="gastronomia">Gastronomía</option><option value="raro">Lugares raros</option><option value="barato">Viaje económico</option><option value="familia">Familia</option></select>
-            </label>
-            <label class="rw-field">Con quién vas
-              <select id="rw-companion"><option value="pareja">Pareja</option><option value="solo">Solo</option><option value="amigos">Amigos</option><option value="familia">Familia</option></select>
+              <select id="rw-interest">
+                <option value="naturaleza">Naturaleza</option>
+                <option value="cultura">Cultura</option>
+                <option value="playa">Playa</option>
+                <option value="gastronomia">Comer bien</option>
+                <option value="raro">Lugares raros</option>
+                <option value="barato">Ahorrar</option>
+                <option value="familia">Fácil en familia</option>
+              </select>
             </label>
             <label class="rw-field">Temporada
-              <select id="rw-season"><option value="primavera">Primavera</option><option value="verano">Verano</option><option value="otono">Otoño</option><option value="invierno">Invierno</option></select>
+              <select id="rw-season">
+                <option value="primavera">Primavera</option>
+                <option value="verano">Verano</option>
+                <option value="otono">Otoño</option>
+                <option value="invierno">Invierno</option>
+              </select>
+            </label>
+            <label class="rw-field">Días libres
+              <input id="rw-days" type="number" min="2" max="21" value="5" />
+            </label>
+            <label class="rw-field">Con quién vas
+              <select id="rw-companion">
+                <option value="pareja">Pareja</option>
+                <option value="solo">Solo</option>
+                <option value="amigos">Amigos</option>
+                <option value="familia">Familia</option>
+              </select>
             </label>
           </div>
 
@@ -148,8 +76,8 @@ const totalGuides = guides.length;
             <div>
               <p class="rw-label">Presupuesto</p>
               <div class="mt-2 grid grid-cols-3 gap-2" role="group" aria-label="Presupuesto">
-                <button class="rw-chip is-active" type="button" data-filter="budget" data-value="bajo">Bajo</button>
-                <button class="rw-chip" type="button" data-filter="budget" data-value="medio">Medio</button>
+                <button class="rw-chip" type="button" data-filter="budget" data-value="bajo">Bajo</button>
+                <button class="rw-chip is-active" type="button" data-filter="budget" data-value="medio">Medio</button>
                 <button class="rw-chip" type="button" data-filter="budget" data-value="alto">Alto</button>
               </div>
             </div>
@@ -163,21 +91,18 @@ const totalGuides = guides.length;
             </div>
           </div>
 
-          <label class="rw-field">Notas del viaje
-            <textarea id="rw-notes" rows="3" placeholder="Ejemplo: quiero evitar calor extremo, ir con maleta pequeña y tener una tarde tranquila."></textarea>
-          </label>
-
-          <div class="grid grid-cols-3 gap-3 border-t border-rw-mist/15 pt-4 font-ui text-center text-xs">
-            <div><strong id="rw-count" class="block text-2xl text-rw-horizon">0</strong>guías</div>
-            <div><strong class="block text-2xl text-rw-forest">{totalGuides}</strong>artículos</div>
-            <div><strong class="block text-2xl text-rw-gold">6</strong>filtros</div>
+          <div class="grid grid-cols-4 gap-3 border-t border-rw-mist/15 pt-4 font-ui text-center text-xs">
+            <div><strong id="rw-count" class="block text-2xl text-rw-horizon">0</strong>rutas</div>
+            <div><strong class="block text-2xl text-rw-forest">{totalDestinations}</strong>destinos</div>
+            <div><strong class="block text-2xl text-rw-gold">{totalPlaces}</strong>lugares</div>
+            <div><strong class="block text-2xl text-rw-ocean dark:text-rw-white">{totalOrigins}</strong>salidas</div>
           </div>
         </form>
       </div>
 
       <div>
         <div id="rw-brief" class="mb-5 rounded-2xl border border-rw-horizon/20 bg-rw-horizon/5 p-5 font-ui text-sm leading-relaxed text-rw-ocean dark:text-rw-mist"></div>
-        <div id="rw-results" class="grid gap-5 sm:grid-cols-2"></div>
+        <div id="rw-results" class="grid gap-5"></div>
       </div>
     </div>
   </div>
@@ -187,64 +112,193 @@ const totalGuides = guides.length;
   .rw-label, .rw-field { font: 800 11px/1.2 "DM Sans", sans-serif; letter-spacing: .12em; text-transform: uppercase; color: rgba(22, 33, 62, .72); }
   .dark .rw-label, .dark .rw-field { color: var(--rw-mist); }
   .rw-field { display: grid; gap: 8px; }
-  .rw-field select, .rw-field textarea { width: 100%; border-radius: 14px; border: 1px solid rgba(168,178,216,.35); background: rgba(250,250,250,.82); padding: 12px 14px; font: 600 14px/1.4 "DM Sans", sans-serif; color: var(--rw-ink); outline: none; }
-  .rw-field textarea { resize: vertical; min-height: 92px; text-transform: none; letter-spacing: 0; }
+  .rw-field input, .rw-field select { width: 100%; min-height: 46px; border-radius: 14px; border: 1px solid rgba(168,178,216,.35); background: rgba(250,250,250,.88); padding: 12px 14px; font: 600 14px/1.4 "DM Sans", sans-serif; color: var(--rw-ink); outline: none; }
   .rw-chip { min-height: 44px; border-radius: 12px; border: 1px solid rgba(168,178,216,.35); font: 800 11px/1.1 "DM Sans", sans-serif; color: var(--rw-ocean); background: rgba(250,250,250,.72); transition: transform 180ms ease, border-color 180ms ease, background 180ms ease, color 180ms ease; }
   .rw-chip:hover, .rw-chip.is-active { transform: translateY(-1px); border-color: var(--rw-horizon); background: var(--rw-horizon); color: white; }
+  .rw-result-card { overflow: hidden; border-radius: 24px; border: 1px solid rgba(168,178,216,.22); background: rgba(250,250,250,.94); box-shadow: 0 12px 34px rgba(26,26,46,.08); }
+  .dark .rw-result-card { background: rgba(22,33,62,.46); }
+  .rw-gallery { display: grid; grid-template-columns: 1.35fr .65fr; gap: 8px; }
+  .rw-gallery img { width: 100%; height: 100%; min-height: 176px; object-fit: cover; }
+  .rw-gallery .side { display: grid; gap: 8px; }
+  .rw-gallery .side img { min-height: 84px; }
+  @media (max-width: 640px) { .rw-gallery { grid-template-columns: 1fr; } .rw-gallery .side { grid-template-columns: 1fr 1fr; } }
 </style>
 
-<script define:vars={{ guides }}>
+<script define:vars={{ routeDestinations, originCities }}>
   function setupRoutePlanner() {
     const root = document.getElementById('planificador-rutas');
     if (!root || root.dataset.ready === 'true') return;
     root.dataset.ready = 'true';
+
     const results = root.querySelector('#rw-results');
     const count = root.querySelector('#rw-count');
     const brief = root.querySelector('#rw-brief');
-    const state = { interest: 'naturaleza', transport: 'avion', budget: 'bajo', companion: 'pareja', pace: 'equilibrado', season: 'primavera', origin: 'Barcelona', notes: '' };
-    const fields = { interest: '#rw-interest', companion: '#rw-companion', season: '#rw-season', origin: '#rw-origin', notes: '#rw-notes' };
+    const state = {
+      origin: 'Barcelona',
+      interest: 'naturaleza',
+      transport: 'avion',
+      budget: 'medio',
+      pace: 'equilibrado',
+      season: 'primavera',
+      days: 5,
+      companion: 'pareja',
+      originCoords: null,
+    };
 
-    function includes(value, list) { return Array.isArray(list) && list.includes(value); }
-    function scoreGuide(item) {
+    function normalize(value) {
+      return String(value || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim();
+    }
+
+    function resolveOrigin(value) {
+      if (state.originCoords) return state.originCoords;
+      const needle = normalize(value);
+      return originCities.find((city) => normalize(city.name) === needle)
+        || originCities.find((city) => normalize(city.name).includes(needle) || needle.includes(normalize(city.name)))
+        || null;
+    }
+
+    function distanceKm(a, b) {
+      if (!a || !b) return null;
+      const toRad = (n) => n * Math.PI / 180;
+      const R = 6371;
+      const dLat = toRad(Number(b.lat) - Number(a.lat));
+      const dLng = toRad(Number(b.lng) - Number(a.lng));
+      const lat1 = toRad(Number(a.lat));
+      const lat2 = toRad(Number(b.lat));
+      const h = Math.sin(dLat / 2) ** 2 + Math.cos(lat1) * Math.cos(lat2) * Math.sin(dLng / 2) ** 2;
+      return Math.round(2 * R * Math.asin(Math.sqrt(h)));
+    }
+
+    function scoreDestination(item, origin) {
       let score = 0;
-      if (includes(state.interest, item.interests)) score += 4;
-      if (includes(state.transport, item.transport)) score += 3;
-      if (item.budget === state.budget) score += 2;
-      if (includes(state.companion, item.companions)) score += 2;
-      if (item.pace === state.pace) score += 1;
-      if (includes(state.season, item.seasons)) score += 2;
+      if (item.interests.includes(state.interest)) score += 34;
+      if (item.transport.includes(state.transport)) score += 26;
+      if (item.budget === state.budget) score += 15;
+      if (item.seasons.includes(state.season)) score += 14;
+      const distance = distanceKm(origin, item);
+      if (distance !== null) {
+        if (state.transport === 'coche') score += distance < 900 ? 18 : distance < 1500 ? 8 : -12;
+        if (state.transport === 'tren') score += distance < 1100 ? 16 : -8;
+        if (state.transport === 'avion') score += distance > 500 ? 12 : 4;
+        if (state.transport === 'bus') score += distance < 800 ? 12 : -6;
+      }
+      const wantedDays = Number(state.days || 5);
+      const itemDays = Number(String(item.days).match(/\d+/)?.[0] || 5);
+      score += Math.max(0, 12 - Math.abs(wantedDays - itemDays) * 3);
+      if (state.companion === 'familia' && item.interests.includes('familia')) score += 10;
+      if (state.pace === 'lento' && itemDays >= 5) score += 7;
+      if (state.pace === 'rapido' && itemDays <= 3) score += 7;
       return score;
     }
+
+    function modeLabel(item, distance) {
+      const direct = item.transport.includes(state.transport) ? state.transport : item.transport[0];
+      const km = distance === null ? 'distancia según salida' : `${distance.toLocaleString('es-ES')} km aprox.`;
+      if (direct === 'coche') return `Coche · ${km}`;
+      if (direct === 'tren') return `Tren · ${km}`;
+      if (direct === 'ferry') return `Avión + ferry · ${km}`;
+      if (direct === 'bus') return `Avión/bus · ${km}`;
+      return `Avión · ${km}`;
+    }
+
+    function itinerary(item) {
+      const total = Math.min(7, Math.max(2, Number(state.days || 5)));
+      const stops = item.highlights;
+      return Array.from({ length: total }, (_, index) => {
+        const stop = stops[index % stops.length];
+        if (index === 0) return `Día 1: llegada tranquila y paseo por ${stop}.`;
+        if (index === total - 1) return `Día ${index + 1}: mañana libre y regreso sin apurar.`;
+        return `Día ${index + 1}: ${stop}, comida local y una parada secundaria.`;
+      });
+    }
+
+    function renderDetails(item) {
+      return `
+        <div class="mt-5 border-t border-rw-mist/20 pt-5">
+          <div class="rw-gallery overflow-hidden rounded-2xl">
+            <img src="${item.photos[0]}" alt="Vista de ${item.name}" loading="lazy">
+            <div class="side">
+              <img src="${item.photos[1]}" alt="Calle o paisaje de ${item.name}" loading="lazy">
+              <img src="${item.photos[2]}" alt="Comida o ambiente de ${item.name}" loading="lazy">
+            </div>
+          </div>
+          <div class="mt-5 grid gap-4 md:grid-cols-2">
+            <div class="rounded-2xl bg-rw-sand p-4">
+              <h4 class="font-display text-xl font-bold text-rw-ink">Ruta sugerida</h4>
+              <ol class="mt-3 grid gap-2 font-ui text-sm text-rw-ocean/80">${itinerary(item).map((step) => `<li>${step}</li>`).join('')}</ol>
+            </div>
+            <div class="rounded-2xl bg-rw-sand p-4">
+              <h4 class="font-display text-xl font-bold text-rw-ink">Qué mirar antes de reservar</h4>
+              <ul class="mt-3 grid gap-2 font-ui text-sm text-rw-ocean/80">
+                <li><strong>Visitas:</strong> ${item.highlights.join(', ')}.</li>
+                <li><strong>Comer:</strong> ${item.food.join(', ')}.</li>
+                <li><strong>Dormir:</strong> ${item.stay.join(' · ')}.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mt-4 flex flex-wrap gap-3">
+            <a class="rounded-full bg-rw-ink px-4 py-2 font-ui text-xs font-bold uppercase tracking-wider text-white" href="${item.article}">Guía completa</a>
+            <a class="rounded-full border border-rw-horizon/30 px-4 py-2 font-ui text-xs font-bold uppercase tracking-wider text-rw-horizon" href="${item.mapUrl}" rel="noopener noreferrer">Mapa</a>
+            <a class="rounded-full border border-rw-horizon/30 px-4 py-2 font-ui text-xs font-bold uppercase tracking-wider text-rw-horizon" href="${item.hotelUrl}" rel="noopener noreferrer">Hoteles</a>
+            <a class="rounded-full border border-rw-horizon/30 px-4 py-2 font-ui text-xs font-bold uppercase tracking-wider text-rw-horizon" href="${item.restaurantUrl}" rel="noopener noreferrer">Restaurantes</a>
+            <a class="rounded-full border border-rw-horizon/30 px-4 py-2 font-ui text-xs font-bold uppercase tracking-wider text-rw-horizon" href="${item.activityUrl}" rel="noopener noreferrer">Actividades</a>
+          </div>
+        </div>`;
+    }
+
     function render() {
-      const rankedAll = guides.map((item) => ({ ...item, score: scoreGuide(item) })).sort((a, b) => b.score - a.score);
-      const strong = rankedAll.filter((item) => item.score > 0);
-      const ranked = (strong.length ? strong : rankedAll).slice(0, 6);
+      const origin = resolveOrigin(state.origin);
+      const ranked = routeDestinations
+        .map((item) => {
+          const distance = distanceKm(origin, item);
+          return { ...item, distance, score: scoreDestination(item, origin) };
+        })
+        .sort((a, b) => b.score - a.score)
+        .slice(0, 8);
+
       count.textContent = String(ranked.length);
-      const first = ranked[0];
-      brief.innerHTML = `<strong>Brief generado:</strong> salida desde ${state.origin}, ritmo ${state.pace}, presupuesto ${state.budget}, interés ${state.interest} y transporte ${state.transport}. Primera guía: <strong>${first.title}</strong>. ${state.notes ? 'Nota añadida: ' + state.notes : 'Ajusta filtros para ver guías distintas.'}`;
+      brief.innerHTML = origin
+        ? `<strong>Salida:</strong> ${origin.name}. Priorizo ${state.transport}, ${state.interest}, ${state.days} días y presupuesto ${state.budget}.`
+        : `<strong>Salida:</strong> ${state.origin}. No tengo coordenadas exactas de esa ciudad todavía, así que ordeno por estilo de viaje y logística.`;
+
       results.replaceChildren();
       ranked.forEach((item, index) => {
         const article = document.createElement('article');
-        article.className = 'overflow-hidden rounded-2xl border border-rw-mist/20 bg-rw-white shadow-sm transition hover:-translate-y-1 hover:shadow-xl dark:bg-rw-ocean/35';
+        article.className = 'rw-result-card';
         article.innerHTML = `
-          <a href="${item.url}" class="block">
-            <div class="relative aspect-[4/3] overflow-hidden">
-              <img src="${item.image}" alt="${item.alt}" loading="lazy" class="h-full w-full object-cover">
-              <div class="absolute left-3 top-3 rounded-full bg-rw-ink/75 px-3 py-1 font-ui text-[10px] font-bold uppercase tracking-wider text-white">${item.route}</div>
-              <div class="absolute right-3 top-3 rounded-full bg-rw-horizon px-3 py-1 font-ui text-xs font-bold text-white">${item.score} pts</div>
-            </div>
-            <div class="p-5">
+          <div class="grid gap-0 md:grid-cols-[0.95fr_1.05fr]">
+            <img src="${item.photos[0]}" alt="Foto de ${item.name}" loading="lazy" class="h-full min-h-[260px] w-full object-cover">
+            <div class="p-5 sm:p-6">
               <div class="flex items-start justify-between gap-3">
-                <div><h3 class="font-display text-2xl font-bold text-rw-ink dark:text-rw-white">${item.title}</h3><p class="font-ui text-xs font-bold uppercase tracking-wider text-rw-horizon">${item.country} · ${item.days}</p></div>
-                <span class="rounded-full bg-rw-gold/15 px-3 py-1 font-ui text-xs font-bold text-rw-ocean dark:text-rw-sand">#${index + 1}</span>
+                <div>
+                  <p class="font-ui text-xs font-bold uppercase tracking-[0.16em] text-rw-horizon">${item.country} · ${item.days}</p>
+                  <h3 class="mt-1 font-display text-3xl font-black leading-tight text-rw-ink dark:text-rw-white">${item.name}</h3>
+                </div>
+                <span class="rounded-full bg-rw-horizon px-3 py-1 font-ui text-xs font-bold text-white">#${index + 1}</span>
               </div>
-              <p class="mt-3 font-ui text-sm leading-relaxed text-rw-ocean/75 dark:text-rw-mist">${item.why}</p>
-              <span class="mt-4 inline-flex rounded-full bg-rw-ink px-4 py-2 font-ui text-xs font-bold uppercase tracking-wider text-white">Leer guía</span>
+              <p class="mt-3 font-ui text-sm leading-relaxed text-rw-ocean/75 dark:text-rw-mist">${modeLabel(item, item.distance)}. Encaja por ${item.interests.slice(0, 3).join(', ')}.</p>
+              <div class="mt-4 flex flex-wrap gap-2">
+                ${item.highlights.slice(0, 3).map((tag) => `<span class="rounded-full bg-rw-gold/15 px-3 py-1 font-ui text-xs font-bold text-rw-ocean dark:text-rw-sand">${tag}</span>`).join('')}
+              </div>
+              <button class="mt-5 rounded-full bg-rw-horizon px-5 py-3 font-ui text-xs font-bold uppercase tracking-wider text-white" type="button" data-detail="${item.id}">
+                Ver fotos y ruta
+              </button>
+              <div class="hidden" data-panel="${item.id}">${renderDetails(item)}</div>
             </div>
-          </a>`;
+          </div>`;
         results.appendChild(article);
       });
+
+      results.querySelectorAll('[data-detail]').forEach((button) => {
+        button.addEventListener('click', () => {
+          const panel = results.querySelector(`[data-panel="${button.dataset.detail}"]`);
+          if (!panel) return;
+          panel.classList.toggle('hidden');
+          button.textContent = panel.classList.contains('hidden') ? 'Ver fotos y ruta' : 'Ocultar detalles';
+        });
+      });
     }
+
     root.querySelectorAll('.rw-chip').forEach((button) => {
       button.addEventListener('click', () => {
         const filter = button.dataset.filter;
@@ -254,14 +308,49 @@ const totalGuides = guides.length;
         render();
       });
     });
-    Object.entries(fields).forEach(([key, selector]) => {
+
+    const boundFields = {
+      origin: '#rw-origin',
+      interest: '#rw-interest',
+      season: '#rw-season',
+      days: '#rw-days',
+      companion: '#rw-companion',
+    };
+    Object.entries(boundFields).forEach(([key, selector]) => {
       const input = root.querySelector(selector);
       if (!input) return;
-      input.addEventListener('input', () => { state[key] = input.value; render(); });
-      input.addEventListener('change', () => { state[key] = input.value; render(); });
+      input.addEventListener('input', () => { state[key] = input.value; if (key === 'origin') state.originCoords = null; render(); });
+      input.addEventListener('change', () => { state[key] = input.value; if (key === 'origin') state.originCoords = null; render(); });
     });
+
+    const locationButton = root.querySelector('#rw-location');
+    if (locationButton) {
+      locationButton.addEventListener('click', () => {
+        if (!navigator.geolocation) {
+          locationButton.textContent = 'Tu navegador no permite ubicación. Escribe tu ciudad arriba.';
+          return;
+        }
+        locationButton.textContent = 'Calculando desde tu ubicación...';
+        navigator.geolocation.getCurrentPosition((position) => {
+          state.origin = 'tu ubicación actual';
+          state.originCoords = {
+            name: 'tu ubicación actual',
+            lat: position.coords.latitude,
+            lng: position.coords.longitude,
+          };
+          const originInput = root.querySelector('#rw-origin');
+          if (originInput) originInput.value = 'Ubicación actual';
+          locationButton.textContent = 'Usando tu ubicación actual';
+          render();
+        }, () => {
+          locationButton.textContent = 'No se pudo usar la ubicación. Escribe tu ciudad arriba.';
+        }, { enableHighAccuracy: false, timeout: 8000, maximumAge: 900000 });
+      });
+    }
+
     render();
   }
+
   setupRoutePlanner();
   document.addEventListener('astro:after-swap', setupRoutePlanner);
 </script>
