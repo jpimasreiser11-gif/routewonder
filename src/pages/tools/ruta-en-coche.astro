@@ -1,0 +1,66 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="Planificador de ruta en coche - RouteWonder"
+  description="Genera una ruta sencilla por días, con distancias orientativas, paradas y guía relacionada."
+>
+  <section class="bg-rw-ocean px-4 py-14 text-rw-white sm:px-6 lg:px-8">
+    <div class="mx-auto max-w-5xl">
+      <p class="font-ui text-xs font-bold uppercase tracking-[0.28em] text-rw-gold">herramienta gratuita</p>
+      <h1 class="mt-3 font-display text-4xl font-black sm:text-6xl">Ruta en coche por días</h1>
+      <p class="mt-4 max-w-2xl font-ui text-base leading-relaxed text-rw-sand/80">
+        Elige salida, duración y estilo. Te damos una estructura simple para empezar a comparar alojamiento y kilómetros.
+      </p>
+    </div>
+  </section>
+
+  <section class="px-4 py-10 sm:px-6 lg:px-8">
+    <div class="mx-auto grid max-w-5xl gap-8 lg:grid-cols-[0.8fr_1.2fr]">
+      <form id="road-tool" class="rounded-2xl border border-rw-mist/20 bg-rw-white p-6 shadow-sm">
+        <label class="rw-tool-label">Salida
+          <select id="road-origin"><option>Barcelona</option><option>Madrid</option><option>Valencia</option><option>Bilbao</option><option>Lisboa</option></select>
+        </label>
+        <label class="rw-tool-label mt-4">Días disponibles
+          <input id="road-days" type="number" min="2" max="14" value="5" />
+        </label>
+        <label class="rw-tool-label mt-4">Estilo
+          <select id="road-style"><option value="costa">Costa</option><option value="interior">Interior</option><option value="mixto">Mixto</option></select>
+        </label>
+        <button class="mt-6 w-full rounded-full bg-rw-horizon px-5 py-3 font-ui text-sm font-bold text-white" type="submit">Crear ruta</button>
+      </form>
+      <div id="road-result" class="rounded-2xl border border-rw-mist/20 bg-rw-white p-6 shadow-sm"></div>
+    </div>
+  </section>
+
+  <style>
+    .rw-tool-label { display: grid; gap: 8px; font: 800 11px/1.2 "DM Sans", sans-serif; letter-spacing: .12em; text-transform: uppercase; color: rgba(22,33,62,.72); }
+    .rw-tool-label select, .rw-tool-label input { width: 100%; border-radius: 14px; border: 1px solid rgba(168,178,216,.35); padding: 12px 14px; font: 600 14px/1.4 "DM Sans", sans-serif; color: var(--rw-ink); background: white; }
+  </style>
+
+  <script>
+    const ROUTES = {
+      costa: ["Base cerca del mar", "Pueblo pequeño + mirador", "Día flexible de playa", "Carretera escénica", "Regreso sin apurar"],
+      interior: ["Ciudad base", "Pueblo histórico", "Naturaleza cercana", "Mercado o ruta gastronómica", "Regreso por carretera alternativa"],
+      mixto: ["Ciudad de llegada", "Costa o lago", "Interior con parada lenta", "Mirador + comida local", "Regreso con margen"],
+    };
+    function renderRoad() {
+      const origin = document.getElementById('road-origin').value;
+      const days = Math.max(2, Math.min(14, Number(document.getElementById('road-days').value || 5)));
+      const style = document.getElementById('road-style').value;
+      const template = ROUTES[style];
+      const steps = Array.from({ length: days }, (_, index) => template[index % template.length]);
+      document.getElementById('road-result').innerHTML = `
+        <p class="font-ui text-xs font-bold uppercase tracking-[0.22em] text-rw-horizon">Ruta sugerida desde ${origin}</p>
+        <h2 class="mt-2 font-display text-3xl font-bold text-rw-ink">${days} días · estilo ${style}</h2>
+        <ol class="mt-5 grid gap-3 font-ui text-sm text-rw-ocean/75">
+          ${steps.map((step, index) => `<li class="rounded-xl bg-rw-sand px-4 py-3"><strong>Día ${index + 1}:</strong> ${step}. Conduce 90-180 minutos y deja una parada sin reservar.</li>`).join('')}
+        </ol>
+        <a class="mt-6 inline-flex rounded-full bg-rw-ink px-5 py-3 font-ui text-xs font-bold uppercase tracking-wider text-white" href="/blog/?q=coche">Ver guías en coche</a>
+      `;
+    }
+    document.getElementById('road-tool').addEventListener('submit', (event) => { event.preventDefault(); renderRoad(); });
+    renderRoad();
+  </script>
+</BaseLayout>

@@ -1,0 +1,82 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="Mejor época para viajar - RouteWonder"
+  description="Elige destino y tipo de viaje para ver los meses más recomendables, qué evitar y qué guía leer después."
+>
+  <section class="bg-rw-sand px-4 py-14 sm:px-6 lg:px-8">
+    <div class="mx-auto max-w-5xl">
+      <p class="font-ui text-xs font-bold uppercase tracking-[0.28em] text-rw-horizon">herramienta gratuita</p>
+      <h1 class="mt-3 font-display text-4xl font-black text-rw-ink sm:text-6xl">Mejor época para viajar</h1>
+      <p class="mt-4 max-w-2xl font-ui text-base leading-relaxed text-rw-ocean/75">
+        Una guía rápida para decidir mes y estilo de viaje sin perderte entre calendarios, lluvias y temporadas altas.
+      </p>
+    </div>
+  </section>
+
+  <section class="px-4 py-10 sm:px-6 lg:px-8">
+    <div class="mx-auto grid max-w-5xl gap-8 lg:grid-cols-[0.8fr_1.2fr]">
+      <form id="season-tool" class="rounded-2xl border border-rw-mist/20 bg-rw-white p-6 shadow-sm">
+        <label class="rw-tool-label">Destino
+          <select id="season-destination">
+            <option value="madeira">Madeira</option>
+            <option value="marruecos">Marruecos</option>
+            <option value="grecia">Islas griegas</option>
+            <option value="noruega">Noruega y fiordos</option>
+            <option value="japon">Japón rural</option>
+            <option value="espana">España interior</option>
+          </select>
+        </label>
+        <label class="rw-tool-label mt-4">Qué quieres hacer
+          <select id="season-style">
+            <option value="naturaleza">Naturaleza y senderos</option>
+            <option value="playa">Playa y costa</option>
+            <option value="ciudad">Ciudades y cultura</option>
+            <option value="barato">Ahorrar presupuesto</option>
+          </select>
+        </label>
+        <button class="mt-6 w-full rounded-full bg-rw-horizon px-5 py-3 font-ui text-sm font-bold text-white" type="submit">
+          Ver meses recomendados
+        </button>
+      </form>
+
+      <div id="season-result" class="rounded-2xl border border-rw-mist/20 bg-rw-white p-6 shadow-sm"></div>
+    </div>
+  </section>
+
+  <style>
+    .rw-tool-label { display: grid; gap: 8px; font: 800 11px/1.2 "DM Sans", sans-serif; letter-spacing: .12em; text-transform: uppercase; color: rgba(22,33,62,.72); }
+    .rw-tool-label select { width: 100%; border-radius: 14px; border: 1px solid rgba(168,178,216,.35); padding: 12px 14px; font: 600 14px/1.4 "DM Sans", sans-serif; color: var(--rw-ink); background: white; }
+  </style>
+
+  <script>
+    const DATA = {
+      madeira: { months: ["abril", "mayo", "octubre"], avoid: "agosto si quieres carreteras tranquilas", price: "medio", link: "/blog/madeira-5-dias-ruta-coche/" },
+      marruecos: { months: ["marzo", "abril", "noviembre"], avoid: "julio y agosto por calor intenso", price: "bajo-medio", link: "/blog/marruecos-primera-vez-desde-espana/" },
+      grecia: { months: ["mayo", "junio", "septiembre"], avoid: "agosto por precios y saturación", price: "medio", link: "/blog/naxos-sin-prisa/" },
+      noruega: { months: ["junio", "julio", "septiembre"], avoid: "invierno si no buscas nieve o auroras", price: "alto", link: "/blog/bergen-y-fiordos-cercanos/" },
+      japon: { months: ["abril", "mayo", "noviembre"], avoid: "Golden Week si quieres menos colas", price: "alto", link: "/blog/japon-rural-sin-correr/" },
+      espana: { months: ["abril", "mayo", "octubre"], avoid: "puentes nacionales si buscas silencio", price: "bajo-medio", link: "/blog/granada-mas-alla-de-la-alhambra/" },
+    };
+    function renderSeason() {
+      const destination = document.getElementById('season-destination').value;
+      const style = document.getElementById('season-style').value;
+      const item = DATA[destination];
+      const note = style === 'barato' ? 'Prioriza entre semana y alojamiento fuera del centro.' : style === 'playa' ? 'Comprueba viento, ferris y temperatura del agua.' : style === 'naturaleza' ? 'Mira horas de luz y estado de senderos.' : 'Reserva entradas culturales con margen.';
+      document.getElementById('season-result').innerHTML = `
+        <p class="font-ui text-xs font-bold uppercase tracking-[0.22em] text-rw-horizon">Resultado</p>
+        <h2 class="mt-2 font-display text-3xl font-bold text-rw-ink">Mejores meses: ${item.months.join(', ')}</h2>
+        <ul class="mt-5 grid gap-3 font-ui text-sm text-rw-ocean/75">
+          <li><strong>Evita:</strong> ${item.avoid}.</li>
+          <li><strong>Precio esperado:</strong> ${item.price} según ruta y antelación.</li>
+          <li><strong>Consejo:</strong> ${note}</li>
+        </ul>
+        <a class="mt-6 inline-flex rounded-full bg-rw-ink px-5 py-3 font-ui text-xs font-bold uppercase tracking-wider text-white" href="${item.link}">Leer guía relacionada</a>
+      `;
+    }
+    document.getElementById('season-tool').addEventListener('submit', (event) => { event.preventDefault(); renderSeason(); });
+    renderSeason();
+  </script>
+</BaseLayout>

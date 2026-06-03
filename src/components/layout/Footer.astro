@@ -48,6 +48,9 @@ const currentYear = new Date().getFullYear();
             <a href={`${base}blog/`} class="text-rw-ocean/85 dark:text-rw-sand/80 hover:text-rw-horizon transition-colors">Artículos</a>
           </li>
           <li>
+            <a href={`${base}tools/`} class="text-rw-ocean/85 dark:text-rw-sand/80 hover:text-rw-horizon transition-colors">Herramientas</a>
+          </li>
+          <li>
             <a href={`${base}about/`} class="text-rw-ocean/85 dark:text-rw-sand/80 hover:text-rw-horizon transition-colors font-semibold">Editorial &amp; Ética</a>
           </li>
           <li>
@@ -63,8 +66,8 @@ const currentYear = new Date().getFullYear();
           Únete a nuestra lista de correo y recibe una ruta o curiosidad geográfica insólita cada domingo.
         </p>
         <form
-          action="https://formspree.io/f/placeholder"
-          method="POST"
+          data-newsletter-form
+          data-recipient="info@routewonder.studio"
           class="flex flex-col sm:flex-row gap-2"
           id="footer-newsletter-form"
         >
@@ -84,6 +87,20 @@ const currentYear = new Date().getFullYear();
             Suscribirse
           </button>
         </form>
+        <script is:inline>
+          document.querySelectorAll("[data-newsletter-form]").forEach((form) => {
+            if (form.dataset.newsletterReady === "true") return;
+            form.dataset.newsletterReady = "true";
+            form.addEventListener("submit", (event) => {
+              event.preventDefault();
+              const email = new FormData(form).get("email") || "";
+              const recipient = form.dataset.recipient;
+              const subject = encodeURIComponent("Alta en Cuaderno de Ruta");
+              const body = encodeURIComponent(`Quiero unirme a la lista de RouteWonder.\n\nEmail: ${email}`);
+              window.location.href = `mailto:${recipient}?subject=${subject}&body=${body}`;
+            });
+          });
+        </script>
       </div>
     </div>
 

@@ -3,6 +3,8 @@
   <select id="language-select-rw" class="rounded-full border border-rw-mist/25 bg-rw-white px-3 py-2 font-ui text-xs font-bold text-rw-ocean outline-none transition hover:border-rw-horizon dark:bg-rw-ocean dark:text-rw-sand">
     <option value="es">ES</option>
     <option value="en">EN</option>
+    <option value="fr">FR</option>
+    <option value="pt">PT</option>
   </select>
 </div>
 
@@ -13,8 +15,8 @@
     select.dataset.ready = 'true';
     select.addEventListener('change', () => {
       const current = window.location.href;
-      if (select.value === 'en') {
-        window.location.href = `https://translate.google.com/translate?sl=es&tl=en&u=${encodeURIComponent(current)}`;
+      if (select.value !== 'es') {
+        window.location.href = `https://translate.google.com/translate?sl=es&tl=${select.value}&u=${encodeURIComponent(current)}`;
       }
       if (select.value === 'es') {
         window.location.href = window.location.origin + window.location.pathname;

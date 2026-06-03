@@ -19,13 +19,13 @@
           Entradas del Cuaderno de Ruta
         </h2>
         <p class="font-body italic text-base sm:text-lg text-rw-sand/80 leading-relaxed max-w-xl">
-          Únete a más de 5,000 mentes curiosas. Cada domingo recibirás una crónica geográfica inédita, mapas insólitos y recomendaciones de lectura que no encontrarás en la web.
+          Únete a nuestra lista de lectores. Cada domingo recibirás una crónica geográfica breve, mapas insólitos y recomendaciones de lectura que no encontrarás en la portada.
         </p>
 
         <!-- Newsletter form -->
         <form
-          action="https://formspree.io/f/placeholder"
-          method="POST"
+          data-newsletter-form
+          data-recipient="info@routewonder.studio"
           class="flex flex-col sm:flex-row gap-3 w-full max-w-md mt-4"
           id="newsletter-signup-form"
         >
@@ -45,6 +45,20 @@
             Unirse a la lista
           </button>
         </form>
+        <script is:inline>
+          document.querySelectorAll("[data-newsletter-form]").forEach((form) => {
+            if (form.dataset.newsletterReady === "true") return;
+            form.dataset.newsletterReady = "true";
+            form.addEventListener("submit", (event) => {
+              event.preventDefault();
+              const email = new FormData(form).get("email") || "";
+              const recipient = form.dataset.recipient;
+              const subject = encodeURIComponent("Alta en Cuaderno de Ruta");
+              const body = encodeURIComponent(`Quiero unirme a la lista de RouteWonder.\n\nEmail: ${email}`);
+              window.location.href = `mailto:${recipient}?subject=${subject}&body=${body}`;
+            });
+          });
+        </script>
         
         <!-- Spam declaration -->
         <p class="font-ui text-[10px] text-rw-sand/50 mt-1 select-none pointer-events-none">
