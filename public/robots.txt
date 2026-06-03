@@ -1,3 +1,11 @@
 User-agent: *
 Allow: /
-Sitemap: https://routewonder.com/sitemap-index.xml
+
+# Sitemaps
+Sitemap: https://routewonder.studio/sitemap-index.xml
+
+# Crawl-delay (optional, be nice to small servers)
+Crawl-delay: 1
+
+# Block common bot paths
+Disallow: /api/

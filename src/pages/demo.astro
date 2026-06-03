@@ -2,16 +2,19 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 const base = import.meta.env.BASE_URL.endsWith("/") ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
 ---
-<BaseLayout title="Demo local | RouteWonder" description="Página demo local para validar diseño, navegación, legal gates y contenido antes de publicar.">
-  <section class="hero">
-    <p class="badge">DRAFT LOCAL · NO PUBLICADO</p>
-    <h1>Ruta piloto: 7 lugares curiosos para inspirar tu próximo viaje</h1>
-    <p>Viajes curiosos, rutas inteligentes y geografía sorprendente.</p>
-    <div class="actions"><a href={`${base}blog/pueblo-bajo-el-agua/`}>Ver artículo piloto</a><a href={`${base}videos/demo/`}>Ver vídeo demo</a></div>
-  </section>
-  <section class="card-grid">
-    <article><h2>SEO</h2><p>Meta title, description, schema y enlaces internos pendientes de quality gate.</p></article>
-    <article><h2>Legal</h2><p>Privacidad, cookies y disclosure existen en modo DRAFT y deben completarse antes de publicar.</p></article>
-    <article><h2>Monetización</h2><p>Afiliados y AdSense bloqueados hasta cuentas reales, flags humanos y revisión final.</p></article>
+
+<BaseLayout title="Vídeos y rutas visuales | RouteWonder" description="Archivo visual de RouteWonder con shorts, guías y rutas narradas.">
+  <section class="bg-rw-ocean px-4 py-20 text-rw-white sm:px-6 lg:px-8">
+    <div class="mx-auto max-w-5xl">
+      <p class="font-ui text-xs font-bold uppercase tracking-[0.28em] text-rw-gold">Archivo visual</p>
+      <h1 class="mt-4 font-display text-5xl font-black leading-tight sm:text-7xl">Rutas que se entienden mirando.</h1>
+      <p class="mt-5 max-w-2xl font-body text-lg leading-relaxed text-rw-sand/80">
+        Vídeos cortos, mapas mentales y guías pensadas para decidir rápido: ir, guardar o descartar.
+      </p>
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a class="rounded-full bg-rw-horizon px-6 py-3 font-ui text-sm font-bold text-white" href={`${base}videos/demo/`}>Ver vídeo principal</a>
+        <a class="rounded-full border border-rw-white/20 px-6 py-3 font-ui text-sm font-bold text-rw-white" href={`${base}blog/`}>Leer guías</a>
+      </div>
+    </div>
   </section>
 </BaseLayout>

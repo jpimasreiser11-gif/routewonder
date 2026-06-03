@@ -52,19 +52,25 @@ const placeholder = Astro.props.placeholder || "Buscar rutas, ciudades o curiosi
         try {
           const pagefind = await loadPagefind();
           const search = await pagefind.search(query);
-          const top = await Promise.all(search.results.slice(0, 5).map((result) => result.data()));
+          const top = await Promise.all(search.results.slice(0, 10).map((result) => result.data()));
           results.innerHTML = top.length
             ? top.map((item) => `
                 <a class="block rounded-xl px-3 py-3 hover:bg-rw-sand/70" href="${item.url}">
                   <span class="block font-ui text-sm font-bold text-rw-ink">${item.meta.title || item.url}</span>
                   <span class="mt-1 block font-ui text-xs text-rw-ocean/70">${item.excerpt || ''}</span>
                 </a>
-              `).join('')
-            : '<p class="px-3 py-3 font-ui text-sm text-rw-ocean/70">Sin resultados todavía.</p>';
+              `).join('') + '<a class="mt-2 block rounded-xl bg-rw-sand px-3 py-3 font-ui text-xs font-bold uppercase tracking-wider text-rw-horizon" href="/blog/">Ver todo el catálogo</a>'
+            : '<p class="px-3 py-3 font-ui text-sm text-rw-ocean/70">No encuentro esa ruta todavía. Prueba con país, ciudad, tren o playa.</p>';
           results.classList.remove('hidden');
         } catch {
-          results.innerHTML = '<p class="px-3 py-3 font-ui text-sm text-rw-ocean/70">La búsqueda estará disponible después del build.</p>';
+          results.innerHTML = '<a class="block rounded-xl bg-rw-sand px-3 py-3 font-ui text-xs font-bold uppercase tracking-wider text-rw-horizon" href="/blog/">Abrir catálogo completo</a>';
           results.classList.remove('hidden');
+        }
+      });
+
+      input.addEventListener('keydown', (event) => {
+        if (event.key === 'Enter' && input.value.trim().length > 1) {
+          window.location.href = `/blog/?q=${encodeURIComponent(input.value.trim())}`;
         }
       });
     });

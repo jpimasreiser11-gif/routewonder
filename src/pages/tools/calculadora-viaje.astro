@@ -1,0 +1,289 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="Calculadora de Presupuesto de Viaje - RouteWonder"
+  description="Calcula cuánto te costará tu próximo viaje. Presupuesto desglosado por alojamiento, comida, transporte y actividades según tu estilo de viajero."
+>
+  <section class="py-12 sm:py-16 bg-gradient-to-b from-rw-ink to-rw-ink/95">
+    <div class="max-w-3xl mx-auto px-4 text-center">
+      <span class="inline-block px-3 py-1 text-xs font-ui font-semibold text-rw-horizon bg-rw-horizon/10 border border-rw-horizon/20 rounded-full mb-4">
+        HERRAMIENTA GRATUITA
+      </span>
+      <h1 class="font-display font-bold text-3xl sm:text-5xl text-rw-white tracking-tight leading-tight">
+        Calculadora de Presupuesto de Viaje
+      </h1>
+      <p class="font-body text-base sm:text-lg text-rw-sand/70 mt-4 max-w-2xl mx-auto leading-relaxed">
+        Estima cuánto te costará tu próximo viaje en Europa con datos reales. 
+        Sin registro, sin publicidad invasiva, sin trucos.
+      </p>
+    </div>
+  </section>
+
+  <section class="py-10 sm:py-16">
+    <div class="max-w-3xl mx-auto px-4">
+      
+      <!-- Calculator Form -->
+      <div class="bg-rw-white dark:bg-rw-ink/60 border border-rw-mist/20 dark:border-rw-mist/10 rounded-2xl p-6 sm:p-8 shadow-lg">
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <!-- Destination -->
+          <div>
+            <label for="destino" class="block font-ui text-sm font-semibold text-rw-ink dark:text-rw-sand mb-2">
+              Destino
+            </label>
+            <select
+              id="destino"
+              class="w-full px-4 py-3 rounded-lg border border-rw-mist/30 dark:border-rw-mist/15 bg-rw-sand/30 dark:bg-rw-ink/40 text-rw-ink dark:text-rw-sand font-ui text-sm focus:ring-2 focus:ring-rw-horizon/40 focus:border-rw-horizon transition-colors"
+            >
+              <option value="">Selecciona un destino</option>
+              <optgroup label="Europa Occidental">
+                <option value="espana">España</option>
+                <option value="portugal">Portugal</option>
+                <option value="francia">Francia</option>
+                <option value="italia">Italia</option>
+                <option value="alemania">Alemania</option>
+                <option value="uk">Reino Unido</option>
+                <option value="paises_bajos">Países Bajos</option>
+                <option value="belgica">Bélgica</option>
+                <option value="suiza">Suiza</option>
+                <option value="austria">Austria</option>
+              </optgroup>
+              <optgroup label="Europa del Norte">
+                <option value="noruega">Noruega</option>
+                <option value="suecia">Suecia</option>
+                <option value="dinamarca">Dinamarca</option>
+                <option value="islandia">Islandia</option>
+                <option value="finlandia">Finlandia</option>
+              </optgroup>
+              <optgroup label="Europa del Sur & Mediterráneo">
+                <option value="grecia">Grecia</option>
+                <option value="croacia">Croacia</option>
+                <option value="turquia">Turquía</option>
+                <option value="montenegro">Montenegro</option>
+                <option value="malta">Malta</option>
+              </optgroup>
+              <optgroup label="Europa del Este & Balcanes">
+                <option value="chequia">Chequia</option>
+                <option value="polonia">Polonia</option>
+                <option value="hungria">Hungría</option>
+                <option value="rumania">Rumanía</option>
+                <option value="bulgaria">Bulgaria</option>
+                <option value="albania">Albania</option>
+                <option value="georgia">Georgia</option>
+              </optgroup>
+              <optgroup label="Norte de África">
+                <option value="marruecos">Marruecos</option>
+              </optgroup>
+            </select>
+          </div>
+
+          <!-- Days -->
+          <div>
+            <label for="dias" class="block font-ui text-sm font-semibold text-rw-ink dark:text-rw-sand mb-2">
+              Duración (días)
+            </label>
+            <input
+              type="number"
+              id="dias"
+              min="1"
+              max="90"
+              value="5"
+              class="w-full px-4 py-3 rounded-lg border border-rw-mist/30 dark:border-rw-mist/15 bg-rw-sand/30 dark:bg-rw-ink/40 text-rw-ink dark:text-rw-sand font-ui text-sm focus:ring-2 focus:ring-rw-horizon/40 focus:border-rw-horizon transition-colors"
+            />
+          </div>
+        </div>
+
+        <!-- Traveler Type -->
+        <div class="mt-6">
+          <label class="block font-ui text-sm font-semibold text-rw-ink dark:text-rw-sand mb-3">
+            Tipo de viajero
+          </label>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+            <label class="travel-type-option cursor-pointer">
+              <input type="radio" name="tipo" value="mochilero" class="hidden peer" />
+              <div class="p-4 rounded-xl border-2 border-rw-mist/20 dark:border-rw-mist/10 peer-checked:border-rw-horizon peer-checked:bg-rw-horizon/5 transition-all hover:border-rw-horizon/50 text-center">
+                <span class="text-2xl block mb-1">🎒</span>
+                <span class="font-ui text-sm font-bold text-rw-ink dark:text-rw-sand">Mochilero</span>
+                <span class="block font-ui text-xs text-rw-ocean/60 dark:text-rw-mist/50 mt-1">Hostels, comida local, transporte público</span>
+              </div>
+            </label>
+            <label class="travel-type-option cursor-pointer">
+              <input type="radio" name="tipo" value="medio" class="hidden peer" checked />
+              <div class="p-4 rounded-xl border-2 border-rw-mist/20 dark:border-rw-mist/10 peer-checked:border-rw-horizon peer-checked:bg-rw-horizon/5 transition-all hover:border-rw-horizon/50 text-center">
+                <span class="text-2xl block mb-1">🧳</span>
+                <span class="font-ui text-sm font-bold text-rw-ink dark:text-rw-sand">Estándar</span>
+                <span class="block font-ui text-xs text-rw-ocean/60 dark:text-rw-mist/50 mt-1">Hotel 3★, restaurantes, mix transporte</span>
+              </div>
+            </label>
+            <label class="travel-type-option cursor-pointer">
+              <input type="radio" name="tipo" value="lujo" class="hidden peer" />
+              <div class="p-4 rounded-xl border-2 border-rw-mist/20 dark:border-rw-mist/10 peer-checked:border-rw-horizon peer-checked:bg-rw-horizon/5 transition-all hover:border-rw-horizon/50 text-center">
+                <span class="text-2xl block mb-1">✨</span>
+                <span class="font-ui text-sm font-bold text-rw-ink dark:text-rw-sand">Premium</span>
+                <span class="block font-ui text-xs text-rw-ocean/60 dark:text-rw-mist/50 mt-1">Hotel 4-5★, fine dining, privado</span>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <!-- Calculate Button -->
+        <button
+          id="btn-calcular"
+          class="w-full mt-8 px-6 py-4 rounded-xl font-ui font-bold text-base text-rw-white bg-rw-horizon hover:bg-rw-horizon/90 shadow-lg shadow-rw-horizon/20 transition-all active:scale-[0.98] disabled:opacity-50 disabled:cursor-not-allowed"
+        >
+          Calcular presupuesto →
+        </button>
+      </div>
+
+      <!-- Results (hidden by default) -->
+      <div id="resultados" class="hidden mt-8 bg-rw-white dark:bg-rw-ink/60 border border-rw-mist/20 dark:border-rw-mist/10 rounded-2xl p-6 sm:p-8 shadow-lg">
+        
+        <h2 class="font-display font-bold text-2xl text-rw-ink dark:text-rw-white mb-6">
+          Tu presupuesto estimado
+        </h2>
+
+        <div class="space-y-4">
+          <div class="flex items-center justify-between py-3 border-b border-rw-mist/10">
+            <div class="flex items-center gap-3">
+              <span class="text-xl">🏨</span>
+              <span class="font-ui text-sm text-rw-ink dark:text-rw-sand">Alojamiento</span>
+            </div>
+            <span id="res-alojamiento" class="font-ui font-bold text-rw-ink dark:text-rw-white">—</span>
+          </div>
+          <div class="flex items-center justify-between py-3 border-b border-rw-mist/10">
+            <div class="flex items-center gap-3">
+              <span class="text-xl">🍽️</span>
+              <span class="font-ui text-sm text-rw-ink dark:text-rw-sand">Comida</span>
+            </div>
+            <span id="res-comida" class="font-ui font-bold text-rw-ink dark:text-rw-white">—</span>
+          </div>
+          <div class="flex items-center justify-between py-3 border-b border-rw-mist/10">
+            <div class="flex items-center gap-3">
+              <span class="text-xl">🚌</span>
+              <span class="font-ui text-sm text-rw-ink dark:text-rw-sand">Transporte local</span>
+            </div>
+            <span id="res-transporte" class="font-ui font-bold text-rw-ink dark:text-rw-white">—</span>
+          </div>
+          <div class="flex items-center justify-between py-3 border-b border-rw-mist/10">
+            <div class="flex items-center gap-3">
+              <span class="text-xl">🎫</span>
+              <span class="font-ui text-sm text-rw-ink dark:text-rw-sand">Actividades y entradas</span>
+            </div>
+            <span id="res-actividades" class="font-ui font-bold text-rw-ink dark:text-rw-white">—</span>
+          </div>
+          <div class="flex items-center justify-between py-3 border-b border-rw-mist/10">
+            <div class="flex items-center gap-3">
+              <span class="text-xl">🛡️</span>
+              <span class="font-ui text-sm text-rw-ink dark:text-rw-sand">Buffer imprevisto (10%)</span>
+            </div>
+            <span id="res-buffer" class="font-ui font-bold text-rw-ink dark:text-rw-white">—</span>
+          </div>
+        </div>
+
+        <!-- Total -->
+        <div class="mt-6 p-4 rounded-xl bg-rw-horizon/10 border border-rw-horizon/20">
+          <div class="flex items-center justify-between">
+            <span class="font-ui font-bold text-lg text-rw-ink dark:text-rw-sand">TOTAL ESTIMADO</span>
+            <span id="res-total" class="font-display font-bold text-2xl text-rw-horizon">—</span>
+          </div>
+          <p id="res-por-dia" class="font-ui text-xs text-rw-ocean/60 dark:text-rw-mist/50 mt-1">— por día</p>
+        </div>
+
+        <!-- Disclaimer -->
+        <p class="font-ui text-xs text-rw-ocean/50 dark:text-rw-mist/40 mt-6 leading-relaxed">
+          ⓘ Estos precios son estimaciones basadas en datos reales de viajeros en 2025-2026. 
+          Los precios pueden variar según temporada, disponibilidad y elecciones personales. 
+          No incluye vuelos internacionales.
+        </p>
+
+        <!-- CTA to articles -->
+        <div class="mt-6 p-4 rounded-xl bg-rw-sand/40 dark:bg-rw-ink/40 border border-rw-mist/10">
+          <p class="font-ui text-sm text-rw-ink dark:text-rw-sand">
+            📖 ¿Quieres una guía detallada? Consulta nuestros artículos de 
+            <a href="/blog/" class="text-rw-horizon hover:underline font-semibold">rutas y destinos</a>.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</BaseLayout>
+
+<script>
+  // Cost database (€ per day, per person)
+  const COSTES = {
+    espana:        { mochilero: { aloj: 20, comida: 15, trans: 8,  activ: 5  }, medio: { aloj: 60,  comida: 35, trans: 15, activ: 15 }, lujo: { aloj: 150, comida: 70,  trans: 40, activ: 30 } },
+    portugal:      { mochilero: { aloj: 18, comida: 12, trans: 7,  activ: 5  }, medio: { aloj: 55,  comida: 30, trans: 12, activ: 12 }, lujo: { aloj: 140, comida: 60,  trans: 35, activ: 25 } },
+    francia:       { mochilero: { aloj: 25, comida: 18, trans: 10, activ: 8  }, medio: { aloj: 80,  comida: 45, trans: 18, activ: 20 }, lujo: { aloj: 200, comida: 90,  trans: 50, activ: 40 } },
+    italia:        { mochilero: { aloj: 22, comida: 15, trans: 8,  activ: 8  }, medio: { aloj: 70,  comida: 40, trans: 15, activ: 18 }, lujo: { aloj: 180, comida: 80,  trans: 45, activ: 35 } },
+    alemania:      { mochilero: { aloj: 22, comida: 16, trans: 10, activ: 6  }, medio: { aloj: 70,  comida: 40, trans: 16, activ: 15 }, lujo: { aloj: 170, comida: 75,  trans: 40, activ: 30 } },
+    uk:            { mochilero: { aloj: 28, comida: 20, trans: 12, activ: 8  }, medio: { aloj: 90,  comida: 50, trans: 20, activ: 20 }, lujo: { aloj: 220, comida: 100, trans: 55, activ: 45 } },
+    paises_bajos:  { mochilero: { aloj: 25, comida: 16, trans: 10, activ: 8  }, medio: { aloj: 80,  comida: 40, trans: 16, activ: 18 }, lujo: { aloj: 180, comida: 80,  trans: 40, activ: 35 } },
+    belgica:       { mochilero: { aloj: 22, comida: 15, trans: 8,  activ: 6  }, medio: { aloj: 70,  comida: 38, trans: 14, activ: 15 }, lujo: { aloj: 160, comida: 75,  trans: 35, activ: 30 } },
+    suiza:         { mochilero: { aloj: 35, comida: 25, trans: 15, activ: 10 }, medio: { aloj: 120, comida: 60, trans: 25, activ: 25 }, lujo: { aloj: 300, comida: 120, trans: 70, activ: 50 } },
+    austria:       { mochilero: { aloj: 22, comida: 15, trans: 8,  activ: 8  }, medio: { aloj: 75,  comida: 40, trans: 15, activ: 18 }, lujo: { aloj: 180, comida: 80,  trans: 40, activ: 35 } },
+    noruega:       { mochilero: { aloj: 35, comida: 25, trans: 15, activ: 10 }, medio: { aloj: 120, comida: 55, trans: 25, activ: 22 }, lujo: { aloj: 280, comida: 110, trans: 65, activ: 45 } },
+    suecia:        { mochilero: { aloj: 28, comida: 20, trans: 12, activ: 8  }, medio: { aloj: 95,  comida: 45, trans: 20, activ: 18 }, lujo: { aloj: 220, comida: 90,  trans: 50, activ: 40 } },
+    dinamarca:     { mochilero: { aloj: 30, comida: 22, trans: 12, activ: 8  }, medio: { aloj: 100, comida: 50, trans: 20, activ: 20 }, lujo: { aloj: 240, comida: 95,  trans: 55, activ: 40 } },
+    islandia:      { mochilero: { aloj: 40, comida: 30, trans: 18, activ: 12 }, medio: { aloj: 130, comida: 65, trans: 30, activ: 30 }, lujo: { aloj: 320, comida: 130, trans: 80, activ: 55 } },
+    finlandia:     { mochilero: { aloj: 25, comida: 18, trans: 10, activ: 8  }, medio: { aloj: 85,  comida: 45, trans: 18, activ: 18 }, lujo: { aloj: 200, comida: 85,  trans: 45, activ: 35 } },
+    grecia:        { mochilero: { aloj: 18, comida: 12, trans: 7,  activ: 5  }, medio: { aloj: 55,  comida: 30, trans: 12, activ: 12 }, lujo: { aloj: 150, comida: 65,  trans: 35, activ: 28 } },
+    croacia:       { mochilero: { aloj: 18, comida: 12, trans: 7,  activ: 6  }, medio: { aloj: 60,  comida: 32, trans: 12, activ: 14 }, lujo: { aloj: 160, comida: 70,  trans: 38, activ: 30 } },
+    turquia:       { mochilero: { aloj: 12, comida: 8,  trans: 5,  activ: 4  }, medio: { aloj: 40,  comida: 20, trans: 8,  activ: 10 }, lujo: { aloj: 110, comida: 50,  trans: 25, activ: 22 } },
+    montenegro:    { mochilero: { aloj: 15, comida: 10, trans: 5,  activ: 4  }, medio: { aloj: 50,  comida: 25, trans: 10, activ: 10 }, lujo: { aloj: 130, comida: 55,  trans: 30, activ: 22 } },
+    malta:         { mochilero: { aloj: 18, comida: 12, trans: 5,  activ: 5  }, medio: { aloj: 55,  comida: 30, trans: 10, activ: 12 }, lujo: { aloj: 140, comida: 60,  trans: 30, activ: 25 } },
+    chequia:       { mochilero: { aloj: 15, comida: 10, trans: 5,  activ: 5  }, medio: { aloj: 50,  comida: 25, trans: 10, activ: 12 }, lujo: { aloj: 130, comida: 55,  trans: 28, activ: 22 } },
+    polonia:       { mochilero: { aloj: 12, comida: 8,  trans: 4,  activ: 4  }, medio: { aloj: 45,  comida: 22, trans: 8,  activ: 10 }, lujo: { aloj: 120, comida: 50,  trans: 25, activ: 20 } },
+    hungria:       { mochilero: { aloj: 12, comida: 8,  trans: 4,  activ: 4  }, medio: { aloj: 45,  comida: 22, trans: 8,  activ: 10 }, lujo: { aloj: 120, comida: 50,  trans: 25, activ: 20 } },
+    rumania:       { mochilero: { aloj: 10, comida: 7,  trans: 4,  activ: 3  }, medio: { aloj: 35,  comida: 18, trans: 7,  activ: 8  }, lujo: { aloj: 100, comida: 40,  trans: 20, activ: 18 } },
+    bulgaria:      { mochilero: { aloj: 10, comida: 7,  trans: 3,  activ: 3  }, medio: { aloj: 35,  comida: 18, trans: 6,  activ: 8  }, lujo: { aloj: 95,  comida: 38,  trans: 18, activ: 16 } },
+    albania:       { mochilero: { aloj: 8,  comida: 5,  trans: 3,  activ: 3  }, medio: { aloj: 30,  comida: 15, trans: 6,  activ: 8  }, lujo: { aloj: 85,  comida: 35,  trans: 18, activ: 15 } },
+    georgia:       { mochilero: { aloj: 8,  comida: 5,  trans: 3,  activ: 3  }, medio: { aloj: 28,  comida: 12, trans: 5,  activ: 6  }, lujo: { aloj: 80,  comida: 30,  trans: 15, activ: 12 } },
+    marruecos:     { mochilero: { aloj: 10, comida: 5,  trans: 4,  activ: 3  }, medio: { aloj: 35,  comida: 15, trans: 8,  activ: 8  }, lujo: { aloj: 100, comida: 40,  trans: 22, activ: 18 } },
+  };
+
+  function calcular() {
+    const destino = (document.getElementById('destino') as HTMLSelectElement).value;
+    const dias = parseInt((document.getElementById('dias') as HTMLInputElement).value) || 1;
+    const tipo = (document.querySelector('input[name="tipo"]:checked') as HTMLInputElement)?.value || 'medio';
+
+    if (!destino || !COSTES[destino]) {
+      alert('Selecciona un destino válido');
+      return;
+    }
+
+    const costes = COSTES[destino][tipo];
+    const alojamiento = costes.aloj * dias;
+    const comida = costes.comida * dias;
+    const transporte = costes.trans * dias;
+    const actividades = costes.activ * dias;
+    const subtotal = alojamiento + comida + transporte + actividades;
+    const buffer = Math.round(subtotal * 0.1);
+    const total = subtotal + buffer;
+
+    document.getElementById('res-alojamiento')!.textContent = `${alojamiento}€`;
+    document.getElementById('res-comida')!.textContent = `${comida}€`;
+    document.getElementById('res-transporte')!.textContent = `${transporte}€`;
+    document.getElementById('res-actividades')!.textContent = `${actividades}€`;
+    document.getElementById('res-buffer')!.textContent = `${buffer}€`;
+    document.getElementById('res-total')!.textContent = `${total}€`;
+    document.getElementById('res-por-dia')!.textContent = `${Math.round(total / dias)}€ por día`;
+
+    const resultados = document.getElementById('resultados')!;
+    resultados.classList.remove('hidden');
+    resultados.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  // Setup
+  function setupCalculator() {
+    const btn = document.getElementById('btn-calcular');
+    if (btn) {
+      btn.addEventListener('click', calcular);
+    }
+  }
+
+  setupCalculator();
+  document.addEventListener('astro:after-swap', setupCalculator);
+</script>

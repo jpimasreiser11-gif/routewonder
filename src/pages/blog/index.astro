@@ -66,7 +66,11 @@ const categories = [
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="posts-grid">
             {
               sortedPosts.map((post) => (
-                <div class="post-card-wrapper" data-category={post.data.category}>
+                <div
+                  class="post-card-wrapper"
+                  data-category={post.data.category}
+                  data-search={`${post.data.title} ${post.data.description} ${post.data.category} ${(post.data.tags || []).join(" ")}`.toLowerCase()}
+                >
                   <ArticleCard post={post} />
                 </div>
               ))
@@ -84,6 +88,16 @@ const categories = [
 
       if (buttons.length === 0 || cards.length === 0) return;
 
+      const urlParams = new URLSearchParams(window.location.search);
+      const searchQuery = (urlParams.get('q') || '').trim().toLowerCase();
+
+      if (searchQuery) {
+        const heroText = document.querySelector('section p');
+        if (heroText) {
+          heroText.textContent = `Resultados para "${searchQuery}". Puedes combinar esta búsqueda con las categorías.`;
+        }
+      }
+
       const filterCategory = (category: string) => {
         // Update active class on buttons
         buttons.forEach((btn) => {
@@ -100,7 +114,10 @@ const categories = [
         // Show/hide cards
         cards.forEach((card: any) => {
           const cardCat = card.getAttribute('data-category');
-          if (category === 'all' || cardCat === category) {
+          const cardSearch = card.getAttribute('data-search') || '';
+          const matchesCategory = category === 'all' || cardCat === category;
+          const matchesSearch = !searchQuery || cardSearch.includes(searchQuery);
+          if (matchesCategory && matchesSearch) {
             card.style.display = 'block';
             card.classList.add('animate-fade-in');
           } else {
@@ -110,8 +127,6 @@ const categories = [
         });
       };
 
-      // Set initial state from query string parameter
-      const urlParams = new URLSearchParams(window.location.search);
       const initialCat = urlParams.get('category') || 'all';
       filterCategory(initialCat);
 

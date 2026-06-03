@@ -1,12 +1,14 @@
 ---
 import ThemeToggle from "../ui/ThemeToggle.astro";
+import LanguageSelector from "../ui/LanguageSelector.astro";
 const base = import.meta.env.BASE_URL.endsWith("/") ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
 
 const navLinks = [
   { href: `${base}`, label: "Inicio" },
   { href: `${base}blog/`, label: "Revista" },
+  { href: `${base}#planificador-rutas`, label: "Planificador" },
+  { href: `${base}videos/demo/`, label: "Vídeo" },
   { href: `${base}about/`, label: "Editorial" },
-  { href: `${base}contact/`, label: "Contacto" },
 ];
 
 const currentPath = Astro.url.pathname;
@@ -48,6 +50,7 @@ const currentPath = Astro.url.pathname;
 
     <!-- Header Actions (Toggle + Mobile Button) -->
     <div class="flex items-center gap-4">
+      <LanguageSelector />
       <ThemeToggle />
       
       <!-- Mobile hamburger trigger -->

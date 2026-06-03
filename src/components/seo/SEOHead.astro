@@ -11,7 +11,7 @@ export interface Props {
 const {
   title = "RouteWonder - Viajes Curiosos y Geografía Sorprendente",
   description = "Descubre rutas inteligentes, destinos secretos, curiosidades geográficas y lugares de película con crónicas periodísticas y de exploración.",
-  image = "/og-image.jpg",
+  image = "/og-default.jpg",
   imageAlt = "RouteWonder - El mundo es más raro de lo que imaginas",
   canonicalURL = Astro.url,
   type = "website",
@@ -25,7 +25,6 @@ const formattedTitle = title.includes(siteName) ? title : `${title} | ${siteName
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-<meta name="generator" content={Astro.generator} />
 
 <!-- Canonical URL -->
 <link rel="canonical" href={canonicalURL} />
