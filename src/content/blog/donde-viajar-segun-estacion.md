@@ -51,7 +51,7 @@ La luz es buena, el calor no aprieta y muchas rutas todavía no están llenas.
 
 ![Imagen de apoyo para primavera: japón rural, madeira, lisboa, eslovenia](https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=84)
 
-**Consejo de ruta: reserva esta parte para cuando el viaje ya tenga ritmo; Primavera: Japón rural, Madeira, Lisboa, Eslovenia funciona mejor si no llega como relleno.**
+**Consejo de ruta:** Dedícale más tiempo al primer contacto con el lugar; la primera impresión define cómo disfrutarás el resto del viaje.
 
 ## Verano: Noruega, Escocia, Azores, Dolomitas
 
@@ -59,7 +59,7 @@ Busca norte, altura o islas con brisa. Evita ciudades interiores muy calientes s
 
 ![Imagen de apoyo para verano: noruega, escocia, azores, dolomitas](https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1600&q=84)
 
-**Consejo de ruta: reserva esta parte para cuando el viaje ya tenga ritmo; Verano: Noruega, Escocia, Azores, Dolomitas funciona mejor si no llega como relleno.**
+**Consejo de ruta:** No reserves todas las actividades por adelantado; deja hueco para descubrir algo por tu cuenta.
 
 ## Otoño: Transilvania, Toscana, Selva Negra, Oporto
 
@@ -67,7 +67,7 @@ Es la estación de carreteras bonitas, bosques y precios algo más razonables.
 
 ![Imagen de apoyo para otoño: transilvania, toscana, selva negra, oporto](https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=84)
 
-**Consejo de ruta: reserva esta parte para cuando el viaje ya tenga ritmo; Otoño: Transilvania, Toscana, Selva Negra, Oporto funciona mejor si no llega como relleno.**
+**Consejo de ruta:** Consulta horarios oficiales el día anterior — en destinos pequeños los cierres inesperados son frecuentes.
 
 ## Invierno: Marruecos, Canarias, Estambul, Sicilia
 
@@ -75,7 +75,7 @@ Funcionan bien porque tienen vida urbana, clima manejable o paisajes que no depe
 
 ![Imagen de apoyo para invierno: marruecos, canarias, estambul, sicilia](https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1600&q=84)
 
-**Consejo de ruta: reserva esta parte para cuando el viaje ya tenga ritmo; Invierno: Marruecos, Canarias, Estambul, Sicilia funciona mejor si no llega como relleno.**
+**Consejo de ruta:** Si un plan depende del clima, ten siempre una alternativa interior que también te apetezca.
 
 ## Presupuesto orientativo sin vender humo
 

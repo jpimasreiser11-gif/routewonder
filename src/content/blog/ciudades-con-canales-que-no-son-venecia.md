@@ -51,7 +51,7 @@ Sus muelles bajos hacen que el canal se viva a otra altura. Es una ciudad cómod
 
 ![Imagen de apoyo para utrecht](https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1600&q=84)
 
-**Consejo de ruta: reserva esta parte para cuando el viaje ya tenga ritmo; Utrecht funciona mejor si no llega como relleno.**
+**Consejo de ruta:** Dedícale más tiempo al primer contacto con el lugar; la primera impresión define cómo disfrutarás el resto del viaje.
 
 ## Aveiro
 
@@ -59,7 +59,7 @@ No es una Venecia portuguesa, y precisamente por eso funciona: salinas, casas de
 
 ![Imagen de apoyo para aveiro](https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1600&q=84)
 
-**Consejo de ruta: reserva esta parte para cuando el viaje ya tenga ritmo; Aveiro funciona mejor si no llega como relleno.**
+**Consejo de ruta:** No reserves todas las actividades por adelantado; deja hueco para descubrir algo por tu cuenta.
 
 ## Annecy
 
@@ -67,7 +67,7 @@ Canales pequeños, lago alpino y montaña cerca. El viaje mejora si lo combinas 
 
 ![Imagen de apoyo para annecy](https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1600&q=84)
 
-**Consejo de ruta: reserva esta parte para cuando el viaje ya tenga ritmo; Annecy funciona mejor si no llega como relleno.**
+**Consejo de ruta:** Consulta horarios oficiales el día anterior — en destinos pequeños los cierres inesperados son frecuentes.
 
 ## Gante
 
@@ -75,7 +75,7 @@ Más intensa que Brujas y menos postal. Sus canales encajan mejor con cerveza, h
 
 ![Imagen de apoyo para gante](https://images.unsplash.com/photo-1482192505345-5655af888cc4?auto=format&fit=crop&w=1600&q=84)
 
-**Consejo de ruta: reserva esta parte para cuando el viaje ya tenga ritmo; Gante funciona mejor si no llega como relleno.**
+**Consejo de ruta:** Si un plan depende del clima, ten siempre una alternativa interior que también te apetezca.
 
 ## Presupuesto orientativo sin vender humo
 

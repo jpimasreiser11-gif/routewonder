@@ -51,7 +51,7 @@ Una ciudad bien conectada ahorra dinero, tiempo y cansancio. Lucerna o Berna sue
 
 ![Imagen de apoyo para elige una base con conexiones](https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1600&q=84)
 
-**Consejo de ruta: reserva esta parte para cuando el viaje ya tenga ritmo; Elige una base con conexiones funciona mejor si no llega como relleno.**
+**Consejo de ruta:** Dedícale más tiempo al primer contacto con el lugar; la primera impresión define cómo disfrutarás el resto del viaje.
 
 ## No todos los trenes escénicos son obligatorios
 
@@ -75,7 +75,7 @@ Dos montañas y una ciudad bien elegidas valen más que seis paradas apresuradas
 
 ![Imagen de apoyo para haz menos, mira mejor](https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=1600&q=84)
 
-**Consejo de ruta: reserva esta parte para cuando el viaje ya tenga ritmo; Haz menos, mira mejor funciona mejor si no llega como relleno.**
+**Consejo de ruta:** No reserves todas las actividades por adelantado; deja hueco para descubrir algo por tu cuenta.
 
 ## Presupuesto orientativo sin vender humo
 

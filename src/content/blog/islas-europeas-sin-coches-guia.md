@@ -51,7 +51,7 @@ Sin coches privados y con un puerto muy fotogénico. Es buena para caminar, nada
 
 ![Imagen de apoyo para hidra, grecia](https://images.unsplash.com/photo-1499678329028-101435549a4e?auto=format&fit=crop&w=1600&q=84)
 
-**Consejo de ruta: reserva esta parte para cuando el viaje ya tenga ritmo; Hidra, Grecia funciona mejor si no llega como relleno.**
+**Consejo de ruta:** Dedícale más tiempo al primer contacto con el lugar; la primera impresión define cómo disfrutarás el resto del viaje.
 
 ## La Graciosa, España
 
@@ -59,7 +59,7 @@ Arena, pistas, bicicleta y playas amplias. Conviene reservar alojamiento con ant
 
 ![Imagen de apoyo para la graciosa, españa](https://images.unsplash.com/photo-1491553895911-0055eca6402d?auto=format&fit=crop&w=1600&q=84)
 
-**Consejo de ruta: reserva esta parte para cuando el viaje ya tenga ritmo; La Graciosa, España funciona mejor si no llega como relleno.**
+**Consejo de ruta:** No reserves todas las actividades por adelantado; deja hueco para descubrir algo por tu cuenta.
 
 ## Porquerolles, Francia
 
@@ -67,7 +67,7 @@ Naturaleza protegida, calas y rutas en bici. Ideal si quieres Mediterráneo sin 
 
 ![Imagen de apoyo para porquerolles, francia](https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1600&q=84)
 
-**Consejo de ruta: reserva esta parte para cuando el viaje ya tenga ritmo; Porquerolles, Francia funciona mejor si no llega como relleno.**
+**Consejo de ruta:** Consulta horarios oficiales el día anterior — en destinos pequeños los cierres inesperados son frecuentes.
 
 ## Inis Mór, Irlanda
 
@@ -75,7 +75,7 @@ Acantilados, piedra, viento y una sensación muy distinta de isla. Aquí la grac
 
 ![Imagen de apoyo para inis mór, irlanda](https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1600&q=84)
 
-**Consejo de ruta: reserva esta parte para cuando el viaje ya tenga ritmo; Inis Mór, Irlanda funciona mejor si no llega como relleno.**
+**Consejo de ruta:** Si un plan depende del clima, ten siempre una alternativa interior que también te apetezca.
 
 ## Presupuesto orientativo sin vender humo
 

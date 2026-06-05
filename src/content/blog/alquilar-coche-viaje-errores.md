@@ -51,7 +51,7 @@ La cifra grande suele ocultar franquicia, política de combustible, kilometraje 
 
 ![Imagen de apoyo para no mires solo el precio diario](https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=1600&q=84)
 
-**Consejo de ruta: reserva esta parte para cuando el viaje ya tenga ritmo; No mires solo el precio diario funciona mejor si no llega como relleno.**
+**Consejo de ruta:** Dedícale más tiempo al primer contacto con el lugar; la primera impresión define cómo disfrutarás el resto del viaje.
 
 ## El seguro no significa lo mismo en todas partes
 
@@ -59,7 +59,7 @@ Diferencia entre cobertura, franquicia y reembolso externo. Si no lo entiendes, 
 
 ![Imagen de apoyo para el seguro no significa lo mismo en todas partes](https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1600&q=84)
 
-**Consejo de ruta: reserva esta parte para cuando el viaje ya tenga ritmo; El seguro no significa lo mismo en todas partes funciona mejor si no llega como relleno.**
+**Consejo de ruta:** No reserves todas las actividades por adelantado; deja hueco para descubrir algo por tu cuenta.
 
 ## El tamaño del coche importa
 
@@ -67,7 +67,7 @@ En islas, pueblos antiguos o carreteras de montaña, un coche pequeño suele ser
 
 ![Imagen de apoyo para el tamaño del coche importa](https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1600&q=84)
 
-**Consejo de ruta: reserva esta parte para cuando el viaje ya tenga ritmo; El tamaño del coche importa funciona mejor si no llega como relleno.**
+**Consejo de ruta:** Consulta horarios oficiales el día anterior — en destinos pequeños los cierres inesperados son frecuentes.
 
 ## Documenta todo
 
@@ -75,7 +75,7 @@ Fotos, vídeo, contrato y recibos. No es desconfianza: es evitar discusiones cua
 
 ![Imagen de apoyo para documenta todo](https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=84)
 
-**Consejo de ruta: reserva esta parte para cuando el viaje ya tenga ritmo; Documenta todo funciona mejor si no llega como relleno.**
+**Consejo de ruta:** Si un plan depende del clima, ten siempre una alternativa interior que también te apetezca.
 
 ## Presupuesto orientativo sin vender humo
 

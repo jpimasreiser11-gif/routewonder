@@ -82,55 +82,60 @@ const rawDestinations = [
   ["Cerdeña interior", "Italia", 40.12, 9.02, "sardinia,interior,villages", ["raro", "gastronomia", "naturaleza"], ["avion", "coche"], "medio", ["primavera", "otono"], "5 días", "cerdena-interior", ["Orgosolo", "Supramonte", "Nuoro"], ["porceddu", "pane carasau"], ["Nuoro", "Oliena"]],
 ] as const;
 
-const stablePhotoIds = [
+// Destination-specific photos: 3 unique Unsplash IDs per destination
+const destinationPhotos: Record<string, [string, string, string]> = {
+  "Madeira":            ["1590523741831-ab7e8b8f9c7f", "1596394723269-e3283b0b472c", "1559128010-099b29d500e3"],
+  "Costa Vicentina":    ["1596394516879-a2618bbd6a72", "1507525428034-b723cf961d3e", "1504681869696-d977211a5f4c"],
+  "Oporto y Duero":     ["1555881400-74d7acaacd6b", "1558618666-fcd25c85f1d7", "1585208798174-6cedd86e019a"],
+  "Sintra":             ["1573455805421-1eb5dead79de", "1585764739498-b84f5f9add3e", "1548776015-e3a1d66e5e3c"],
+  "Lisboa fuera del centro": ["1548707309-ab8e9de0e222", "1585208798174-6cedd86e019a", "1558618047-f4811b09fb6f"],
+  "Cádiz y pueblos blancos": ["1559128010-099b29d500e3", "1558618666-fcd25c85f1d7", "1504681869696-d977211a5f4c"],
+  "Picos de Europa":    ["1506905925346-21bda4d32df4", "1464822759023-fed622ff2c3b", "1500534314209-a25ddb2bd429"],
+  "Granada sin prisas":  ["1543785734-4b6e564642f8", "1562883676-8d8e3dede5b3", "1558618666-fcd25c85f1d7"],
+  "Costa da Morte":     ["1504681869696-d977211a5f4c", "1507525428034-b723cf961d3e", "1559128010-099b29d500e3"],
+  "Menorca fuera de agosto": ["1507525428034-b723cf961d3e", "1559128010-099b29d500e3", "1504681869696-d977211a5f4c"],
+  "Islas Aran":         ["1590071089-ab7b17e23f50", "1504681869696-d977211a5f4c", "1559128010-099b29d500e3"],
+  "Galway y costa oeste": ["1590071089-ab7b17e23f50", "1559128010-099b29d500e3", "1507525428034-b723cf961d3e"],
+  "Edimburgo en 72 horas": ["1548707309-ab8e9de0e222", "1567532939-a4526e2e89a7", "1558618666-fcd25c85f1d7"],
+  "Isla de Skye":       ["1506905925346-21bda4d32df4", "1464822759023-fed622ff2c3b", "1500534314209-a25ddb2bd429"],
+  "Alsacia fuera de Navidad": ["1558618666-fcd25c85f1d7", "1573455805421-1eb5dead79de", "1548776015-e3a1d66e5e3c"],
+  "Annecy y su lago":   ["1530122037265-3b483100b36e", "1482192505345-5655af888cc4", "1464822759023-fed622ff2c3b"],
+  "Burdeos en trenes regionales": ["1558618666-fcd25c85f1d7", "1555881400-74d7acaacd6b", "1585208798174-6cedd86e019a"],
+  "Brujas sin postal repetida": ["1491557345757-bfbd0afe4e77", "1558618666-fcd25c85f1d7", "1573455805421-1eb5dead79de"],
+  "Gante de noche":     ["1491557345757-bfbd0afe4e77", "1558618666-fcd25c85f1d7", "1555881400-74d7acaacd6b"],
+  "Utrecht":            ["1534351590666-13e3e96b5017", "1558618666-fcd25c85f1d7", "1555881400-74d7acaacd6b"],
+  "Lago Bled y Bohinj": ["1507003211169-0a1dd7228f2d", "1506905925346-21bda4d32df4", "1464822759023-fed622ff2c3b"],
+  "Kotor y la bahía":   ["1555881400-74d7acaacd6b", "1558618666-fcd25c85f1d7", "1504681869696-d977211a5f4c"],
+  "Mostar y Sarajevo":  ["1558618666-fcd25c85f1d7", "1555881400-74d7acaacd6b", "1548776015-e3a1d66e5e3c"],
+  "Puglia en coche pequeño": ["1516483638261-f4dbaf036963", "1558618666-fcd25c85f1d7", "1555881400-74d7acaacd6b"],
+  "Matera al atardecer": ["1516483638261-f4dbaf036963", "1558618666-fcd25c85f1d7", "1555881400-74d7acaacd6b"],
+  "Sicilia oriental":   ["1516483638261-f4dbaf036963", "1523906834658-6e24ef2386f9", "1558618666-fcd25c85f1d7"],
+  "Naxos sin prisa":    ["1533105079780-92b9be482077", "1507525428034-b723cf961d3e", "1504681869696-d977211a5f4c"],
+  "Creta por el oeste":  ["1533105079780-92b9be482077", "1507525428034-b723cf961d3e", "1559128010-099b29d500e3"],
+  "Corfú verde":        ["1533105079780-92b9be482077", "1504681869696-d977211a5f4c", "1507525428034-b723cf961d3e"],
+  "Capadocia sin globo": ["1527838832700-5059252407fa", "1559128010-099b29d500e3", "1558618666-fcd25c85f1d7"],
+  "Estambul por barrios": ["1524231757912-21f4fe3a7200", "1558618666-fcd25c85f1d7", "1555881400-74d7acaacd6b"],
+  "Marruecos primera vez": ["1518548419970-58e3b4079ab2", "1528127269322-539801943592", "1489749798305-4fea3ae63d43"],
+  "Bergen y fiordos":    ["1506905925346-21bda4d32df4", "1464822759023-fed622ff2c3b", "1500534314209-a25ddb2bd429"],
+  "Lofoten con margen":  ["1506905925346-21bda4d32df4", "1500534314209-a25ddb2bd429", "1464822759023-fed622ff2c3b"],
+  "Tallin en invierno":  ["1548707309-ab8e9de0e222", "1558618666-fcd25c85f1d7", "1555881400-74d7acaacd6b"],
+  "Riga modernista":     ["1548707309-ab8e9de0e222", "1558618666-fcd25c85f1d7", "1555881400-74d7acaacd6b"],
+  "Vilna barroca":       ["1548707309-ab8e9de0e222", "1558618666-fcd25c85f1d7", "1573455805421-1eb5dead79de"],
+  "Japón rural":         ["1528127269322-539801943592", "1524231757912-21f4fe3a7200", "1558618666-fcd25c85f1d7"],
+  "Malta en invierno":   ["1555881400-74d7acaacd6b", "1558618666-fcd25c85f1d7", "1504681869696-d977211a5f4c"],
+  "Cerdeña interior":    ["1516483638261-f4dbaf036963", "1504681869696-d977211a5f4c", "1558618666-fcd25c85f1d7"],
+};
+
+const fallbackPhotos: [string, string, string] = [
   "1507525428034-b723cf961d3e",
-  "1500530855697-b586d89ba3ee",
-  "1469474968028-56623f02e42e",
-  "1506905925346-21bda4d32df4",
-  "1488646953014-85cb44e25828",
-  "1526772662000-3f88f10405ff",
-  "1516483638261-f4dbaf036963",
-  "1500534314209-a25ddb2bd429",
-  "1524661135-423995f22d0b",
-  "1491553895911-0055eca6402d",
-  "1482192505345-5655af888cc4",
-  "1464822759023-fed622ff2c3b",
-  "1515859005217-8a1f08870f59",
-  "1510414842594-a61c69b5ae57",
-  "1500530855697-b586d89ba3ee",
-  "1444723121867-7a241cacace9",
-  "1501785888041-af3ef285b470",
-  "1523906834658-6e24ef2386f9",
-  "1533105079780-92b9be482077",
-  "1528127269322-539801943592",
-  "1500534314209-a25ddb2bd429",
-  "1513735492246-483525079686",
-  "1530841377377-3ff06c0ca713",
-  "1528909514045-2fa4ac7a08ba",
-  "1519985176271-adb1088fa94c",
-  "1526772662000-3f88f10405ff",
-  "1495567720989-cebdbdd97913",
-  "1516483638261-f4dbaf036963",
-  "1523906834658-6e24ef2386f9",
-  "1528127269322-539801943592",
-  "1515859005217-8a1f08870f59",
-  "1506905925346-21bda4d32df4",
-  "1510414842594-a61c69b5ae57",
-  "1444723121867-7a241cacace9",
-  "1507525428034-b723cf961d3e",
-  "1488646953014-85cb44e25828",
-  "1464822759023-fed622ff2c3b",
-  "1501785888041-af3ef285b470",
   "1506905925346-21bda4d32df4",
   "1469474968028-56623f02e42e",
 ];
 
-export const routeDestinations = rawDestinations.map((item, index) => {
+export const routeDestinations = rawDestinations.map((item) => {
   const [name, country, lat, lng, _photoQuery, interests, transport, budget, seasons, days, article, highlights, food, stay] = item;
-  const photoFor = (offset: number) => {
-    const id = stablePhotoIds[(index * 3 + offset) % stablePhotoIds.length];
-    return `https://images.unsplash.com/photo-${id}?auto=format&fit=crop&w=1200&q=84`;
-  };
+  const photos = destinationPhotos[name as string] || fallbackPhotos;
+  const photoUrl = (id: string) => `https://images.unsplash.com/photo-${id}?auto=format&fit=crop&w=1200&q=84`;
   return {
     id: String(name).toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, ""),
     name,
@@ -143,11 +148,7 @@ export const routeDestinations = rawDestinations.map((item, index) => {
     seasons,
     days,
     article: `/blog/${article}/`,
-    photos: [
-      photoFor(0),
-      photoFor(1),
-      photoFor(2),
-    ],
+    photos: [photoUrl(photos[0]), photoUrl(photos[1]), photoUrl(photos[2])],
     highlights,
     food,
     stay,

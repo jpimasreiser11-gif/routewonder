@@ -51,7 +51,7 @@ Dedica al menos un día completo. La ciudad ayuda a entender el tono del viaje: 
 
 ![Imagen de apoyo para edimburgo como entrada](https://images.unsplash.com/photo-1499678329028-101435549a4e?auto=format&fit=crop&w=1600&q=84)
 
-**Consejo de ruta: reserva esta parte para cuando el viaje ya tenga ritmo; Edimburgo como entrada funciona mejor si no llega como relleno.**
+**Consejo de ruta:** Dedícale más tiempo al primer contacto con el lugar; la primera impresión define cómo disfrutarás el resto del viaje.
 
 ## Glencoe sin prisas
 
@@ -59,7 +59,7 @@ No lo conviertas en una parada de diez minutos. Es uno de esos valles que se ent
 
 ![Imagen de apoyo para glencoe sin prisas](https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1600&q=84)
 
-**Consejo de ruta: reserva esta parte para cuando el viaje ya tenga ritmo; Glencoe sin prisas funciona mejor si no llega como relleno.**
+**Consejo de ruta:** No reserves todas las actividades por adelantado; deja hueco para descubrir algo por tu cuenta.
 
 ## Isla de Skye con margen
 
@@ -67,7 +67,7 @@ Reserva alojamiento pronto y acepta que el clima decide parte del itinerario. Ll
 
 ![Imagen de apoyo para isla de skye con margen](https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=1600&q=84)
 
-**Consejo de ruta: reserva esta parte para cuando el viaje ya tenga ritmo; Isla de Skye con margen funciona mejor si no llega como relleno.**
+**Consejo de ruta:** Consulta horarios oficiales el día anterior — en destinos pequeños los cierres inesperados son frecuentes.
 
 ## Castillos con contexto
 
@@ -75,7 +75,7 @@ Elige pocos y lee un poco antes. Un castillo sin historia puede ser solo piedra 
 
 ![Imagen de apoyo para castillos con contexto](https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1600&q=84)
 
-**Consejo de ruta: reserva esta parte para cuando el viaje ya tenga ritmo; Castillos con contexto funciona mejor si no llega como relleno.**
+**Consejo de ruta:** Si un plan depende del clima, ten siempre una alternativa interior que también te apetezca.
 
 ## Presupuesto orientativo sin vender humo
 
