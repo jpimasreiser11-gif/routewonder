@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://routewonder.studio/sitemap-index.xml
+Sitemap: https://routewonder.studio/sitemap.xml
 
 # Crawl-delay (optional, be nice to small servers)
 Crawl-delay: 1
