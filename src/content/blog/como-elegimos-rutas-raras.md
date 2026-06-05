@@ -1,17 +1,29 @@
 ---
 title: "Cómo elegimos una ruta rara sin caer en turismo de postal"
 description: "El método editorial de RouteWonder para convertir mapas, fuentes y detalles geográficos en viajes curiosos pero útiles."
-publishedDate: 2026-06-01
-updatedDate: 2026-06-01
+publishedDate: "2026-05-28"
+updatedDate: "2026-06-05"
 author: Marco Vidal
 category: "rutas-sorprendentes"
 tags: ["rutas", "editorial", "metodologia", "geografia"]
 image: "https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=1800&q=85"
 imageAlt: "Mapa físico extendido sobre una mesa"
 readingTime: 6
-affiliate: false
+affiliate: true
 featured: false
 draft: false
+affiliateProgram: "travel"
+planner:
+  destination: "Cómo elegimos una ruta rara sin caer en turismo de postal"
+  country: "españa"
+  continent: "europe"
+  budget: "medium"
+  duration: 3
+  transport: ["flight"]
+  season: ["autumn", "spring"]
+  companion: ["couple", "solo", "friends"]
+  interests: ["roadtrip"]
+  difficulty: "easy"
 ---
 
 ## Una ruta rara empieza con una fricción

@@ -1,9 +1,104 @@
 ---
 import { originCities, routeDestinations } from "../../data/routePlannerData";
+import { getCollection } from "astro:content";
 
-const totalDestinations = routeDestinations.length;
+const publishedPosts = await getCollection("blog", ({ data }) => !data.draft);
+const plannerPosts = publishedPosts.filter((post) => post.data.planner);
+const postBySlug = new Map(plannerPosts.map((post) => [post.slug, post]));
+
+const budgetMap = { low: "bajo", medium: "medio", high: "alto" };
+const transportMap = { car: "coche", train: "tren", flight: "avion", ferry: "ferry", bus: "bus" };
+const seasonMap = { spring: "primavera", summer: "verano", autumn: "otono", winter: "invierno" };
+const companionInterestMap = { couple: "pareja", solo: "solo", friends: "amigos", family: "familia" };
+const interestMap = {
+  nature: "naturaleza",
+  culture: "cultura",
+  beach: "playa",
+  coastal: "playa",
+  food: "gastronomia",
+  driving: "raro",
+  roadtrip: "raro",
+  urban: "cultura",
+  budget: "barato",
+  family: "familia",
+};
+
+const stableImages = [
+  "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=84",
+  "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1200&q=84",
+  "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=84",
+  "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1200&q=84",
+  "https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=1200&q=84",
+];
+
+function normalizeSlug(value: string) {
+  return value.replace(/^\/?blog\//, "").replace(/\/$/, "");
+}
+
+function fromPlanner(post: (typeof plannerPosts)[number], index: number) {
+  const planner = post.data.planner!;
+  const interests = Array.from(new Set([
+    ...planner.interests.map((item) => interestMap[item as keyof typeof interestMap] ?? item),
+    ...planner.companion.map((item) => companionInterestMap[item as keyof typeof companionInterestMap] ?? item),
+  ]));
+  const image = post.data.image ?? stableImages[index % stableImages.length];
+  return {
+    id: post.slug,
+    name: planner.destination,
+    country: planner.country,
+    lat: 40.42,
+    lng: -3.70,
+    interests,
+    transport: planner.transport.map((item) => transportMap[item]),
+    budget: budgetMap[planner.budget],
+    seasons: planner.season.map((item) => seasonMap[item]),
+    days: `${planner.duration} días`,
+    article: `/blog/${post.slug}/`,
+    photos: [
+      image,
+      stableImages[(index + 1) % stableImages.length],
+      stableImages[(index + 2) % stableImages.length],
+    ],
+    highlights: post.data.tags?.slice(0, 3).map((tag) => tag.replace(/-/g, " ")) ?? [planner.destination],
+    food: ["mercado local", "plato típico", "café de barrio"],
+    stay: ["base céntrica para moverte fácil", "zona tranquila si prefieres descansar"],
+    hotelUrl: `https://www.booking.com/searchresults.html?ss=${encodeURIComponent(planner.destination)}`,
+    restaurantUrl: `https://www.google.com/maps/search/restaurantes+${encodeURIComponent(`${planner.destination} ${planner.country}`)}`,
+    activityUrl: `https://www.getyourguide.com/s/?q=${encodeURIComponent(planner.destination)}`,
+    mapUrl: `https://www.google.com/maps/search/${encodeURIComponent(`${planner.destination} ${planner.country}`)}`,
+    description: post.data.description,
+    title: post.data.title,
+  };
+}
+
+const articleRoutes = plannerPosts.map(fromPlanner);
+const articleRouteMap = new Map(articleRoutes.map((item) => [normalizeSlug(item.article), item]));
+const plannerDestinations = [
+  ...routeDestinations.map((item) => {
+    const enriched = articleRouteMap.get(normalizeSlug(item.article));
+    if (!enriched) return item;
+    return {
+      ...item,
+      title: enriched.title,
+      description: enriched.description,
+      budget: enriched.budget,
+      transport: enriched.transport,
+      seasons: enriched.seasons,
+      days: enriched.days,
+      interests: Array.from(new Set([...item.interests, ...enriched.interests])),
+      photos: [
+        enriched.photos[0],
+        item.photos[1],
+        item.photos[2],
+      ],
+    };
+  }),
+  ...articleRoutes.filter((item) => !routeDestinations.some((route) => normalizeSlug(route.article) === item.id)),
+];
+
+const totalDestinations = plannerDestinations.length;
 const totalOrigins = originCities.length;
-const totalPlaces = routeDestinations.reduce((sum, item) => sum + item.highlights.length, 0);
+const totalPlaces = plannerDestinations.reduce((sum, item) => sum + item.highlights.length, 0);
 ---
 
 <section id="planificador-rutas" class="bg-rw-sand py-16 dark:bg-rw-ink sm:py-24">
@@ -92,7 +187,7 @@ const totalPlaces = routeDestinations.reduce((sum, item) => sum + item.highlight
           </div>
 
           <div class="grid grid-cols-4 gap-3 border-t border-rw-mist/15 pt-4 font-ui text-center text-xs">
-            <div><strong id="rw-count" class="block text-2xl text-rw-horizon">0</strong>rutas</div>
+            <div><strong id="rw-count" class="block text-2xl text-rw-horizon">8</strong>rutas</div>
             <div><strong class="block text-2xl text-rw-forest">{totalDestinations}</strong>destinos</div>
             <div><strong class="block text-2xl text-rw-gold">{totalPlaces}</strong>lugares</div>
             <div><strong class="block text-2xl text-rw-ocean dark:text-rw-white">{totalOrigins}</strong>salidas</div>
@@ -124,7 +219,7 @@ const totalPlaces = routeDestinations.reduce((sum, item) => sum + item.highlight
   @media (max-width: 640px) { .rw-gallery { grid-template-columns: 1fr; } .rw-gallery .side { grid-template-columns: 1fr 1fr; } }
 </style>
 
-<script define:vars={{ routeDestinations, originCities }}>
+<script define:vars={{ routeDestinations: plannerDestinations, originCities }}>
   function setupRoutePlanner() {
     const root = document.getElementById('planificador-rutas');
     if (!root || root.dataset.ready === 'true') return;
@@ -276,7 +371,7 @@ const totalPlaces = routeDestinations.reduce((sum, item) => sum + item.highlight
                 </div>
                 <span class="rounded-full bg-rw-horizon px-3 py-1 font-ui text-xs font-bold text-white">#${index + 1}</span>
               </div>
-              <p class="mt-3 font-ui text-sm leading-relaxed text-rw-ocean/75 dark:text-rw-mist">${modeLabel(item, item.distance)}. Encaja por ${item.interests.slice(0, 3).join(', ')}.</p>
+              <p class="mt-3 font-ui text-sm leading-relaxed text-rw-ocean/75 dark:text-rw-mist">${item.description || `${modeLabel(item, item.distance)}. Encaja por ${item.interests.slice(0, 3).join(', ')}.`}</p>
               <div class="mt-4 flex flex-wrap gap-2">
                 ${item.highlights.slice(0, 3).map((tag) => `<span class="rounded-full bg-rw-gold/15 px-3 py-1 font-ui text-xs font-bold text-rw-ocean dark:text-rw-sand">${tag}</span>`).join('')}
               </div>

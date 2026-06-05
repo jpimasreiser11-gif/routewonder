@@ -1,22 +1,34 @@
 ---
 title: "Alquilar coche en un viaje: errores que te cuestan dinero y tranquilidad"
 description: "Una checklist práctica para alquilar coche, revisar seguros y evitar sorpresas al recoger o devolver el vehículo."
-publishedDate: 2026-06-02
-updatedDate: 2026-06-02
+publishedDate: "2026-05-30"
+updatedDate: "2026-06-05"
 author: "Marco Vidal"
 category: "rutas-sorprendentes"
 tags: ["alquiler de coche", "road trip", "seguros", "viaje práctico", "consejos"]
 image: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1400&q=84"
 imageAlt: "Carretera rural entre colinas con luz dorada de tarde"
 readingTime: 9
-affiliate: false
+affiliate: true
 featured: false
 draft: false
+affiliateProgram: "travel"
+planner:
+  destination: "Alquilar coche en un viaje"
+  country: "españa"
+  continent: "europe"
+  budget: "medium"
+  duration: 3
+  transport: ["car", "flight"]
+  season: ["autumn", "spring"]
+  companion: ["couple", "solo", "friends"]
+  interests: ["roadtrip"]
+  difficulty: "easy"
 ---
 
 Un coche puede convertir un viaje normal en una ruta inolvidable. También puede convertirse en la parte más cara si firmas sin mirar.
 
-![Carretera rural entre colinas con luz dorada de tarde](https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1400&q=84)
+![Carretera rural entre colinas con luz dorada de tarde](https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=1600&q=84)
 
 ## Resumen rápido
 
@@ -37,33 +49,33 @@ La regla editorial de RouteWonder es sencilla: cada parada debe justificar una d
 
 La cifra grande suele ocultar franquicia, política de combustible, kilometraje y coste de conductor adicional.
 
-![Imagen de apoyo para no mires solo el precio diario](https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1400&q=84)
+![Imagen de apoyo para no mires solo el precio diario](https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=1600&q=84)
 
-**Cómo usarlo en la ruta:** guarda esta parada como bloque flexible. Si el clima, el precio o el cansancio cambian, debe poder moverse sin romper todo el viaje.
+**Consejo de ruta: reserva esta parte para cuando el viaje ya tenga ritmo; No mires solo el precio diario funciona mejor si no llega como relleno.**
 
 ## El seguro no significa lo mismo en todas partes
 
 Diferencia entre cobertura, franquicia y reembolso externo. Si no lo entiendes, pregunta antes de pagar.
 
-![Imagen de apoyo para el seguro no significa lo mismo en todas partes](https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1400&q=84)
+![Imagen de apoyo para el seguro no significa lo mismo en todas partes](https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=84)
 
-**Cómo usarlo en la ruta:** guarda esta parada como bloque flexible. Si el clima, el precio o el cansancio cambian, debe poder moverse sin romper todo el viaje.
+**Consejo de ruta: reserva esta parte para cuando el viaje ya tenga ritmo; El seguro no significa lo mismo en todas partes funciona mejor si no llega como relleno.**
 
 ## El tamaño del coche importa
 
 En islas, pueblos antiguos o carreteras de montaña, un coche pequeño suele ser mejor que uno grande.
 
-![Imagen de apoyo para el tamaño del coche importa](https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1400&q=84)
+![Imagen de apoyo para el tamaño del coche importa](https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1600&q=84)
 
-**Cómo usarlo en la ruta:** guarda esta parada como bloque flexible. Si el clima, el precio o el cansancio cambian, debe poder moverse sin romper todo el viaje.
+**Consejo de ruta: reserva esta parte para cuando el viaje ya tenga ritmo; El tamaño del coche importa funciona mejor si no llega como relleno.**
 
 ## Documenta todo
 
 Fotos, vídeo, contrato y recibos. No es desconfianza: es evitar discusiones cuando ya estás de vuelta.
 
-![Imagen de apoyo para documenta todo](https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1400&q=84)
+![Imagen de apoyo para documenta todo](https://images.unsplash.com/photo-1476514525535-07fb3b4ae5aff?auto=format&fit=crop&w=1600&q=84)
 
-**Cómo usarlo en la ruta:** guarda esta parada como bloque flexible. Si el clima, el precio o el cansancio cambian, debe poder moverse sin romper todo el viaje.
+**Consejo de ruta: reserva esta parte para cuando el viaje ya tenga ritmo; Documenta todo funciona mejor si no llega como relleno.**
 
 ## Presupuesto orientativo sin vender humo
 

@@ -1,22 +1,35 @@
 ---
-title: "Oporto y el valle del Duero: guía honesta para decidir si merece el viaje"
-description: "Ruta editorial de Oporto y el valle del Duero: qué ver, cómo organizarlo, cuándo ir, qué evitar y cómo convertirlo en un viaje con sentido."
-publishedDate: 2026-06-03
-updatedDate: 2026-06-03
+title: "Oporto y el Duero: la ruta de vino y tren que conecta los dos"
+description: "Oporto y el Duero se conectan en tren, barco o coche. Qué opción elegir según tiempo, presupuesto y ganas de vino."
+publishedDate: "2026-05-22"
+updatedDate: "2026-06-05"
 author: "Marco Vidal"
 category: "rutas-sorprendentes"
 tags: ["Portugal", "gastronomía", "guía", "ruta", "viaje práctico"]
-image: "https://source.unsplash.com/1600x950/?Oporto,y,el,valle,del,Duero,Portugal,travel,landmark&sig=2"
-imageAlt: "Fotografía de Oporto y el valle del Duero en Portugal"
+image: "https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1400&q=84"
+imageAlt: "Imagen de viaje relacionada con Oporto y el Duero"
 readingTime: 10
-affiliate: false
+affiliate: true
 featured: false
 draft: false
+affiliateProgram: "travel"
+tipo: "guia"
+planner:
+  destination: "Oporto y el Duero"
+  country: "portugal"
+  continent: "europe"
+  budget: "medium"
+  duration: 3
+  transport: ["flight", "train"]
+  season: ["autumn", "spring"]
+  companion: ["couple", "solo", "friends"]
+  interests: ["food", "roadtrip"]
+  difficulty: "easy"
 ---
 
 Oporto y el valle del Duero no necesita una lista infinita de imprescindibles. Necesita una pregunta mejor: **qué tipo de viaje quieres tener allí**. Si buscas una ruta corta con tren, vino, río y pueblos de piedra, esta ruta tiene sentido. Si solo quieres tachar lugares, probablemente te cansará antes de empezar.
 
-![Vista principal de Oporto y el valle del Duero](https://source.unsplash.com/1600x950/?Oporto,y,el,valle,del,Duero,Portugal,travel,landmark&sig=9004)
+![Vista principal de Oporto y el valle del Duero](https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=84)
 
 ## Resumen para decidir rápido
 
@@ -32,7 +45,7 @@ Oporto y el valle del Duero no necesita una lista infinita de imprescindibles. N
 
 Empieza por una base clara y dibuja un círculo sencillo alrededor. El error habitual es poner todos los lugares bonitos en una misma ruta sin mirar carreteras, horarios o cansancio. En Oporto y el valle del Duero, la experiencia mejora cuando dejas huecos.
 
-![Mapa visual y ruta para Oporto y el valle del Duero](https://source.unsplash.com/1600x950/?Oporto,y,el,valle,del,Duero,map,route,landscape&sig=102)
+![Mapa visual y ruta para Oporto y el valle del Duero](https://images.unsplash.com/photo-1491553895911-0055eca6402d?auto=format&fit=crop&w=1600&q=84)
 
 ### Día 1: entender el lugar
 
@@ -46,13 +59,13 @@ Reserva aquí el plan que justifica el viaje: mirador, museo, carretera, caminat
 
 Busca una parte menos obvia: una calle secundaria, un pueblo cercano, una comida concreta o una ruta corta a pie. Ese detalle suele ser lo que convierte el viaje en recuerdo.
 
-![Detalle local de Oporto y el valle del Duero](https://source.unsplash.com/1600x950/?Oporto,y,el,valle,del,Duero,street,food,detail&sig=202)
+![Detalle local de Oporto y el valle del Duero](https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1600&q=84)
 
 ## Cuándo ir
 
 La mejor temporada no siempre es la más famosa. Primavera y otoño suelen dar equilibrio entre luz, precio y temperatura. Verano funciona si el viaje depende de playa o montaña; invierno puede ser excelente si el destino tiene vida urbana.
 
-![Luz de temporada en Oporto y el valle del Duero](https://source.unsplash.com/1600x950/?Oporto,y,el,valle,del,Duero,season,travel&sig=302)
+![Luz de temporada en Oporto y el valle del Duero](https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1600&q=84)
 
 ## Presupuesto sin prometer milagros
 
@@ -78,3 +91,26 @@ Depende del destino. Si hay trenes o buses frecuentes, evita el coche. Si la gra
 ### ¿Qué haría distinto en una segunda visita?
 
 Iría más lento. La mayoría de rutas fallan por exceso, no por falta de opciones.
+
+
+## Lo que nadie te cuenta sobre Oporto y el Duero
+
+Antes de cerrar el plan, revisa siempre horarios oficiales, estado de carreteras o senderos y el último transporte de vuelta. En destinos pequeños, un cierre cambia más que el precio de una entrada.
+
+
+## ¿Cuánto cuesta viajar a Oporto y el Duero?
+
+Un viaje corto a Oporto y el Duero suele moverse entre 450€ y 1.200€ por persona, según vuelos, temporada, alojamiento y transporte local. La diferencia real suele estar en dormir céntrico y reservar con margen.
+
+| Concepto | Bajo | Medio | Qué lo cambia |
+|---|---:|---:|---|
+| Alojamiento | 35-70€/noche | 80-140€/noche | Temporada y ubicación |
+| Comidas | 15-25€/día | 30-50€/día | Restaurantes y zonas turísticas |
+| Transporte local | 10-25€/día | 30-65€/día | Coche, tren o excursiones |
+
+Precios orientativos. Verifica siempre antes de reservar.
+
+
+## Dato verificado
+
+La información práctica de esta guía debe contrastarse con fuentes oficiales de transporte, turismo local o patrimonio antes del viaje. Los horarios, cierres y precios pueden cambiar sin aviso.

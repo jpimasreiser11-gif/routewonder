@@ -1,22 +1,34 @@
 ---
 title: "Dónde viajar según la estación: 24 ideas fáciles de elegir"
 description: "Una guía rápida para decidir destino por clima, precio, luz y tipo de experiencia."
-publishedDate: 2026-06-02
-updatedDate: 2026-06-02
+publishedDate: "2026-05-31"
+updatedDate: "2026-06-05"
 author: "Marco Vidal"
 category: "viaje-rapido"
 tags: ["cuándo viajar", "temporadas", "destinos", "viaje rápido", "planificación"]
 image: "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=1400&q=84"
 imageAlt: "Carretera panorámica entre montañas y lago con luz de atardecer"
 readingTime: 9
-affiliate: false
+affiliate: true
 featured: false
 draft: false
+affiliateProgram: "travel"
+planner:
+  destination: "Dónde viajar según la estación"
+  country: "españa"
+  continent: "europe"
+  budget: "medium"
+  duration: 3
+  transport: ["flight"]
+  season: ["autumn", "spring"]
+  companion: ["couple", "solo", "friends"]
+  interests: ["culture"]
+  difficulty: "easy"
 ---
 
 El destino correcto en el mes equivocado puede salir caro, estar saturado o perder la mitad de su gracia. Elegir por estación ahorra discusiones y dinero.
 
-![Carretera panorámica entre montañas y lago con luz de atardecer](https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=1400&q=84)
+![Carretera panorámica entre montañas y lago con luz de atardecer](https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=1600&q=84)
 
 ## Resumen rápido
 
@@ -37,33 +49,33 @@ La regla editorial de RouteWonder es sencilla: cada parada debe justificar una d
 
 La luz es buena, el calor no aprieta y muchas rutas todavía no están llenas.
 
-![Imagen de apoyo para primavera: japón rural, madeira, lisboa, eslovenia](https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=1400&q=84)
+![Imagen de apoyo para primavera: japón rural, madeira, lisboa, eslovenia](https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=84)
 
-**Cómo usarlo en la ruta:** guarda esta parada como bloque flexible. Si el clima, el precio o el cansancio cambian, debe poder moverse sin romper todo el viaje.
+**Consejo de ruta: reserva esta parte para cuando el viaje ya tenga ritmo; Primavera: Japón rural, Madeira, Lisboa, Eslovenia funciona mejor si no llega como relleno.**
 
 ## Verano: Noruega, Escocia, Azores, Dolomitas
 
 Busca norte, altura o islas con brisa. Evita ciudades interiores muy calientes si no vas preparado.
 
-![Imagen de apoyo para verano: noruega, escocia, azores, dolomitas](https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=1400&q=84)
+![Imagen de apoyo para verano: noruega, escocia, azores, dolomitas](https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1600&q=84)
 
-**Cómo usarlo en la ruta:** guarda esta parada como bloque flexible. Si el clima, el precio o el cansancio cambian, debe poder moverse sin romper todo el viaje.
+**Consejo de ruta: reserva esta parte para cuando el viaje ya tenga ritmo; Verano: Noruega, Escocia, Azores, Dolomitas funciona mejor si no llega como relleno.**
 
 ## Otoño: Transilvania, Toscana, Selva Negra, Oporto
 
 Es la estación de carreteras bonitas, bosques y precios algo más razonables.
 
-![Imagen de apoyo para otoño: transilvania, toscana, selva negra, oporto](https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=1400&q=84)
+![Imagen de apoyo para otoño: transilvania, toscana, selva negra, oporto](https://images.unsplash.com/photo-1476514525535-07fb3b4ae5aff?auto=format&fit=crop&w=1600&q=84)
 
-**Cómo usarlo en la ruta:** guarda esta parada como bloque flexible. Si el clima, el precio o el cansancio cambian, debe poder moverse sin romper todo el viaje.
+**Consejo de ruta: reserva esta parte para cuando el viaje ya tenga ritmo; Otoño: Transilvania, Toscana, Selva Negra, Oporto funciona mejor si no llega como relleno.**
 
 ## Invierno: Marruecos, Canarias, Estambul, Sicilia
 
 Funcionan bien porque tienen vida urbana, clima manejable o paisajes que no dependen del baño.
 
-![Imagen de apoyo para invierno: marruecos, canarias, estambul, sicilia](https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=1400&q=84)
+![Imagen de apoyo para invierno: marruecos, canarias, estambul, sicilia](https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1600&q=84)
 
-**Cómo usarlo en la ruta:** guarda esta parada como bloque flexible. Si el clima, el precio o el cansancio cambian, debe poder moverse sin romper todo el viaje.
+**Consejo de ruta: reserva esta parte para cuando el viaje ya tenga ritmo; Invierno: Marruecos, Canarias, Estambul, Sicilia funciona mejor si no llega como relleno.**
 
 ## Presupuesto orientativo sin vender humo
 

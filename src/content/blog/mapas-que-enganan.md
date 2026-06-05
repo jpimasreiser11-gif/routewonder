@@ -1,17 +1,29 @@
 ---
 title: "Por qué algunos mapas engañan aunque estén bien hechos"
 description: "Proyecciones, escala y percepción: una pieza sencilla para entender por qué el mundo no cabe en una hoja sin deformarse."
-publishedDate: 2026-06-01
-updatedDate: 2026-06-01
+publishedDate: "2026-05-29"
+updatedDate: "2026-06-05"
 author: Marco Vidal
 category: "curiosidades-geograficas"
 tags: ["mapas", "geografia", "proyecciones", "curiosidades"]
 image: "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&w=1800&q=85"
 imageAlt: "Mapa del mundo sobre una pared"
 readingTime: 6
-affiliate: false
+affiliate: true
 featured: false
 draft: false
+affiliateProgram: "travel"
+planner:
+  destination: "Por qué algunos mapas engañan aunque estén bien hechos"
+  country: "españa"
+  continent: "europe"
+  budget: "medium"
+  duration: 3
+  transport: ["flight"]
+  season: ["autumn", "spring"]
+  companion: ["couple", "solo", "friends"]
+  interests: ["culture"]
+  difficulty: "easy"
 ---
 
 ## El mapa no miente, pero tiene que escoger

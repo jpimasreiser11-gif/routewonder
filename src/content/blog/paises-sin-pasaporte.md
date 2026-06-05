@@ -1,16 +1,29 @@
 ---
-title: "5 países donde puedes entrar sin pasaporte siendo español"
+title: "Países a los que puedes viajar desde España sin pasaporte"
 description: "Guía práctica para ciudadanos españoles que quieren viajar solo con el DNI. Estos cinco países permiten la entrada sin necesidad de pasaporte."
-publishedDate: 2026-05-25
+publishedDate: "2026-05-27"
 author: "Marco Vidal"
 category: "viaje-economico"
 tags: ["documentación", "DNI", "Europa", "viajes baratos", "sin pasaporte", "consejos"]
 image: "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=1200&h=630&fit=crop"
 imageAlt: "Pasaporte y tarjeta de embarque sobre un mapa desplegado"
 readingTime: 6
-affiliate: false
+affiliate: true
 featured: true
 draft: false
+updatedDate: "2026-06-05"
+affiliateProgram: "travel"
+planner:
+  destination: "Países a los que puedes viajar desde España sin pasaporte"
+  country: "españa"
+  continent: "europe"
+  budget: "low"
+  duration: 3
+  transport: ["flight"]
+  season: ["autumn", "spring"]
+  companion: ["couple", "solo", "friends"]
+  interests: ["culture"]
+  difficulty: "easy"
 ---
 
 ## Viajar con el DNI en el bolsillo

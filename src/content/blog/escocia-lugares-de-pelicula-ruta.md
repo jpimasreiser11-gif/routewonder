@@ -1,22 +1,34 @@
 ---
 title: "Escocia de película: ruta visual por castillos, valles y carreteras míticas"
 description: "Una guía para montar una ruta por Escocia con escenas memorables, sin convertir cada parada en una cola turística."
-publishedDate: 2026-06-02
-updatedDate: 2026-06-02
+publishedDate: "2026-05-31"
+updatedDate: "2026-06-05"
 author: "Marco Vidal"
 category: "lugares-de-pelicula"
 tags: ["Escocia", "road trip", "castillos", "cine", "naturaleza"]
 image: "https://images.unsplash.com/photo-1505765050516-f72dcac9c60e?auto=format&fit=crop&w=1400&q=84"
 imageAlt: "Castillo escocés junto a un lago y montañas grises al fondo"
 readingTime: 9
-affiliate: false
+affiliate: true
 featured: false
 draft: false
+affiliateProgram: "travel"
+planner:
+  destination: "Escocia de película"
+  country: "españa"
+  continent: "europe"
+  budget: "medium"
+  duration: 3
+  transport: ["car", "flight"]
+  season: ["autumn", "spring"]
+  companion: ["couple", "solo", "friends"]
+  interests: ["culture", "nature", "roadtrip"]
+  difficulty: "easy"
 ---
 
 Escocia tiene una ventaja rara: incluso cuando una carretera es famosa, el paisaje que la rodea suele seguir pareciendo salvaje.
 
-![Castillo escocés junto a un lago y montañas grises al fondo](https://images.unsplash.com/photo-1505765050516-f72dcac9c60e?auto=format&fit=crop&w=1400&q=84)
+![Castillo escocés junto a un lago y montañas grises al fondo](https://images.unsplash.com/photo-1482192505345-5655af888cc4?auto=format&fit=crop&w=1600&q=84)
 
 ## Resumen rápido
 
@@ -37,33 +49,33 @@ La regla editorial de RouteWonder es sencilla: cada parada debe justificar una d
 
 Dedica al menos un día completo. La ciudad ayuda a entender el tono del viaje: piedra, niebla, colinas y capas de historia.
 
-![Imagen de apoyo para edimburgo como entrada](https://images.unsplash.com/photo-1505765050516-f72dcac9c60e?auto=format&fit=crop&w=1400&q=84)
+![Imagen de apoyo para edimburgo como entrada](https://images.unsplash.com/photo-1499678329028-101435549a4e?auto=format&fit=crop&w=1600&q=84)
 
-**Cómo usarlo en la ruta:** guarda esta parada como bloque flexible. Si el clima, el precio o el cansancio cambian, debe poder moverse sin romper todo el viaje.
+**Consejo de ruta: reserva esta parte para cuando el viaje ya tenga ritmo; Edimburgo como entrada funciona mejor si no llega como relleno.**
 
 ## Glencoe sin prisas
 
 No lo conviertas en una parada de diez minutos. Es uno de esos valles que se entienden caminando un tramo corto.
 
-![Imagen de apoyo para glencoe sin prisas](https://images.unsplash.com/photo-1505765050516-f72dcac9c60e?auto=format&fit=crop&w=1400&q=84)
+![Imagen de apoyo para glencoe sin prisas](https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1600&q=84)
 
-**Cómo usarlo en la ruta:** guarda esta parada como bloque flexible. Si el clima, el precio o el cansancio cambian, debe poder moverse sin romper todo el viaje.
+**Consejo de ruta: reserva esta parte para cuando el viaje ya tenga ritmo; Glencoe sin prisas funciona mejor si no llega como relleno.**
 
 ## Isla de Skye con margen
 
 Reserva alojamiento pronto y acepta que el clima decide parte del itinerario. Lleva planes alternativos de costa y pueblos.
 
-![Imagen de apoyo para isla de skye con margen](https://images.unsplash.com/photo-1505765050516-f72dcac9c60e?auto=format&fit=crop&w=1400&q=84)
+![Imagen de apoyo para isla de skye con margen](https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=1600&q=84)
 
-**Cómo usarlo en la ruta:** guarda esta parada como bloque flexible. Si el clima, el precio o el cansancio cambian, debe poder moverse sin romper todo el viaje.
+**Consejo de ruta: reserva esta parte para cuando el viaje ya tenga ritmo; Isla de Skye con margen funciona mejor si no llega como relleno.**
 
 ## Castillos con contexto
 
 Elige pocos y lee un poco antes. Un castillo sin historia puede ser solo piedra bonita; con contexto, cambia.
 
-![Imagen de apoyo para castillos con contexto](https://images.unsplash.com/photo-1505765050516-f72dcac9c60e?auto=format&fit=crop&w=1400&q=84)
+![Imagen de apoyo para castillos con contexto](https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1600&q=84)
 
-**Cómo usarlo en la ruta:** guarda esta parada como bloque flexible. Si el clima, el precio o el cansancio cambian, debe poder moverse sin romper todo el viaje.
+**Consejo de ruta: reserva esta parte para cuando el viaje ya tenga ritmo; Castillos con contexto funciona mejor si no llega como relleno.**
 
 ## Presupuesto orientativo sin vender humo
 

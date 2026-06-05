@@ -5,6 +5,8 @@ import TableOfContents from "../components/article/TableOfContents.astro";
 import AuthorBox from "../components/article/AuthorBox.astro";
 import ShareButtons from "../components/article/ShareButtons.astro";
 import AffiliateDisclosure from "../components/article/AffiliateDisclosure.astro";
+import AffiliateBox from "../components/article/AffiliateBox.astro";
+import RelatedArticles from "../components/article/RelatedArticles.astro";
 import SchemaOrg from "../components/seo/SchemaOrg.astro";
 import ProgressBar from "../components/ui/ProgressBar.astro";
 import Breadcrumbs from "../components/ui/Breadcrumbs.astro";
@@ -16,7 +18,9 @@ export interface Props {
 }
 
 const { post, headings } = Astro.props;
-const { title, description, publishedDate, updatedDate, author, category, image, imageAlt, readingTime, affiliate, affiliateProgram } = post.data;
+const { title, description, publishedDate, updatedDate, author, category, tags, image, imageAlt, readingTime, affiliate, affiliateProgram, planner } = post.data;
+const destination = planner?.destination ?? title.split(":")[0];
+const usesCar = planner?.transport?.includes("car") ?? false;
 
 const base = import.meta.env.BASE_URL.endsWith("/") ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
 
@@ -75,11 +79,22 @@ const breadcrumbItems = [
           <slot />
         </div>
 
+        {affiliate && (
+          <div class="max-w-3xl">
+            <AffiliateBox type="accommodation" {destination} />
+            {usesCar && <AffiliateBox type="car" {destination} />}
+            <AffiliateBox type="activities" {destination} />
+            <AffiliateBox type="esim" {destination} />
+          </div>
+        )}
+
         <!-- Social sharing panel -->
         <ShareButtons {title} />
 
         <!-- Author bio panel -->
         <AuthorBox authorName={author} />
+
+        <RelatedArticles currentSlug={post.slug} {category} {tags} />
       </article>
 
     </div>

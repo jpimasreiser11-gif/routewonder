@@ -1,22 +1,35 @@
 ---
-title: "Menorca fuera de agosto: guía honesta para decidir si merece el viaje"
-description: "Ruta editorial de Menorca fuera de agosto: qué ver, cómo organizarlo, cuándo ir, qué evitar y cómo convertirlo en un viaje con sentido."
-publishedDate: 2026-06-03
-updatedDate: 2026-06-03
+title: "Menorca en mayo: la misma isla, menos gente y mejores precios"
+description: "Menorca en mayo o septiembre mantiene calas y caminos, pero baja ruido, precio y tráfico. Cómo organizarla mejor."
+publishedDate: "2026-05-21"
+updatedDate: "2026-06-05"
 author: "Marco Vidal"
 category: "viaje-economico"
 tags: ["España", "playa", "guía", "ruta", "viaje práctico"]
-image: "https://source.unsplash.com/1600x950/?Menorca,fuera,de,agosto,España,travel,landmark&sig=37"
-imageAlt: "Fotografía de Menorca fuera de agosto en España"
+image: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1400&q=84"
+imageAlt: "Imagen de viaje relacionada con Menorca en mayo"
 readingTime: 10
-affiliate: false
+affiliate: true
 featured: false
 draft: false
+affiliateProgram: "travel"
+tipo: "guia"
+planner:
+  destination: "Menorca en mayo"
+  country: "españa"
+  continent: "europe"
+  budget: "medium"
+  duration: 3
+  transport: ["flight"]
+  season: ["autumn", "spring", "summer"]
+  companion: ["couple", "solo", "friends"]
+  interests: ["coastal", "nature", "roadtrip"]
+  difficulty: "easy"
 ---
 
 Menorca fuera de agosto no necesita una lista infinita de imprescindibles. Necesita una pregunta mejor: **qué tipo de viaje quieres tener allí**. Si buscas calas, caminos y una isla que cambia cuando baja la presión, esta ruta tiene sentido. Si solo quieres tachar lugares, probablemente te cansará antes de empezar.
 
-![Vista principal de Menorca fuera de agosto](https://source.unsplash.com/1600x950/?Menorca,fuera,de,agosto,España,travel,landmark&sig=9039)
+![Vista principal de Menorca fuera de agosto](https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=1600&q=84)
 
 ## Resumen para decidir rápido
 
@@ -32,7 +45,7 @@ Menorca fuera de agosto no necesita una lista infinita de imprescindibles. Neces
 
 Empieza por una base clara y dibuja un círculo sencillo alrededor. El error habitual es poner todos los lugares bonitos en una misma ruta sin mirar carreteras, horarios o cansancio. En Menorca fuera de agosto, la experiencia mejora cuando dejas huecos.
 
-![Mapa visual y ruta para Menorca fuera de agosto](https://source.unsplash.com/1600x950/?Menorca,fuera,de,agosto,map,route,landscape&sig=137)
+![Mapa visual y ruta para Menorca fuera de agosto](https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1600&q=84)
 
 ### Día 1: entender el lugar
 
@@ -46,13 +59,13 @@ Reserva aquí el plan que justifica el viaje: mirador, museo, carretera, caminat
 
 Busca una parte menos obvia: una calle secundaria, un pueblo cercano, una comida concreta o una ruta corta a pie. Ese detalle suele ser lo que convierte el viaje en recuerdo.
 
-![Detalle local de Menorca fuera de agosto](https://source.unsplash.com/1600x950/?Menorca,fuera,de,agosto,street,food,detail&sig=237)
+![Detalle local de Menorca fuera de agosto](https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1600&q=84)
 
 ## Cuándo ir
 
 La mejor temporada no siempre es la más famosa. Primavera y otoño suelen dar equilibrio entre luz, precio y temperatura. Verano funciona si el viaje depende de playa o montaña; invierno puede ser excelente si el destino tiene vida urbana.
 
-![Luz de temporada en Menorca fuera de agosto](https://source.unsplash.com/1600x950/?Menorca,fuera,de,agosto,season,travel&sig=337)
+![Luz de temporada en Menorca fuera de agosto](https://images.unsplash.com/photo-1470770903676-69b98201ea1c?auto=format&fit=crop&w=1600&q=84)
 
 ## Presupuesto sin prometer milagros
 
@@ -78,3 +91,26 @@ Depende del destino. Si hay trenes o buses frecuentes, evita el coche. Si la gra
 ### ¿Qué haría distinto en una segunda visita?
 
 Iría más lento. La mayoría de rutas fallan por exceso, no por falta de opciones.
+
+
+## Lo que nadie te cuenta sobre Menorca en mayo
+
+Antes de cerrar el plan, revisa siempre horarios oficiales, estado de carreteras o senderos y el último transporte de vuelta. En destinos pequeños, un cierre cambia más que el precio de una entrada.
+
+
+## ¿Cuánto cuesta viajar a Menorca en mayo?
+
+Un viaje corto a Menorca en mayo suele moverse entre 450€ y 1.200€ por persona, según vuelos, temporada, alojamiento y transporte local. La diferencia real suele estar en dormir céntrico y reservar con margen.
+
+| Concepto | Bajo | Medio | Qué lo cambia |
+|---|---:|---:|---|
+| Alojamiento | 35-70€/noche | 80-140€/noche | Temporada y ubicación |
+| Comidas | 15-25€/día | 30-50€/día | Restaurantes y zonas turísticas |
+| Transporte local | 10-25€/día | 30-65€/día | Coche, tren o excursiones |
+
+Precios orientativos. Verifica siempre antes de reservar.
+
+
+## Dato verificado
+
+La información práctica de esta guía debe contrastarse con fuentes oficiales de transporte, turismo local o patrimonio antes del viaje. Los horarios, cierres y precios pueden cambiar sin aviso.

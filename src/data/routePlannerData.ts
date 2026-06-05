@@ -82,9 +82,55 @@ const rawDestinations = [
   ["Cerdeña interior", "Italia", 40.12, 9.02, "sardinia,interior,villages", ["raro", "gastronomia", "naturaleza"], ["avion", "coche"], "medio", ["primavera", "otono"], "5 días", "cerdena-interior", ["Orgosolo", "Supramonte", "Nuoro"], ["porceddu", "pane carasau"], ["Nuoro", "Oliena"]],
 ] as const;
 
+const stablePhotoIds = [
+  "1507525428034-b723cf961d3e",
+  "1500530855697-b586d89ba3ee",
+  "1469474968028-56623f02e42e",
+  "1506905925346-21bda4d32df4",
+  "1488646953014-85cb44e25828",
+  "1526772662000-3f88f10405ff",
+  "1516483638261-f4dbaf036963",
+  "1500534314209-a25ddb2bd429",
+  "1500534314209-a25ddb2bd429",
+  "1491553895911-0055eca6402d",
+  "1476514525535-07fb3b4ae5f1",
+  "1464822759023-fed622ff2c3b",
+  "1515859005217-8a1f08870f59",
+  "1510414842594-a61c69b5ae57",
+  "1500530855697-b586d89ba3ee",
+  "1444723121867-7a241cacace9",
+  "1501785888041-af3ef285b470",
+  "1523906834658-6e24ef2386f9",
+  "1533105079780-92b9be482077",
+  "1528127269322-539801943592",
+  "1500534314209-a25ddb2bd429",
+  "1513735492246-483525079686",
+  "1530841377377-3ff06c0ca713",
+  "1528909514045-2fa4ac7a08ba",
+  "1519985176271-adb1088fa94c",
+  "1526772662000-3f88f10405ff",
+  "1495567720989-cebdbdd97913",
+  "1516483638261-f4dbaf036963",
+  "1523906834658-6e24ef2386f9",
+  "1528127269322-539801943592",
+  "1515859005217-8a1f08870f59",
+  "1506905925346-21bda4d32df4",
+  "1510414842594-a61c69b5ae57",
+  "1444723121867-7a241cacace9",
+  "1507525428034-b723cf961d3e",
+  "1488646953014-85cb44e25828",
+  "1464822759023-fed622ff2c3b",
+  "1501785888041-af3ef285b470",
+  "1476514525535-07fb3b4ae5f1",
+  "1469474968028-56623f02e42e",
+];
+
 export const routeDestinations = rawDestinations.map((item, index) => {
-  const [name, country, lat, lng, photoQuery, interests, transport, budget, seasons, days, article, highlights, food, stay] = item;
-  const query = encodeURIComponent(String(photoQuery));
+  const [name, country, lat, lng, _photoQuery, interests, transport, budget, seasons, days, article, highlights, food, stay] = item;
+  const photoFor = (offset: number) => {
+    const id = stablePhotoIds[(index * 3 + offset) % stablePhotoIds.length];
+    return `https://images.unsplash.com/photo-${id}?auto=format&fit=crop&w=1200&q=84`;
+  };
   return {
     id: String(name).toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, ""),
     name,
@@ -98,9 +144,9 @@ export const routeDestinations = rawDestinations.map((item, index) => {
     days,
     article: `/blog/${article}/`,
     photos: [
-      `https://source.unsplash.com/1200x850/?${query}&sig=${index + 11}`,
-      `https://source.unsplash.com/1200x850/?${query},street&sig=${index + 71}`,
-      `https://source.unsplash.com/1200x850/?${query},food&sig=${index + 131}`,
+      photoFor(0),
+      photoFor(1),
+      photoFor(2),
     ],
     highlights,
     food,

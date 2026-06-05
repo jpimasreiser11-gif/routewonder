@@ -1,22 +1,34 @@
 ---
 title: "Suiza en tren sin arruinarte: cómo montar una ruta bonita y razonable"
 description: "Consejos para usar bases inteligentes, pases regionales y trayectos escénicos sin pagar de más."
-publishedDate: 2026-06-02
-updatedDate: 2026-06-02
+publishedDate: "2026-06-02"
+updatedDate: "2026-06-05"
 author: "Marco Vidal"
 category: "viaje-economico"
 tags: ["Suiza", "tren", "Europa", "viaje económico", "rutas"]
 image: "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?auto=format&fit=crop&w=1400&q=84"
 imageAlt: "Tren atravesando un paisaje alpino suizo con montañas nevadas"
 readingTime: 9
-affiliate: false
+affiliate: true
 featured: false
 draft: false
+affiliateProgram: "travel"
+planner:
+  destination: "Suiza en tren sin arruinarte"
+  country: "españa"
+  continent: "europe"
+  budget: "low"
+  duration: 3
+  transport: ["flight", "train"]
+  season: ["autumn", "spring"]
+  companion: ["couple", "solo", "friends"]
+  interests: ["roadtrip"]
+  difficulty: "easy"
 ---
 
 Suiza no es barata, pero se puede visitar con cabeza. El error es improvisar cada trayecto y dormir siempre en los lugares más obvios.
 
-![Tren atravesando un paisaje alpino suizo con montañas nevadas](https://images.unsplash.com/photo-1531366936337-7c912a4589a7?auto=format&fit=crop&w=1400&q=84)
+![Tren atravesando un paisaje alpino suizo con montañas nevadas](https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=84)
 
 ## Resumen rápido
 
@@ -37,33 +49,33 @@ La regla editorial de RouteWonder es sencilla: cada parada debe justificar una d
 
 Una ciudad bien conectada ahorra dinero, tiempo y cansancio. Lucerna o Berna suelen ser más prácticas que dormir en cada valle.
 
-![Imagen de apoyo para elige una base con conexiones](https://images.unsplash.com/photo-1531366936337-7c912a4589a7?auto=format&fit=crop&w=1400&q=84)
+![Imagen de apoyo para elige una base con conexiones](https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1600&q=84)
 
-**Cómo usarlo en la ruta:** guarda esta parada como bloque flexible. Si el clima, el precio o el cansancio cambian, debe poder moverse sin romper todo el viaje.
+**Consejo de ruta: reserva esta parte para cuando el viaje ya tenga ritmo; Elige una base con conexiones funciona mejor si no llega como relleno.**
 
 ## No todos los trenes escénicos son obligatorios
 
 El paisaje aparece en trayectos normales. A veces un tren regional ofrece vistas excelentes sin pagar suplementos turísticos.
 
-![Imagen de apoyo para no todos los trenes escénicos son obligatorios](https://images.unsplash.com/photo-1531366936337-7c912a4589a7?auto=format&fit=crop&w=1400&q=84)
+![Imagen de apoyo para no todos los trenes escénicos son obligatorios](https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?auto=format&fit=crop&w=1600&q=84)
 
-**Cómo usarlo en la ruta:** guarda esta parada como bloque flexible. Si el clima, el precio o el cansancio cambian, debe poder moverse sin romper todo el viaje.
+**Consejo de ruta: guarda capturas de horarios; en rutas regionales el último trayecto importa más que el primero.**
 
 ## Compra comida de supermercado
 
 Parece un consejo pequeño, pero en Suiza cambia el presupuesto diario. Deja los restaurantes para momentos concretos.
 
-![Imagen de apoyo para compra comida de supermercado](https://images.unsplash.com/photo-1531366936337-7c912a4589a7?auto=format&fit=crop&w=1400&q=84)
+![Imagen de apoyo para compra comida de supermercado](https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1600&q=84)
 
-**Cómo usarlo en la ruta:** guarda esta parada como bloque flexible. Si el clima, el precio o el cansancio cambian, debe poder moverse sin romper todo el viaje.
+**Consejo de ruta: usa esta parada como bloque urbano, ideal para días de lluvia o llegadas tardías.**
 
 ## Haz menos, mira mejor
 
 Dos montañas y una ciudad bien elegidas valen más que seis paradas apresuradas con maletas.
 
-![Imagen de apoyo para haz menos, mira mejor](https://images.unsplash.com/photo-1531366936337-7c912a4589a7?auto=format&fit=crop&w=1400&q=84)
+![Imagen de apoyo para haz menos, mira mejor](https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=1600&q=84)
 
-**Cómo usarlo en la ruta:** guarda esta parada como bloque flexible. Si el clima, el precio o el cansancio cambian, debe poder moverse sin romper todo el viaje.
+**Consejo de ruta: reserva esta parte para cuando el viaje ya tenga ritmo; Haz menos, mira mejor funciona mejor si no llega como relleno.**
 
 ## Presupuesto orientativo sin vender humo
 

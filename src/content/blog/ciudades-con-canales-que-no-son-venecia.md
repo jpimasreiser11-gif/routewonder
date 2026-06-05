@@ -1,22 +1,34 @@
 ---
 title: "Ciudades con canales que no son Venecia y sí merecen viaje"
 description: "De Utrecht a Aveiro: ciudades de agua con menos presión turística y mejores planes para un fin de semana."
-publishedDate: 2026-06-02
-updatedDate: 2026-06-02
+publishedDate: "2026-05-30"
+updatedDate: "2026-06-05"
 author: "Marco Vidal"
 category: "ciudades-extranas"
 tags: ["canales", "Europa", "ciudades", "fin de semana", "rutas urbanas"]
 image: "https://images.unsplash.com/photo-1512470876302-972faa2aa9a4?auto=format&fit=crop&w=1400&q=84"
 imageAlt: "Canal europeo con casas históricas y bicicletas junto al agua"
 readingTime: 9
-affiliate: false
+affiliate: true
 featured: false
 draft: false
+affiliateProgram: "travel"
+planner:
+  destination: "Ciudades con canales que no son Venecia y sí merecen viaje"
+  country: "españa"
+  continent: "europe"
+  budget: "medium"
+  duration: 3
+  transport: ["flight"]
+  season: ["autumn", "spring"]
+  companion: ["couple", "solo", "friends"]
+  interests: ["culture", "roadtrip"]
+  difficulty: "easy"
 ---
 
 Venecia es única, pero no es la única forma de viajar por una ciudad de agua. Algunas alternativas son más fáciles, más baratas y más respirables.
 
-![Canal europeo con casas históricas y bicicletas junto al agua](https://images.unsplash.com/photo-1512470876302-972faa2aa9a4?auto=format&fit=crop&w=1400&q=84)
+![Canal europeo con casas históricas y bicicletas junto al agua](https://images.unsplash.com/photo-1433086966358-54859d0ed716?auto=format&fit=crop&w=1600&q=84)
 
 ## Resumen rápido
 
@@ -37,33 +49,33 @@ La regla editorial de RouteWonder es sencilla: cada parada debe justificar una d
 
 Sus muelles bajos hacen que el canal se viva a otra altura. Es una ciudad cómoda para caminar, comer junto al agua y moverse en tren por Países Bajos.
 
-![Imagen de apoyo para utrecht](https://images.unsplash.com/photo-1512470876302-972faa2aa9a4?auto=format&fit=crop&w=1400&q=84)
+![Imagen de apoyo para utrecht](https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1600&q=84)
 
-**Cómo usarlo en la ruta:** guarda esta parada como bloque flexible. Si el clima, el precio o el cansancio cambian, debe poder moverse sin romper todo el viaje.
+**Consejo de ruta: reserva esta parte para cuando el viaje ya tenga ritmo; Utrecht funciona mejor si no llega como relleno.**
 
 ## Aveiro
 
 No es una Venecia portuguesa, y precisamente por eso funciona: salinas, casas de colores y una escala fácil desde Oporto.
 
-![Imagen de apoyo para aveiro](https://images.unsplash.com/photo-1512470876302-972faa2aa9a4?auto=format&fit=crop&w=1400&q=84)
+![Imagen de apoyo para aveiro](https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1600&q=84)
 
-**Cómo usarlo en la ruta:** guarda esta parada como bloque flexible. Si el clima, el precio o el cansancio cambian, debe poder moverse sin romper todo el viaje.
+**Consejo de ruta: reserva esta parte para cuando el viaje ya tenga ritmo; Aveiro funciona mejor si no llega como relleno.**
 
 ## Annecy
 
 Canales pequeños, lago alpino y montaña cerca. El viaje mejora si lo combinas con rutas suaves alrededor del lago.
 
-![Imagen de apoyo para annecy](https://images.unsplash.com/photo-1512470876302-972faa2aa9a4?auto=format&fit=crop&w=1400&q=84)
+![Imagen de apoyo para annecy](https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1600&q=84)
 
-**Cómo usarlo en la ruta:** guarda esta parada como bloque flexible. Si el clima, el precio o el cansancio cambian, debe poder moverse sin romper todo el viaje.
+**Consejo de ruta: reserva esta parte para cuando el viaje ya tenga ritmo; Annecy funciona mejor si no llega como relleno.**
 
 ## Gante
 
 Más intensa que Brujas y menos postal. Sus canales encajan mejor con cerveza, historia medieval y planes nocturnos.
 
-![Imagen de apoyo para gante](https://images.unsplash.com/photo-1512470876302-972faa2aa9a4?auto=format&fit=crop&w=1400&q=84)
+![Imagen de apoyo para gante](https://images.unsplash.com/photo-1482192505345-5655af888cc4?auto=format&fit=crop&w=1600&q=84)
 
-**Cómo usarlo en la ruta:** guarda esta parada como bloque flexible. Si el clima, el precio o el cansancio cambian, debe poder moverse sin romper todo el viaje.
+**Consejo de ruta: reserva esta parte para cuando el viaje ya tenga ritmo; Gante funciona mejor si no llega como relleno.**
 
 ## Presupuesto orientativo sin vender humo
 

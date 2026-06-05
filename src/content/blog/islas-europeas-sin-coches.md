@@ -1,24 +1,36 @@
 ---
 title: "Islas europeas sin coches: cómo pensar un viaje más lento"
 description: "Una guía editorial para entender por qué las islas sin coches funcionan tan bien como escapadas y qué comprobar antes de reservar."
-publishedDate: 2026-06-01
-updatedDate: 2026-06-01
+publishedDate: "2026-05-29"
+updatedDate: "2026-06-05"
 author: Marco Vidal
 category: "destinos-secretos"
 tags: ["islas", "europa", "viaje-lento", "rutas"]
-image: "https://source.unsplash.com/1800x1100/?europe,island,coast,ferry&sig=9021"
+image: "https://images.unsplash.com/photo-1433086966358-54859d0ed716?auto=format&fit=crop&w=1400&q=84"
 imageAlt: "Costa europea con agua transparente vista desde arriba"
 readingTime: 7
-affiliate: false
+affiliate: true
 featured: false
 draft: false
+affiliateProgram: "travel"
+planner:
+  destination: "Islas europeas sin coches"
+  country: "españa"
+  continent: "europe"
+  budget: "medium"
+  duration: 3
+  transport: ["car", "ferry", "flight"]
+  season: ["autumn", "spring", "summer"]
+  companion: ["couple", "solo", "friends"]
+  interests: ["coastal", "nature", "roadtrip"]
+  difficulty: "easy"
 ---
 
 ## El atractivo no es solo la ausencia de tráfico
 
 Una isla sin coches cambia el viaje antes de llegar. Obliga a pensar en ferry, equipaje, horarios, alojamiento cerca del puerto y distancias a pie. Esa incomodidad inicial es precisamente lo que filtra el destino: viajas más lento, dependes menos de aparcamientos y miras mejor el lugar.
 
-![Puerto pequeño de una isla europea sin coches](https://source.unsplash.com/1600x950/?small,island,harbor,europe&sig=9022)
+![Puerto pequeño de una isla europea sin coches](https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1600&q=84)
 
 No todas las islas sin coches son iguales. Algunas permiten vehículos de residentes. Otras tienen pequeños transportes eléctricos. Algunas son fáciles de visitar en un día y otras requieren dormir allí para no pasar más tiempo esperando barcos que explorando.
 
@@ -32,7 +44,7 @@ También importa el tipo de alojamiento. En islas pequeñas, la disponibilidad c
 
 Una buena isla sin coches tiene tres cosas: una llegada clara, un recorrido natural y un motivo para quedarse más de dos horas. Puede ser una playa, un sendero, un pueblo, un faro o una historia local. Si solo hay una foto bonita, el viaje puede quedarse corto.
 
-![Sendero junto al mar en una isla tranquila](https://source.unsplash.com/1600x950/?island,trail,sea,europe&sig=9023)
+![Sendero junto al mar en una isla tranquila](https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1600&q=84)
 
 Para planificar, usamos mapas abiertos como [OpenStreetMap](https://www.openstreetmap.org/) y guías de contexto como [Wikivoyage](https://www.wikivoyage.org/). Cuando hay información turística oficial, esa fuente manda sobre cualquier recomendación antigua.
 

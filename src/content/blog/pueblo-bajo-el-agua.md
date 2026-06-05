@@ -1,16 +1,29 @@
 ---
-title: "El pueblo español que se quedó bajo el agua (y volvió)"
+title: "El pueblo español que volvió a aparecer cuando bajó el embalse"
 description: "La historia de Mansilla de la Sierra, un pueblo de La Rioja que fue sumergido por un embalse en los años 60 y cuyas ruinas emergen cada verano cuando baja el agua."
-publishedDate: 2026-05-28
+publishedDate: "2026-05-28"
 author: "Marco Vidal"
 category: "curiosidades-geograficas"
 tags: ["España", "pueblos abandonados", "embalses", "La Rioja", "historia", "curiosidades"]
 image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&h=630&fit=crop"
 imageAlt: "Ruinas parcialmente sumergidas emergiendo de un embalse al atardecer"
 readingTime: 7
-affiliate: false
+affiliate: true
 featured: true
 draft: false
+updatedDate: "2026-06-05"
+affiliateProgram: "travel"
+planner:
+  destination: "El pueblo español que volvió a aparecer cuando bajó el embalse"
+  country: "españa"
+  continent: "europe"
+  budget: "medium"
+  duration: 3
+  transport: ["flight"]
+  season: ["autumn", "spring"]
+  companion: ["couple", "solo", "friends"]
+  interests: ["culture"]
+  difficulty: "easy"
 ---
 
 ## La historia que el agua no pudo borrar

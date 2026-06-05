@@ -1,6 +1,12 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+
 const base = import.meta.env.BASE_URL.endsWith("/") ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+const posts = await getCollection("blog", ({ data }) => !data.draft);
+const suggestions = posts
+  .sort((a, b) => Number(b.data.publishedDate) - Number(a.data.publishedDate))
+  .slice(0, 3);
 ---
 
 <BaseLayout
@@ -8,7 +14,7 @@ const base = import.meta.env.BASE_URL.endsWith("/") ? import.meta.env.BASE_URL :
   description="Lo sentimos, pero esta ruta no existe en nuestro mapa."
 >
   <section class="min-h-[75vh] flex items-center justify-center bg-rw-sand/30 dark:bg-rw-ink/10 py-16 px-4">
-    <div class="max-w-md mx-auto text-center flex flex-col items-center gap-6">
+    <div class="mx-auto flex max-w-5xl flex-col items-center gap-8 text-center">
       <div class="relative w-36 h-36 flex items-center justify-center rounded-full bg-rw-horizon/10 text-rw-horizon select-none mb-2">
         <span class="text-6xl font-display font-black leading-none animate-pulse-slow">404</span>
         <div class="absolute inset-0 border-2 border-rw-horizon border-dashed rounded-full animate-pulse"></div>
@@ -36,6 +42,23 @@ const base = import.meta.env.BASE_URL.endsWith("/") ? import.meta.env.BASE_URL :
           Ver Archivo de Rutas
         </a>
       </div>
+
+      {suggestions.length > 0 && (
+        <div class="mt-6 w-full border-t border-rw-mist/20 pt-8">
+          <p class="font-ui text-xs font-black uppercase tracking-[0.2em] text-rw-horizon">Mientras vuelves al mapa</p>
+          <div class="mt-5 grid gap-4 md:grid-cols-3">
+            {suggestions.map((post) => (
+              <a href={`${base}blog/${post.slug}/`} class="group overflow-hidden rounded-2xl border border-rw-mist/18 bg-rw-white text-left shadow-sm transition hover:-translate-y-1 hover:border-rw-horizon/40 dark:bg-rw-ocean/40">
+                {post.data.image && <img src={post.data.image} alt={post.data.imageAlt ?? post.data.title} loading="lazy" class="h-36 w-full object-cover transition duration-500 group-hover:scale-105" />}
+                <div class="p-4">
+                  <h2 class="font-display text-xl font-bold leading-tight text-rw-ink group-hover:text-rw-horizon dark:text-rw-white">{post.data.title}</h2>
+                  <p class="mt-2 font-ui text-xs leading-relaxed text-rw-ocean/62 dark:text-rw-mist">{post.data.description}</p>
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+      )}
     </div>
   </section>
 </BaseLayout>
