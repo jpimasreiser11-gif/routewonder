@@ -29,7 +29,7 @@ planner:
 
 Corfú verde no necesita una lista infinita de imprescindibles. Necesita una pregunta mejor: **qué tipo de viaje quieres tener allí**. Si buscas carreteras, costa norte y pueblos que no viven solo del verano, esta ruta tiene sentido. Si solo quieres tachar lugares, probablemente te cansará antes de empezar.
 
-![Vista principal de Corfú verde](https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1600&q=84)
+![Vista principal de Corfú verde](https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=1600&q=84)
 
 ## Resumen para decidir rápido
 
@@ -59,7 +59,7 @@ Reserva aquí el plan que justifica el viaje: mirador, museo, carretera, caminat
 
 Busca una parte menos obvia: una calle secundaria, un pueblo cercano, una comida concreta o una ruta corta a pie. Ese detalle suele ser lo que convierte el viaje en recuerdo.
 
-![Detalle local de Corfú verde](https://images.unsplash.com/photo-1476514525535-07fb3b4ae5aff?auto=format&fit=crop&w=1600&q=84)
+![Detalle local de Corfú verde](https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1600&q=84)
 
 ## Cuándo ir
 

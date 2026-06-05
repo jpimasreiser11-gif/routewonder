@@ -73,7 +73,7 @@ function fromPlanner(post: (typeof plannerPosts)[number], index: number) {
 
 const articleRoutes = plannerPosts.map(fromPlanner);
 const articleRouteMap = new Map(articleRoutes.map((item) => [normalizeSlug(item.article), item]));
-const plannerDestinations = [
+const rawPlannerDestinations = [
   ...routeDestinations.map((item) => {
     const enriched = articleRouteMap.get(normalizeSlug(item.article));
     if (!enriched) return item;
@@ -95,6 +95,12 @@ const plannerDestinations = [
   }),
   ...articleRoutes.filter((item) => !routeDestinations.some((route) => normalizeSlug(route.article) === item.id)),
 ];
+const destinationMap = new Map<string, (typeof rawPlannerDestinations)[number]>();
+for (const item of rawPlannerDestinations) {
+  const key = `${String(item.name).toLowerCase()}-${String(item.country).toLowerCase()}`;
+  if (!destinationMap.has(key)) destinationMap.set(key, item);
+}
+const plannerDestinations = Array.from(destinationMap.values());
 
 const totalDestinations = plannerDestinations.length;
 const totalOrigins = originCities.length;
@@ -286,6 +292,18 @@ const totalPlaces = plannerDestinations.reduce((sum, item) => sum + item.highlig
       return score;
     }
 
+    function matchesVisibleSeason(item) {
+      const selected = normalize(state.season);
+      const text = normalize(`${item.name} ${item.description || ''} ${(item.tags || []).join(' ')}`);
+      const conflicts = {
+        primavera: ['invierno'],
+        verano: ['invierno'],
+        otono: ['verano pleno', 'agosto'],
+        invierno: ['verano'],
+      };
+      return !(conflicts[selected] || []).some((word) => text.includes(word));
+    }
+
     function modeLabel(item, distance) {
       const direct = item.transport.includes(state.transport) ? state.transport : item.transport[0];
       const km = distance === null ? 'distancia según salida' : `${distance.toLocaleString('es-ES')} km aprox.`;
@@ -343,7 +361,18 @@ const totalPlaces = plannerDestinations.reduce((sum, item) => sum + item.highlig
 
     function render() {
       const origin = resolveOrigin(state.origin);
-      const ranked = routeDestinations
+      const candidates = routeDestinations.filter(matchesVisibleSeason);
+      const strict = candidates.filter((item) =>
+        item.seasons.includes(state.season)
+        && item.interests.includes(state.interest)
+        && item.transport.includes(state.transport)
+      );
+      const seasonal = candidates.filter((item) =>
+        item.seasons.includes(state.season)
+        && item.interests.includes(state.interest)
+      );
+      const pool = strict.length ? strict : seasonal.length ? seasonal : candidates.filter((item) => item.seasons.includes(state.season));
+      const ranked = pool
         .map((item) => {
           const distance = distanceKm(origin, item);
           return { ...item, distance, score: scoreDestination(item, origin) };
@@ -352,9 +381,13 @@ const totalPlaces = plannerDestinations.reduce((sum, item) => sum + item.highlig
         .slice(0, 8);
 
       count.textContent = String(ranked.length);
-      brief.innerHTML = origin
-        ? `<strong>Salida:</strong> ${origin.name}. Priorizo ${state.transport}, ${state.interest}, ${state.days} días y presupuesto ${state.budget}.`
-        : `<strong>Salida:</strong> ${state.origin}. No tengo coordenadas exactas de esa ciudad todavía, así que ordeno por estilo de viaje y logística.`;
+      brief.replaceChildren();
+      const briefStrong = document.createElement('strong');
+      briefStrong.textContent = 'Salida:';
+      const briefText = document.createTextNode(origin
+        ? ` ${origin.name}. ${strict.length ? 'Coincidencias exactas' : 'Alternativas cercanas'} para ${state.season}, ${state.interest}, ${state.transport}, ${state.days} días y presupuesto ${state.budget}.`
+        : ` ${state.origin}. No tengo coordenadas exactas de esa ciudad todavía, así que ordeno por estilo de viaje y logística.`);
+      brief.append(briefStrong, briefText);
 
       results.replaceChildren();
       ranked.forEach((item, index) => {

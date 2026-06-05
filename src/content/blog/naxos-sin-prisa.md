@@ -65,7 +65,7 @@ Busca una parte menos obvia: una calle secundaria, un pueblo cercano, una comida
 
 La mejor temporada no siempre es la más famosa. Primavera y otoño suelen dar equilibrio entre luz, precio y temperatura. Verano funciona si el viaje depende de playa o montaña; invierno puede ser excelente si el destino tiene vida urbana.
 
-![Luz de temporada en Naxos sin prisa](https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=84)
+![Luz de temporada en Naxos sin prisa](https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1600&q=84)
 
 ## Presupuesto sin prometer milagros
 

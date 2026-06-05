@@ -6,7 +6,7 @@ updatedDate: "2026-06-05"
 author: "Marco Vidal"
 category: "viaje-rapido"
 tags: ["cuándo viajar", "temporadas", "destinos", "viaje rápido", "planificación"]
-image: "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=1400&q=84"
+image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1400&q=84"
 imageAlt: "Carretera panorámica entre montañas y lago con luz de atardecer"
 readingTime: 9
 affiliate: true
@@ -65,7 +65,7 @@ Busca norte, altura o islas con brisa. Evita ciudades interiores muy calientes s
 
 Es la estación de carreteras bonitas, bosques y precios algo más razonables.
 
-![Imagen de apoyo para otoño: transilvania, toscana, selva negra, oporto](https://images.unsplash.com/photo-1476514525535-07fb3b4ae5aff?auto=format&fit=crop&w=1600&q=84)
+![Imagen de apoyo para otoño: transilvania, toscana, selva negra, oporto](https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=84)
 
 **Consejo de ruta: reserva esta parte para cuando el viaje ya tenga ritmo; Otoño: Transilvania, Toscana, Selva Negra, Oporto funciona mejor si no llega como relleno.**
 

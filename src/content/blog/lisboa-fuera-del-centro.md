@@ -59,7 +59,7 @@ Reserva aquí el plan que justifica el viaje: mirador, museo, carretera, caminat
 
 Busca una parte menos obvia: una calle secundaria, un pueblo cercano, una comida concreta o una ruta corta a pie. Ese detalle suele ser lo que convierte el viaje en recuerdo.
 
-![Detalle local de Lisboa fuera del centro](https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=1600&q=84)
+![Detalle local de Lisboa fuera del centro](https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1600&q=84)
 
 ## Cuándo ir
 

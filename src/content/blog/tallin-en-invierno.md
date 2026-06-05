@@ -45,7 +45,7 @@ Tallin en invierno no necesita una lista infinita de imprescindibles. Necesita u
 
 Empieza por una base clara y dibuja un círculo sencillo alrededor. El error habitual es poner todos los lugares bonitos en una misma ruta sin mirar carreteras, horarios o cansancio. En Tallin en invierno, la experiencia mejora cuando dejas huecos.
 
-![Mapa visual y ruta para Tallin en invierno](https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1600&q=84)
+![Mapa visual y ruta para Tallin en invierno](https://images.unsplash.com/photo-1499678329028-101435549a4e?auto=format&fit=crop&w=1600&q=84)
 
 ### Día 1: entender el lugar
 
@@ -65,7 +65,7 @@ Busca una parte menos obvia: una calle secundaria, un pueblo cercano, una comida
 
 La mejor temporada no siempre es la más famosa. Primavera y otoño suelen dar equilibrio entre luz, precio y temperatura. Verano funciona si el viaje depende de playa o montaña; invierno puede ser excelente si el destino tiene vida urbana.
 
-![Luz de temporada en Tallin en invierno](https://images.unsplash.com/photo-1476514525535-07fb3b4ae5aff?auto=format&fit=crop&w=1600&q=84)
+![Luz de temporada en Tallin en invierno](https://images.unsplash.com/photo-1482192505345-5655af888cc4?auto=format&fit=crop&w=1600&q=84)
 
 ## Presupuesto sin prometer milagros
 

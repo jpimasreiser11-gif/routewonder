@@ -29,7 +29,7 @@ planner:
 
 Burdeos con trenes regionales no necesita una lista infinita de imprescindibles. Necesita una pregunta mejor: **qué tipo de viaje quieres tener allí**. Si buscas una base cómoda para comer, moverse y no gastar en coche, esta ruta tiene sentido. Si solo quieres tachar lugares, probablemente te cansará antes de empezar.
 
-![Vista principal de Burdeos con trenes regionales](https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1600&q=84)
+![Vista principal de Burdeos con trenes regionales](https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1600&q=84)
 
 ## Resumen para decidir rápido
 

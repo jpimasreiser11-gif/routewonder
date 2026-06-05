@@ -36,16 +36,42 @@ const placeholder = Astro.props.placeholder || "Buscar rutas, ciudades o curiosi
       const loadPagefind = () => {
         if (!pagefindPromise) {
           const runtimeModule = '/pagefind/' + 'pagefind.js';
-          pagefindPromise = import(runtimeModule);
+          pagefindPromise = import(/* @vite-ignore */ runtimeModule);
         }
         return pagefindPromise;
+      };
+
+      const clearResults = () => results.replaceChildren();
+
+      const appendLink = ({ href, title, excerpt, className = 'block rounded-xl px-3 py-3 hover:bg-rw-sand/70' }) => {
+        const link = document.createElement('a');
+        link.className = className;
+        link.href = href;
+        const titleEl = document.createElement('span');
+        titleEl.className = 'block font-ui text-sm font-bold text-rw-ink';
+        titleEl.textContent = title;
+        link.appendChild(titleEl);
+        if (excerpt) {
+          const excerptEl = document.createElement('span');
+          excerptEl.className = 'mt-1 block font-ui text-xs text-rw-ocean/70';
+          excerptEl.textContent = excerpt;
+          link.appendChild(excerptEl);
+        }
+        results.appendChild(link);
+      };
+
+      const appendMessage = (message) => {
+        const p = document.createElement('p');
+        p.className = 'px-3 py-3 font-ui text-sm text-rw-ocean/70';
+        p.textContent = message;
+        results.appendChild(p);
       };
 
       input.addEventListener('input', async () => {
         const query = input.value.trim();
         if (query.length < 2) {
           results.classList.add('hidden');
-          results.innerHTML = '';
+          clearResults();
           return;
         }
 
@@ -53,17 +79,29 @@ const placeholder = Astro.props.placeholder || "Buscar rutas, ciudades o curiosi
           const pagefind = await loadPagefind();
           const search = await pagefind.search(query);
           const top = await Promise.all(search.results.slice(0, 10).map((result) => result.data()));
-          results.innerHTML = top.length
-            ? top.map((item) => `
-                <a class="block rounded-xl px-3 py-3 hover:bg-rw-sand/70" href="${item.url}">
-                  <span class="block font-ui text-sm font-bold text-rw-ink">${item.meta.title || item.url}</span>
-                  <span class="mt-1 block font-ui text-xs text-rw-ocean/70">${item.excerpt || ''}</span>
-                </a>
-              `).join('') + '<a class="mt-2 block rounded-xl bg-rw-sand px-3 py-3 font-ui text-xs font-bold uppercase tracking-wider text-rw-horizon" href="/blog/">Ver todo el catálogo</a>'
-            : '<p class="px-3 py-3 font-ui text-sm text-rw-ocean/70">No encuentro esa ruta todavía. Prueba con país, ciudad, tren o playa.</p>';
+          clearResults();
+          if (top.length) {
+            top.forEach((item) => appendLink({
+              href: item.url,
+              title: item.meta.title || item.url,
+              excerpt: item.excerpt || '',
+            }));
+            appendLink({
+              href: '/blog/',
+              title: 'Ver todo el catálogo',
+              className: 'mt-2 block rounded-xl bg-rw-sand px-3 py-3 font-ui text-xs font-bold uppercase tracking-wider text-rw-horizon',
+            });
+          } else {
+            appendMessage('No encuentro esa ruta todavía. Prueba con país, ciudad, tren o playa.');
+          }
           results.classList.remove('hidden');
         } catch {
-          results.innerHTML = '<a class="block rounded-xl bg-rw-sand px-3 py-3 font-ui text-xs font-bold uppercase tracking-wider text-rw-horizon" href="/blog/">Abrir catálogo completo</a>';
+          clearResults();
+          appendLink({
+            href: '/blog/',
+            title: 'Abrir catálogo completo',
+            className: 'block rounded-xl bg-rw-sand px-3 py-3 font-ui text-xs font-bold uppercase tracking-wider text-rw-horizon',
+          });
           results.classList.remove('hidden');
         }
       });

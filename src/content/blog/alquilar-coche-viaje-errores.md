@@ -57,7 +57,7 @@ La cifra grande suele ocultar franquicia, política de combustible, kilometraje 
 
 Diferencia entre cobertura, franquicia y reembolso externo. Si no lo entiendes, pregunta antes de pagar.
 
-![Imagen de apoyo para el seguro no significa lo mismo en todas partes](https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=84)
+![Imagen de apoyo para el seguro no significa lo mismo en todas partes](https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1600&q=84)
 
 **Consejo de ruta: reserva esta parte para cuando el viaje ya tenga ritmo; El seguro no significa lo mismo en todas partes funciona mejor si no llega como relleno.**
 
@@ -65,7 +65,7 @@ Diferencia entre cobertura, franquicia y reembolso externo. Si no lo entiendes, 
 
 En islas, pueblos antiguos o carreteras de montaña, un coche pequeño suele ser mejor que uno grande.
 
-![Imagen de apoyo para el tamaño del coche importa](https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1600&q=84)
+![Imagen de apoyo para el tamaño del coche importa](https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1600&q=84)
 
 **Consejo de ruta: reserva esta parte para cuando el viaje ya tenga ritmo; El tamaño del coche importa funciona mejor si no llega como relleno.**
 
@@ -73,7 +73,7 @@ En islas, pueblos antiguos o carreteras de montaña, un coche pequeño suele ser
 
 Fotos, vídeo, contrato y recibos. No es desconfianza: es evitar discusiones cuando ya estás de vuelta.
 
-![Imagen de apoyo para documenta todo](https://images.unsplash.com/photo-1476514525535-07fb3b4ae5aff?auto=format&fit=crop&w=1600&q=84)
+![Imagen de apoyo para documenta todo](https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=84)
 
 **Consejo de ruta: reserva esta parte para cuando el viaje ya tenga ritmo; Documenta todo funciona mejor si no llega como relleno.**
 

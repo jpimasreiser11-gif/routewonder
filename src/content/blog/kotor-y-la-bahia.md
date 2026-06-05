@@ -45,7 +45,7 @@ Kotor y la bahía no necesita una lista infinita de imprescindibles. Necesita un
 
 Empieza por una base clara y dibuja un círculo sencillo alrededor. El error habitual es poner todos los lugares bonitos en una misma ruta sin mirar carreteras, horarios o cansancio. En Kotor y la bahía, la experiencia mejora cuando dejas huecos.
 
-![Mapa visual y ruta para Kotor y la bahía](https://images.unsplash.com/photo-1476514525535-07fb3b4ae5aff?auto=format&fit=crop&w=1600&q=84)
+![Mapa visual y ruta para Kotor y la bahía](https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=1600&q=84)
 
 ### Día 1: entender el lugar
 

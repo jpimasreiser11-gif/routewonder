@@ -6,7 +6,7 @@ updatedDate: "2026-06-05"
 author: "Marco Vidal"
 category: "destinos-secretos"
 tags: ["Francia", "naturaleza", "guía", "ruta", "viaje práctico"]
-image: "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5aff?auto=format&fit=crop&w=1400&q=84"
+image: "https://images.unsplash.com/photo-1482192505345-5655af888cc4?auto=format&fit=crop&w=1400&q=84"
 imageAlt: "Imagen de viaje relacionada con Annecy y su lago"
 readingTime: 10
 affiliate: true
@@ -29,7 +29,7 @@ planner:
 
 Annecy y su lago no necesita una lista infinita de imprescindibles. Necesita una pregunta mejor: **qué tipo de viaje quieres tener allí**. Si buscas agua alpina, bici y pueblos junto al lago, esta ruta tiene sentido. Si solo quieres tachar lugares, probablemente te cansará antes de empezar.
 
-![Vista principal de Annecy y su lago](https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1600&q=84)
+![Vista principal de Annecy y su lago](https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1600&q=84)
 
 ## Resumen para decidir rápido
 
@@ -45,7 +45,7 @@ Annecy y su lago no necesita una lista infinita de imprescindibles. Necesita una
 
 Empieza por una base clara y dibuja un círculo sencillo alrededor. El error habitual es poner todos los lugares bonitos en una misma ruta sin mirar carreteras, horarios o cansancio. En Annecy y su lago, la experiencia mejora cuando dejas huecos.
 
-![Mapa visual y ruta para Annecy y su lago](https://images.unsplash.com/photo-1482192505345-5655af888cc4?auto=format&fit=crop&w=1600&q=84)
+![Mapa visual y ruta para Annecy y su lago](https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=1600&q=84)
 
 ### Día 1: entender el lugar
 

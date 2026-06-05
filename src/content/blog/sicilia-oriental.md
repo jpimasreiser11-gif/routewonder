@@ -29,7 +29,7 @@ planner:
 
 Sicilia oriental no necesita una lista infinita de imprescindibles. Necesita una pregunta mejor: **qué tipo de viaje quieres tener allí**. Si buscas volcán, barroco y costa en una ruta con mucho carácter, esta ruta tiene sentido. Si solo quieres tachar lugares, probablemente te cansará antes de empezar.
 
-![Vista principal de Sicilia oriental](https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1600&q=84)
+![Vista principal de Sicilia oriental](https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=1600&q=84)
 
 ## Resumen para decidir rápido
 
@@ -45,7 +45,7 @@ Sicilia oriental no necesita una lista infinita de imprescindibles. Necesita una
 
 Empieza por una base clara y dibuja un círculo sencillo alrededor. El error habitual es poner todos los lugares bonitos en una misma ruta sin mirar carreteras, horarios o cansancio. En Sicilia oriental, la experiencia mejora cuando dejas huecos.
 
-![Mapa visual y ruta para Sicilia oriental](https://images.unsplash.com/photo-1476514525535-07fb3b4ae5aff?auto=format&fit=crop&w=1600&q=84)
+![Mapa visual y ruta para Sicilia oriental](https://images.unsplash.com/photo-1482192505345-5655af888cc4?auto=format&fit=crop&w=1600&q=84)
 
 ### Día 1: entender el lugar
 

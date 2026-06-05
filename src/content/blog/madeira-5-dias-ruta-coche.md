@@ -57,7 +57,7 @@ Empieza por el mercado, el casco antiguo y un mirador al atardecer. No llenes el
 
 La costa sur sirve para tomarle el pulso a la isla. Cabo Girão es famoso, pero la parte buena está en conducir hacia pueblos más pequeños y parar en miradores sin nombre.
 
-![Imagen de apoyo para día 2: cabo girão, ponta do sol y paul do mar](https://images.unsplash.com/photo-1476514525535-07fb3b4ae5aff?auto=format&fit=crop&w=1600&q=84)
+![Imagen de apoyo para día 2: cabo girão, ponta do sol y paul do mar](https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1600&q=84)
 
 **Consejo de ruta: sal temprano hacia la costa sur y guarda el atardecer para Paul do Mar; las fotos mejoran cuando baja el sol.**
 

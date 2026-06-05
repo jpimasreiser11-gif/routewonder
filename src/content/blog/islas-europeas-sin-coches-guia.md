@@ -49,7 +49,7 @@ La regla editorial de RouteWonder es sencilla: cada parada debe justificar una d
 
 Sin coches privados y con un puerto muy fotogénico. Es buena para caminar, nadar y desconectar sin convertir el viaje en logística.
 
-![Imagen de apoyo para hidra, grecia](https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=84)
+![Imagen de apoyo para hidra, grecia](https://images.unsplash.com/photo-1499678329028-101435549a4e?auto=format&fit=crop&w=1600&q=84)
 
 **Consejo de ruta: reserva esta parte para cuando el viaje ya tenga ritmo; Hidra, Grecia funciona mejor si no llega como relleno.**
 

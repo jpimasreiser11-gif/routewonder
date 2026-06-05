@@ -45,7 +45,7 @@ Malta en invierno no necesita una lista infinita de imprescindibles. Necesita un
 
 Empieza por una base clara y dibuja un círculo sencillo alrededor. El error habitual es poner todos los lugares bonitos en una misma ruta sin mirar carreteras, horarios o cansancio. En Malta en invierno, la experiencia mejora cuando dejas huecos.
 
-![Mapa visual y ruta para Malta en invierno](https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?auto=format&fit=crop&w=1600&q=84)
+![Mapa visual y ruta para Malta en invierno](https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1600&q=84)
 
 ### Día 1: entender el lugar
 
