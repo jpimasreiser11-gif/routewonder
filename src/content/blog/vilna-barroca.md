@@ -6,7 +6,7 @@ updatedDate: "2026-06-05"
 author: "Marco Vidal"
 category: "destinos-secretos"
 tags: ["Lituania", "cultura", "guía", "ruta", "viaje práctico"]
-image: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1400&q=84"
+image: "https://images.unsplash.com/photo-1573455805421-1eb5dead79de?auto=format&fit=crop&w=1400&q=84"
 imageAlt: "Imagen de viaje relacionada con Vilna"
 readingTime: 10
 affiliate: true

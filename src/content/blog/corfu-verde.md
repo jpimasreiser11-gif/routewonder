@@ -6,7 +6,7 @@ updatedDate: "2026-06-05"
 author: "Marco Vidal"
 category: "rutas-sorprendentes"
 tags: ["Grecia", "naturaleza", "guía", "ruta", "viaje práctico"]
-image: "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1400&q=84"
+image: "https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=1400&q=84"
 imageAlt: "Imagen de viaje relacionada con Corfú sin hoteles frente al mar"
 readingTime: 10
 affiliate: true

@@ -6,7 +6,7 @@ updatedDate: "2026-06-05"
 author: "Marco Vidal"
 category: "rutas-sorprendentes"
 tags: ["Eslovenia", "naturaleza", "guía", "ruta", "viaje práctico"]
-image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1400&q=84"
+image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=1400&q=84"
 imageAlt: "Imagen de viaje relacionada con Eslovenia en una semana"
 readingTime: 10
 affiliate: true

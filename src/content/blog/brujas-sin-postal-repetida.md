@@ -6,7 +6,7 @@ updatedDate: "2026-06-05"
 author: "Marco Vidal"
 category: "viaje-rapido"
 tags: ["Bélgica", "cultura", "guía", "ruta", "viaje práctico"]
-image: "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1400&q=84"
+image: "https://images.unsplash.com/photo-1491557345757-bfbd0afe4e77?auto=format&fit=crop&w=1400&q=84"
 imageAlt: "Imagen de viaje relacionada con Brujas en 2 días sin caer en la misma foto de todos"
 readingTime: 10
 affiliate: true

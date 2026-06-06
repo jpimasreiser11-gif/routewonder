@@ -6,7 +6,7 @@ updatedDate: "2026-06-05"
 author: "Marco Vidal"
 category: "destinos-secretos"
 tags: ["islas", "Europa", "viaje lento", "sin coches", "sostenible"]
-image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1400&q=84"
+image: "https://images.unsplash.com/photo-1559128010-099b29d500e3?auto=format&fit=crop&w=1400&q=84"
 imageAlt: "Agua turquesa y costa mediterránea vista desde una isla"
 readingTime: 9
 affiliate: true

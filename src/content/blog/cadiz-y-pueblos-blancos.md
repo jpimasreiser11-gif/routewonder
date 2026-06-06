@@ -6,7 +6,7 @@ updatedDate: "2026-06-05"
 author: "Marco Vidal"
 category: "rutas-sorprendentes"
 tags: ["España", "gastronomía", "guía", "ruta", "viaje práctico"]
-image: "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1400&q=84"
+image: "https://images.unsplash.com/photo-1559825481-12a96e51b52e?auto=format&fit=crop&w=1400&q=84"
 imageAlt: "Imagen de viaje relacionada con La ruta de los pueblos blancos de Cádiz"
 readingTime: 10
 affiliate: true

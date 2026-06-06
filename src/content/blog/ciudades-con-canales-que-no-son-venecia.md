@@ -6,7 +6,7 @@ updatedDate: "2026-06-05"
 author: "Marco Vidal"
 category: "ciudades-extranas"
 tags: ["canales", "Europa", "ciudades", "fin de semana", "rutas urbanas"]
-image: "https://images.unsplash.com/photo-1512470876302-972faa2aa9a4?auto=format&fit=crop&w=1400&q=84"
+image: "https://images.unsplash.com/photo-1534351590666-13e3e96b5017?auto=format&fit=crop&w=1400&q=84"
 imageAlt: "Canal europeo con casas históricas y bicicletas junto al agua"
 readingTime: 9
 affiliate: true

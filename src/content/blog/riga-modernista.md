@@ -6,7 +6,7 @@ updatedDate: "2026-06-05"
 author: "Marco Vidal"
 category: "ciudades-extranas"
 tags: ["Letonia", "cultura", "guía", "ruta", "viaje práctico"]
-image: "https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?auto=format&fit=crop&w=1400&q=84"
+image: "https://images.unsplash.com/photo-1548707309-ab8e9de0e222?auto=format&fit=crop&w=1400&q=84"
 imageAlt: "Imagen de viaje relacionada con Riga tiene más arquitectura modernista que cualquier ciudad de Europa"
 readingTime: 10
 affiliate: true

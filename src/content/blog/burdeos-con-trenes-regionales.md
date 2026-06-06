@@ -6,7 +6,7 @@ updatedDate: "2026-06-05"
 author: "Marco Vidal"
 category: "viaje-economico"
 tags: ["Francia", "gastronomía", "guía", "ruta", "viaje práctico"]
-image: "https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1400&q=84"
+image: "https://images.unsplash.com/photo-1555881400-74d7acaacd6b?auto=format&fit=crop&w=1400&q=84"
 imageAlt: "Imagen de viaje relacionada con Burdeos sin coche propio"
 readingTime: 10
 affiliate: true

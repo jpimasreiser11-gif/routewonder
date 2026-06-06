@@ -6,7 +6,7 @@ updatedDate: "2026-06-05"
 author: "Marco Vidal"
 category: "ciudades-extranas"
 tags: ["Turquía", "cultura", "guía", "ruta", "viaje práctico"]
-image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1400&q=84"
+image: "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=1400&q=84"
 imageAlt: "Imagen de viaje relacionada con Estambul más allá de Sultanahmet"
 readingTime: 10
 affiliate: true

@@ -6,7 +6,7 @@ updatedDate: "2026-06-05"
 author: "Marco Vidal"
 category: "ciudades-extranas"
 tags: ["Bélgica", "cultura", "guía", "ruta", "viaje práctico"]
-image: "https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=1400&q=84"
+image: "https://images.unsplash.com/photo-1491557345757-bfbd0afe4e77?auto=format&fit=crop&w=1400&q=84"
 imageAlt: "Imagen de viaje relacionada con Por qué Gante de noche es mejor que Brujas de día"
 readingTime: 10
 affiliate: true

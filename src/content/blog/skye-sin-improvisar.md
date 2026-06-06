@@ -6,7 +6,7 @@ updatedDate: "2026-06-05"
 author: "Marco Vidal"
 category: "rutas-sorprendentes"
 tags: ["Escocia", "naturaleza", "guía", "ruta", "viaje práctico"]
-image: "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1400&q=84"
+image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1400&q=84"
 imageAlt: "Imagen de viaje relacionada con Isla de Skye"
 readingTime: 10
 affiliate: true

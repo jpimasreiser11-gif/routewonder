@@ -6,7 +6,7 @@ updatedDate: "2026-06-05"
 author: "Marco Vidal"
 category: "rutas-sorprendentes"
 tags: ["Noruega", "naturaleza", "guía", "ruta", "viaje práctico"]
-image: "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1400&q=84"
+image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1400&q=84"
 imageAlt: "Imagen de viaje relacionada con Bergen es una trampa para turistas. A no ser que hagas esto"
 readingTime: 10
 affiliate: true

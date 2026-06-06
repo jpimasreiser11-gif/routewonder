@@ -6,7 +6,7 @@ updatedDate: "2026-06-05"
 author: "Marco Vidal"
 category: "lugares-de-pelicula"
 tags: ["Italia", "cultura", "guía", "ruta", "viaje práctico"]
-image: "https://images.unsplash.com/photo-1482192505345-5655af888cc4?auto=format&fit=crop&w=1400&q=84"
+image: "https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=1400&q=84"
 imageAlt: "Imagen de viaje relacionada con Matera"
 readingTime: 10
 affiliate: true

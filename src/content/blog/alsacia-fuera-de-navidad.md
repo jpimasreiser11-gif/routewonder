@@ -6,7 +6,7 @@ updatedDate: "2026-06-05"
 author: "Marco Vidal"
 category: "rutas-sorprendentes"
 tags: ["Francia", "cultura", "guía", "ruta", "viaje práctico"]
-image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1400&q=84"
+image: "https://images.unsplash.com/photo-1569949381939-f29fa5c21c9b?auto=format&fit=crop&w=1400&q=84"
 imageAlt: "Imagen de viaje relacionada con Alsacia en otoño"
 readingTime: 10
 affiliate: true

@@ -6,7 +6,7 @@ updatedDate: "2026-06-05"
 author: "Marco Vidal"
 category: "lugares-de-pelicula"
 tags: ["Turquía", "cultura", "guía", "ruta", "viaje práctico"]
-image: "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?auto=format&fit=crop&w=1400&q=84"
+image: "https://images.unsplash.com/photo-1527838832700-5059252407fa?auto=format&fit=crop&w=1400&q=84"
 imageAlt: "Imagen de viaje relacionada con Capadocia sin pagar el globo"
 readingTime: 10
 affiliate: true
