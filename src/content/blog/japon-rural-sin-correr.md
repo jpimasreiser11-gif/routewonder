@@ -6,7 +6,7 @@ updatedDate: "2026-06-05"
 author: "Marco Vidal"
 category: "rutas-sorprendentes"
 tags: ["Japón", "tren", "viaje lento", "rutas", "cultura"]
-image: "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=1400&q=84"
+image: "https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?auto=format&fit=crop&w=1400&q=84"
 imageAlt: "Imagen de viaje relacionada con Japón rural sin correr"
 readingTime: 11
 affiliate: true

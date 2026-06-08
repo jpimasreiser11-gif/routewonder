@@ -6,7 +6,7 @@ updatedDate: "2026-06-05"
 author: "Marco Vidal"
 category: "rutas-sorprendentes"
 tags: ["Portugal", "gastronomía", "guía", "ruta", "viaje práctico"]
-image: "https://images.unsplash.com/photo-1555881400-74d7acaacd6b?auto=format&fit=crop&w=1400&q=84"
+image: "https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?auto=format&fit=crop&w=1400&q=84"
 imageAlt: "Imagen de viaje relacionada con Oporto y el Duero"
 readingTime: 10
 affiliate: true

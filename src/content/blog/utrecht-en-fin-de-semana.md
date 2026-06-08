@@ -6,7 +6,7 @@ updatedDate: "2026-06-05"
 author: "Marco Vidal"
 category: "ciudades-extranas"
 tags: ["Países Bajos", "cultura", "guía", "ruta", "viaje práctico"]
-image: "https://images.unsplash.com/photo-1534351590666-13e3e96b5017?auto=format&fit=crop&w=1400&q=84"
+image: "https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?auto=format&fit=crop&w=1400&q=84"
 imageAlt: "Imagen de viaje relacionada con Utrecht no es Amsterdam"
 readingTime: 10
 affiliate: true

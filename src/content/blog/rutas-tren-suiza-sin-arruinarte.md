@@ -6,7 +6,7 @@ updatedDate: "2026-06-05"
 author: "Marco Vidal"
 category: "viaje-economico"
 tags: ["Suiza", "tren", "Europa", "viaje económico", "rutas"]
-image: "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?auto=format&fit=crop&w=1400&q=84"
+image: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1400&q=84"
 imageAlt: "Tren atravesando un paisaje alpino suizo con montañas nevadas"
 readingTime: 9
 affiliate: true

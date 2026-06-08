@@ -6,7 +6,7 @@ updatedDate: "2026-06-05"
 author: "Marco Vidal"
 category: "viaje-economico"
 tags: ["Malta", "cultura", "guía", "ruta", "viaje práctico"]
-image: "https://images.unsplash.com/photo-1555881400-74d7acaacd6b?auto=format&fit=crop&w=1400&q=84"
+image: "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=1400&q=84"
 imageAlt: "Imagen de viaje relacionada con Malta en enero"
 readingTime: 10
 affiliate: true

@@ -6,7 +6,7 @@ updatedDate: "2026-06-05"
 author: Marco Vidal
 category: "destinos-secretos"
 tags: ["islas", "europa", "viaje-lento", "rutas"]
-image: "https://images.unsplash.com/photo-1559128010-099b29d500e3?auto=format&fit=crop&w=1400&q=84"
+image: "https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=1400&q=84"
 imageAlt: "Costa europea con agua transparente vista desde arriba"
 readingTime: 7
 affiliate: true

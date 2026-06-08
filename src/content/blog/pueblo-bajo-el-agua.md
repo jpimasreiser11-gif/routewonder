@@ -5,7 +5,7 @@ publishedDate: "2026-05-28"
 author: "Marco Vidal"
 category: "curiosidades-geograficas"
 tags: ["España", "pueblos abandonados", "embalses", "La Rioja", "historia", "curiosidades"]
-image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&h=630&fit=crop"
+image: "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=1200&h=630&fit=crop"
 imageAlt: "Ruinas parcialmente sumergidas emergiendo de un embalse al atardecer"
 readingTime: 7
 affiliate: true

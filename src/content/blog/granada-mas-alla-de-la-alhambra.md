@@ -6,7 +6,7 @@ updatedDate: "2026-06-05"
 author: "Marco Vidal"
 category: "ciudades-extranas"
 tags: ["España", "cultura", "guía", "ruta", "viaje práctico"]
-image: "https://images.unsplash.com/photo-1543785734-4b6e564642f8?auto=format&fit=crop&w=1400&q=84"
+image: "https://images.unsplash.com/photo-1511527661048-7fe73d85e9a4?auto=format&fit=crop&w=1400&q=84"
 imageAlt: "Imagen de viaje relacionada con Granada sin la Alhambra"
 readingTime: 10
 affiliate: true

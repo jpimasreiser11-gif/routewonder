@@ -6,7 +6,7 @@ updatedDate: "2026-06-05"
 author: "Marco Vidal"
 category: "viaje-rapido"
 tags: ["cuándo viajar", "temporadas", "destinos", "viaje rápido", "planificación"]
-image: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1400&q=84"
+image: "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&w=1400&q=84"
 imageAlt: "Carretera panorámica entre montañas y lago con luz de atardecer"
 readingTime: 9
 affiliate: true

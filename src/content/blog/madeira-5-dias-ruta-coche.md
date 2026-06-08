@@ -6,7 +6,7 @@ updatedDate: "2026-06-05"
 author: "Marco Vidal"
 category: "rutas-sorprendentes"
 tags: ["Madeira", "Portugal", "rutas en coche", "naturaleza", "islas"]
-image: "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?auto=format&fit=crop&w=1400&q=84"
+image: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1400&q=84"
 imageAlt: "Costa verde de Madeira con acantilados y carretera junto al océano"
 readingTime: 9
 affiliate: true

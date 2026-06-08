@@ -6,7 +6,7 @@ updatedDate: "2026-06-05"
 author: "Marco Vidal"
 category: "rutas-sorprendentes"
 tags: ["Irlanda", "cultura", "guía", "ruta", "viaje práctico"]
-image: "https://images.unsplash.com/photo-1590071089-ab7b17e23f50?auto=format&fit=crop&w=1400&q=84"
+image: "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1400&q=84"
 imageAlt: "Imagen de viaje relacionada con Irlanda sin alquiler de coche"
 readingTime: 10
 affiliate: true

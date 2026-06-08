@@ -6,7 +6,7 @@ updatedDate: "2026-06-05"
 author: "Marco Vidal"
 category: "destinos-secretos"
 tags: ["España", "naturaleza", "guía", "ruta", "viaje práctico"]
-image: "https://images.unsplash.com/photo-1504681869696-d977211a5f4c?auto=format&fit=crop&w=1400&q=84"
+image: "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1400&q=84"
 imageAlt: "Imagen de viaje relacionada con Costa da Morte"
 readingTime: 10
 affiliate: true

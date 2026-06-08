@@ -6,7 +6,7 @@ updatedDate: "2026-06-05"
 author: "Marco Vidal"
 category: "rutas-sorprendentes"
 tags: ["alquiler de coche", "road trip", "seguros", "viaje práctico", "consejos"]
-image: "https://images.unsplash.com/photo-1558618666-fcd25c85f1d7?auto=format&fit=crop&w=1400&q=84"
+image: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=1400&q=84"
 imageAlt: "Carretera rural entre colinas con luz dorada de tarde"
 readingTime: 9
 affiliate: true

@@ -6,7 +6,7 @@ updatedDate: "2026-06-05"
 author: "Marco Vidal"
 category: "viaje-economico"
 tags: ["España", "playa", "guía", "ruta", "viaje práctico"]
-image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1400&q=84"
+image: "https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=1400&q=84"
 imageAlt: "Imagen de viaje relacionada con Menorca en mayo"
 readingTime: 10
 affiliate: true

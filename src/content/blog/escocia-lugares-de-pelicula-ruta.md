@@ -6,7 +6,7 @@ updatedDate: "2026-06-05"
 author: "Marco Vidal"
 category: "lugares-de-pelicula"
 tags: ["Escocia", "road trip", "castillos", "cine", "naturaleza"]
-image: "https://images.unsplash.com/photo-1548707309-ab8e9de0e222?auto=format&fit=crop&w=1400&q=84"
+image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1400&q=84"
 imageAlt: "Castillo escocés junto a un lago y montañas grises al fondo"
 readingTime: 9
 affiliate: true

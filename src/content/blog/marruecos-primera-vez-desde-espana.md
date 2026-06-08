@@ -6,7 +6,7 @@ updatedDate: "2026-06-05"
 author: "Marco Vidal"
 category: "viaje-economico"
 tags: ["Marruecos", "Marrakech", "Atlas", "viaje barato", "primer viaje"]
-image: "https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?auto=format&fit=crop&w=1400&q=84"
+image: "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=1400&q=84"
 imageAlt: "Arquitectura tradicional marroquí con tonos rojizos y calle estrecha"
 readingTime: 9
 affiliate: true

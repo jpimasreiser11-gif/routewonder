@@ -6,7 +6,7 @@ updatedDate: "2026-06-05"
 author: "Marco Vidal"
 category: "lugares-de-pelicula"
 tags: ["Italia", "cultura", "guía", "ruta", "viaje práctico"]
-image: "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?auto=format&fit=crop&w=1400&q=84"
+image: "https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=1400&q=84"
 imageAlt: "Imagen de viaje relacionada con Sicilia oriental"
 readingTime: 10
 affiliate: true

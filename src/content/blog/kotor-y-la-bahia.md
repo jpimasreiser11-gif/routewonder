@@ -6,7 +6,7 @@ updatedDate: "2026-06-05"
 author: "Marco Vidal"
 category: "destinos-secretos"
 tags: ["Montenegro", "naturaleza", "guía", "ruta", "viaje práctico"]
-image: "https://images.unsplash.com/photo-1555881400-74d7acaacd6b?auto=format&fit=crop&w=1400&q=84"
+image: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1400&q=84"
 imageAlt: "Imagen de viaje relacionada con Kotor"
 readingTime: 10
 affiliate: true
