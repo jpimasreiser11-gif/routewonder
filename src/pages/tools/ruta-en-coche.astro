@@ -45,20 +45,35 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
       interior: ["Ciudad base", "Pueblo histórico", "Naturaleza cercana", "Mercado o ruta gastronómica", "Regreso por carretera alternativa"],
       mixto: ["Ciudad de llegada", "Costa o lago", "Interior con parada lenta", "Mirador + comida local", "Regreso con margen"],
     };
+    function setTrustedHTML(element, html) {
+      if (!element) return;
+      window.__rwTrustedPolicies = window.__rwTrustedPolicies || {};
+      if (window.trustedTypes && !window.__rwTrustedPolicies.roadTool) {
+        try {
+          window.__rwTrustedPolicies.roadTool = window.trustedTypes.createPolicy('routewonder-road-tool', {
+            createHTML: (value) => value,
+          });
+        } catch {
+          window.__rwTrustedPolicies.roadTool = null;
+        }
+      }
+      const policy = window.__rwTrustedPolicies.roadTool;
+      element.innerHTML = policy ? policy.createHTML(html) : html;
+    }
     function renderRoad() {
       const origin = document.getElementById('road-origin').value;
       const days = Math.max(2, Math.min(14, Number(document.getElementById('road-days').value || 5)));
       const style = document.getElementById('road-style').value;
       const template = ROUTES[style];
       const steps = Array.from({ length: days }, (_, index) => template[index % template.length]);
-      document.getElementById('road-result').innerHTML = `
+      setTrustedHTML(document.getElementById('road-result'), `
         <p class="font-ui text-xs font-bold uppercase tracking-[0.22em] text-rw-horizon">Ruta sugerida desde ${origin}</p>
         <h2 class="mt-2 font-display text-3xl font-bold text-rw-ink">${days} días · estilo ${style}</h2>
         <ol class="mt-5 grid gap-3 font-ui text-sm text-rw-ocean/75">
           ${steps.map((step, index) => `<li class="rounded-xl bg-rw-sand px-4 py-3"><strong>Día ${index + 1}:</strong> ${step}. Conduce 90-180 minutos y deja una parada sin reservar.</li>`).join('')}
         </ol>
-        <a class="mt-6 inline-flex rounded-full bg-rw-ink px-5 py-3 font-ui text-xs font-bold uppercase tracking-wider text-white" href="/blog/?q=coche">Ver guías en coche</a>
-      `;
+        <a class="mt-6 inline-flex rounded-full bg-rw-ink px-5 py-3 font-ui text-xs font-bold uppercase tracking-wider text-white" href="/search/?query=coche">Ver guías en coche</a>
+      `);
     }
     document.getElementById('road-tool').addEventListener('submit', (event) => { event.preventDefault(); renderRoad(); });
     renderRoad();

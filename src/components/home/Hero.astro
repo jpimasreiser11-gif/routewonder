@@ -1,62 +1,69 @@
 ---
 import SearchBar from "../ui/SearchBar.astro";
+import Light3DScene from "../ui/Light3DScene.astro";
 const base = import.meta.env.BASE_URL.endsWith("/") ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
 ---
 
-<section class="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-rw-ink text-rw-white select-none">
-  <!-- Background Elements (Sinuous route line decoration) -->
-  <div class="absolute inset-0 opacity-15 pointer-events-none select-none z-0">
-    <svg class="w-full h-full" viewBox="0 0 1440 800" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
-      <path d="M-100,200 C300,100 400,600 800,400 S1200,700 1600,300" stroke="#E94560" stroke-width="4" stroke-linecap="round" stroke-dasharray="8 8"></path>
-      <circle cx="800" cy="400" r="8" fill="#E94560" class="animate-pulse"></circle>
-      <circle cx="300" cy="150" r="6" fill="#F4A261"></circle>
-    </svg>
+<section class="rw-hero-premium relative isolate overflow-hidden border-b border-rw-ink/10 bg-rw-ink text-rw-white dark:border-rw-white/10 dark:bg-rw-ink dark:text-rw-white">
+  <div class="pointer-events-none absolute inset-0 -z-10 opacity-80">
+    <div class="absolute inset-x-0 top-0 h-px bg-rw-ink/15"></div>
+    <div class="absolute left-0 top-24 h-px w-full rotate-[-3deg] bg-rw-ink/8"></div>
+    <div class="absolute bottom-24 right-0 h-px w-full rotate-[2deg] bg-rw-horizon/12"></div>
   </div>
 
-  <!-- Content Container -->
-  <div class="relative z-10 max-w-4xl mx-auto px-4 text-center flex flex-col items-center gap-6 md:gap-8">
-    <!-- Badge -->
-    <span class="inline-flex items-center gap-1.5 px-4 py-1 text-xs font-semibold uppercase tracking-widest text-rw-horizon bg-rw-horizon/10 border border-rw-horizon/20 rounded-full animate-fade-in">
-      🧭 Cuaderno de Geografía &amp; Exploración
-    </span>
+  <div class="mx-auto grid min-h-[88dvh] max-w-[1500px] grid-cols-1 gap-8 px-4 pb-16 pt-10 sm:px-6 sm:pb-24 lg:grid-cols-12 lg:px-10 lg:pt-16">
+    <div class="order-1 flex flex-col justify-end lg:col-span-5 lg:pb-8">
+      <div class="max-w-xl">
+        <div class="mb-7 flex items-center gap-4 font-ui text-[12px] font-black tracking-[0.02em] text-rw-gold">
+          <span class="h-px w-16 bg-rw-gold/55"></span>
+          <span data-i18n="hero.kicker">Revista de rutas raras</span>
+        </div>
 
-    <!-- Heading -->
-    <h1 class="font-display font-black text-4xl sm:text-5xl md:text-7xl tracking-tight leading-[1.1] animate-fade-in-up">
-      El mundo es más raro <br />
-      <span class="text-transparent bg-clip-text bg-gradient-to-r from-rw-horizon via-rw-gold to-rw-horizon bg-[length:200%_auto] hover:bg-right transition-all duration-1000">de lo que imaginas</span>
-    </h1>
+        <h1 data-i18n="hero.title" class="text-balance font-display text-[clamp(2.85rem,12vw,7.1rem)] font-black leading-[0.9] tracking-[-0.035em] text-rw-white dark:text-rw-white">
+          El mundo es más raro de lo que imaginas
+        </h1>
 
-    <!-- Subtitle -->
-    <p class="font-body italic text-lg sm:text-2xl text-rw-sand/80 max-w-2xl leading-relaxed animate-fade-in-up" style="animation-delay: 200ms;">
-      Crónicas sobre rutas insólitas, pueblos que emergen del agua, fronteras absurdas y rincones olvidados del planeta.
-    </p>
+        <p data-i18n="hero.copy" class="text-pretty mt-7 max-w-[35rem] font-body text-xl leading-[1.65] text-rw-sand/82 sm:text-2xl">
+          Crónicas de fronteras absurdas, carreteras secundarias, islas sin coches y ciudades que parecen inventadas, explicadas para viajar sin perder el criterio.
+        </p>
 
-    <div class="w-full animate-fade-in-up" style="animation-delay: 320ms;">
-      <SearchBar />
+        <div class="mt-8 max-w-xl rounded-[.9rem] border border-rw-gold/18 bg-rw-sand/10 p-2 shadow-[0_24px_70px_-48px_rgba(0,0,0,.85)] backdrop-blur">
+          <SearchBar />
+        </div>
+
+        <div class="mt-8 flex flex-wrap items-center gap-x-7 gap-y-4">
+          <a href={`${base}blog/`} class="rw-luxury-link text-rw-white"><span data-i18n="hero.cta.primary">Leer la revista</span></a>
+          <a href={`${base}#planificador-rutas`} class="rw-luxury-link text-rw-horizon"><span data-i18n="hero.cta.secondary">Diseñar una ruta</span></a>
+        </div>
+      </div>
     </div>
 
-    <!-- Search/Actions -->
-    <div class="flex flex-col sm:flex-row gap-4 w-full max-w-md mt-4 animate-fade-in-up" style="animation-delay: 400ms;">
-      <a
-        href={`${base}blog/`}
-        class="w-full sm:w-auto px-8 py-3 bg-rw-horizon hover:bg-rw-horizon/95 text-rw-white font-ui font-semibold rounded-lg shadow-lg shadow-rw-horizon/10 hover:shadow-xl active:scale-[0.98] transition-all text-center"
-      >
-        Explorar la Revista
-      </a>
-      <a
-        href={`${base}about/`}
-        class="w-full sm:w-auto px-8 py-3 border border-rw-sand/20 hover:border-rw-horizon hover:text-rw-horizon text-rw-sand font-ui font-semibold rounded-lg bg-rw-sand/5 active:scale-[0.98] transition-all text-center"
-      >
-        Nuestra Filosofía
-      </a>
-    </div>
-  </div>
+    <div class="order-2 lg:col-span-7">
+      <div class="relative mx-auto max-w-[760px] lg:mr-0">
+        <div class="absolute -left-4 top-10 z-20 hidden w-48 border border-rw-gold/24 bg-rw-ink/88 p-4 font-ui text-[11px] font-bold tracking-[0.04em] text-rw-gold shadow-[0_24px_70px_-48px_rgba(0,0,0,.9)] backdrop-blur md:block">
+          <span data-i18n="hero.badge.title">Archivo vivo</span>
+          <span data-i18n="hero.badge.copy" class="mt-2 block font-body text-base normal-case leading-snug tracking-normal text-rw-sand">Rutas que se leen como una historia y se usan como una guía.</span>
+        </div>
 
-  <!-- Animated Scroll Down Indicator -->
-  <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-rw-sand/40 select-none pointer-events-none animate-bounce-slow">
-    <span class="font-ui text-[10px] uppercase tracking-widest">Desplazar</span>
-    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-    </svg>
+        <figure class="rw-depth-frame relative overflow-hidden rounded-[.95rem] border border-rw-gold/18 bg-rw-sand/10 p-3 shadow-[0_40px_110px_-70px_rgba(0,0,0,.98)]" data-rw-tilt-lite>
+          <Light3DScene />
+          <img
+            src="/images/route-mountain.svg"
+            alt="Visual editorial de una ruta de montaña"
+            class="h-[45vh] min-h-[320px] w-full rounded-[.6rem] object-cover object-center saturate-[0.82] contrast-[1.04] transition duration-[900ms] hover:scale-[1.025] sm:h-[52vh] sm:min-h-[390px]"
+            loading="eager"
+          />
+          <figcaption class="mt-3 flex flex-col gap-2 px-1 pb-1 font-ui text-[11px] font-bold tracking-[0.03em] text-rw-sand/62 sm:flex-row sm:items-center sm:justify-between">
+            <span data-i18n="hero.caption.left">Atlas visual, edición semanal</span>
+            <span data-i18n="hero.caption.right" class="text-rw-horizon">Rutas que no salen primeras en Google</span>
+          </figcaption>
+        </figure>
+
+        <div class="absolute -bottom-8 right-4 z-20 w-[min(86%,360px)] rounded-[.9rem] border border-rw-gold/20 bg-rw-white px-5 py-4 text-rw-ink shadow-[0_28px_80px_-45px_rgba(0,0,0,.95)] sm:right-10">
+          <p data-i18n="hero.note.title" class="font-display text-2xl font-bold leading-tight">Primera regla editorial</p>
+          <p data-i18n="hero.note.copy" class="mt-2 font-ui text-sm leading-relaxed text-rw-ocean/78">Si una ruta no cambia cómo miras el mapa, no merece portada.</p>
+        </div>
+      </div>
+    </div>
   </div>
 </section>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900" role="img" aria-labelledby="title desc">
+  <title id="title">Ruta de montaña</title>
+  <desc id="desc">Ilustración editorial de una ruta por montañas, valles y miradores.</desc>
+  <rect width="1400" height="900" fill="#f6f1e6"/>
+  <path d="M0 564 206 309l90 116 92-182 183 310 146-237 125 151 185-258 373 452v239H0z" fill="#d9d2c2"/>
+  <path d="M0 635 236 354l91 119 90-175 178 294 148-226 124 148 181-245 352 410v221H0z" fill="#263a34"/>
+  <path d="M236 354l91 119 90-175 178 294 148-226 124 148 181-245" fill="none" stroke="#f8f5eb" stroke-width="7" stroke-linejoin="round" opacity=".86"/>
+  <path d="M139 713c137-44 242-35 362 16 97 41 173 45 270 4 120-51 243-43 391 34" fill="none" stroke="#b15f3e" stroke-width="12" stroke-linecap="round"/>
+  <path d="M139 713c137-44 242-35 362 16 97 41 173 45 270 4 120-51 243-43 391 34" fill="none" stroke="#f8f5eb" stroke-width="4" stroke-linecap="round"/>
+  <g fill="#c69a54">
+    <circle cx="140" cy="713" r="18"/>
+    <circle cx="509" cy="731" r="18"/>
+    <circle cx="1160" cy="767" r="18"/>
+  </g>
+  <circle cx="1134" cy="172" r="74" fill="#c69a54" opacity=".35"/>
+</svg>

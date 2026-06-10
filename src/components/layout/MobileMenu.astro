@@ -2,11 +2,11 @@
 const base = import.meta.env.BASE_URL.endsWith("/") ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
 
 const navLinks = [
-  { href: `${base}`, label: "Inicio", emoji: "🗺️" },
-  { href: `${base}blog/`, label: "Revista", emoji: "📰" },
-  { href: `${base}#planificador-rutas`, label: "Planificador", emoji: "🧭" },
-  { href: `${base}tools/`, label: "Herramientas", emoji: "⚙️" },
-  { href: `${base}about/`, label: "Sobre", emoji: "🖋️" },
+  { href: `${base}`, label: "Inicio", key: "nav.home" },
+  { href: `${base}blog/`, label: "Revista", key: "nav.blog" },
+  { href: `${base}#planificador-rutas`, label: "Planificador", key: "nav.planner" },
+  { href: `${base}tools/`, label: "Herramientas", key: "nav.tools" },
+  { href: `${base}about/`, label: "Sobre", key: "nav.about" },
 ];
 ---
 
@@ -44,8 +44,7 @@ const navLinks = [
           href={link.href}
           class="font-display font-bold text-2xl sm:text-3xl text-rw-ink dark:text-rw-white hover:text-rw-horizon dark:hover:text-rw-horizon flex items-center justify-center gap-3 py-2"
         >
-          <span class="text-xl opacity-80">{link.emoji}</span>
-          <span>{link.label}</span>
+          <span data-i18n={link.key}>{link.label}</span>
         </a>
       ))
     }

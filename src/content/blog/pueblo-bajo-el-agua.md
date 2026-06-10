@@ -5,8 +5,8 @@ publishedDate: "2026-05-28"
 author: "Marco Vidal"
 category: "curiosidades-geograficas"
 tags: ["España", "pueblos abandonados", "embalses", "La Rioja", "historia", "curiosidades"]
-image: "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=1200&h=630&fit=crop"
-imageAlt: "Ruinas parcialmente sumergidas emergiendo de un embalse al atardecer"
+image: "/images/editorial/pueblo-bajo-el-agua-hero.svg"
+imageAlt: "Visual editorial de El pueblo español que volvió a aparecer cuando bajó el embalse"
 readingTime: 7
 affiliate: true
 featured: true

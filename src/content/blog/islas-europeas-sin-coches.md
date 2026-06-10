@@ -6,8 +6,8 @@ updatedDate: "2026-06-05"
 author: Marco Vidal
 category: "destinos-secretos"
 tags: ["islas", "europa", "viaje-lento", "rutas"]
-image: "https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=1400&q=84"
-imageAlt: "Costa europea con agua transparente vista desde arriba"
+image: "/images/editorial/islas-europeas-sin-coches-hero.svg"
+imageAlt: "Visual editorial de Islas europeas sin coches: cómo pensar un viaje más lento"
 readingTime: 7
 affiliate: true
 featured: false
@@ -30,7 +30,7 @@ planner:
 
 Una isla sin coches cambia el viaje antes de llegar. Obliga a pensar en ferry, equipaje, horarios, alojamiento cerca del puerto y distancias a pie. Esa incomodidad inicial es precisamente lo que filtra el destino: viajas más lento, dependes menos de aparcamientos y miras mejor el lugar.
 
-![Puerto pequeño de una isla europea sin coches](https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1600&q=84)
+![Visual editorial 1 de Islas europeas sin coches: cómo pensar un viaje más lento](/images/editorial/islas-europeas-sin-coches-panel-1.svg)
 
 No todas las islas sin coches son iguales. Algunas permiten vehículos de residentes. Otras tienen pequeños transportes eléctricos. Algunas son fáciles de visitar en un día y otras requieren dormir allí para no pasar más tiempo esperando barcos que explorando.
 
@@ -44,7 +44,7 @@ También importa el tipo de alojamiento. En islas pequeñas, la disponibilidad c
 
 Una buena isla sin coches tiene tres cosas: una llegada clara, un recorrido natural y un motivo para quedarse más de dos horas. Puede ser una playa, un sendero, un pueblo, un faro o una historia local. Si solo hay una foto bonita, el viaje puede quedarse corto.
 
-![Sendero junto al mar en una isla tranquila](https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1600&q=84)
+![Visual editorial 2 de Islas europeas sin coches: cómo pensar un viaje más lento](/images/editorial/islas-europeas-sin-coches-panel-2.svg)
 
 Para planificar, usamos mapas abiertos como [OpenStreetMap](https://www.openstreetmap.org/) y guías de contexto como [Wikivoyage](https://www.wikivoyage.org/). Cuando hay información turística oficial, esa fuente manda sobre cualquier recomendación antigua.
 
@@ -59,3 +59,13 @@ También conviene revisar si hay cajeros, supermercados, cobertura y normas ambi
 Las islas sin coches funcionan porque bajan el volumen del viaje. Menos ruido, menos prisa, menos lista de "imprescindibles". A cambio piden algo que no siempre damos: leer horarios, mirar el mapa y aceptar que el destino marca el ritmo.
 
 Ese intercambio, cuando está bien elegido, suele valer la pena.
+
+<!-- hermes-editorial-depth-pass:2026-06-06 -->
+
+## La versión sencilla del viaje
+
+Antes de enamorarte de Islas europeas sin coches: cómo pensar un viaje más lento, mira el mapa con las horas del día delante. La distancia en kilómetros engaña cuando hay ferris, túneles, carreteras lentas, cambios de altitud o transporte público escaso.
+
+Si viajas con otra persona en Islas europeas sin coches: cómo pensar un viaje más lento, pacta una regla simple: una visita fuerte al día y una parte flexible. Esa parte puede ser una comida, un paseo sin mapa o una alternativa si cambia el clima.
+
+Un buen itinerario para Islas europeas sin coches: cómo pensar un viaje más lento no agota posibilidades: deja energía para entender dónde estás y cambiar el orden si el día lo pide.

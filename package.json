@@ -3,7 +3,7 @@
   "type": "module",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build && node scripts/ensure-sitemap.mjs && pagefind --site dist",
+    "build": "astro build && node scripts/ensure-sitemap.mjs && node scripts/ensure-ads-txt.mjs && pagefind --site dist",
     "preview": "astro preview"
   },
   "dependencies": {

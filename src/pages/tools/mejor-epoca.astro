@@ -60,12 +60,27 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
       japon: { months: ["abril", "mayo", "noviembre"], avoid: "Golden Week si quieres menos colas", price: "alto", link: "/blog/japon-rural-sin-correr/" },
       espana: { months: ["abril", "mayo", "octubre"], avoid: "puentes nacionales si buscas silencio", price: "bajo-medio", link: "/blog/granada-mas-alla-de-la-alhambra/" },
     };
+    function setTrustedHTML(element, html) {
+      if (!element) return;
+      window.__rwTrustedPolicies = window.__rwTrustedPolicies || {};
+      if (window.trustedTypes && !window.__rwTrustedPolicies.seasonTool) {
+        try {
+          window.__rwTrustedPolicies.seasonTool = window.trustedTypes.createPolicy('routewonder-season-tool', {
+            createHTML: (value) => value,
+          });
+        } catch {
+          window.__rwTrustedPolicies.seasonTool = null;
+        }
+      }
+      const policy = window.__rwTrustedPolicies.seasonTool;
+      element.innerHTML = policy ? policy.createHTML(html) : html;
+    }
     function renderSeason() {
       const destination = document.getElementById('season-destination').value;
       const style = document.getElementById('season-style').value;
       const item = DATA[destination];
       const note = style === 'barato' ? 'Prioriza entre semana y alojamiento fuera del centro.' : style === 'playa' ? 'Comprueba viento, ferris y temperatura del agua.' : style === 'naturaleza' ? 'Mira horas de luz y estado de senderos.' : 'Reserva entradas culturales con margen.';
-      document.getElementById('season-result').innerHTML = `
+      setTrustedHTML(document.getElementById('season-result'), `
         <p class="font-ui text-xs font-bold uppercase tracking-[0.22em] text-rw-horizon">Resultado</p>
         <h2 class="mt-2 font-display text-3xl font-bold text-rw-ink">Mejores meses: ${item.months.join(', ')}</h2>
         <ul class="mt-5 grid gap-3 font-ui text-sm text-rw-ocean/75">
@@ -74,7 +89,7 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
           <li><strong>Consejo:</strong> ${note}</li>
         </ul>
         <a class="mt-6 inline-flex rounded-full bg-rw-ink px-5 py-3 font-ui text-xs font-bold uppercase tracking-wider text-white" href="${item.link}">Leer guía relacionada</a>
-      `;
+      `);
     }
     document.getElementById('season-tool').addEventListener('submit', (event) => { event.preventDefault(); renderSeason(); });
     renderSeason();

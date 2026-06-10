@@ -1,0 +1,74 @@
+---
+const ga4Id = import.meta.env.PUBLIC_GA4_MEASUREMENT_ID || import.meta.env.GA4_MEASUREMENT_ID || "";
+const adsensePublisherId = import.meta.env.PUBLIC_ADSENSE_PUBLISHER_ID || import.meta.env.ADSENSE_PUBLISHER_ID || "";
+---
+
+<script is:inline define:vars={{ ga4Id, adsensePublisherId }}>
+  (() => {
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = window.gtag || function gtag(){ window.dataLayer.push(arguments); };
+
+    window.gtag('consent', 'default', {
+      ad_storage: 'denied',
+      analytics_storage: 'denied',
+      ad_user_data: 'denied',
+      ad_personalization: 'denied',
+      functionality_storage: 'granted',
+      security_storage: 'granted',
+      wait_for_update: 500,
+    });
+
+    const hasRealGa4Id = (value) => /^G-[A-Z0-9]+$/.test(String(value || '')) && !String(value).includes('X');
+    const hasRealAdsensePublisherId = (value) => /^ca-pub-\d+$/.test(String(value || ''));
+
+    const loadScript = (src, attrs = {}) => {
+      if (!src || document.querySelector(`script[src="${src}"]`)) return;
+      const script = document.createElement('script');
+      script.src = src;
+      script.async = true;
+      Object.entries(attrs).forEach(([key, value]) => {
+        if (value !== undefined && value !== null) script.setAttribute(key, String(value));
+      });
+      document.head.appendChild(script);
+    };
+
+    const enableOptionalGoogleTags = () => {
+      const consent = localStorage.getItem('cookie-consent');
+      if (consent !== 'all' && consent !== 'accepted') {
+        window.gtag('consent', 'update', {
+          ad_storage: 'denied',
+          analytics_storage: 'denied',
+          ad_user_data: 'denied',
+          ad_personalization: 'denied',
+          functionality_storage: 'granted',
+          security_storage: 'granted',
+        });
+        return;
+      }
+
+      window.gtag('consent', 'update', {
+        ad_storage: 'granted',
+        analytics_storage: 'granted',
+        ad_user_data: 'granted',
+        ad_personalization: 'granted',
+      });
+
+      if (hasRealGa4Id(ga4Id) && !window.__routewonderGa4Loaded) {
+        window.__routewonderGa4Loaded = true;
+        loadScript(`https://www.googletagmanager.com/gtag/js?id=${ga4Id}`);
+        window.gtag('js', new Date());
+        window.gtag('config', ga4Id, { anonymize_ip: true });
+      }
+
+      if (hasRealAdsensePublisherId(adsensePublisherId) && !window.__routewonderAdsenseLoaded) {
+        window.__routewonderAdsenseLoaded = true;
+        loadScript(`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adsensePublisherId}`, {
+          crossorigin: 'anonymous',
+        });
+      }
+    };
+
+    enableOptionalGoogleTags();
+    window.addEventListener('cookie-consent-updated', enableOptionalGoogleTags);
+  })();
+</script>

@@ -1,0 +1,83 @@
+---
+---
+
+<div class="rw-language-switch" role="group" aria-label="Seleccionar idioma">
+  <button type="button" data-lang-choice="es" aria-pressed="true">ES</button>
+  <button type="button" data-lang-choice="en" aria-pressed="false">EN</button>
+</div>
+
+<script>
+  const routeWonderTranslations = {
+    en: {
+      "nav.home": "Home",
+      "nav.blog": "Magazine",
+      "nav.planner": "Planner",
+      "nav.tools": "Tools",
+      "nav.about": "About",
+      "hero.kicker": "Unusual route magazine",
+      "hero.title": "The world is stranger than you imagine",
+      "hero.copy": "Stories about odd borders, secondary roads, car-free islands and cities that feel invented, written to help you travel with judgement.",
+      "hero.cta.primary": "Read the magazine",
+      "hero.cta.secondary": "Design a route",
+      "hero.note.title": "Editorial rule one",
+      "hero.note.copy": "If a route does not change how you read a map, it does not deserve the cover.",
+      "hero.badge.title": "Living archive",
+      "hero.badge.copy": "Routes that read like a story and work like a guide.",
+      "hero.caption.left": "Weekly visual atlas",
+      "hero.caption.right": "Routes that do not rank first on Google",
+      "search.placeholder": "Search destinations, routes, maps...",
+      "planner.kicker": "Itinerary workshop",
+      "planner.title": "Tell me where you leave from. The map answers.",
+      "planner.copy": "Write your city, adjust the trip and open each destination to see photos, stops, places to sleep and useful links.",
+    },
+    es: {},
+  };
+
+  function setupRouteWonderLanguage() {
+    const buttons = document.querySelectorAll('[data-lang-choice]');
+    if (!buttons.length) return;
+
+    const browserLang = (navigator.language || '').slice(0, 2).toLowerCase();
+    const timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone || '';
+    const storedLang = localStorage.getItem('rw-language');
+    const manualLang = localStorage.getItem('rw-language-manual') === 'true';
+    const spanishRegion = timeZone === 'Europe/Madrid' || timeZone === 'Atlantic/Canary';
+    const initialLang = manualLang && storedLang ? storedLang : (browserLang === 'en' && !spanishRegion ? 'en' : 'es');
+
+    function applyLang(lang) {
+      const dictionary = routeWonderTranslations[lang] || {};
+      document.documentElement.lang = lang;
+      localStorage.setItem('rw-language', lang);
+      document.querySelectorAll('[data-i18n]').forEach((node) => {
+        const key = node.getAttribute('data-i18n');
+        const value = dictionary[key || ''];
+        if (value) node.textContent = value;
+      });
+      document.querySelectorAll('[data-i18n-placeholder]').forEach((node) => {
+        const key = node.getAttribute('data-i18n-placeholder');
+        const value = dictionary[key || ''];
+        if (value) node.setAttribute('placeholder', value);
+      });
+      buttons.forEach((button) => {
+        const active = button.getAttribute('data-lang-choice') === lang;
+        button.setAttribute('aria-pressed', String(active));
+        button.classList.toggle('is-active', active);
+      });
+      window.dispatchEvent(new CustomEvent('site-language-change', { detail: { lang } }));
+    }
+
+    buttons.forEach((button) => {
+      if (button.dataset.boundLang === 'true') return;
+      button.dataset.boundLang = 'true';
+      button.addEventListener('click', () => {
+        localStorage.setItem('rw-language-manual', 'true');
+        applyLang(button.getAttribute('data-lang-choice') || 'es');
+      });
+    });
+
+    applyLang(initialLang);
+  }
+
+  setupRouteWonderLanguage();
+  document.addEventListener('astro:after-swap', setupRouteWonderLanguage);
+</script>

@@ -6,14 +6,14 @@ export default {
     extend: {
       colors: {
         rw: {
-          ink: '#1A1A2E',
-          ocean: '#16213E',
-          horizon: '#E94560',
-          sand: '#F5F0E8',
-          mist: '#A8B2D8',
-          forest: '#2D6A4F',
-          gold: '#F4A261',
-          white: '#FAFAFA',
+          ink: '#18231f',
+          ocean: '#263a34',
+          horizon: '#b15f3e',
+          sand: '#f5f4ee',
+          mist: '#8b9488',
+          forest: '#334b39',
+          gold: '#c69a54',
+          white: '#fbfaf4',
         },
       },
       fontFamily: {

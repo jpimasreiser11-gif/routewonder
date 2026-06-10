@@ -2,23 +2,24 @@
 ---
 <div
   id="cookie-banner"
-  class="fixed bottom-3 left-3 right-3 md:left-auto md:right-4 md:max-w-sm z-50 bg-rw-white/92 dark:bg-rw-ink/95 border border-rw-mist/20 dark:border-rw-mist/10 backdrop-blur-md p-4 rounded-xl shadow-xl border-t-2 border-t-rw-horizon translate-y-24 opacity-0 transition-all duration-500 ease-out pointer-events-none"
+  class="fixed bottom-3 left-3 right-3 md:left-auto md:right-4 md:max-w-sm z-50 bg-rw-ink/94 text-rw-sand border border-rw-gold/20 backdrop-blur-md p-4 rounded-[.9rem] shadow-[0_22px_70px_-42px_rgba(0,0,0,.95)] translate-y-24 opacity-0 transition-all duration-500 ease-out pointer-events-none"
   role="alert"
 >
-  <h3 class="font-subtitle text-base font-bold text-rw-ink dark:text-rw-white mb-1">Privacidad</h3>
-  <p class="font-ui text-xs text-rw-ocean/85 dark:text-rw-mist/85 mb-3 leading-relaxed">
+  <h3 class="font-display text-base font-bold text-rw-white mb-1">Privacidad</h3>
+  <p class="font-ui text-xs text-rw-sand/78 mb-3 leading-relaxed">
     Cookies esenciales y analítica solo si aceptas. Puedes seguir explorando sin bloquear la web.
+    <a href="/cookie-policy/" class="font-bold text-rw-horizon underline underline-offset-2">Política de cookies</a>.
   </p>
   <div class="grid grid-cols-2 gap-2">
     <button
       id="btn-cookies-essential"
-      class="min-h-10 px-3 py-2 text-xs font-semibold font-ui text-rw-ocean/80 dark:text-rw-mist/85 hover:text-rw-horizon border border-rw-mist/35 rounded-lg transition-colors hover:bg-rw-horizon/5"
+      class="min-h-10 px-3 py-2 text-xs font-semibold font-ui text-rw-sand/80 hover:text-rw-white border border-rw-gold/20 rounded-lg transition-colors hover:bg-rw-white/8"
     >
       Solo esenciales
     </button>
     <button
       id="btn-cookies-accept"
-      class="min-h-10 px-3 py-2 text-xs font-semibold font-ui text-rw-white bg-rw-horizon hover:bg-rw-horizon/90 rounded-lg shadow-sm shadow-rw-horizon/20 transition-all active:scale-95"
+      class="min-h-10 px-3 py-2 text-xs font-semibold font-ui text-rw-ink bg-rw-gold hover:bg-rw-gold/90 rounded-lg shadow-sm shadow-rw-gold/20 transition-all active:scale-95"
     >
       Aceptar todas
     </button>
@@ -48,6 +49,7 @@
 
     const dismissBanner = (choice: string) => {
       localStorage.setItem('cookie-consent', choice);
+      window.dispatchEvent(new CustomEvent('cookie-consent-updated', { detail: { choice } }));
       banner.classList.add('translate-y-24', 'opacity-0', 'pointer-events-none');
       banner.classList.remove('translate-y-0', 'opacity-100');
       setTimeout(() => {

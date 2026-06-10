@@ -1,0 +1,130 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import AfsSearchBlock from "../components/ads/AfsSearchBlock.astro";
+import { getCollection } from "astro:content";
+
+const posts = await getCollection("blog", ({ data }) => !data.draft);
+const searchIndex = posts
+  .sort((a, b) => b.data.publishedDate.valueOf() - a.data.publishedDate.valueOf())
+  .map((post) => ({
+    title: post.data.title,
+    description: post.data.description,
+    category: post.data.category?.replace(/-/g, " ") || "Ruta",
+    url: `/blog/${post.slug}/`,
+    image: post.data.image || "/images/route-map.svg",
+    imageAlt: post.data.imageAlt || post.data.title,
+    tags: post.data.tags || [],
+  }));
+---
+
+<BaseLayout
+  title="Buscar rutas y destinos - RouteWonder"
+  description="Busca rutas, destinos, mapas y guías dentro del archivo editorial de RouteWonder."
+>
+  <section class="bg-rw-ink px-4 py-16 text-rw-white sm:px-6 lg:px-10">
+    <div class="mx-auto max-w-[1200px]">
+      <p class="font-mono text-xs font-bold tracking-[0.04em] text-rw-gold">archivo / búsqueda</p>
+      <h1 class="mt-3 max-w-4xl font-display text-5xl font-black leading-[0.96] tracking-[-0.03em] sm:text-7xl">
+        Buscar en el cuaderno de rutas
+      </h1>
+      <form class="mt-8 max-w-2xl rounded-[.9rem] border border-rw-gold/20 bg-rw-sand/10 p-2" id="rw-search-page-form">
+        <label class="sr-only" for="rw-search-page-input">Buscar rutas</label>
+        <input
+          id="rw-search-page-input"
+          name="query"
+          type="search"
+          autocomplete="off"
+          placeholder="Madeira, tren, islas, naturaleza..."
+          class="w-full rounded-[.65rem] border border-rw-gold/10 bg-rw-white px-5 py-4 font-ui text-sm font-semibold text-rw-ink outline-none focus:border-rw-gold focus:ring-4 focus:ring-rw-gold/12"
+        />
+      </form>
+    </div>
+  </section>
+
+  <section class="bg-rw-sand px-4 py-12 sm:px-6 lg:px-10">
+    <div class="mx-auto grid max-w-[1200px] gap-8 lg:grid-cols-[1fr_340px]">
+      <div>
+        <p id="rw-search-summary" class="mb-5 font-ui text-sm text-rw-ocean/72">Escribe una búsqueda para ver rutas relacionadas.</p>
+        <div id="rw-organic-results" class="grid gap-5"></div>
+      </div>
+      <aside class="space-y-5 lg:sticky lg:top-24 lg:self-start">
+        <AfsSearchBlock />
+        <div class="rounded-[.9rem] border border-rw-ink/12 bg-rw-white p-4">
+          <h2 class="font-display text-2xl font-bold text-rw-ink">Sugerencias útiles</h2>
+          <div class="mt-3 flex flex-wrap gap-2 font-ui text-sm">
+            <a class="rounded-md bg-rw-ink px-3 py-2 text-rw-white" href="/search/?query=viaje%20en%20tren">viaje en tren</a>
+            <a class="rounded-md bg-rw-ink px-3 py-2 text-rw-white" href="/search/?query=islas%20sin%20coches">islas sin coches</a>
+            <a class="rounded-md bg-rw-ink px-3 py-2 text-rw-white" href="/search/?query=Madeira">Madeira</a>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <script define:vars={{ searchIndex }}>
+    function setupRouteWonderSearchPage() {
+      const params = new URLSearchParams(window.location.search);
+      const query = (params.get("query") || "").trim();
+      const input = document.getElementById("rw-search-page-input");
+      const form = document.getElementById("rw-search-page-form");
+      const summary = document.getElementById("rw-search-summary");
+      const results = document.getElementById("rw-organic-results");
+      if (!input || !form || !summary || !results) return;
+      input.value = query;
+
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+        const next = input.value.trim();
+        if (next.length > 1) window.location.href = `/search/?query=${encodeURIComponent(next)}`;
+      });
+
+      const normalized = query.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+      const words = normalized.split(/\s+/).filter((word) => word.length > 2);
+      const ranked = searchIndex.map((item) => {
+        const text = `${item.title} ${item.description} ${item.category} ${item.tags.join(" ")}`.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+        const score = words.reduce((total, word) => total + (text.includes(word) ? 1 : 0), 0);
+        return { ...item, score };
+      }).filter((item) => !query || item.score > 0).sort((a, b) => b.score - a.score).slice(0, 12);
+
+      results.replaceChildren();
+      summary.textContent = query
+        ? `${ranked.length} resultados editoriales para "${query}".`
+        : "Escribe una búsqueda para ver rutas relacionadas.";
+
+      const list = ranked.length ? ranked : searchIndex.slice(0, 6);
+      if (!ranked.length && query) {
+        const note = document.createElement("p");
+        note.className = "rounded-[.9rem] border border-rw-ink/12 bg-rw-white p-4 font-ui text-sm text-rw-ocean/72";
+        note.textContent = "No hay una coincidencia exacta. Estas rutas se acercan por temporada, estilo o logística.";
+        results.appendChild(note);
+      }
+
+      list.forEach((item) => {
+        const link = document.createElement("a");
+        link.href = item.url;
+        link.className = "group grid gap-4 rounded-[.9rem] border border-rw-ink/12 bg-rw-white p-3 transition hover:-translate-y-0.5 hover:border-rw-gold/40 sm:grid-cols-[170px_1fr]";
+        const img = document.createElement("img");
+        img.src = item.image;
+        img.alt = item.imageAlt;
+        img.loading = "lazy";
+        img.className = "h-44 w-full rounded-[.55rem] object-cover saturate-[.86] sm:h-full";
+        const body = document.createElement("span");
+        const meta = document.createElement("span");
+        meta.className = "font-mono text-xs font-bold tracking-[0.04em] text-rw-horizon";
+        meta.textContent = item.category;
+        const title = document.createElement("strong");
+        title.className = "mt-2 block font-display text-3xl font-black leading-tight text-rw-ink group-hover:text-rw-horizon";
+        title.textContent = item.title;
+        const desc = document.createElement("span");
+        desc.className = "mt-3 block font-ui text-sm leading-relaxed text-rw-ocean/72";
+        desc.textContent = item.description;
+        body.append(meta, title, desc);
+        link.append(img, body);
+        results.appendChild(link);
+      });
+    }
+
+    setupRouteWonderSearchPage();
+    document.addEventListener("astro:after-swap", setupRouteWonderSearchPage);
+  </script>
+</BaseLayout>

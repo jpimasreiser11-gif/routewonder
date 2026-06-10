@@ -2,39 +2,38 @@
 import CategoryIcon from "../ui/CategoryIcon.astro";
 
 const categories = [
-  { id: 'rutas-sorprendentes', label: 'Rutas Sorprendentes', icon: 'route' },
-  { id: 'ciudades-extranas', label: 'Ciudades Extrañas', icon: 'city' },
-  { id: 'destinos-secretos', label: 'Destinos Secretos', icon: 'island' },
-  { id: 'viaje-economico', label: 'Viaje Económico', icon: 'budget' },
-  { id: 'curiosidades-geograficas', label: 'Curiosidades Geográficas', icon: 'geo' },
-  { id: 'lugares-de-pelicula', label: 'Lugares de Película', icon: 'cinema' },
-  { id: 'viaje-rapido', label: 'Viaje Rápido', icon: 'fast' },
+  { id: 'rutas-sorprendentes', label: 'Rutas sorprendentes', icon: 'route', size: 'wide' },
+  { id: 'ciudades-extranas', label: 'Ciudades extrañas', icon: 'city', size: 'normal' },
+  { id: 'destinos-secretos', label: 'Destinos secretos', icon: 'island', size: 'normal' },
+  { id: 'viaje-economico', label: 'Viaje económico', icon: 'budget', size: 'wide' },
+  { id: 'curiosidades-geograficas', label: 'Curiosidades geográficas', icon: 'geo', size: 'wide' },
+  { id: 'lugares-de-pelicula', label: 'Lugares de película', icon: 'cinema', size: 'normal' },
+  { id: 'viaje-rapido', label: 'Viaje rápido', icon: 'fast', size: 'normal' },
 ];
 
 const base = import.meta.env.BASE_URL.endsWith("/") ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
 ---
 
-<section class="py-8 border-b border-rw-mist/10 bg-rw-white/30 dark:bg-rw-ink/10">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex items-center justify-between mb-4">
-      <h2 class="font-ui text-xs font-bold uppercase tracking-widest text-rw-horizon">Explorar por temática</h2>
-      <a href={`${base}blog/`} class="font-ui text-xs font-semibold text-rw-ocean/60 dark:text-rw-mist/60 hover:text-rw-horizon transition-colors">
-        Ver todos los temas &rarr;
+<section class="border-b border-rw-ink/10 bg-rw-white/46 py-9 dark:bg-rw-white/46">
+  <div class="mx-auto max-w-[1500px] px-4 sm:px-6 lg:px-10">
+    <div class="mb-5 flex items-end justify-between gap-4">
+      <h2 class="font-ui text-xs font-black uppercase tracking-[0.2em] text-rw-horizon">Explorar por temática</h2>
+      <a href={`${base}blog/`} class="rw-luxury-link hidden sm:inline-flex">
+        Ver todos los temas
       </a>
     </div>
     
-    <!-- Horizontal scroll wrapper for mobile, grid for desktop -->
-    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-[repeat(7,minmax(0,1fr))] gap-3">
+    <div class="-mx-4 flex snap-x gap-3 overflow-x-auto px-4 pb-3 sm:mx-0 sm:px-0 lg:grid lg:grid-cols-7 lg:overflow-visible lg:pb-0">
       {
-        categories.map((cat) => (
+        categories.map((cat, index) => (
           <a
             href={`${base}categoria/${cat.id}/`}
-            class="group min-h-[104px] flex flex-col items-center justify-center gap-3 px-3 py-4 bg-rw-white dark:bg-rw-ink border border-rw-mist/20 dark:border-rw-mist/10 rounded-xl hover:border-rw-horizon/40 dark:hover:border-rw-horizon/40 hover:shadow-md hover:translate-y-[-2px] transition-all duration-200 select-none text-center"
+            class="group min-w-[11.5rem] snap-start rounded-[1.25rem] border border-rw-ink/10 bg-rw-sand/70 px-4 py-4 transition duration-200 hover:-translate-y-0.5 hover:border-rw-horizon/40 hover:bg-rw-white lg:min-w-0"
           >
-            <span class="grid place-items-center w-10 h-10 rounded-full bg-rw-horizon/10 text-rw-horizon border border-rw-horizon/15 group-hover:bg-rw-horizon group-hover:text-rw-white transition-colors">
+            <span class="grid h-10 w-10 place-items-center rounded-full border border-rw-horizon/20 bg-rw-horizon/8 text-rw-horizon transition-colors group-hover:bg-rw-horizon group-hover:text-rw-white">
               <CategoryIcon icon={cat.icon} class="w-5 h-5" />
             </span>
-            <span class="font-ui text-[11px] sm:text-xs font-semibold leading-tight text-rw-ink dark:text-rw-white text-balance max-w-[9rem]">
+            <span class="mt-4 block font-ui text-sm font-black leading-tight text-rw-ink text-balance">
               {cat.label}
             </span>
           </a>

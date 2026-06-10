@@ -19,15 +19,15 @@ const formattedDate = new Date(publishedDate).toLocaleDateString("es-ES", {
 const base = import.meta.env.BASE_URL.endsWith("/") ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
 ---
 
-<article class={`flex flex-col bg-rw-white dark:bg-rw-ink border border-rw-mist/20 dark:border-rw-mist/10 rounded-xl overflow-hidden shadow-sm hover:-translate-y-1.5 hover:shadow-lg hover:shadow-rw-horizon/5 hover:border-rw-horizon/30 transition-all duration-300 group ${className}`}>
+<article class={`group flex flex-col overflow-hidden rounded-[1.35rem] border border-rw-ink/10 bg-rw-white/72 transition duration-300 hover:-translate-y-1 hover:border-rw-horizon/32 hover:bg-rw-white hover:shadow-[0_26px_80px_-62px_rgba(33,29,25,.9)] ${className}`}>
   <!-- Article Image -->
-  <a href={`${base}blog/${post.slug}/`} class="relative block overflow-hidden aspect-video bg-rw-sand select-none" aria-label={`Leer artículo: ${title}`}>
+  <a href={`${base}blog/${post.slug}/`} class="relative block overflow-hidden aspect-[4/3] bg-rw-sand select-none" aria-label={`Leer artículo: ${title}`}>
     {
       image ? (
         <img
           src={image}
           alt={imageAlt || ""}
-          class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.035]"
           loading="lazy"
         />
       ) : (
@@ -40,39 +40,39 @@ const base = import.meta.env.BASE_URL.endsWith("/") ? import.meta.env.BASE_URL :
     }
     
     <!-- Float category badge -->
-    <div class="absolute top-3 left-3 z-10 pointer-events-none">
+    <div class="absolute left-3 top-3 z-10 pointer-events-none">
       <Badge category={category} linked={false} />
     </div>
   </a>
 
   <!-- Article Info -->
-  <div class="flex-grow flex flex-col p-5 md:p-6">
+  <div class="flex flex-grow flex-col p-5 md:p-6">
     <!-- Meta Info -->
-    <div class="flex items-center gap-3 font-ui text-[11px] font-semibold text-rw-ocean/50 dark:text-rw-mist/60 uppercase tracking-wider mb-2">
+    <div class="mb-3 flex items-center gap-3 border-b border-rw-ink/10 pb-3 font-ui text-[11px] font-black uppercase tracking-[0.14em] text-rw-mist">
       <time datetime={publishedDate.toISOString()}>{formattedDate}</time>
       {readingTime && <span>·</span> <span>{readingTime} min de lectura</span>}
     </div>
 
     <!-- Title -->
-    <h3 class="font-display font-bold text-xl sm:text-2xl text-rw-ink dark:text-rw-white mb-2 leading-snug group-hover:text-rw-horizon transition-colors">
+    <h3 class="mb-3 font-display text-2xl font-black leading-tight tracking-[-0.012em] text-rw-ink transition-colors group-hover:text-rw-horizon">
       <a href={`${base}blog/${post.slug}/`}>
         {title}
       </a>
     </h3>
 
     <!-- Excerpt -->
-    <p class="font-ui text-sm text-rw-ocean/75 dark:text-rw-mist/75 mb-6 line-clamp-3 leading-relaxed">
+    <p class="mb-6 font-ui text-sm leading-relaxed text-rw-ocean/72 line-clamp-3">
       {description}
     </p>
 
     <!-- Footer Author info -->
-    <div class="mt-auto pt-4 border-t border-rw-mist/10 flex items-center gap-3 select-none">
-      <div class="w-8 h-8 rounded-full bg-rw-horizon/10 border border-rw-horizon/25 flex items-center justify-center font-display font-bold text-xs text-rw-horizon">
+    <div class="mt-auto flex items-center gap-3 border-t border-rw-ink/10 pt-4 select-none">
+      <div class="flex h-8 w-8 items-center justify-center rounded-full border border-rw-horizon/25 bg-rw-horizon/10 font-display text-xs font-bold text-rw-horizon">
         {author.split(" ").map(n => n[0]).join("")}
       </div>
       <div class="font-ui text-xs">
-        <p class="font-bold text-rw-ink dark:text-rw-white leading-none">{author}</p>
-        <p class="text-[10px] text-rw-ocean/50 dark:text-rw-mist/50 tracking-wider uppercase mt-0.5">Explorador &amp; Autor</p>
+        <p class="font-bold leading-none text-rw-ink">{author}</p>
+        <p class="mt-0.5 text-[10px] uppercase tracking-wider text-rw-ocean/50">Explorador &amp; Autor</p>
       </div>
     </div>
   </div>

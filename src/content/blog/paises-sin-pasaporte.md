@@ -5,8 +5,8 @@ publishedDate: "2026-05-27"
 author: "Marco Vidal"
 category: "viaje-economico"
 tags: ["documentación", "DNI", "Europa", "viajes baratos", "sin pasaporte", "consejos"]
-image: "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=1200&h=630&fit=crop"
-imageAlt: "Pasaporte y tarjeta de embarque sobre un mapa desplegado"
+image: "/images/editorial/paises-sin-pasaporte-hero.svg"
+imageAlt: "Visual editorial de Países a los que puedes viajar desde España sin pasaporte"
 readingTime: 6
 affiliate: true
 featured: true

@@ -1,13 +1,14 @@
 ---
 import ThemeToggle from "../ui/ThemeToggle.astro";
+import LanguageSwitcher from "../ui/LanguageSwitcher.astro";
 const base = import.meta.env.BASE_URL.endsWith("/") ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
 
 const navLinks = [
-  { href: `${base}`, label: "Inicio" },
-  { href: `${base}blog/`, label: "Revista" },
-  { href: `${base}#planificador-rutas`, label: "Planificador" },
-  { href: `${base}tools/`, label: "Herramientas" },
-  { href: `${base}about/`, label: "Sobre" },
+  { href: `${base}`, label: "Inicio", key: "nav.home" },
+  { href: `${base}blog/`, label: "Revista", key: "nav.blog" },
+  { href: `${base}#planificador-rutas`, label: "Planificador", key: "nav.planner" },
+  { href: `${base}tools/`, label: "Herramientas", key: "nav.tools" },
+  { href: `${base}about/`, label: "Sobre", key: "nav.about" },
 ];
 
 const currentPath = Astro.url.pathname;
@@ -15,7 +16,7 @@ const currentPath = Astro.url.pathname;
 
 <header
   id="main-header"
-  class="sticky top-0 z-40 w-full bg-rw-white/80 dark:bg-rw-ink/80 border-b border-rw-mist/15 dark:border-rw-mist/10 backdrop-blur-md transition-all duration-300"
+  class="sticky top-0 z-40 w-full border-b border-rw-ink/10 bg-rw-white/82 shadow-[0_1px_0_rgba(255,253,248,.65)_inset] backdrop-blur-xl transition-all duration-300 dark:border-rw-white/10 dark:bg-rw-white/78"
 >
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between">
     <!-- Brand Logo -->
@@ -34,6 +35,7 @@ const currentPath = Astro.url.pathname;
           return (
             <a
               href={link.href}
+              data-i18n={link.key}
               class={`font-ui text-sm font-semibold tracking-wide transition-colors ${
                 isActive
                   ? "text-rw-horizon border-b-2 border-rw-horizon pb-1"
@@ -49,6 +51,7 @@ const currentPath = Astro.url.pathname;
 
     <!-- Header Actions (Toggle + Mobile Button) -->
     <div class="flex items-center gap-4">
+      <LanguageSwitcher />
       <ThemeToggle />
       
       <!-- Mobile hamburger trigger -->

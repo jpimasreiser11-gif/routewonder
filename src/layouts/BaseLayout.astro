@@ -1,5 +1,6 @@
 ---
 import SEOHead from "../components/seo/SEOHead.astro";
+import ConsentScripts from "../components/seo/ConsentScripts.astro";
 import Header from "../components/layout/Header.astro";
 import Footer from "../components/layout/Footer.astro";
 import MobileMenu from "../components/layout/MobileMenu.astro";
@@ -21,6 +22,7 @@ const { title, description, image, imageAlt, type } = Astro.props;
 <html lang="es">
   <head>
     <SEOHead {title} {description} {image} {imageAlt} {type} />
+    <ConsentScripts />
     <ViewTransitions />
     
     <!-- Script to handle dark mode toggle local storage before rendering page -->
@@ -74,6 +76,28 @@ const { title, description, image, imageAlt, type } = Astro.props;
       }
       setupRevealObserver();
       document.addEventListener('astro:after-swap', setupRevealObserver);
+    </script>
+    <script is:inline>
+      function setupRouteWonderTilt() {
+        const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        const finePointer = window.matchMedia('(pointer: fine)').matches;
+        if (reduceMotion || !finePointer) return;
+        document.querySelectorAll('[data-rw-tilt-lite]').forEach((item) => {
+          if (item.dataset.rwTiltReady === 'true') return;
+          item.dataset.rwTiltReady = 'true';
+          item.addEventListener('pointermove', (event) => {
+            const rect = item.getBoundingClientRect();
+            const x = (event.clientX - rect.left) / rect.width;
+            const y = (event.clientY - rect.top) / rect.height;
+            item.style.transform = `perspective(1100px) rotateX(${(0.5 - y) * 2.5}deg) rotateY(${(x - 0.5) * 3.5}deg)`;
+          });
+          item.addEventListener('pointerleave', () => {
+            item.style.transform = '';
+          });
+        });
+      }
+      setupRouteWonderTilt();
+      document.addEventListener('astro:after-swap', setupRouteWonderTilt);
     </script>
   </body>
 </html>

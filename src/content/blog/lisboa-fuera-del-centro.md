@@ -6,8 +6,8 @@ updatedDate: "2026-06-05"
 author: "Marco Vidal"
 category: "ciudades-extranas"
 tags: ["Portugal", "cultura", "guía", "ruta", "viaje práctico"]
-image: "https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?auto=format&fit=crop&w=1400&q=84"
-imageAlt: "Imagen de viaje relacionada con Lisboa más allá de Alfama"
+image: "/images/editorial/lisboa-fuera-del-centro-hero.svg"
+imageAlt: "Visual editorial de Lisboa más allá de Alfama: los barrios donde vive la gente real"
 readingTime: 10
 affiliate: true
 featured: false
@@ -29,7 +29,7 @@ planner:
 
 Lisboa fuera del centro no necesita una lista infinita de imprescindibles. Necesita una pregunta mejor: **qué tipo de viaje quieres tener allí**. Si buscas tranvías, miradores secundarios y barrios donde la ciudad respira mejor, esta ruta tiene sentido. Si solo quieres tachar lugares, probablemente te cansará antes de empezar.
 
-![Vista principal de Lisboa fuera del centro](https://images.unsplash.com/photo-1470770903676-69b98201ea1c?auto=format&fit=crop&w=1600&q=84)
+![Visual editorial 1 de Lisboa más allá de Alfama: los barrios donde vive la gente real](/images/editorial/lisboa-fuera-del-centro-panel-1.svg)
 
 ## Resumen para decidir rápido
 
@@ -45,35 +45,35 @@ Lisboa fuera del centro no necesita una lista infinita de imprescindibles. Neces
 
 Empieza por una base clara y dibuja un círculo sencillo alrededor. El error habitual es poner todos los lugares bonitos en una misma ruta sin mirar carreteras, horarios o cansancio. En Lisboa fuera del centro, la experiencia mejora cuando dejas huecos.
 
-![Mapa visual y ruta para Lisboa fuera del centro](https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1600&q=84)
+![Visual editorial 2 de Lisboa más allá de Alfama: los barrios donde vive la gente real](/images/editorial/lisboa-fuera-del-centro-panel-2.svg)
 
 ### Día 1: entender el lugar
 
-El primer día no debería ser el más ambicioso. Sirve para caminar, mirar dónde está el agua, la estación, el centro real y los barrios donde la gente vive sin mirar el reloj turístico.
+En Lisboa más allá de Alfama: los barrios donde vive la gente real, el primer día sirve para medir distancias reales y ajustar expectativas: dónde conviene dormir, qué trayecto pesa más y qué parte merece una mañana completa.
 
 ### Día 2: el motivo principal
 
-Reserva aquí el plan que justifica el viaje: mirador, museo, carretera, caminata, mercado o excursión. Hazlo temprano si depende de luz o clima.
+El plan fuerte debe elegirse por una razón concreta en Lisboa más allá de Alfama: los barrios donde vive la gente real: luz, acceso, horario o logística. Si todo compite por ser imprescindible, la ruta se vuelve ruido.
 
 ### Día 3: detalle local
 
-Busca una parte menos obvia: una calle secundaria, un pueblo cercano, una comida concreta o una ruta corta a pie. Ese detalle suele ser lo que convierte el viaje en recuerdo.
+Deja una franja para el detalle local de Lisboa más allá de Alfama: los barrios donde vive la gente real: una parada pequeña, una comida sencilla o un paseo que no necesite reserva. Ahí se nota si el itinerario respira.
 
-![Detalle local de Lisboa fuera del centro](https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1600&q=84)
+![Visual editorial 3 de Lisboa más allá de Alfama: los barrios donde vive la gente real](/images/editorial/lisboa-fuera-del-centro-panel-3.svg)
 
 ## Cuándo ir
 
-La mejor temporada no siempre es la más famosa. Primavera y otoño suelen dar equilibrio entre luz, precio y temperatura. Verano funciona si el viaje depende de playa o montaña; invierno puede ser excelente si el destino tiene vida urbana.
+La temporada ideal para Lisboa más allá de Alfama: los barrios donde vive la gente real depende menos de la postal y más de la fricción: horarios, calor, viento, ferris, carreteras y precio del alojamiento.
 
-![Luz de temporada en Lisboa fuera del centro](https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=1600&q=84)
+![Visual editorial 4 de Lisboa más allá de Alfama: los barrios donde vive la gente real](/images/editorial/lisboa-fuera-del-centro-panel-4.svg)
 
 ## Presupuesto sin prometer milagros
 
-Los precios cambian según vuelos, eventos y antelación. Para estimar sin engañarte, separa cuatro bloques: transporte principal, alojamiento, comidas y extras. Si uno se dispara, ajusta otro antes de cancelar el viaje.
+Para presupuestar Lisboa más allá de Alfama: los barrios donde vive la gente real, separa transporte, base, comidas y margen. Si una partida sube, recorta desplazamientos antes que quitar el plan que da sentido al viaje.
 
 ## Mini mapa de decisiones
 
-- Si tienes poco tiempo: una base, una excursión y una mañana libre.
+- Si tienes poco tiempo en Lisboa más allá de Alfama: los barrios donde vive la gente real: una base, una excursión y una mañana libre.
 - Si viajas con familia: alojamiento cerca del transporte y planes cortos.
 - Si vas con amigos: prioriza comida, ruta visual y una noche sin desplazamientos.
 - Si vas solo: elige lugares con buena movilidad y cafés donde descansar.
@@ -82,11 +82,11 @@ Los precios cambian según vuelos, eventos y antelación. Para estimar sin enga�
 
 ### ¿Es mejor reservar antes?
 
-Reserva alojamiento y transporte principal. Deja actividades secundarias con margen si dependen del clima.
+Reserva lo que pueda bloquear Lisboa más allá de Alfama: los barrios donde vive la gente real: base, llegada y trayectos escasos. Lo demás conviene dejarlo flexible si depende de clima, cansancio o luz.
 
 ### ¿Hace falta coche?
 
-Depende del destino. Si hay trenes o buses frecuentes, evita el coche. Si la gracia está en miradores, pueblos o costa dispersa, un coche pequeño puede cambiar el viaje.
+En Lisboa más allá de Alfama: los barrios donde vive la gente real, el coche solo compensa si reduce cambios incómodos o abre paradas que no funcionan bien en transporte público. Si solo añade aparcamiento y tensión, sobra.
 
 ### ¿Qué haría distinto en una segunda visita?
 
@@ -95,7 +95,7 @@ Iría más lento. La mayoría de rutas fallan por exceso, no por falta de opcion
 
 ## Lo que nadie te cuenta sobre Lisboa más allá de Alfama
 
-Antes de cerrar el plan, revisa siempre horarios oficiales, estado de carreteras o senderos y el último transporte de vuelta. En destinos pequeños, un cierre cambia más que el precio de una entrada.
+Antes de cerrar Lisboa más allá de Alfama: los barrios donde vive la gente real, revisa horarios oficiales, estado de carreteras o senderos y el último transporte de vuelta. En esta ruta, un cierre cambia más que el precio de una entrada.
 
 
 ## ¿Cuánto cuesta viajar a Lisboa más allá de Alfama?
@@ -107,10 +107,21 @@ Un viaje corto a Lisboa más allá de Alfama suele moverse entre 450€ y 1.200�
 | Alojamiento | 35-70€/noche | 80-140€/noche | Temporada y ubicación |
 | Comidas | 15-25€/día | 30-50€/día | Restaurantes y zonas turísticas |
 | Transporte local | 10-25€/día | 30-65€/día | Coche, tren o excursiones |
+| Ajuste local | Reserva primero lo que condicione Lisboa más allá de Alfama | El transporte decide más que el precio del hotel | Nota específica de Lisboa más allá de Alfama: los barrios donde vive la gente real |
 
 Precios orientativos. Verifica siempre antes de reservar.
 
 
 ## Dato verificado
 
-La información práctica de esta guía debe contrastarse con fuentes oficiales de transporte, turismo local o patrimonio antes del viaje. Los horarios, cierres y precios pueden cambiar sin aviso.
+La información práctica de Lisboa más allá de Alfama: los barrios donde vive la gente real debe contrastarse con fuentes oficiales de transporte, turismo local o patrimonio antes del viaje. Horarios, cierres y precios cambian sin pedir permiso.
+
+<!-- hermes-editorial-depth-pass:2026-06-06 -->
+
+## La versión sencilla del viaje
+
+Antes de enamorarte de Lisboa más allá de Alfama: los barrios donde vive la gente real, mira el mapa con las horas del día delante. La distancia en kilómetros engaña cuando hay ferris, túneles, carreteras lentas, cambios de altitud o transporte público escaso.
+
+Si viajas con otra persona en Lisboa más allá de Alfama: los barrios donde vive la gente real, pacta una regla simple: una visita fuerte al día y una parte flexible. Esa parte puede ser una comida, un paseo sin mapa o una alternativa si cambia el clima.
+
+Un buen itinerario para Lisboa más allá de Alfama: los barrios donde vive la gente real no agota posibilidades: deja energía para entender dónde estás y cambiar el orden si el día lo pide.

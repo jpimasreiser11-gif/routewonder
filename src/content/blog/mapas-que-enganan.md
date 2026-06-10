@@ -6,8 +6,8 @@ updatedDate: "2026-06-05"
 author: Marco Vidal
 category: "curiosidades-geograficas"
 tags: ["mapas", "geografia", "proyecciones", "curiosidades"]
-image: "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&w=1800&q=85"
-imageAlt: "Mapa del mundo sobre una pared"
+image: "/images/editorial/mapas-que-enganan-hero.svg"
+imageAlt: "Visual editorial de Por qué algunos mapas engañan aunque estén bien hechos"
 readingTime: 6
 affiliate: true
 featured: false

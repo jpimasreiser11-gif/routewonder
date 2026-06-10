@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" fill="none" role="img" aria-label="RouteWonder vertical video cover">
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920" fill="none" role="img" aria-label="RouteWonder vertical video cover">
   <rect width="1080" height="1920" fill="#16213E"/>
   <circle cx="810" cy="290" r="230" fill="#F4A261" opacity=".32"/>
   <path d="M0 1220c170-165 322-145 520-268 235-146 350-317 560-210v1178H0v-700z" fill="#1A1A2E"/>

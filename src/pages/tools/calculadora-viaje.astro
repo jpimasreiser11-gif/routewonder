@@ -104,7 +104,7 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
             <label class="travel-type-option cursor-pointer">
               <input type="radio" name="tipo" value="mochilero" class="hidden peer" />
               <div class="p-4 rounded-xl border-2 border-rw-mist/20 dark:border-rw-mist/10 peer-checked:border-rw-horizon peer-checked:bg-rw-horizon/5 transition-all hover:border-rw-horizon/50 text-center">
-                <span class="text-2xl block mb-1">🎒</span>
+                <span class="mx-auto mb-2 grid h-8 w-8 place-items-center rounded-full border border-rw-horizon/25 text-[11px] font-ui font-black text-rw-horizon">BK</span>
                 <span class="font-ui text-sm font-bold text-rw-ink dark:text-rw-sand">Mochilero</span>
                 <span class="block font-ui text-xs text-rw-ocean/60 dark:text-rw-mist/50 mt-1">Hostels, comida local, transporte público</span>
               </div>
@@ -112,7 +112,7 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
             <label class="travel-type-option cursor-pointer">
               <input type="radio" name="tipo" value="medio" class="hidden peer" checked />
               <div class="p-4 rounded-xl border-2 border-rw-mist/20 dark:border-rw-mist/10 peer-checked:border-rw-horizon peer-checked:bg-rw-horizon/5 transition-all hover:border-rw-horizon/50 text-center">
-                <span class="text-2xl block mb-1">🧳</span>
+                <span class="mx-auto mb-2 grid h-8 w-8 place-items-center rounded-full border border-rw-horizon/25 text-[11px] font-ui font-black text-rw-horizon">ST</span>
                 <span class="font-ui text-sm font-bold text-rw-ink dark:text-rw-sand">Estándar</span>
                 <span class="block font-ui text-xs text-rw-ocean/60 dark:text-rw-mist/50 mt-1">Hotel 3★, restaurantes, mix transporte</span>
               </div>
@@ -120,7 +120,7 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
             <label class="travel-type-option cursor-pointer">
               <input type="radio" name="tipo" value="lujo" class="hidden peer" />
               <div class="p-4 rounded-xl border-2 border-rw-mist/20 dark:border-rw-mist/10 peer-checked:border-rw-horizon peer-checked:bg-rw-horizon/5 transition-all hover:border-rw-horizon/50 text-center">
-                <span class="text-2xl block mb-1">✨</span>
+                <span class="mx-auto mb-2 grid h-8 w-8 place-items-center rounded-full border border-rw-horizon/25 text-[11px] font-ui font-black text-rw-horizon">PR</span>
                 <span class="font-ui text-sm font-bold text-rw-ink dark:text-rw-sand">Premium</span>
                 <span class="block font-ui text-xs text-rw-ocean/60 dark:text-rw-mist/50 mt-1">Hotel 4-5★, fine dining, privado</span>
               </div>
@@ -135,6 +135,7 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
         >
           Calcular presupuesto →
         </button>
+        <p id="calc-status" class="mt-4 hidden rounded-xl border border-rw-horizon/20 bg-rw-horizon/8 px-4 py-3 font-ui text-sm text-rw-horizon" role="status"></p>
       </div>
 
       <!-- Results (hidden by default) -->
@@ -194,8 +195,8 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
         <!-- Disclaimer -->
         <p class="font-ui text-xs text-rw-ocean/50 dark:text-rw-mist/40 mt-6 leading-relaxed">
           ⓘ Estos precios son estimaciones basadas en datos reales de viajeros en 2025-2026. 
-          Los precios pueden variar según temporada, disponibilidad y elecciones personales. 
-          No incluye vuelos internacionales.
+          Los precios pueden variar según temporada, disponibilidad y elecciones personales.
+          No incluye vuelos internacionales. Revisa siempre tarifas oficiales antes de reservar.
         </p>
 
         <!-- CTA to articles -->
@@ -250,9 +251,12 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
     const tipo = (document.querySelector('input[name="tipo"]:checked') as HTMLInputElement)?.value || 'medio';
 
     if (!destino || !COSTES[destino]) {
-      alert('Selecciona un destino válido');
+      const status = document.getElementById('calc-status')!;
+      status.textContent = 'Elige un destino para calcular. Si aún dudas, empieza por España, Portugal o Marruecos para comparar rangos.';
+      status.classList.remove('hidden');
       return;
     }
+    document.getElementById('calc-status')!.classList.add('hidden');
 
     const costes = COSTES[destino][tipo];
     const alojamiento = costes.aloj * dias;
@@ -282,6 +286,8 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
     if (btn) {
       btn.addEventListener('click', calcular);
     }
+    const destino = document.getElementById('destino') as HTMLSelectElement | null;
+    if (destino && !destino.value) destino.value = 'portugal';
   }
 
   setupCalculator();

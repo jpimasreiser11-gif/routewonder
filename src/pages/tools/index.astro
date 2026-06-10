@@ -2,16 +2,16 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 
 const tools = [
-  { title: "Calculadora de presupuesto", text: "Estima alojamiento, comida, transporte y actividades por destino.", href: "/tools/calculadora-viaje/" },
-  { title: "Mejor época para viajar", text: "Elige destino y estilo para ver meses recomendados y qué evitar.", href: "/tools/mejor-epoca/" },
-  { title: "Ruta en coche por días", text: "Crea una estructura sencilla por etapas, paradas y ritmo.", href: "/tools/ruta-en-coche/" },
+  { title: "Calculadora de presupuesto", text: "Estima alojamiento, comida, transporte y actividades por destino.", href: "/tools/calculadora-viaje/", cta: "Calcular presupuesto" },
+  { title: "Mejor época para viajar", text: "Elige destino y estilo para ver meses recomendados y qué evitar.", href: "/tools/mejor-epoca/", cta: "Elegir temporada" },
+  { title: "Ruta en coche por días", text: "Crea una estructura sencilla por etapas, paradas y ritmo.", href: "/tools/ruta-en-coche/", cta: "Trazar etapas" },
 ];
 ---
 
 <BaseLayout title="Herramientas de viaje - RouteWonder" description="Calculadoras y planificadores gratuitos para decidir rutas, presupuesto y mejor época de viaje.">
   <section class="bg-rw-sand px-4 py-16 sm:px-6 lg:px-8">
     <div class="mx-auto max-w-6xl">
-      <p class="font-ui text-xs font-bold uppercase tracking-[0.28em] text-rw-horizon">herramientas gratuitas</p>
+      <p class="font-ui text-xs font-semibold tracking-[0.08em] text-rw-horizon">mesa de planificación</p>
       <h1 class="mt-3 font-display text-5xl font-black text-rw-ink">Decide el viaje antes de reservar.</h1>
       <p class="mt-4 max-w-2xl font-ui text-base leading-relaxed text-rw-ocean/75">Pequeñas utilidades para pasar de una idea bonita a una ruta concreta.</p>
       <div class="mt-10 grid gap-5 md:grid-cols-3">
@@ -19,7 +19,7 @@ const tools = [
           <a href={tool.href} class="rounded-2xl border border-rw-mist/20 bg-rw-white p-6 shadow-sm transition hover:-translate-y-1 hover:border-rw-horizon">
             <h2 class="font-display text-2xl font-bold text-rw-ink">{tool.title}</h2>
             <p class="mt-3 font-ui text-sm leading-relaxed text-rw-ocean/75">{tool.text}</p>
-            <span class="mt-5 inline-flex font-ui text-xs font-bold uppercase tracking-wider text-rw-horizon">Abrir herramienta</span>
+            <span class="mt-5 inline-flex font-ui text-xs font-bold tracking-[-0.01em] text-rw-horizon">{tool.cta}</span>
           </a>
         ))}
       </div>

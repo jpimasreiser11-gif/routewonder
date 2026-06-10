@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" fill="none" role="img" aria-label="RouteWonder social square">
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080" fill="none" role="img" aria-label="RouteWonder social square">
   <rect width="1080" height="1080" fill="#F5F0E8"/>
   <path d="M0 730c160-110 260-95 418-185 191-109 281-230 488-158 85 29 136 76 174 127v566H0V730z" fill="#16213E"/>
   <path d="M144 730c183-146 343 85 515-52 107-85 166-221 308-176" stroke="#E94560" stroke-width="12" stroke-linecap="round" stroke-dasharray="22 28"/>

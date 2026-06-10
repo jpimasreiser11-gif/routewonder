@@ -1,0 +1,38 @@
+---
+const afsEnabled = String(import.meta.env.PUBLIC_AFS_ENABLED || "").toLowerCase() === "true";
+const pubId = import.meta.env.AFS_ROUTEWONDER_PUB_ID || import.meta.env.PUBLIC_AFS_ROUTEWONDER_PUB_ID || "";
+const styleId = import.meta.env.AFS_ROUTEWONDER_STYLE_ID || import.meta.env.PUBLIC_AFS_ROUTEWONDER_STYLE_ID || "";
+const shouldRender = afsEnabled && pubId && styleId;
+const adtest = import.meta.env.PROD ? undefined : "on";
+---
+
+{shouldRender ? (
+  <section class="rounded-[.9rem] border border-rw-ink/12 bg-rw-white p-4 shadow-[0_24px_70px_-58px_rgba(24,35,31,.8)]" aria-label="Anuncios relacionados con la búsqueda">
+    <p class="mb-3 font-mono text-xs font-bold tracking-[0.04em] text-rw-mist">Resultados patrocinados relacionados</p>
+    <div id="afs-routewonder-search"></div>
+    <script async src="https://www.google.com/adsense/search/ads.js"></script>
+    <script is:inline define:vars={{ pubId, styleId, adtest }}>
+      const query = new URLSearchParams(window.location.search).get("query") || "";
+      if (query) {
+      window._googCsa = window._googCsa || function () { (window._googCsa.q = window._googCsa.q || []).push(arguments); };
+      const pageOptions = {
+        pubId,
+        styleId,
+        query,
+        linkTarget: "_blank",
+      };
+      if (adtest) pageOptions.adtest = adtest;
+      window._googCsa("ads", pageOptions, {
+        container: "afs-routewonder-search",
+        number: 4,
+      });
+      }
+    </script>
+  </section>
+) : (
+  <section class="rounded-[.9rem] border border-rw-ink/12 bg-rw-white p-4" aria-label="Estado de anuncios de búsqueda">
+    <p class="font-ui text-sm leading-relaxed text-rw-ocean/74">
+      Los anuncios de búsqueda se activarán aquí cuando AdSense for Search esté aprobado y configurado con IDs reales.
+    </p>
+  </section>
+)}

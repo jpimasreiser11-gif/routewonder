@@ -4,21 +4,27 @@
 
 @layer base {
   :root {
-    --rw-ink: #1A1A2E;
-    --rw-ocean: #16213E;
-    --rw-horizon: #E94560;
-    --rw-sand: #F5F0E8;
-    --rw-mist: #A8B2D8;
-    --rw-forest: #2D6A4F;
-    --rw-gold: #F4A261;
-    --rw-white: #FAFAFA;
+    --rw-ink: #18231f;
+    --rw-ocean: #263a34;
+    --rw-horizon: #b15f3e;
+    --rw-sand: #f5f4ee;
+    --rw-mist: #8b9488;
+    --rw-forest: #334b39;
+    --rw-gold: #c69a54;
+    --rw-white: #fbfaf4;
+    --rw-paper-line: rgba(24, 35, 31, 0.12);
+    --rw-paper-grain: rgba(24, 35, 31, 0.05);
     color-scheme: light;
   }
 
   .dark {
-    --rw-sand: #1A1A2E;
-    --rw-white: #0F0F23;
-    --rw-ink: #F5F0E8;
+    --rw-sand: #1d211e;
+    --rw-white: #151815;
+    --rw-ink: #f7f4ed;
+    --rw-ocean: #d7d0c4;
+    --rw-mist: #a8a79b;
+    --rw-paper-line: rgba(247, 244, 237, 0.12);
+    --rw-paper-grain: rgba(247, 244, 237, 0.045);
     color-scheme: dark;
   }
 
@@ -30,6 +36,13 @@
 
   body {
     @apply bg-rw-sand text-rw-ink font-body transition-colors duration-300;
+    background-image:
+      linear-gradient(90deg, var(--rw-paper-line) 1px, transparent 1px),
+      linear-gradient(var(--rw-paper-line) 1px, transparent 1px),
+      radial-gradient(circle at 12% 22%, rgba(51,75,57,.11), transparent 24rem),
+      radial-gradient(circle at 88% 0%, rgba(198,154,84,.11), transparent 22rem);
+    background-size: 118px 118px, 118px 118px, auto, auto;
+    text-rendering: optimizeLegibility;
   }
 
   .dark body {
@@ -37,27 +50,29 @@
   }
 
   ::selection {
-    background-color: #E94560;
-    color: #FAFAFA;
+    background-color: var(--rw-horizon);
+    color: var(--rw-white);
   }
 
   ::-moz-selection {
-    background-color: #E94560;
-    color: #FAFAFA;
+    background-color: var(--rw-horizon);
+    color: var(--rw-white);
   }
 
   /* Scrollbar styling */
   ::-webkit-scrollbar {
-    width: 8px;
+    width: 7px;
+    height: 7px;
   }
 
   ::-webkit-scrollbar-track {
-    background: var(--rw-sand);
+    background: color-mix(in srgb, var(--rw-sand) 86%, var(--rw-ink));
   }
 
   ::-webkit-scrollbar-thumb {
-    background: var(--rw-mist);
-    border-radius: 4px;
+    background: color-mix(in srgb, var(--rw-horizon) 62%, var(--rw-mist));
+    border-radius: 999px;
+    border: 2px solid var(--rw-sand);
   }
 
   ::-webkit-scrollbar-thumb:hover {
@@ -93,7 +108,8 @@
   }
 
   .prose-rw blockquote {
-    @apply border-l-4 border-rw-horizon pl-6 py-2 my-8 italic text-rw-ocean/80 bg-rw-horizon/5 rounded-r-lg;
+    @apply border border-rw-horizon/20 pl-6 py-4 my-8 italic text-rw-ocean/80 bg-rw-horizon/5;
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,.35);
   }
 
   .dark .prose-rw blockquote {
@@ -143,8 +159,8 @@
   }
 
   .card-hover:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 12px 40px -8px rgba(233, 69, 96, 0.2);
+    transform: translateY(-4px);
+    box-shadow: 0 18px 50px -30px rgba(24, 35, 31, 0.4);
   }
 
   /* Glass effect for header */
@@ -153,10 +169,121 @@
     -webkit-backdrop-filter: blur(16px) saturate(180%);
   }
 
-  /* Gradient text */
-  .gradient-text {
-    @apply bg-clip-text text-transparent;
-    background-image: linear-gradient(135deg, var(--rw-horizon), var(--rw-gold));
+  .rw-editorial-rule {
+    background: linear-gradient(90deg, transparent, var(--rw-paper-line), transparent);
+    height: 1px;
+  }
+
+  .rw-luxury-link {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: .45rem;
+    font-family: "DM Sans", system-ui, sans-serif;
+    font-size: .78rem;
+    font-weight: 800;
+    letter-spacing: .02em;
+    text-transform: none;
+    color: var(--rw-ink);
+    text-decoration: none;
+  }
+
+  .rw-luxury-link::after {
+    content: "";
+    height: 1px;
+    width: 2.6rem;
+    background: var(--rw-horizon);
+    transform-origin: left;
+    transition: transform 220ms ease;
+  }
+
+  .rw-luxury-link:hover::after {
+    transform: scaleX(1.35);
+  }
+
+  .rw-language-switch {
+    display: inline-grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    min-width: 72px;
+    border: 1px solid rgba(33, 29, 25, 0.12);
+    border-radius: 12px;
+    background: rgba(245, 244, 238, 0.78);
+    padding: 3px;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.72);
+  }
+
+  .rw-language-switch button {
+    min-height: 32px;
+    border-radius: 9px;
+    font: 900 11px/1 "DM Sans", system-ui, sans-serif;
+    letter-spacing: .08em;
+    color: var(--rw-ocean);
+    transition: transform 180ms ease, background 180ms ease, color 180ms ease;
+  }
+
+  .rw-language-switch button:hover {
+    transform: translateY(-1px);
+  }
+
+  .rw-language-switch button.is-active,
+  .rw-language-switch button[aria-pressed="true"] {
+    background: var(--rw-ink);
+    color: var(--rw-white);
+  }
+
+  .rw-hero-premium::after {
+    content: "";
+    position: absolute;
+    inset: auto 0 0 0;
+    height: 7rem;
+    pointer-events: none;
+    background: linear-gradient(to bottom, transparent, rgba(25,36,32,.86));
+    z-index: -1;
+  }
+
+  .rw-depth-frame {
+    transform-style: preserve-3d;
+    will-change: transform;
+  }
+
+  .rw-depth-frame::before {
+    content: "";
+    position: absolute;
+    inset: 14px;
+    z-index: 2;
+    pointer-events: none;
+    border: 1px solid rgba(255,253,248,.54);
+    border-radius: .7rem;
+    mix-blend-mode: soft-light;
+  }
+
+  [data-rw-tilt-lite] {
+    transition: transform 240ms cubic-bezier(.2,.8,.2,1), box-shadow 240ms ease;
+  }
+
+  .rw-web3d {
+    position: absolute;
+    right: clamp(1rem, 3vw, 2.6rem);
+    top: clamp(1rem, 4vw, 3rem);
+    z-index: 3;
+    width: min(42vw, 340px);
+    aspect-ratio: 1.7;
+    border: 1px solid rgba(245,244,238,.28);
+    background: rgba(24,35,31,.72);
+    backdrop-filter: blur(12px) saturate(120%);
+    border-radius: .9rem;
+    box-shadow: 0 26px 78px -58px rgba(24,35,31,.95);
+    overflow: hidden;
+  }
+
+  .rw-web3d canvas {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+  @media (max-width: 780px) {
+    .rw-web3d { display: none; }
   }
 }
 
@@ -184,6 +311,14 @@
   /* Focus ring */
   .focus-ring {
     @apply focus:outline-none focus:ring-2 focus:ring-rw-horizon focus:ring-offset-2 focus:ring-offset-rw-sand;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .text-pretty {
+    text-wrap: pretty;
   }
 
   .dark .focus-ring {

@@ -6,8 +6,8 @@ updatedDate: "2026-06-05"
 author: "Marco Vidal"
 category: "rutas-sorprendentes"
 tags: ["Grecia", "naturaleza", "guía", "ruta", "viaje práctico"]
-image: "https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=1400&q=84"
-imageAlt: "Imagen de viaje relacionada con Corfú sin hoteles frente al mar"
+image: "/images/editorial/corfu-verde-hero.svg"
+imageAlt: "Visual editorial de Corfú sin hoteles frente al mar: la isla que hay detrás"
 readingTime: 10
 affiliate: true
 featured: false
@@ -29,7 +29,7 @@ planner:
 
 Corfú verde no necesita una lista infinita de imprescindibles. Necesita una pregunta mejor: **qué tipo de viaje quieres tener allí**. Si buscas carreteras, costa norte y pueblos que no viven solo del verano, esta ruta tiene sentido. Si solo quieres tachar lugares, probablemente te cansará antes de empezar.
 
-![Vista principal de Corfú verde](https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=1600&q=84)
+![Visual editorial 1 de Corfú sin hoteles frente al mar: la isla que hay detrás](/images/editorial/corfu-verde-panel-1.svg)
 
 ## Resumen para decidir rápido
 
@@ -45,35 +45,35 @@ Corfú verde no necesita una lista infinita de imprescindibles. Necesita una pre
 
 Empieza por una base clara y dibuja un círculo sencillo alrededor. El error habitual es poner todos los lugares bonitos en una misma ruta sin mirar carreteras, horarios o cansancio. En Corfú verde, la experiencia mejora cuando dejas huecos.
 
-![Mapa visual y ruta para Corfú verde](https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=84)
+![Visual editorial 2 de Corfú sin hoteles frente al mar: la isla que hay detrás](/images/editorial/corfu-verde-panel-2.svg)
 
 ### Día 1: entender el lugar
 
-El primer día no debería ser el más ambicioso. Sirve para caminar, mirar dónde está el agua, la estación, el centro real y los barrios donde la gente vive sin mirar el reloj turístico.
+En Corfú sin hoteles frente al mar: la isla que hay detrás, el primer día sirve para medir distancias reales y ajustar expectativas: dónde conviene dormir, qué trayecto pesa más y qué parte merece una mañana completa.
 
 ### Día 2: el motivo principal
 
-Reserva aquí el plan que justifica el viaje: mirador, museo, carretera, caminata, mercado o excursión. Hazlo temprano si depende de luz o clima.
+El plan fuerte debe elegirse por una razón concreta en Corfú sin hoteles frente al mar: la isla que hay detrás: luz, acceso, horario o logística. Si todo compite por ser imprescindible, la ruta se vuelve ruido.
 
 ### Día 3: detalle local
 
-Busca una parte menos obvia: una calle secundaria, un pueblo cercano, una comida concreta o una ruta corta a pie. Ese detalle suele ser lo que convierte el viaje en recuerdo.
+Deja una franja para el detalle local de Corfú sin hoteles frente al mar: la isla que hay detrás: una parada pequeña, una comida sencilla o un paseo que no necesite reserva. Ahí se nota si el itinerario respira.
 
-![Detalle local de Corfú verde](https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1600&q=84)
+![Visual editorial 3 de Corfú sin hoteles frente al mar: la isla que hay detrás](/images/editorial/corfu-verde-panel-3.svg)
 
 ## Cuándo ir
 
-La mejor temporada no siempre es la más famosa. Primavera y otoño suelen dar equilibrio entre luz, precio y temperatura. Verano funciona si el viaje depende de playa o montaña; invierno puede ser excelente si el destino tiene vida urbana.
+La temporada ideal para Corfú sin hoteles frente al mar: la isla que hay detrás depende menos de la postal y más de la fricción: horarios, calor, viento, ferris, carreteras y precio del alojamiento.
 
-![Luz de temporada en Corfú verde](https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1600&q=84)
+![Visual editorial 4 de Corfú sin hoteles frente al mar: la isla que hay detrás](/images/editorial/corfu-verde-panel-4.svg)
 
 ## Presupuesto sin prometer milagros
 
-Los precios cambian según vuelos, eventos y antelación. Para estimar sin engañarte, separa cuatro bloques: transporte principal, alojamiento, comidas y extras. Si uno se dispara, ajusta otro antes de cancelar el viaje.
+Para presupuestar Corfú sin hoteles frente al mar: la isla que hay detrás, separa transporte, base, comidas y margen. Si una partida sube, recorta desplazamientos antes que quitar el plan que da sentido al viaje.
 
 ## Mini mapa de decisiones
 
-- Si tienes poco tiempo: una base, una excursión y una mañana libre.
+- Si tienes poco tiempo en Corfú sin hoteles frente al mar: la isla que hay detrás: una base, una excursión y una mañana libre.
 - Si viajas con familia: alojamiento cerca del transporte y planes cortos.
 - Si vas con amigos: prioriza comida, ruta visual y una noche sin desplazamientos.
 - Si vas solo: elige lugares con buena movilidad y cafés donde descansar.
@@ -82,11 +82,11 @@ Los precios cambian según vuelos, eventos y antelación. Para estimar sin enga�
 
 ### ¿Es mejor reservar antes?
 
-Reserva alojamiento y transporte principal. Deja actividades secundarias con margen si dependen del clima.
+Reserva lo que pueda bloquear Corfú sin hoteles frente al mar: la isla que hay detrás: base, llegada y trayectos escasos. Lo demás conviene dejarlo flexible si depende de clima, cansancio o luz.
 
 ### ¿Hace falta coche?
 
-Depende del destino. Si hay trenes o buses frecuentes, evita el coche. Si la gracia está en miradores, pueblos o costa dispersa, un coche pequeño puede cambiar el viaje.
+En Corfú sin hoteles frente al mar: la isla que hay detrás, el coche solo compensa si reduce cambios incómodos o abre paradas que no funcionan bien en transporte público. Si solo añade aparcamiento y tensión, sobra.
 
 ### ¿Qué haría distinto en una segunda visita?
 
@@ -95,7 +95,7 @@ Iría más lento. La mayoría de rutas fallan por exceso, no por falta de opcion
 
 ## Lo que nadie te cuenta sobre Corfú sin hoteles frente al mar
 
-Antes de cerrar el plan, revisa siempre horarios oficiales, estado de carreteras o senderos y el último transporte de vuelta. En destinos pequeños, un cierre cambia más que el precio de una entrada.
+Antes de cerrar Corfú sin hoteles frente al mar: la isla que hay detrás, revisa horarios oficiales, estado de carreteras o senderos y el último transporte de vuelta. En esta ruta, un cierre cambia más que el precio de una entrada.
 
 
 ## ¿Cuánto cuesta viajar a Corfú sin hoteles frente al mar?
@@ -107,10 +107,21 @@ Un viaje corto a Corfú sin hoteles frente al mar suele moverse entre 450€ y 1
 | Alojamiento | 35-70€/noche | 80-140€/noche | Temporada y ubicación |
 | Comidas | 15-25€/día | 30-50€/día | Restaurantes y zonas turísticas |
 | Transporte local | 10-25€/día | 30-65€/día | Coche, tren o excursiones |
+| Movilidad insular | Comprueba ferris y buses antes de reservar base | Moverse tarde suele salir caro | Nota específica de Corfú sin hoteles frente al mar: la isla que hay detrás |
 
 Precios orientativos. Verifica siempre antes de reservar.
 
 
 ## Dato verificado
 
-La información práctica de esta guía debe contrastarse con fuentes oficiales de transporte, turismo local o patrimonio antes del viaje. Los horarios, cierres y precios pueden cambiar sin aviso.
+La información práctica de Corfú sin hoteles frente al mar: la isla que hay detrás debe contrastarse con fuentes oficiales de transporte, turismo local o patrimonio antes del viaje. Horarios, cierres y precios cambian sin pedir permiso.
+
+<!-- hermes-editorial-depth-pass:2026-06-06 -->
+
+## La versión sencilla del viaje
+
+Antes de enamorarte de Corfú sin hoteles frente al mar: la isla que hay detrás, mira el mapa con las horas del día delante. La distancia en kilómetros engaña cuando hay ferris, túneles, carreteras lentas, cambios de altitud o transporte público escaso.
+
+Si viajas con otra persona en Corfú sin hoteles frente al mar: la isla que hay detrás, pacta una regla simple: una visita fuerte al día y una parte flexible. Esa parte puede ser una comida, un paseo sin mapa o una alternativa si cambia el clima.
+
+Un buen itinerario para Corfú sin hoteles frente al mar: la isla que hay detrás no agota posibilidades: deja energía para entender dónde estás y cambiar el orden si el día lo pide.

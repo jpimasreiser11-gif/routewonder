@@ -1,5 +1,6 @@
 ---
 const placeholder = Astro.props.placeholder || "Buscar rutas, ciudades o curiosidades...";
+const placeholderKey = Astro.props.placeholderKey || "search.placeholder";
 ---
 
 <div class="relative w-full max-w-2xl" data-search-root>
@@ -7,19 +8,25 @@ const placeholder = Astro.props.placeholder || "Buscar rutas, ciudades o curiosi
   <input
     id="site-search"
     data-search-input
+    data-i18n-placeholder={placeholderKey}
     type="search"
     placeholder={placeholder}
     autocomplete="off"
-    class="w-full rounded-2xl border border-rw-sand/25 bg-rw-white/95 px-5 py-4 pr-12 font-ui text-sm text-rw-ink shadow-2xl shadow-rw-ink/20 outline-none transition focus:border-rw-horizon focus:ring-4 focus:ring-rw-horizon/20"
+    class="w-full rounded-[1.1rem] border border-rw-ink/10 bg-rw-white/92 px-5 py-4 pr-12 font-ui text-sm font-semibold text-rw-ink outline-none transition placeholder:text-rw-mist focus:border-rw-horizon focus:bg-rw-white focus:ring-4 focus:ring-rw-horizon/14"
   />
-  <span class="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-rw-horizon">
+  <button
+    type="button"
+    data-search-submit
+    class="absolute right-2 top-1/2 grid h-10 w-10 -translate-y-1/2 place-items-center rounded-[.8rem] text-rw-horizon transition hover:bg-rw-horizon/10 hover:text-rw-ink focus:outline-none focus:ring-2 focus:ring-rw-horizon/35"
+    aria-label="Buscar en RouteWonder"
+  >
     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
       <path d="m21 21-4.3-4.3m1.3-5.2a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
     </svg>
-  </span>
+  </button>
   <div
     data-search-results
-    class="absolute left-0 right-0 top-full z-50 mt-3 hidden max-h-80 overflow-auto rounded-2xl border border-rw-mist/25 bg-rw-white p-3 text-left shadow-2xl shadow-rw-ink/20"
+    class="absolute left-0 right-0 top-full z-50 mt-3 hidden max-h-80 overflow-auto rounded-[1.2rem] border border-rw-ink/10 bg-rw-white p-3 text-left shadow-[0_28px_90px_-55px_rgba(33,29,25,.85)]"
   ></div>
 </div>
 
@@ -29,6 +36,7 @@ const placeholder = Astro.props.placeholder || "Buscar rutas, ciudades o curiosi
     roots.forEach((root) => {
       const input = root.querySelector('[data-search-input]');
       const results = root.querySelector('[data-search-results]');
+      const submit = root.querySelector('[data-search-submit]');
       if (!input || !results || input.dataset.ready === 'true') return;
       input.dataset.ready = 'true';
 
@@ -42,8 +50,9 @@ const placeholder = Astro.props.placeholder || "Buscar rutas, ciudades o curiosi
       };
 
       const clearResults = () => results.replaceChildren();
+      const canLoadPagefind = !import.meta.env.DEV;
 
-      const appendLink = ({ href, title, excerpt, className = 'block rounded-xl px-3 py-3 hover:bg-rw-sand/70' }) => {
+      const appendLink = ({ href, title, excerpt, className = 'block rounded-xl px-3 py-3 transition hover:bg-rw-sand/70' }) => {
         const link = document.createElement('a');
         link.className = className;
         link.href = href;
@@ -62,7 +71,7 @@ const placeholder = Astro.props.placeholder || "Buscar rutas, ciudades o curiosi
 
       const appendMessage = (message) => {
         const p = document.createElement('p');
-        p.className = 'px-3 py-3 font-ui text-sm text-rw-ocean/70';
+        p.className = 'rounded-xl border border-rw-ink/10 bg-rw-sand/55 px-3 py-3 font-ui text-sm text-rw-ocean/70';
         p.textContent = message;
         results.appendChild(p);
       };
@@ -72,6 +81,17 @@ const placeholder = Astro.props.placeholder || "Buscar rutas, ciudades o curiosi
         if (query.length < 2) {
           results.classList.add('hidden');
           clearResults();
+          return;
+        }
+
+        if (!canLoadPagefind) {
+          clearResults();
+          appendLink({
+            href: `/search/?query=${encodeURIComponent(query)}`,
+            title: `Buscar "${query}" en el cuaderno`,
+            className: 'block rounded-xl bg-rw-sand px-3 py-3 font-ui text-xs font-bold tracking-[0.04em] text-rw-horizon',
+          });
+          results.classList.remove('hidden');
           return;
         }
 
@@ -108,7 +128,14 @@ const placeholder = Astro.props.placeholder || "Buscar rutas, ciudades o curiosi
 
       input.addEventListener('keydown', (event) => {
         if (event.key === 'Enter' && input.value.trim().length > 1) {
-          window.location.href = `/blog/?q=${encodeURIComponent(input.value.trim())}`;
+          window.location.href = `/search/?query=${encodeURIComponent(input.value.trim())}`;
+        }
+      });
+      submit?.addEventListener('click', () => {
+        if (input.value.trim().length > 1) {
+          window.location.href = `/search/?query=${encodeURIComponent(input.value.trim())}`;
+        } else {
+          input.focus();
         }
       });
     });

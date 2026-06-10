@@ -6,8 +6,8 @@ updatedDate: "2026-06-05"
 author: "Marco Vidal"
 category: "rutas-sorprendentes"
 tags: ["Madeira", "Portugal", "rutas en coche", "naturaleza", "islas"]
-image: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1400&q=84"
-imageAlt: "Costa verde de Madeira con acantilados y carretera junto al océano"
+image: "/images/editorial/madeira-5-dias-ruta-coche-hero.svg"
+imageAlt: "Visual editorial de Madeira en 5 días: levadas, costa norte y miradores sin correr"
 readingTime: 9
 affiliate: true
 featured: true
@@ -28,7 +28,7 @@ planner:
 
 Madeira parece pequeña en el mapa, pero engaña. Las distancias son cortas y, aun así, cada curva cambia el viaje: túneles, miradores, pueblos colgados y montañas que aparecen de golpe entre nubes.
 
-![Costa verde de Madeira con acantilados y carretera junto al océano](https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=84)
+![Visual editorial 1 de Madeira en 5 días: levadas, costa norte y miradores sin correr](/images/editorial/madeira-5-dias-ruta-coche-panel-1.svg)
 
 ## Resumen rápido
 
@@ -41,7 +41,7 @@ Madeira parece pequeña en el mapa, pero engaña. Las distancias son cortas y, a
 
 ## Mapa mental de la ruta
 
-Antes de reservar, dibuja el viaje como una línea simple: llegada, base, excursiones y regreso. Si el mapa parece una estrella con demasiadas puntas, probablemente estás intentando meter más de lo que el destino permite.
+Antes de reservar Madeira en 5 días: levadas, costa norte y miradores sin correr, dibuja el viaje como una línea simple: llegada, base, excursiones y regreso. Si parece una estrella con demasiadas puntas, estás metiendo más de lo que el destino permite.
 
 La regla práctica es sencilla: cada parada debe justificar paisaje, historia o logística. Si una parada solo aparece porque la viste en redes, ponla en duda.
 
@@ -49,7 +49,7 @@ La regla práctica es sencilla: cada parada debe justificar paisaje, historia o 
 
 Empieza por el mercado, el casco antiguo y un mirador al atardecer. No llenes el primer día de excursiones: Madeira se disfruta mejor cuando entiendes su escala y sus pendientes.
 
-![Imagen de apoyo para día 1: funchal sin prisa](https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1600&q=84)
+![Visual editorial 2 de Madeira en 5 días: levadas, costa norte y miradores sin correr](/images/editorial/madeira-5-dias-ruta-coche-panel-2.svg)
 
 **Consejo de ruta: deja Funchal para el primer contacto y para cenar; no gastes aquí el coche si aún estás aterrizando.**
 
@@ -57,7 +57,7 @@ Empieza por el mercado, el casco antiguo y un mirador al atardecer. No llenes el
 
 La costa sur sirve para tomarle el pulso a la isla. Cabo Girão es famoso, pero la parte buena está en conducir hacia pueblos más pequeños y parar en miradores sin nombre.
 
-![Imagen de apoyo para día 2: cabo girão, ponta do sol y paul do mar](https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1600&q=84)
+![Visual editorial 3 de Madeira en 5 días: levadas, costa norte y miradores sin correr](/images/editorial/madeira-5-dias-ruta-coche-panel-3.svg)
 
 **Consejo de ruta: sal temprano hacia la costa sur y guarda el atardecer para Paul do Mar; las fotos mejoran cuando baja el sol.**
 
@@ -65,7 +65,7 @@ La costa sur sirve para tomarle el pulso a la isla. Cabo Girão es famoso, pero 
 
 Elige una levada sencilla si no haces senderismo a menudo. Revisa cierres oficiales antes de salir y lleva impermeable aunque el día empiece despejado.
 
-![Imagen de apoyo para día 3: levadas y bosque de laurisilva](https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1600&q=84)
+![Visual editorial 4 de Madeira en 5 días: levadas, costa norte y miradores sin correr](/images/editorial/madeira-5-dias-ruta-coche-panel-4.svg)
 
 **Consejo de ruta: revisa cierres oficiales antes de caminar; las levadas cambian rápido con lluvia y desprendimientos.**
 
@@ -73,7 +73,7 @@ Elige una levada sencilla si no haces senderismo a menudo. Revisa cierres oficia
 
 El norte es más salvaje. Las piscinas naturales de Porto Moniz merecen tiempo, pero la carretera entre Seixal y São Vicente es la parte que recordarás.
 
-![Imagen de apoyo para día 4: são vicente, seixal y porto moniz](https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=84)
+![Visual editorial 5 de Madeira en 5 días: levadas, costa norte y miradores sin correr](/images/editorial/madeira-5-dias-ruta-coche-panel-5.svg)
 
 **Consejo de ruta: no conviertas Porto Moniz en una parada de veinte minutos; las piscinas y la carretera norte piden margen.**
 
@@ -81,7 +81,7 @@ El norte es más salvaje. Las piscinas naturales de Porto Moniz merecen tiempo, 
 
 Si el clima acompaña, sube temprano. Si no, cambia a jardín botánico, miradores bajos y comida local. En Madeira conviene llevar siempre un plan B.
 
-![Imagen de apoyo para día 5: pico do arieiro o plan b con nubes](https://images.unsplash.com/photo-1491553895911-0055eca6402d?auto=format&fit=crop&w=1600&q=84)
+![Visual editorial 6 de Madeira en 5 días: levadas, costa norte y miradores sin correr](/images/editorial/madeira-5-dias-ruta-coche-panel-6.svg)
 
 **Consejo de ruta: mira la webcam antes de subir; si la cumbre está tapada, cambia a miradores bajos y jardines.**
 
@@ -89,32 +89,42 @@ Si el clima acompaña, sube temprano. Si no, cambia a jardín botánico, mirador
 
 Un viaje de 5 días a Madeira suele costar entre 650€ y 1.450€ por persona, incluyendo vuelos desde España, alojamiento, comidas y coche de alquiler. La horquilla cambia mucho entre primavera, agosto y otoño.
 
-- **Bajo:** alojamiento simple, transporte público cuando sea posible y una comida principal fuera al día.
+- **Bajo en Madeira en 5 días: levadas, costa norte y miradores sin correr:** alojamiento simple, transporte público cuando sea posible y una comida principal fuera al día.
 - **Medio:** coche o excursión puntual, alojamiento bien situado y margen para entradas.
 - **Alto:** hoteles con vistas, restaurantes reservados y menos fricción logística.
 
-Comprueba siempre horarios, cierres y condiciones oficiales antes de salir. Una guía útil no sustituye la verificación final.
+Comprueba siempre horarios, cierres y condiciones oficiales antes de salir hacia Madeira en 5 días: levadas, costa norte y miradores sin correr. Una guía útil no sustituye la verificación final.
 
 ## Preguntas frecuentes
 
 ### ¿Merece la pena ir pocos días?
 
-Sí, si eliges una base y aceptas dejar cosas fuera. Un viaje corto funciona cuando tiene una idea clara, no cuando intenta parecer completo.
+Sí, si Madeira en 5 días: levadas, costa norte y miradores sin correr se organiza con una base clara y aceptas dejar cosas fuera. Un viaje corto funciona cuando tiene una idea, no cuando intenta parecer completo.
 
 ### ¿Conviene reservar todo antes?
 
-Reserva transporte principal y alojamiento. Deja actividades secundarias con margen si dependen del clima.
+Para Madeira en 5 días: levadas, costa norte y miradores sin correr, reserva transporte principal y alojamiento. Deja actividades secundarias con margen si dependen del clima.
 
 ### ¿Qué hace que esta ruta sea distinta?
 
-Está pensada para decidir rápido: qué ver, qué evitar y qué parte del viaje debe recibir más tiempo.
+Está pensada para decidir rápido Madeira en 5 días: levadas, costa norte y miradores sin...: qué ver, qué evitar y qué parte del viaje merece más tiempo.
 
 
 ## Lo que nadie te cuenta sobre Madeira en 5 días
 
-Antes de cerrar el plan, revisa siempre horarios oficiales, estado de carreteras o senderos y el último transporte de vuelta. En destinos pequeños, un cierre cambia más que el precio de una entrada.
+Antes de cerrar Madeira en 5 días: levadas, costa norte y miradores sin correr, revisa horarios oficiales, estado de carreteras o senderos y el último transporte de vuelta. En esta ruta, un cierre cambia más que el precio de una entrada.
 
 
 ## Dato verificado
 
-La información práctica de esta guía debe contrastarse con fuentes oficiales de transporte, turismo local o patrimonio antes del viaje. Los horarios, cierres y precios pueden cambiar sin aviso.
+La información práctica de Madeira en 5 días: levadas, costa norte y miradores sin correr debe contrastarse con fuentes oficiales de transporte, turismo local o patrimonio antes del viaje. Horarios, cierres y precios cambian sin pedir permiso.
+
+<!-- hermes-editorial-depth-pass:2026-06-06 -->
+
+## Cómo aterrizar esta idea en un viaje real
+
+Para convertir Madeira en 5 días: levadas, costa norte y miradores sin correr en un viaje real, empieza por una comprobación poco vistosa: cuánto tiempo pierdes entre llegada, base y primera visita. Si esa primera pieza no encaja, el resto del itinerario se vuelve una cadena de carreras pequeñas.
+
+Mis tres filtros serían estos: que el alojamiento no obligue a rehacer maletas cada mañana, que haya una alternativa si cambia el tiempo y que las visitas principales no dependan todas de la misma franja horaria. En destinos ligados a 06 01", 06 05", sorprendentes", ese margen suele valer más que una entrada reservada a última hora.
+
+Señal de que Madeira en 5 días: levadas, costa norte y miradores sin correr encaja: puedes explicar el viaje en una frase sin usar la palabra imprescindible. Si necesitas justificar cada parada, sobra ruta o falta criterio.

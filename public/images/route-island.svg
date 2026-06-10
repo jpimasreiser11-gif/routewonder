@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900" role="img" aria-labelledby="title desc">
+  <title id="title">Ruta de isla</title>
+  <desc id="desc">Ilustración editorial de una isla mediterránea con caminos, colinas y puerto.</desc>
+  <rect width="1400" height="900" fill="#f4f0e3"/>
+  <path d="M0 0h1400v900H0z" fill="#d5e1de"/>
+  <path d="M217 553c35-151 188-249 343-235 87 8 138-68 224-71 129-4 186 132 291 161 94 26 159 72 165 157 7 107-85 187-218 202-196 22-306-63-489-28-205 40-359-32-316-186z" fill="#e2d0ac"/>
+  <path d="M304 561c64-110 171-150 297-121 94 22 167-11 237-78 48-45 98-62 157-40" fill="none" stroke="#263a34" stroke-width="5" opacity=".35"/>
+  <path d="M355 676c105-61 212-78 316-51 109 28 187 16 280-55 55-42 112-57 184-38" fill="none" stroke="#b15f3e" stroke-width="12" stroke-linecap="round"/>
+  <path d="M355 676c105-61 212-78 316-51 109 28 187 16 280-55 55-42 112-57 184-38" fill="none" stroke="#f8f5eb" stroke-width="4" stroke-linecap="round"/>
+  <g fill="#18231f">
+    <circle cx="438" cy="535" r="15"/>
+    <circle cx="654" cy="628" r="15"/>
+    <circle cx="902" cy="578" r="15"/>
+    <rect x="983" y="478" width="96" height="18" rx="9"/>
+    <path d="M1008 454h47l-16 24h-16z"/>
+  </g>
+  <path d="M221 443c-48-22-94-13-133 28M1166 314c43-21 87-20 131 4M115 206c73-34 142-30 205 12" fill="none" stroke="#f8f5eb" stroke-width="9" stroke-linecap="round" opacity=".7"/>
+  <circle cx="1098" cy="190" r="84" fill="#c69a54" opacity=".42"/>
+</svg>

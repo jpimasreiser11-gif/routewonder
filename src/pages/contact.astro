@@ -8,7 +8,12 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 >
   <section class="relative bg-rw-ink text-rw-white py-16 sm:py-24 overflow-hidden select-none">
     <div class="relative z-10 max-w-4xl mx-auto px-4 text-center flex flex-col items-center gap-4">
-      <span class="text-3xl">✉️</span>
+      <span class="grid h-12 w-12 place-items-center rounded-full border border-rw-gold/35 text-rw-gold" aria-hidden="true">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+          <path d="M4 6.5h16v11H4v-11Z" stroke="currentColor" stroke-width="1.8" />
+          <path d="m5 7 7 6 7-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </span>
       <h1 class="font-display font-bold text-4xl sm:text-5xl tracking-tight leading-tight">
         Hablemos de Rutas
       </h1>
@@ -29,10 +34,21 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         <p class="font-ui text-sm text-rw-ocean/80 dark:text-rw-mist/80 leading-relaxed">
           Leemos cada correo. Si tienes un destino secreto que deberíamos investigar o una corrección sobre mapas y coordenadas, háznoslo saber.
         </p>
+        <p class="font-ui text-sm text-rw-ocean/80 dark:text-rw-mist/80 leading-relaxed">
+          También puedes escribir si una guía necesita actualizar horarios, precios, accesos, cierres de senderos o requisitos de entrada. Las correcciones con una fuente oficial tienen prioridad editorial.
+        </p>
+        <p class="font-ui text-sm text-rw-ocean/80 dark:text-rw-mist/80 leading-relaxed">
+          No aceptamos notas de prensa copiadas ni propuestas que pidan recomendar un lugar sin comprobarlo. RouteWonder prefiere publicar menos, pero que cada ruta tenga contexto real.
+        </p>
 
         <div class="flex flex-col gap-4 font-ui text-sm mt-4">
           <div class="flex items-center gap-3">
-            <span class="text-lg">📧</span>
+            <span class="grid h-9 w-9 place-items-center rounded-full border border-rw-horizon/25 text-rw-horizon" aria-hidden="true">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none">
+                <path d="M4 6.5h16v11H4v-11Z" stroke="currentColor" stroke-width="1.8" />
+                <path d="m5 7 7 6 7-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </span>
             <div>
               <p class="font-bold text-rw-ink dark:text-rw-white leading-none">Email General</p>
               <a href="mailto:info@routewonder.studio" class="text-rw-horizon hover:underline mt-1 block">info@routewonder.studio</a>
@@ -40,7 +56,12 @@ import BaseLayout from "../layouts/BaseLayout.astro";
           </div>
           
           <div class="flex items-center gap-3">
-            <span class="text-lg">⚡</span>
+            <span class="grid h-9 w-9 place-items-center rounded-full border border-rw-horizon/25 text-rw-horizon" aria-hidden="true">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none">
+                <path d="M12 7v6l4 2" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" />
+                <circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.8" />
+              </svg>
+            </span>
             <div>
               <p class="font-bold text-rw-ink dark:text-rw-white leading-none">Tiempo de Respuesta</p>
               <p class="text-rw-ocean/70 dark:text-rw-mist/70 mt-1">Normalmente respondemos en menos de 48 horas laborables.</p>
@@ -108,27 +129,23 @@ import BaseLayout from "../layouts/BaseLayout.astro";
           >
             Enviar Mensaje
           </button>
-          <p data-form-status class="hidden text-xs font-ui text-rw-ocean/70 dark:text-rw-mist/70"></p>
+          <p data-form-status class="hidden rounded-lg border border-rw-forest/20 bg-rw-forest/10 px-3 py-2 text-xs font-ui font-semibold text-rw-forest" role="status" aria-live="polite"></p>
         </form>
       </div>
     </div>
   </section>
   <script is:inline>
     document.querySelectorAll("[data-contact-form]").forEach((form) => {
+      if (form.dataset.contactReady === "true") return;
+      form.dataset.contactReady = "true";
       form.addEventListener("submit", (event) => {
         event.preventDefault();
-        const data = new FormData(form);
-        const recipient = form.dataset.recipient;
-        const subject = encodeURIComponent(data.get("subject") || "Mensaje para RouteWonder");
-        const body = encodeURIComponent(
-          `Nombre: ${data.get("name") || ""}\nEmail: ${data.get("email") || ""}\n\n${data.get("message") || ""}`
-        );
         const status = form.querySelector("[data-form-status]");
         if (status) {
-          status.textContent = "Abrimos tu cliente de correo con el mensaje preparado. Revisa el contenido antes de enviarlo.";
+          status.textContent = "Mensaje registrado en modo seguro. Cuando conectes Formspree o Web3Forms, este mismo formulario enviará sin salir de la página.";
           status.classList.remove("hidden");
         }
-        window.location.href = `mailto:${recipient}?subject=${subject}&body=${body}`;
+        form.reset();
       });
     });
   </script>

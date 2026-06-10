@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900" role="img" aria-labelledby="title desc">
+  <title id="title">Mapa editorial de ruta</title>
+  <desc id="desc">Ilustración editorial de un mapa con una ruta marcada y varias paradas.</desc>
+  <defs>
+    <pattern id="grid" width="96" height="96" patternUnits="userSpaceOnUse">
+      <path d="M96 0H0v96" fill="none" stroke="#263a34" stroke-width="1" opacity=".13"/>
+    </pattern>
+  </defs>
+  <rect width="1400" height="900" fill="#f8f5eb"/>
+  <rect width="1400" height="900" fill="url(#grid)"/>
+  <path d="M146 160c105 43 189 40 273-7 102-57 212-51 329 17 90 52 179 54 286 7 88-39 163-33 232 18" fill="none" stroke="#d8c8a6" stroke-width="94" stroke-linecap="round"/>
+  <path d="M174 688c151-134 301-167 451-99 98 45 190 32 279-39 105-84 217-101 338-53" fill="none" stroke="#d8c8a6" stroke-width="118" stroke-linecap="round"/>
+  <path d="M153 194c104 32 191 23 261-28 92-67 194-59 314 24 88 61 178 70 302 15 85-38 163-26 233 32M183 682c143-114 285-139 425-75 112 51 208 31 291-44 103-93 215-107 338-50" fill="none" stroke="#b15f3e" stroke-width="13" stroke-linecap="round"/>
+  <path d="M153 194c104 32 191 23 261-28 92-67 194-59 314 24 88 61 178 70 302 15 85-38 163-26 233 32M183 682c143-114 285-139 425-75 112 51 208 31 291-44 103-93 215-107 338-50" fill="none" stroke="#f8f5eb" stroke-width="4" stroke-linecap="round"/>
+  <g fill="#18231f">
+    <circle cx="153" cy="194" r="19"/>
+    <circle cx="545" cy="150" r="19"/>
+    <circle cx="932" cy="229" r="19"/>
+    <circle cx="1263" cy="237" r="19"/>
+    <circle cx="183" cy="682" r="19"/>
+    <circle cx="608" cy="607" r="19"/>
+    <circle cx="899" cy="563" r="19"/>
+    <circle cx="1237" cy="513" r="19"/>
+  </g>
+  <path d="M950 118h248v52H950zM950 188h173v28H950z" fill="#263a34" opacity=".88"/>
+  <circle cx="286" cy="350" r="86" fill="#c69a54" opacity=".22"/>
+</svg>

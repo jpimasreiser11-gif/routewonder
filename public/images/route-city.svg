@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900" role="img" aria-labelledby="title desc">
+  <title id="title">Ruta urbana europea</title>
+  <desc id="desc">Ilustración editorial de una ciudad europea con canales, plazas y una línea de paseo.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f7f1e6"/>
+      <stop offset="1" stop-color="#e0dccf"/>
+    </linearGradient>
+  </defs>
+  <rect width="1400" height="900" fill="url(#bg)"/>
+  <path d="M0 685c223-40 380-17 579 24 241 49 456 35 821-73v264H0z" fill="#263a34"/>
+  <path d="M130 631h1160" stroke="#c69a54" stroke-width="3" opacity=".35"/>
+  <g fill="#18231f">
+    <rect x="167" y="334" width="128" height="282" rx="4"/>
+    <rect x="322" y="278" width="154" height="338" rx="4"/>
+    <rect x="504" y="373" width="112" height="243" rx="4"/>
+    <rect x="720" y="305" width="142" height="311" rx="4"/>
+    <rect x="890" y="226" width="96" height="390" rx="4"/>
+    <rect x="1030" y="356" width="182" height="260" rx="4"/>
+  </g>
+  <g fill="#f5f1e5" opacity=".86">
+    <path d="M193 378h38v38h-38zM193 448h38v38h-38zM193 518h38v38h-38zM360 330h42v42h-42zM360 408h42v42h-42zM360 486h42v42h-42z"/>
+    <path d="M543 421h32v32h-32zM543 483h32v32h-32zM764 355h40v40h-40zM764 430h40v40h-40zM920 282h34v34h-34zM920 350h34v34h-34zM1080 405h42v42h-42z"/>
+  </g>
+  <path d="M174 735c142-74 256-93 374-48 98 37 183 37 278-21 103-63 208-66 354-10" fill="none" stroke="#b15f3e" stroke-width="12" stroke-linecap="round"/>
+  <path d="M174 735c142-74 256-93 374-48 98 37 183 37 278-21 103-63 208-66 354-10" fill="none" stroke="#f8f5eb" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="1180" cy="210" r="86" fill="#c69a54" opacity=".32"/>
+</svg>

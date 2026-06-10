@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900" role="img" aria-labelledby="title desc">
+  <title id="title">Ruta alpina en tren</title>
+  <desc id="desc">Ilustración editorial de un tren atravesando un valle alpino con montañas y una línea de ruta.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f7f3e8"/>
+      <stop offset="1" stop-color="#d9e4df"/>
+    </linearGradient>
+    <linearGradient id="mountain" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#46655c"/>
+      <stop offset="1" stop-color="#18231f"/>
+    </linearGradient>
+    <filter id="paper">
+      <feTurbulence baseFrequency=".018" numOctaves="3" seed="12" type="fractalNoise"/>
+      <feColorMatrix type="saturate" values=".18"/>
+      <feBlend in="SourceGraphic" mode="multiply"/>
+    </filter>
+  </defs>
+  <rect width="1400" height="900" fill="url(#sky)"/>
+  <g opacity=".45" fill="none" stroke="#b15f3e" stroke-width="1.2">
+    <path d="M120 180h1160M120 300h1160M120 420h1160M120 540h1160"/>
+    <path d="M220 110v680M460 110v680M700 110v680M940 110v680M1180 110v680"/>
+  </g>
+  <path fill="#f8f5eb" d="M0 520 235 250l85 94 88-142 145 252 126-196 95 128 162-224 241 358 223-228v608H0z"/>
+  <path fill="url(#mountain)" d="M0 610 260 315l72 92 86-143 138 244 132-205 93 126 159-213 228 352 232-248v580H0z"/>
+  <path fill="#e2d3b2" d="M0 720c158-45 287-61 458-36 160 23 288 77 466 51 168-25 285-105 476-80v245H0z"/>
+  <path d="M133 672c178-28 329-16 482 26 147 40 261 51 404 9 87-26 166-31 248-12" fill="none" stroke="#b15f3e" stroke-width="14" stroke-linecap="round"/>
+  <path d="M145 672c173-22 322-9 465 31 138 38 252 48 386 8 86-25 162-31 244-12" fill="none" stroke="#f5f1e5" stroke-width="5" stroke-linecap="round"/>
+  <g transform="translate(532 625)">
+    <rect x="0" y="0" width="285" height="72" rx="12" fill="#18231f"/>
+    <rect x="22" y="18" width="58" height="28" rx="4" fill="#d9e4df"/>
+    <rect x="96" y="18" width="58" height="28" rx="4" fill="#d9e4df"/>
+    <rect x="170" y="18" width="58" height="28" rx="4" fill="#d9e4df"/>
+    <circle cx="57" cy="76" r="15" fill="#263a34"/>
+    <circle cx="218" cy="76" r="15" fill="#263a34"/>
+  </g>
+  <circle cx="1110" cy="170" r="84" fill="#c69a54" opacity=".32"/>
+  <g filter="url(#paper)" opacity=".16">
+    <rect width="1400" height="900" fill="#18231f"/>
+  </g>
+</svg>

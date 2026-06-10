@@ -1,6 +1,7 @@
 ---
 import { originCities, routeDestinations } from "../../data/routePlannerData";
 import { getCollection } from "astro:content";
+import { getRouteVisualSet } from "../../lib/routeVisuals";
 
 const publishedPosts = await getCollection("blog", ({ data }) => !data.draft);
 const plannerPosts = publishedPosts.filter((post) => post.data.planner);
@@ -23,25 +24,22 @@ const interestMap = {
   family: "familia",
 };
 
-const stableImages = [
-  "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=84",
-  "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1200&q=84",
-  "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=84",
-  "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1200&q=84",
-  "https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=1200&q=84",
-];
-
 function normalizeSlug(value: string) {
   return value.replace(/^\/?blog\//, "").replace(/\/$/, "");
 }
 
-function fromPlanner(post: (typeof plannerPosts)[number], index: number) {
+function fromPlanner(post: (typeof plannerPosts)[number]) {
   const planner = post.data.planner!;
   const interests = Array.from(new Set([
     ...planner.interests.map((item) => interestMap[item as keyof typeof interestMap] ?? item),
     ...planner.companion.map((item) => companionInterestMap[item as keyof typeof companionInterestMap] ?? item),
   ]));
-  const image = post.data.image ?? stableImages[index % stableImages.length];
+  const fallbackVisuals = getRouteVisualSet(`${post.slug} ${post.data.category} ${planner.destination} ${planner.country}`);
+  const visuals = [
+    post.data.image || fallbackVisuals[0],
+    `/images/editorial/${post.slug}-panel-1.svg`,
+    `/images/editorial/${post.slug}-panel-2.svg`,
+  ];
   return {
     id: post.slug,
     name: planner.destination,
@@ -54,11 +52,7 @@ function fromPlanner(post: (typeof plannerPosts)[number], index: number) {
     seasons: planner.season.map((item) => seasonMap[item]),
     days: `${planner.duration} días`,
     article: `/blog/${post.slug}/`,
-    photos: [
-      image,
-      stableImages[(index + 1) % stableImages.length],
-      stableImages[(index + 2) % stableImages.length],
-    ],
+    photos: visuals,
     highlights: post.data.tags?.slice(0, 3).map((tag) => tag.replace(/-/g, " ")) ?? [planner.destination],
     food: ["mercado local", "plato típico", "café de barrio"],
     stay: ["base céntrica para moverte fácil", "zona tranquila si prefieres descansar"],
@@ -86,11 +80,7 @@ const rawPlannerDestinations = [
       seasons: enriched.seasons,
       days: enriched.days,
       interests: Array.from(new Set([...item.interests, ...enriched.interests])),
-      photos: [
-        enriched.photos[0],
-        item.photos[1],
-        item.photos[2],
-      ],
+      photos: enriched.photos,
     };
   }),
   ...articleRoutes.filter((item) => !routeDestinations.some((route) => normalizeSlug(route.article) === item.id)),
@@ -107,19 +97,21 @@ const totalOrigins = originCities.length;
 const totalPlaces = plannerDestinations.reduce((sum, item) => sum + item.highlights.length, 0);
 ---
 
-<section id="planificador-rutas" class="bg-rw-sand py-16 dark:bg-rw-ink sm:py-24">
-  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-    <div class="grid gap-8 lg:grid-cols-[0.9fr_1.5fr] lg:items-start">
+<section id="planificador-rutas" class="relative overflow-hidden bg-rw-ink py-16 text-rw-white dark:bg-rw-ink sm:py-24">
+  <div class="pointer-events-none absolute inset-x-0 top-0 h-px bg-rw-gold/20"></div>
+  <div class="pointer-events-none absolute inset-0 opacity-55" style="background-image: linear-gradient(90deg, rgba(245,244,238,.08) 1px, transparent 1px), linear-gradient(rgba(245,244,238,.08) 1px, transparent 1px); background-size: 112px 112px;"></div>
+  <div class="mx-auto max-w-[1500px] px-4 sm:px-6 lg:px-10">
+    <div class="grid gap-10 lg:grid-cols-[0.82fr_1.48fr] lg:items-start">
       <div class="lg:sticky lg:top-28">
-        <p class="font-ui text-xs font-bold uppercase tracking-[0.28em] text-rw-horizon">creador de rutas</p>
-        <h2 class="mt-3 font-display text-4xl font-black leading-tight text-rw-ink dark:text-rw-white sm:text-5xl">
-          Dime desde dónde sales y te preparo opciones con sentido.
+        <p data-i18n="planner.kicker" class="font-mono text-xs font-black tracking-[0.04em] text-rw-gold">Taller de itinerarios</p>
+        <h2 data-i18n="planner.title" class="text-balance mt-3 font-display text-4xl font-black leading-[0.98] tracking-[-0.025em] text-rw-white dark:text-rw-white sm:text-6xl">
+          Dime desde dónde sales. El mapa responde.
         </h2>
-        <p class="mt-4 font-ui text-base leading-relaxed text-rw-ocean/75 dark:text-rw-mist">
-          Escribe tu ciudad, elige estilo de viaje y abre cada destino para ver fotos, paradas, comida, zonas para dormir y enlaces útiles.
+        <p data-i18n="planner.copy" class="text-pretty mt-5 font-body text-xl leading-relaxed text-rw-sand/75">
+          Escribe tu ciudad, ajusta el viaje y abre cada destino para ver ruta, paradas, zonas donde dormir y enlaces útiles. Sin pantallas vacías ni recomendaciones sin contexto.
         </p>
 
-        <form class="mt-6 space-y-5 rounded-2xl border border-rw-mist/20 bg-rw-white p-5 shadow-sm dark:bg-rw-ocean/30" id="rw-trip-form">
+        <form class="rw-planner-card mt-7 space-y-5" id="rw-trip-form">
           <div class="grid gap-4 sm:grid-cols-2">
             <label class="rw-field sm:col-span-2">Vivo en
               <input id="rw-origin" list="rw-origin-cities" value="Barcelona" autocomplete="off" placeholder="Escribe tu ciudad: Madrid, Sevilla, Vigo..." />
@@ -127,7 +119,7 @@ const totalPlaces = plannerDestinations.reduce((sum, item) => sum + item.highlig
                 {originCities.map((city) => <option value={city.name} />)}
               </datalist>
             </label>
-            <button id="rw-location" class="sm:col-span-2 rounded-2xl border border-rw-horizon/25 bg-rw-horizon/10 px-4 py-3 text-left font-ui text-sm font-bold text-rw-horizon transition hover:bg-rw-horizon hover:text-white" type="button">
+            <button id="rw-location" class="rw-location-button sm:col-span-2" type="button">
               Usar mi ubicación actual para calcular distancias reales
             </button>
             <label class="rw-field">Interés principal
@@ -192,37 +184,139 @@ const totalPlaces = plannerDestinations.reduce((sum, item) => sum + item.highlig
             </div>
           </div>
 
-          <div class="grid grid-cols-4 gap-3 border-t border-rw-mist/15 pt-4 font-ui text-center text-xs">
+          <div class="grid grid-cols-4 gap-3 border-t border-rw-ink/10 pt-4 font-ui text-center text-xs text-rw-ocean/75">
             <div><strong id="rw-count" class="block text-2xl text-rw-horizon">8</strong>rutas</div>
             <div><strong class="block text-2xl text-rw-forest">{totalDestinations}</strong>destinos</div>
             <div><strong class="block text-2xl text-rw-gold">{totalPlaces}</strong>lugares</div>
-            <div><strong class="block text-2xl text-rw-ocean dark:text-rw-white">{totalOrigins}</strong>salidas</div>
+            <div><strong class="block text-2xl text-rw-ocean dark:text-rw-ink">{totalOrigins}</strong>salidas</div>
           </div>
         </form>
       </div>
 
       <div>
-        <div id="rw-brief" class="mb-5 rounded-2xl border border-rw-horizon/20 bg-rw-horizon/5 p-5 font-ui text-sm leading-relaxed text-rw-ocean dark:text-rw-mist"></div>
-        <div id="rw-results" class="grid gap-5"></div>
+        <div id="rw-brief" class="mb-5 border-y border-rw-gold/20 bg-rw-sand/8 px-5 py-4 font-ui text-sm leading-relaxed text-rw-sand/76 backdrop-blur"></div>
+        <div id="rw-results" class="grid gap-6"></div>
       </div>
     </div>
   </div>
 </section>
 
 <style>
-  .rw-label, .rw-field { font: 800 11px/1.2 "DM Sans", sans-serif; letter-spacing: .12em; text-transform: uppercase; color: rgba(22, 33, 62, .72); }
-  .dark .rw-label, .dark .rw-field { color: var(--rw-mist); }
+  .rw-planner-card {
+    border: 1px solid rgba(198, 154, 84, .2);
+    border-radius: 18px;
+    background:
+      linear-gradient(135deg, rgba(245,244,238,.94), rgba(231,229,218,.82)),
+      radial-gradient(circle at 0 0, rgba(198,154,84,.16), transparent 38%);
+    box-shadow: 0 30px 90px -70px rgba(0,0,0,.95);
+    padding: clamp(18px, 3vw, 26px);
+  }
+  .rw-label, .rw-field { font: 900 11px/1.2 "JetBrains Mono", monospace; letter-spacing: .04em; text-transform: none; color: rgba(38, 58, 52, .72); }
+  .dark .rw-label, .dark .rw-field { color: var(--rw-ocean); }
   .rw-field { display: grid; gap: 8px; }
-  .rw-field input, .rw-field select { width: 100%; min-height: 46px; border-radius: 14px; border: 1px solid rgba(168,178,216,.35); background: rgba(250,250,250,.88); padding: 12px 14px; font: 600 14px/1.4 "DM Sans", sans-serif; color: var(--rw-ink); outline: none; }
-  .rw-chip { min-height: 44px; border-radius: 12px; border: 1px solid rgba(168,178,216,.35); font: 800 11px/1.1 "DM Sans", sans-serif; color: var(--rw-ocean); background: rgba(250,250,250,.72); transition: transform 180ms ease, border-color 180ms ease, background 180ms ease, color 180ms ease; }
-  .rw-chip:hover, .rw-chip.is-active { transform: translateY(-1px); border-color: var(--rw-horizon); background: var(--rw-horizon); color: white; }
-  .rw-result-card { overflow: hidden; border-radius: 24px; border: 1px solid rgba(168,178,216,.22); background: rgba(250,250,250,.94); box-shadow: 0 12px 34px rgba(26,26,46,.08); }
-  .dark .rw-result-card { background: rgba(22,33,62,.46); }
-  .rw-gallery { display: grid; grid-template-columns: 1.35fr .65fr; gap: 8px; }
-  .rw-gallery img { width: 100%; height: 100%; min-height: 176px; object-fit: cover; }
-  .rw-gallery .side { display: grid; gap: 8px; }
-  .rw-gallery .side img { min-height: 84px; }
-  @media (max-width: 640px) { .rw-gallery { grid-template-columns: 1fr; } .rw-gallery .side { grid-template-columns: 1fr 1fr; } }
+  .rw-field input, .rw-field select { width: 100%; min-height: 48px; border-radius: 12px; border: 1px solid rgba(24,35,31,.16); background: rgba(251,250,244,.86); padding: 13px 15px; font: 700 14px/1.4 "DM Sans", sans-serif; color: var(--rw-ink); outline: none; transition: border-color 180ms ease, box-shadow 180ms ease, background 180ms ease; }
+  .rw-field input:focus, .rw-field select:focus { border-color: var(--rw-horizon); background: var(--rw-white); box-shadow: 0 0 0 4px rgba(163,79,63,.12); }
+  .rw-location-button { border: 1px solid rgba(177,95,62,.26); border-radius: 12px; background: rgba(177,95,62,.08); padding: 14px 16px; text-align: left; font: 900 13px/1.35 "DM Sans", sans-serif; color: var(--rw-horizon); transition: transform 180ms ease, border-color 180ms ease, background 180ms ease, color 180ms ease; }
+  .rw-location-button:hover { transform: translateY(-1px); border-color: var(--rw-horizon); background: var(--rw-horizon); color: var(--rw-white); }
+  .rw-chip { min-height: 44px; border-radius: 10px; border: 1px solid rgba(24,35,31,.16); font: 900 11px/1.1 "JetBrains Mono", monospace; color: var(--rw-ocean); background: rgba(251,250,244,.68); transition: transform 180ms ease, border-color 180ms ease, background 180ms ease, color 180ms ease, box-shadow 180ms ease; }
+  .rw-chip:hover, .rw-chip.is-active { transform: translateY(-1px); border-color: rgba(177,95,62,.72); background: var(--rw-ink); color: var(--rw-white); box-shadow: 0 12px 34px -24px rgba(24,35,31,.95); }
+  .rw-result-card { overflow: hidden; border: 1px solid rgba(198,154,84,.2); border-radius: 18px; background: #f8f5eb; box-shadow: 0 28px 85px -68px rgba(0,0,0,.95); transition: transform 220ms ease, border-color 220ms ease, box-shadow 220ms ease; }
+  .rw-result-card:hover { transform: translateY(-2px); border-color: rgba(198,154,84,.4); box-shadow: 0 34px 95px -64px rgba(0,0,0,1); }
+  .dark .rw-result-card { background: rgba(245,244,238,.94); }
+  .rw-result-shell { display: grid; gap: 0; background: #f8f5eb; }
+  .rw-result-art { width: 100%; height: 18rem; object-fit: cover; background: #e7e3d6; }
+  .rw-result-body { background: rgba(251,250,244,.98); color: var(--rw-ink); padding: 1.25rem; }
+  @media (min-width: 768px) {
+    .rw-result-shell { grid-template-columns: minmax(220px, .9fr) minmax(0, 1.1fr); }
+    .rw-result-art { height: 100%; min-height: 340px; }
+    .rw-result-body { padding: 1.5rem; }
+  }
+  .rw-route-atlas { display: grid; grid-template-columns: 1.1fr .9fr; gap: 12px; border: 1px solid rgba(24,35,31,.12); background: rgba(248,245,235,.86); padding: 10px; }
+  .rw-route-atlas img { width: 100%; height: 100%; min-height: 244px; border-radius: 14px; object-fit: cover; background: #f8f5eb; }
+  .rw-route-atlas__notes { display: grid; align-content: center; gap: 12px; border-left: 1px solid rgba(24,35,31,.12); padding: 16px; }
+  .rw-route-atlas__label { font: 900 11px/1.2 "JetBrains Mono", monospace; letter-spacing: .04em; color: var(--rw-horizon); }
+  @media (max-width: 640px) { .rw-route-atlas { grid-template-columns: 1fr; } .rw-route-atlas__notes { border-left: 0; border-top: 1px solid rgba(24,35,31,.12); } }
+</style>
+
+<style is:global>
+  #planificador-rutas .rw-result-card {
+    overflow: hidden;
+    border: 1px solid rgba(198, 154, 84, .24);
+    border-radius: 18px;
+    background: #f8f5eb;
+    box-shadow: 0 28px 85px -68px rgba(0, 0, 0, .95);
+    transition: transform 220ms ease, border-color 220ms ease, box-shadow 220ms ease;
+  }
+  #planificador-rutas .rw-result-card:hover {
+    transform: translateY(-2px);
+    border-color: rgba(198, 154, 84, .44);
+    box-shadow: 0 34px 95px -64px rgba(0, 0, 0, 1);
+  }
+  #planificador-rutas .rw-result-shell {
+    display: grid;
+    gap: 0;
+    background: #f8f5eb;
+  }
+  #planificador-rutas .rw-result-art {
+    width: 100%;
+    height: 18rem;
+    object-fit: cover;
+    background: #e7e3d6;
+  }
+  #planificador-rutas .rw-result-body {
+    background: rgba(251, 250, 244, .98);
+    color: var(--rw-ink);
+    padding: 1.25rem;
+  }
+  #planificador-rutas .rw-route-atlas {
+    display: grid;
+    grid-template-columns: 1.1fr .9fr;
+    gap: 12px;
+    border: 1px solid rgba(24, 35, 31, .12);
+    background: rgba(248, 245, 235, .86);
+    padding: 10px;
+  }
+  #planificador-rutas .rw-route-atlas img {
+    width: 100%;
+    height: 100%;
+    min-height: 244px;
+    border-radius: 14px;
+    object-fit: cover;
+    background: #f8f5eb;
+  }
+  #planificador-rutas .rw-route-atlas__notes {
+    display: grid;
+    align-content: center;
+    gap: 12px;
+    border-left: 1px solid rgba(24, 35, 31, .12);
+    padding: 16px;
+  }
+  #planificador-rutas .rw-route-atlas__label {
+    font: 900 11px/1.2 "JetBrains Mono", monospace;
+    letter-spacing: .04em;
+    color: var(--rw-horizon);
+  }
+  @media (min-width: 768px) {
+    #planificador-rutas .rw-result-shell {
+      grid-template-columns: minmax(220px, .9fr) minmax(0, 1.1fr);
+    }
+    #planificador-rutas .rw-result-art {
+      height: 100%;
+      min-height: 340px;
+    }
+    #planificador-rutas .rw-result-body {
+      padding: 1.5rem;
+    }
+  }
+  @media (max-width: 640px) {
+    #planificador-rutas .rw-route-atlas {
+      grid-template-columns: 1fr;
+    }
+    #planificador-rutas .rw-route-atlas__notes {
+      border-left: 0;
+      border-top: 1px solid rgba(24, 35, 31, .12);
+    }
+  }
 </style>
 
 <script define:vars={{ routeDestinations: plannerDestinations, originCities }}>
@@ -245,6 +339,22 @@ const totalPlaces = plannerDestinations.reduce((sum, item) => sum + item.highlig
       companion: 'pareja',
       originCoords: null,
     };
+
+    function setTrustedHTML(element, html) {
+      if (!element) return;
+      window.__rwTrustedPolicies = window.__rwTrustedPolicies || {};
+      if (window.trustedTypes && !window.__rwTrustedPolicies.routePlanner) {
+        try {
+          window.__rwTrustedPolicies.routePlanner = window.trustedTypes.createPolicy('routewonder-route-planner', {
+            createHTML: (value) => value,
+          });
+        } catch {
+          window.__rwTrustedPolicies.routePlanner = null;
+        }
+      }
+      const policy = window.__rwTrustedPolicies.routePlanner;
+      element.innerHTML = policy ? policy.createHTML(html) : html;
+    }
 
     function normalize(value) {
       return String(value || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim();
@@ -328,19 +438,23 @@ const totalPlaces = plannerDestinations.reduce((sum, item) => sum + item.highlig
     function renderDetails(item) {
       return `
         <div class="mt-5 border-t border-rw-mist/20 pt-5">
-          <div class="rw-gallery overflow-hidden rounded-2xl">
-            <img src="${item.photos[0]}" alt="Vista de ${item.name}" loading="lazy">
-            <div class="side">
-              <img src="${item.photos[1]}" alt="Calle o paisaje de ${item.name}" loading="lazy">
-              <img src="${item.photos[2]}" alt="Comida o ambiente de ${item.name}" loading="lazy">
+          <div class="rw-route-atlas overflow-hidden rounded-2xl">
+            <img src="${item.photos[0]}" alt="Mapa editorial de ${item.name}" loading="lazy">
+            <div class="rw-route-atlas__notes">
+              <span class="rw-route-atlas__label">Atlas editorial</span>
+              <p class="font-display text-2xl font-black leading-tight text-rw-ink">${item.name}</p>
+              <p class="font-ui text-sm leading-relaxed text-rw-ocean/76">Visual orientativo, no foto de stock: resume el tipo de ruta para evitar imágenes bonitas que no pertenecen al lugar.</p>
+              <div class="flex flex-wrap gap-2">
+                ${item.transport.map((mode) => `<span class="rounded-full border border-rw-ink/10 px-3 py-1 font-mono text-xs font-bold text-rw-ocean">${mode}</span>`).join('')}
+              </div>
             </div>
           </div>
           <div class="mt-5 grid gap-4 md:grid-cols-2">
-            <div class="rounded-2xl bg-rw-sand p-4">
+            <div class="rounded-[1.35rem] border border-rw-ink/10 bg-rw-sand/70 p-4">
               <h4 class="font-display text-xl font-bold text-rw-ink">Ruta sugerida</h4>
               <ol class="mt-3 grid gap-2 font-ui text-sm text-rw-ocean/80">${itinerary(item).map((step) => `<li>${step}</li>`).join('')}</ol>
             </div>
-            <div class="rounded-2xl bg-rw-sand p-4">
+            <div class="rounded-[1.35rem] border border-rw-ink/10 bg-rw-sand/70 p-4">
               <h4 class="font-display text-xl font-bold text-rw-ink">Qué mirar antes de reservar</h4>
               <ul class="mt-3 grid gap-2 font-ui text-sm text-rw-ocean/80">
                 <li><strong>Visitas:</strong> ${item.highlights.join(', ')}.</li>
@@ -350,11 +464,11 @@ const totalPlaces = plannerDestinations.reduce((sum, item) => sum + item.highlig
             </div>
           </div>
           <div class="mt-4 flex flex-wrap gap-3">
-            <a class="rounded-full bg-rw-ink px-4 py-2 font-ui text-xs font-bold uppercase tracking-wider text-white" href="${item.article}">Guía completa</a>
-            <a class="rounded-full border border-rw-horizon/30 px-4 py-2 font-ui text-xs font-bold uppercase tracking-wider text-rw-horizon" href="${item.mapUrl}" rel="noopener noreferrer">Mapa</a>
-            <a class="rounded-full border border-rw-horizon/30 px-4 py-2 font-ui text-xs font-bold uppercase tracking-wider text-rw-horizon" href="${item.hotelUrl}" rel="noopener noreferrer">Hoteles</a>
-            <a class="rounded-full border border-rw-horizon/30 px-4 py-2 font-ui text-xs font-bold uppercase tracking-wider text-rw-horizon" href="${item.restaurantUrl}" rel="noopener noreferrer">Restaurantes</a>
-            <a class="rounded-full border border-rw-horizon/30 px-4 py-2 font-ui text-xs font-bold uppercase tracking-wider text-rw-horizon" href="${item.activityUrl}" rel="noopener noreferrer">Actividades</a>
+            <a class="rounded-full bg-rw-ink px-4 py-2 font-ui text-xs font-black uppercase tracking-wider text-white transition hover:bg-rw-horizon" href="${item.article}">Guía completa</a>
+            <a class="rounded-full border border-rw-horizon/30 px-4 py-2 font-ui text-xs font-black uppercase tracking-wider text-rw-horizon transition hover:border-rw-horizon hover:bg-rw-horizon hover:text-white" href="${item.mapUrl}" target="_blank" rel="noopener noreferrer">Mapa</a>
+            <a class="rounded-full border border-rw-horizon/30 px-4 py-2 font-ui text-xs font-black uppercase tracking-wider text-rw-horizon transition hover:border-rw-horizon hover:bg-rw-horizon hover:text-white" href="${item.hotelUrl}" target="_blank" rel="nofollow sponsored noopener noreferrer">Hoteles</a>
+            <a class="rounded-full border border-rw-horizon/30 px-4 py-2 font-ui text-xs font-black uppercase tracking-wider text-rw-horizon transition hover:border-rw-horizon hover:bg-rw-horizon hover:text-white" href="${item.restaurantUrl}" target="_blank" rel="noopener noreferrer">Restaurantes</a>
+            <a class="rounded-full border border-rw-horizon/30 px-4 py-2 font-ui text-xs font-black uppercase tracking-wider text-rw-horizon transition hover:border-rw-horizon hover:bg-rw-horizon hover:text-white" href="${item.activityUrl}" target="_blank" rel="nofollow sponsored noopener noreferrer">Actividades</a>
           </div>
         </div>`;
     }
@@ -393,27 +507,27 @@ const totalPlaces = plannerDestinations.reduce((sum, item) => sum + item.highlig
       ranked.forEach((item, index) => {
         const article = document.createElement('article');
         article.className = 'rw-result-card';
-        article.innerHTML = `
-          <div class="grid gap-0 md:grid-cols-[0.95fr_1.05fr]">
-            <img src="${item.photos[0]}" alt="Foto de ${item.name}" loading="lazy" class="h-full min-h-[260px] w-full object-cover">
-            <div class="p-5 sm:p-6">
+        setTrustedHTML(article, `
+          <div class="rw-result-shell">
+            <img src="${item.photos[0]}" alt="Mapa editorial de ${item.name}" loading="lazy" class="rw-result-art">
+            <div class="rw-result-body">
               <div class="flex items-start justify-between gap-3">
                 <div>
-                  <p class="font-ui text-xs font-bold uppercase tracking-[0.16em] text-rw-horizon">${item.country} · ${item.days}</p>
-                  <h3 class="mt-1 font-display text-3xl font-black leading-tight text-rw-ink dark:text-rw-white">${item.name}</h3>
+                  <p class="font-ui text-xs font-black uppercase tracking-[0.16em] text-rw-horizon">${item.country} · ${item.days}</p>
+                  <h3 class="mt-1 font-display text-3xl font-black leading-tight tracking-[-0.015em] text-rw-ink dark:text-rw-ink">${item.name}</h3>
                 </div>
-                <span class="rounded-full bg-rw-horizon px-3 py-1 font-ui text-xs font-bold text-white">#${index + 1}</span>
+                <span class="rounded-full border border-rw-ink/10 bg-rw-sand px-3 py-1 font-mono text-xs font-bold text-rw-horizon">#${index + 1}</span>
               </div>
-              <p class="mt-3 font-ui text-sm leading-relaxed text-rw-ocean/75 dark:text-rw-mist">${item.description || `${modeLabel(item, item.distance)}. Encaja por ${item.interests.slice(0, 3).join(', ')}.`}</p>
+              <p class="mt-3 font-ui text-sm leading-relaxed text-rw-ocean/75 dark:text-rw-ocean/75">${item.description || `${modeLabel(item, item.distance)}. Encaja por ${item.interests.slice(0, 3).join(', ')}.`}</p>
               <div class="mt-4 flex flex-wrap gap-2">
-                ${item.highlights.slice(0, 3).map((tag) => `<span class="rounded-full bg-rw-gold/15 px-3 py-1 font-ui text-xs font-bold text-rw-ocean dark:text-rw-sand">${tag}</span>`).join('')}
+                ${item.highlights.slice(0, 3).map((tag) => `<span class="rounded-full border border-rw-ink/10 bg-rw-gold/12 px-3 py-1 font-ui text-xs font-bold text-rw-ocean dark:text-rw-ocean">${tag}</span>`).join('')}
               </div>
-              <button class="mt-5 rounded-full bg-rw-horizon px-5 py-3 font-ui text-xs font-bold uppercase tracking-wider text-white" type="button" data-detail="${item.id}">
-                Ver fotos y ruta
+              <button class="mt-5 rounded-full bg-rw-ink px-5 py-3 font-ui text-xs font-black uppercase tracking-wider text-white transition hover:-translate-y-0.5 hover:bg-rw-horizon focus:outline-none focus-visible:ring-2 focus-visible:ring-rw-horizon focus-visible:ring-offset-2" type="button" data-detail="${item.id}" aria-expanded="false">
+                Ver ruta y detalles
               </button>
               <div class="hidden" data-panel="${item.id}">${renderDetails(item)}</div>
             </div>
-          </div>`;
+          </div>`);
         results.appendChild(article);
       });
 
@@ -422,7 +536,9 @@ const totalPlaces = plannerDestinations.reduce((sum, item) => sum + item.highlig
           const panel = results.querySelector(`[data-panel="${button.dataset.detail}"]`);
           if (!panel) return;
           panel.classList.toggle('hidden');
-          button.textContent = panel.classList.contains('hidden') ? 'Ver fotos y ruta' : 'Ocultar detalles';
+          const isHidden = panel.classList.contains('hidden');
+          button.textContent = isHidden ? 'Ver ruta y detalles' : 'Ocultar detalles';
+          button.setAttribute('aria-expanded', String(!isHidden));
         });
       });
     }

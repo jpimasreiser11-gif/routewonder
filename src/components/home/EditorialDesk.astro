@@ -2,29 +2,29 @@
 const checks = [
   ["Mapa antes que maleta", "Primero ubicamos la base, el transporte y las distancias reales. Después llega la lista de planes."],
   ["Una razón para ir", "Cada guía busca el motivo concreto: paisaje, historia, comida, rareza geográfica o ruta cómoda."],
-  ["Fotos que ayudan", "Paisaje, detalle local y temporada aparecen dentro del artículo para decidir sin imaginar a ciegas."],
+  ["Visuales que ayudan", "Mapa, ritmo de ruta y temporada aparecen dentro del artículo para decidir sin imaginar a ciegas."],
   ["Menos ruido", "No prometemos viajes perfectos: señalamos qué evitar, cuándo reservar y dónde bajar expectativas."],
 ];
 ---
 
-<section class="bg-rw-sand py-16 dark:bg-rw-ocean sm:py-24">
-  <div class="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-4 sm:px-6 lg:grid-cols-12 lg:px-8">
+<section class="bg-rw-sand py-16 dark:bg-rw-sand sm:py-24">
+  <div class="mx-auto grid max-w-[1500px] grid-cols-1 gap-10 px-4 sm:px-6 lg:grid-cols-12 lg:px-10">
     <div class="lg:col-span-4">
-      <p class="font-ui text-xs font-bold uppercase tracking-[0.28em] text-rw-forest">Mesa editorial</p>
-      <h2 class="mt-3 font-display text-4xl font-black leading-tight text-rw-ink dark:text-rw-white">
+      <p class="font-ui text-xs font-black uppercase tracking-[0.28em] text-rw-forest">Mesa editorial</p>
+      <h2 class="text-balance mt-3 font-display text-4xl font-black leading-[1] tracking-[-0.02em] text-rw-ink dark:text-rw-ink sm:text-5xl">
         Más revista que feed infinito.
       </h2>
-      <p class="mt-4 font-ui text-base leading-relaxed text-rw-ocean/75 dark:text-rw-mist">
+      <p class="text-pretty mt-4 font-body text-xl leading-relaxed text-rw-ocean/76">
         RouteWonder publica guías para decidir. No buscamos que leas durante una hora: buscamos que entiendas si ese lugar encaja contigo.
       </p>
     </div>
     <div class="grid gap-4 lg:col-span-8 sm:grid-cols-2">
       {
         checks.map(([title, text], index) => (
-          <article class="reveal rounded-2xl border border-rw-mist/20 bg-rw-white p-6 shadow-sm dark:bg-rw-ink">
-            <span class="font-mono text-xs font-bold text-rw-horizon">0{index + 1}</span>
-            <h3 class="mt-3 font-display text-2xl font-bold text-rw-ink dark:text-rw-white">{title}</h3>
-            <p class="mt-2 font-ui text-sm leading-relaxed text-rw-ocean/75 dark:text-rw-mist">{text}</p>
+          <article class={`reveal border border-rw-ink/10 bg-rw-white/62 p-6 shadow-[0_24px_70px_-60px_rgba(33,29,25,.8)] ${index === 1 ? "rounded-[2rem] sm:mt-8" : "rounded-[1.35rem]"} ${index === 2 ? "sm:-mt-5" : ""}`}>
+            <span class="mb-4 block h-px w-14 bg-rw-horizon/55"></span>
+            <h3 class="font-display text-2xl font-bold leading-tight text-rw-ink dark:text-rw-ink">{title}</h3>
+            <p class="mt-3 font-ui text-sm leading-relaxed text-rw-ocean/75">{text}</p>
           </article>
         ))
       }

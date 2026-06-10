@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900" role="img" aria-labelledby="title desc">
+  <title id="title">Ruta de costa</title>
+  <desc id="desc">Ilustración editorial de una ruta costera con acantilados, faro y mar.</desc>
+  <defs>
+    <linearGradient id="sea" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#d8e8e4"/>
+      <stop offset=".62" stop-color="#6f9188"/>
+      <stop offset="1" stop-color="#263a34"/>
+    </linearGradient>
+    <filter id="grain">
+      <feTurbulence baseFrequency=".025" numOctaves="3" seed="22"/>
+      <feColorMatrix type="saturate" values=".12"/>
+      <feBlend in="SourceGraphic" mode="multiply"/>
+    </filter>
+  </defs>
+  <rect width="1400" height="900" fill="#f8f5eb"/>
+  <rect y="105" width="1400" height="565" fill="url(#sea)"/>
+  <path d="M0 644c183-86 300-101 462-59 112 29 205 41 329-22 181-91 323-69 609 25v312H0z" fill="#e5d3ae"/>
+  <path d="M0 738c171-46 345-45 512-4 172 42 330 32 484-36 135-60 260-62 404-11v213H0z" fill="#b15f3e" opacity=".88"/>
+  <path d="M116 604c128-54 255-58 385-12 138 49 273 37 410-28 121-58 232-60 350-12" fill="none" stroke="#f5f1e5" stroke-width="8" stroke-linecap="round"/>
+  <path d="M171 591c79-21 165-19 247 4m339-10c80-18 150-43 224-52" fill="none" stroke="#18231f" stroke-width="2" opacity=".36"/>
+  <g transform="translate(1040 392)">
+    <rect x="0" y="90" width="104" height="24" rx="5" fill="#18231f"/>
+    <path d="M22 90h60L72 0H32z" fill="#f8f5eb" stroke="#18231f" stroke-width="7"/>
+    <path d="M30 28h44" stroke="#b15f3e" stroke-width="9"/>
+    <circle cx="52" cy="16" r="9" fill="#c69a54"/>
+  </g>
+  <circle cx="258" cy="212" r="76" fill="#c69a54" opacity=".42"/>
+  <g filter="url(#grain)" opacity=".18"><rect width="1400" height="900" fill="#263a34"/></g>
+</svg>
