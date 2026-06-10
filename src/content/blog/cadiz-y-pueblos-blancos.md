@@ -7,7 +7,7 @@ author: "Marco Vidal"
 category: "rutas-sorprendentes"
 tags: ["España", "gastronomía", "guía", "ruta", "viaje práctico"]
 image: "/images/editorial/cadiz-y-pueblos-blancos-hero.svg"
-imageAlt: "Visual editorial de La ruta de los pueblos blancos de Cádiz: sin prisa ni tour"
+imageAlt: "Ilustración editorial de La ruta de los pueblos blancos de Cádiz: sin prisa ni tour: mar, faros y línea de costa"
 readingTime: 10
 affiliate: true
 featured: false
@@ -29,7 +29,7 @@ planner:
 
 Cádiz y pueblos blancos no necesita una lista infinita de imprescindibles. Necesita una pregunta mejor: **qué tipo de viaje quieres tener allí**. Si buscas Atlántico, carretera y pueblos que funcionan mejor con calma, esta ruta tiene sentido. Si solo quieres tachar lugares, probablemente te cansará antes de empezar.
 
-![Visual editorial 1 de La ruta de los pueblos blancos de Cádiz: sin prisa ni tour](/images/editorial/cadiz-y-pueblos-blancos-panel-1.svg)
+![Ilustración 1 para La ruta de los pueblos blancos de Cádiz: sin prisa ni tour: mar, faros y línea de costa](/images/editorial/cadiz-y-pueblos-blancos-panel-1.svg)
 
 ## Resumen para decidir rápido
 
@@ -45,7 +45,7 @@ Cádiz y pueblos blancos no necesita una lista infinita de imprescindibles. Nece
 
 Empieza por una base clara y dibuja un círculo sencillo alrededor. El error habitual es poner todos los lugares bonitos en una misma ruta sin mirar carreteras, horarios o cansancio. En Cádiz y pueblos blancos, la experiencia mejora cuando dejas huecos.
 
-![Visual editorial 2 de La ruta de los pueblos blancos de Cádiz: sin prisa ni tour](/images/editorial/cadiz-y-pueblos-blancos-panel-2.svg)
+![Ilustración 2 para La ruta de los pueblos blancos de Cádiz: sin prisa ni tour: mar, faros y línea de costa](/images/editorial/cadiz-y-pueblos-blancos-panel-2.svg)
 
 ### Día 1: entender el lugar
 
@@ -59,13 +59,13 @@ El plan fuerte debe elegirse por una razón concreta en La ruta de los pueblos b
 
 Deja una franja para el detalle local de La ruta de los pueblos blancos de Cádiz: sin prisa ni tour: una parada pequeña, una comida sencilla o un paseo que no necesite reserva. Ahí se nota si el itinerario respira.
 
-![Visual editorial 3 de La ruta de los pueblos blancos de Cádiz: sin prisa ni tour](/images/editorial/cadiz-y-pueblos-blancos-panel-3.svg)
+![Ilustración 3 para La ruta de los pueblos blancos de Cádiz: sin prisa ni tour: mar, faros y línea de costa](/images/editorial/cadiz-y-pueblos-blancos-panel-3.svg)
 
 ## Cuándo ir
 
 La temporada ideal para La ruta de los pueblos blancos de Cádiz: sin prisa ni tour depende menos de la postal y más de la fricción: horarios, calor, viento, ferris, carreteras y precio del alojamiento.
 
-![Visual editorial 4 de La ruta de los pueblos blancos de Cádiz: sin prisa ni tour](/images/editorial/cadiz-y-pueblos-blancos-panel-4.svg)
+![Ilustración 4 para La ruta de los pueblos blancos de Cádiz: sin prisa ni tour: mar, faros y línea de costa](/images/editorial/cadiz-y-pueblos-blancos-panel-4.svg)
 
 ## Presupuesto sin prometer milagros
 

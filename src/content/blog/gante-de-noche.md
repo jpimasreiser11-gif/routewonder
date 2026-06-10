@@ -7,7 +7,7 @@ author: "Marco Vidal"
 category: "ciudades-extranas"
 tags: ["Bélgica", "cultura", "guía", "ruta", "viaje práctico"]
 image: "/images/editorial/gante-de-noche-hero.svg"
-imageAlt: "Visual editorial de Por qué Gante de noche es mejor que Brujas de día"
+imageAlt: "Ilustración editorial de Por qué Gante de noche es mejor que Brujas de día: agua, puentes y arquitectura junto al lago o canal"
 readingTime: 10
 affiliate: true
 featured: false
@@ -29,7 +29,7 @@ planner:
 
 Gante de noche no necesita una lista infinita de imprescindibles. Necesita una pregunta mejor: **qué tipo de viaje quieres tener allí**. Si buscas canales, luces y un centro medieval que mejora cuando baja el ruido, esta ruta tiene sentido. Si solo quieres tachar lugares, probablemente te cansará antes de empezar.
 
-![Visual editorial 1 de Por qué Gante de noche es mejor que Brujas de día](/images/editorial/gante-de-noche-panel-1.svg)
+![Ilustración 1 para Por qué Gante de noche es mejor que Brujas de día: agua, puentes y arquitectura junto al lago o canal](/images/editorial/gante-de-noche-panel-1.svg)
 
 ## Resumen para decidir rápido
 
@@ -46,7 +46,7 @@ Gante de noche no necesita una lista infinita de imprescindibles. Necesita una p
 
 Empieza por una base clara y dibuja un círculo sencillo alrededor. El error habitual es poner todos los lugares bonitos en una misma ruta sin mirar carreteras, horarios o cansancio. En Gante de noche, la experiencia mejora cuando dejas huecos.
 
-![Visual editorial 2 de Por qué Gante de noche es mejor que Brujas de día](/images/editorial/gante-de-noche-panel-2.svg)
+![Ilustración 2 para Por qué Gante de noche es mejor que Brujas de día: agua, puentes y arquitectura junto al lago o canal](/images/editorial/gante-de-noche-panel-2.svg)
 
 ### Día 1: entender el lugar
 
@@ -60,13 +60,13 @@ El plan fuerte debe elegirse por una razón concreta en Por qué Gante de noche 
 
 Deja una franja para el detalle local de Por qué Gante de noche es mejor que Brujas de día: una parada pequeña, una comida sencilla o un paseo que no necesite reserva. Ahí se nota si el itinerario respira.
 
-![Visual editorial 3 de Por qué Gante de noche es mejor que Brujas de día](/images/editorial/gante-de-noche-panel-3.svg)
+![Ilustración 3 para Por qué Gante de noche es mejor que Brujas de día: agua, puentes y arquitectura junto al lago o canal](/images/editorial/gante-de-noche-panel-3.svg)
 
 ## Cuándo ir
 
 La temporada ideal para Por qué Gante de noche es mejor que Brujas de día depende menos de la postal y más de la fricción: horarios, calor, viento, ferris, carreteras y precio del alojamiento.
 
-![Visual editorial 4 de Por qué Gante de noche es mejor que Brujas de día](/images/editorial/gante-de-noche-panel-4.svg)
+![Ilustración 4 para Por qué Gante de noche es mejor que Brujas de día: agua, puentes y arquitectura junto al lago o canal](/images/editorial/gante-de-noche-panel-4.svg)
 
 ## Presupuesto sin prometer milagros
 

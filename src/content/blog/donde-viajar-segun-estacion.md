@@ -7,7 +7,7 @@ author: "Marco Vidal"
 category: "viaje-rapido"
 tags: ["cuándo viajar", "temporadas", "destinos", "viaje rápido", "planificación"]
 image: "/images/editorial/donde-viajar-segun-estacion-hero.svg"
-imageAlt: "Visual editorial de Dónde viajar según la estación: 24 ideas fáciles de elegir"
+imageAlt: "Ilustración editorial de Dónde viajar según la estación: 24 ideas fáciles de elegir: luz de temporada y paisaje cambiante"
 readingTime: 9
 affiliate: true
 featured: false
@@ -28,7 +28,7 @@ planner:
 
 El destino correcto en el mes equivocado puede salir caro, estar saturado o perder la mitad de su gracia. Elegir por estación ahorra discusiones y dinero.
 
-![Visual editorial 1 de Dónde viajar según la estación: 24 ideas fáciles de elegir](/images/editorial/donde-viajar-segun-estacion-panel-1.svg)
+![Ilustración 1 para Dónde viajar según la estación: 24 ideas fáciles de elegir: luz de temporada y paisaje cambiante](/images/editorial/donde-viajar-segun-estacion-panel-1.svg)
 
 ## Resumen rápido
 
@@ -49,7 +49,7 @@ La regla editorial para Dónde viajar según la estación: 24 ideas fáciles de 
 
 La luz es buena, el calor no aprieta y muchas rutas todavía no están llenas.
 
-![Visual editorial 2 de Dónde viajar según la estación: 24 ideas fáciles de elegir](/images/editorial/donde-viajar-segun-estacion-panel-2.svg)
+![Ilustración 2 para Dónde viajar según la estación: 24 ideas fáciles de elegir: luz de temporada y paisaje cambiante](/images/editorial/donde-viajar-segun-estacion-panel-2.svg)
 
 **Consejo de ruta:** La primera decisión no es el destino, es la luz disponible: invierno y verano cambian totalmente el ritmo.
 
@@ -57,7 +57,7 @@ La luz es buena, el calor no aprieta y muchas rutas todavía no están llenas.
 
 Busca norte, altura o islas con brisa. Evita ciudades interiores muy calientes si no vas preparado.
 
-![Visual editorial 3 de Dónde viajar según la estación: 24 ideas fáciles de elegir](/images/editorial/donde-viajar-segun-estacion-panel-3.svg)
+![Ilustración 3 para Dónde viajar según la estación: 24 ideas fáciles de elegir: luz de temporada y paisaje cambiante](/images/editorial/donde-viajar-segun-estacion-panel-3.svg)
 
 **Consejo de ruta:** No llenes el calendario antes de mirar festivos locales y cierres de temporada.
 
@@ -65,7 +65,7 @@ Busca norte, altura o islas con brisa. Evita ciudades interiores muy calientes s
 
 Es la estación de carreteras bonitas, bosques y precios algo más razonables.
 
-![Visual editorial 4 de Dónde viajar según la estación: 24 ideas fáciles de elegir](/images/editorial/donde-viajar-segun-estacion-panel-4.svg)
+![Ilustración 4 para Dónde viajar según la estación: 24 ideas fáciles de elegir: luz de temporada y paisaje cambiante](/images/editorial/donde-viajar-segun-estacion-panel-4.svg)
 
 **Consejo de ruta:** Consulta calendarios oficiales de parques, ferris y museos; la estación bonita no siempre es la más operativa.
 
@@ -73,7 +73,7 @@ Es la estación de carreteras bonitas, bosques y precios algo más razonables.
 
 Funcionan bien porque tienen vida urbana, clima manejable o paisajes que no dependen del baño.
 
-![Visual editorial 5 de Dónde viajar según la estación: 24 ideas fáciles de elegir](/images/editorial/donde-viajar-segun-estacion-panel-5.svg)
+![Ilustración 5 para Dónde viajar según la estación: 24 ideas fáciles de elegir: luz de temporada y paisaje cambiante](/images/editorial/donde-viajar-segun-estacion-panel-5.svg)
 
 **Consejo de ruta:** Para cada estación, elige un plan cubierto y otro exterior que te apetezcan por igual.
 
@@ -82,8 +82,8 @@ Funcionan bien porque tienen vida urbana, clima manejable o paisajes que no depe
 Los precios de Dónde viajar según la estación: 24 ideas fáciles de elegir cambian por temporada, eventos y antelación. En vez de prometer una cifra exacta, usa estas tres franjas:
 
 - **Bajo en Dónde viajar según la estación: 24 ideas fáciles de elegir:** alojamiento simple, transporte público cuando sea posible y una comida principal fuera al día.
-- **Medio:** coche o excursión puntual, alojamiento bien situado y margen para entradas.
-- **Alto:** hoteles con vistas, restaurantes reservados y menos fricción logística.
+- **Medio:** mejor base, alguna actividad reservada y margen para cambiar el plan si el tiempo aprieta.
+- **Alto:** hoteles mejor situados, reservas con cancelación flexible y menos tiempo perdido en traslados.
 
 Comprueba siempre horarios, cierres y condiciones oficiales antes de salir hacia Dónde viajar según la estación: 24 ideas fáciles de elegir. Una guía útil no sustituye la verificación final.
 

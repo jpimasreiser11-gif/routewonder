@@ -7,7 +7,7 @@ author: "Marco Vidal"
 category: "ciudades-extranas"
 tags: ["Estonia", "cultura", "guía", "ruta", "viaje práctico"]
 image: "/images/editorial/tallin-en-invierno-hero.svg"
-imageAlt: "Visual editorial de Tallin en diciembre: el centro medieval báltico casi sin turistas"
+imageAlt: "Ilustración editorial de Tallin en diciembre: el centro medieval báltico casi sin turistas: calles, siluetas urbanas y patrimonio"
 readingTime: 10
 affiliate: true
 featured: false
@@ -29,7 +29,7 @@ planner:
 
 Tallin en invierno no necesita una lista infinita de imprescindibles. Necesita una pregunta mejor: **qué tipo de viaje quieres tener allí**. Si buscas murallas, nieve y diseño digital en una capital pequeña, esta ruta tiene sentido. Si solo quieres tachar lugares, probablemente te cansará antes de empezar.
 
-![Visual editorial 1 de Tallin en diciembre: el centro medieval báltico casi sin turistas](/images/editorial/tallin-en-invierno-panel-1.svg)
+![Ilustración 1 para Tallin en diciembre: el centro medieval báltico casi sin turistas: calles, siluetas urbanas y patrimonio](/images/editorial/tallin-en-invierno-panel-1.svg)
 
 ## Resumen para decidir rápido
 
@@ -45,7 +45,7 @@ Tallin en invierno no necesita una lista infinita de imprescindibles. Necesita u
 
 Empieza por una base clara y dibuja un círculo sencillo alrededor. El error habitual es poner todos los lugares bonitos en una misma ruta sin mirar carreteras, horarios o cansancio. En Tallin en invierno, la experiencia mejora cuando dejas huecos.
 
-![Visual editorial 2 de Tallin en diciembre: el centro medieval báltico casi sin turistas](/images/editorial/tallin-en-invierno-panel-2.svg)
+![Ilustración 2 para Tallin en diciembre: el centro medieval báltico casi sin turistas: calles, siluetas urbanas y patrimonio](/images/editorial/tallin-en-invierno-panel-2.svg)
 
 ### Día 1: entender el lugar
 
@@ -59,13 +59,13 @@ El plan fuerte debe elegirse por una razón concreta en Tallin en diciembre: el 
 
 Deja una franja para el detalle local de Tallin en diciembre: el centro medieval báltico casi sin turistas: una parada pequeña, una comida sencilla o un paseo que no necesite reserva. Ahí se nota si el itinerario respira.
 
-![Visual editorial 3 de Tallin en diciembre: el centro medieval báltico casi sin turistas](/images/editorial/tallin-en-invierno-panel-3.svg)
+![Ilustración 3 para Tallin en diciembre: el centro medieval báltico casi sin turistas: calles, siluetas urbanas y patrimonio](/images/editorial/tallin-en-invierno-panel-3.svg)
 
 ## Cuándo ir
 
 La temporada ideal para Tallin en diciembre: el centro medieval báltico casi sin turistas depende menos de la postal y más de la fricción: horarios, calor, viento, ferris, carreteras y precio del alojamiento.
 
-![Visual editorial 4 de Tallin en diciembre: el centro medieval báltico casi sin turistas](/images/editorial/tallin-en-invierno-panel-4.svg)
+![Ilustración 4 para Tallin en diciembre: el centro medieval báltico casi sin turistas: calles, siluetas urbanas y patrimonio](/images/editorial/tallin-en-invierno-panel-4.svg)
 
 ## Presupuesto sin prometer milagros
 

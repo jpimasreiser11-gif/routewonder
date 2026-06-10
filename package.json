@@ -10,9 +10,8 @@
     "@astrojs/rss": "latest",
     "@astrojs/sitemap": "latest",
     "@astrojs/tailwind": "latest",
-    "astro": "latest",
+    "astro": "^6.4.6",
     "tailwindcss": "latest",
-    "three": "^0.184.0",
     "typescript": "latest"
   },
   "devDependencies": {

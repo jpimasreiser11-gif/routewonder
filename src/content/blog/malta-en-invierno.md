@@ -7,7 +7,7 @@ author: "Marco Vidal"
 category: "viaje-economico"
 tags: ["Malta", "cultura", "guía", "ruta", "viaje práctico"]
 image: "/images/editorial/malta-en-invierno-hero.svg"
-imageAlt: "Visual editorial de Malta en enero: la isla mediterránea cuando cuesta la mitad"
+imageAlt: "Ilustración editorial de Malta en enero: la isla mediterránea cuando cuesta la mitad: islas, costa y horizonte mediterráneo"
 readingTime: 10
 affiliate: true
 featured: false
@@ -29,7 +29,7 @@ planner:
 
 Malta en invierno no necesita una lista infinita de imprescindibles. Necesita una pregunta mejor: **qué tipo de viaje quieres tener allí**. Si buscas ciudades de piedra, mar frío y precios más razonables, esta ruta tiene sentido. Si solo quieres tachar lugares, probablemente te cansará antes de empezar.
 
-![Visual editorial 1 de Malta en enero: la isla mediterránea cuando cuesta la mitad](/images/editorial/malta-en-invierno-panel-1.svg)
+![Ilustración 1 para Malta en enero: la isla mediterránea cuando cuesta la mitad: islas, costa y horizonte mediterráneo](/images/editorial/malta-en-invierno-panel-1.svg)
 
 ## Resumen para decidir rápido
 
@@ -45,7 +45,7 @@ Malta en invierno no necesita una lista infinita de imprescindibles. Necesita un
 
 Empieza por una base clara y dibuja un círculo sencillo alrededor. El error habitual es poner todos los lugares bonitos en una misma ruta sin mirar carreteras, horarios o cansancio. En Malta en invierno, la experiencia mejora cuando dejas huecos.
 
-![Visual editorial 2 de Malta en enero: la isla mediterránea cuando cuesta la mitad](/images/editorial/malta-en-invierno-panel-2.svg)
+![Ilustración 2 para Malta en enero: la isla mediterránea cuando cuesta la mitad: islas, costa y horizonte mediterráneo](/images/editorial/malta-en-invierno-panel-2.svg)
 
 ### Día 1: entender el lugar
 
@@ -59,13 +59,13 @@ El plan fuerte debe elegirse por una razón concreta en Malta en enero: la isla 
 
 Deja una franja para el detalle local de Malta en enero: la isla mediterránea cuando cuesta la mitad: una parada pequeña, una comida sencilla o un paseo que no necesite reserva. Ahí se nota si el itinerario respira.
 
-![Visual editorial 3 de Malta en enero: la isla mediterránea cuando cuesta la mitad](/images/editorial/malta-en-invierno-panel-3.svg)
+![Ilustración 3 para Malta en enero: la isla mediterránea cuando cuesta la mitad: islas, costa y horizonte mediterráneo](/images/editorial/malta-en-invierno-panel-3.svg)
 
 ## Cuándo ir
 
 La temporada ideal para Malta en enero: la isla mediterránea cuando cuesta la mitad depende menos de la postal y más de la fricción: horarios, calor, viento, ferris, carreteras y precio del alojamiento.
 
-![Visual editorial 4 de Malta en enero: la isla mediterránea cuando cuesta la mitad](/images/editorial/malta-en-invierno-panel-4.svg)
+![Ilustración 4 para Malta en enero: la isla mediterránea cuando cuesta la mitad: islas, costa y horizonte mediterráneo](/images/editorial/malta-en-invierno-panel-4.svg)
 
 ## Presupuesto sin prometer milagros
 

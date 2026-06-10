@@ -1,6 +1,7 @@
 ---
 import type { CollectionEntry } from "astro:content";
 import Badge from "../ui/Badge.astro";
+import { getContentSlug } from "../../lib/contentSlug";
 
 export interface Props {
   post: CollectionEntry<"blog">;
@@ -9,6 +10,7 @@ export interface Props {
 
 const { post, class: className = "" } = Astro.props;
 const { title, description, publishedDate, author, category, image, imageAlt, readingTime } = post.data;
+const slug = getContentSlug(post);
 
 const formattedDate = new Date(publishedDate).toLocaleDateString("es-ES", {
   year: "numeric",
@@ -21,7 +23,7 @@ const base = import.meta.env.BASE_URL.endsWith("/") ? import.meta.env.BASE_URL :
 
 <article class={`group flex flex-col overflow-hidden rounded-[1.35rem] border border-rw-ink/10 bg-rw-white/72 transition duration-300 hover:-translate-y-1 hover:border-rw-horizon/32 hover:bg-rw-white hover:shadow-[0_26px_80px_-62px_rgba(33,29,25,.9)] ${className}`}>
   <!-- Article Image -->
-  <a href={`${base}blog/${post.slug}/`} class="relative block overflow-hidden aspect-[4/3] bg-rw-sand select-none" aria-label={`Leer artículo: ${title}`}>
+  <a href={`${base}blog/${slug}/`} class="relative block overflow-hidden aspect-[4/3] bg-rw-sand select-none" aria-label={`Leer artículo: ${title}`}>
     {
       image ? (
         <img
@@ -55,7 +57,7 @@ const base = import.meta.env.BASE_URL.endsWith("/") ? import.meta.env.BASE_URL :
 
     <!-- Title -->
     <h3 class="mb-3 font-display text-2xl font-black leading-tight tracking-[-0.012em] text-rw-ink transition-colors group-hover:text-rw-horizon">
-      <a href={`${base}blog/${post.slug}/`}>
+      <a href={`${base}blog/${slug}/`}>
         {title}
       </a>
     </h3>

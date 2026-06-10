@@ -1,5 +1,6 @@
 ---
 import { getCollection } from "astro:content";
+import { getContentSlug } from "../../lib/contentSlug";
 
 export interface Props {
   currentSlug: string;
@@ -11,7 +12,7 @@ const { currentSlug, category, tags = [] } = Astro.props;
 const posts = await getCollection("blog", ({ data }) => !data.draft);
 
 const related = posts
-  .filter((post) => post.slug !== currentSlug)
+  .filter((post) => getContentSlug(post) !== currentSlug)
   .map((post) => {
     const tagScore = (post.data.tags ?? []).filter((tag) => tags.includes(tag)).length;
     const categoryScore = post.data.category === category ? 3 : 0;
@@ -27,8 +28,10 @@ const related = posts
     <p class="font-ui text-xs font-black uppercase tracking-[0.22em] text-rw-horizon">Sigue la ruta</p>
     <h2 class="mt-2 font-display text-3xl font-black text-rw-ink dark:text-rw-white">También te puede interesar</h2>
     <div class="mt-6 grid gap-5 md:grid-cols-3">
-      {related.map(({ post }) => (
-        <a href={`/blog/${post.slug}/`} class="group overflow-hidden rounded-2xl border border-rw-mist/18 bg-rw-white shadow-sm transition hover:-translate-y-1 hover:border-rw-horizon/40 dark:bg-rw-ocean/40">
+      {related.map(({ post }) => {
+        const slug = getContentSlug(post);
+        return (
+        <a href={`/blog/${slug}/`} class="group overflow-hidden rounded-2xl border border-rw-mist/18 bg-rw-white shadow-sm transition hover:-translate-y-1 hover:border-rw-horizon/40 dark:bg-rw-ocean/40">
           {post.data.image && (
             <img src={post.data.image} alt={post.data.imageAlt ?? post.data.title} loading="lazy" class="h-40 w-full object-cover transition duration-500 group-hover:scale-105" />
           )}
@@ -38,7 +41,8 @@ const related = posts
             <p class="mt-2 font-ui text-xs text-rw-ocean/58 dark:text-rw-mist">{post.data.readingTime ?? 7} min de lectura</p>
           </div>
         </a>
-      ))}
+        );
+      })}
     </div>
   </section>
 )}

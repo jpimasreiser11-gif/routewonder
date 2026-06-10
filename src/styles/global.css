@@ -269,21 +269,75 @@
     width: min(42vw, 340px);
     aspect-ratio: 1.7;
     border: 1px solid rgba(245,244,238,.28);
-    background: rgba(24,35,31,.72);
+    background:
+      radial-gradient(circle at 72% 22%, rgba(216,177,95,.26), transparent 24%),
+      linear-gradient(135deg, rgba(24,35,31,.88), rgba(40,54,48,.68));
     backdrop-filter: blur(12px) saturate(120%);
     border-radius: .9rem;
     box-shadow: 0 26px 78px -58px rgba(24,35,31,.95);
     overflow: hidden;
+    transform: perspective(700px) rotateX(9deg) rotateY(-12deg);
+    transform-style: preserve-3d;
   }
 
-  .rw-web3d canvas {
-    width: 100%;
-    height: 100%;
-    display: block;
+  .rw-map-grid {
+    position: absolute;
+    inset: 18px;
+    border: 1px solid rgba(245,244,238,.18);
+    background:
+      repeating-linear-gradient(0deg, transparent 0 22px, rgba(245,244,238,.09) 22px 23px),
+      repeating-linear-gradient(90deg, transparent 0 28px, rgba(245,244,238,.08) 28px 29px);
+    transform: translateZ(18px);
+  }
+
+  .rw-map-line {
+    position: absolute;
+    left: 16%;
+    right: 12%;
+    height: 4px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, transparent, rgba(184,135,76,.95), rgba(107,133,90,.95), transparent);
+    transform-origin: left center;
+    filter: drop-shadow(0 8px 14px rgba(184,135,76,.24));
+  }
+
+  .rw-map-line-a {
+    top: 47%;
+    transform: translateZ(42px) rotate(-16deg);
+  }
+
+  .rw-map-line-b {
+    top: 62%;
+    transform: translateZ(30px) rotate(12deg);
+    opacity: .72;
+  }
+
+  .rw-map-pin {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border: 2px solid rgba(255,253,248,.86);
+    border-radius: 999px;
+    background: #b8874c;
+    box-shadow: 0 0 0 7px rgba(184,135,76,.18), 0 16px 26px rgba(0,0,0,.24);
+    animation: rw-float 4.8s cubic-bezier(.2,.8,.2,1) infinite;
+  }
+
+  .rw-map-pin-a { left: 24%; top: 38%; transform: translateZ(58px); }
+  .rw-map-pin-b { left: 55%; top: 52%; transform: translateZ(50px); animation-delay: .45s; }
+  .rw-map-pin-c { left: 76%; top: 42%; transform: translateZ(62px); animation-delay: .9s; }
+
+  @keyframes rw-float {
+    0%, 100% { translate: 0 0; }
+    50% { translate: 0 -5px; }
   }
 
   @media (max-width: 780px) {
     .rw-web3d { display: none; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .rw-map-pin { animation: none; }
   }
 }
 

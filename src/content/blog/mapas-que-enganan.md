@@ -7,7 +7,7 @@ author: Marco Vidal
 category: "curiosidades-geograficas"
 tags: ["mapas", "geografia", "proyecciones", "curiosidades"]
 image: "/images/editorial/mapas-que-enganan-hero.svg"
-imageAlt: "Visual editorial de Por qué algunos mapas engañan aunque estén bien hechos"
+imageAlt: "Ilustración editorial de Por qué algunos mapas engañan aunque estén bien hechos: mapa editorial, marcas de ruta y decisiones prácticas"
 readingTime: 6
 affiliate: true
 featured: false

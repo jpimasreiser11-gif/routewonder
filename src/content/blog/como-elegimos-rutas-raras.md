@@ -7,7 +7,7 @@ author: Marco Vidal
 category: "rutas-sorprendentes"
 tags: ["rutas", "editorial", "metodologia", "geografia"]
 image: "/images/editorial/como-elegimos-rutas-raras-hero.svg"
-imageAlt: "Visual editorial de Cómo elegimos una ruta rara sin caer en turismo de postal"
+imageAlt: "Ilustración editorial de Cómo elegimos una ruta rara sin caer en turismo de postal: mapa editorial, marcas de ruta y decisiones prácticas"
 readingTime: 6
 affiliate: true
 featured: false

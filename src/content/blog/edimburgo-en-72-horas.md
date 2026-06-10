@@ -7,7 +7,7 @@ author: "Marco Vidal"
 category: "viaje-rapido"
 tags: ["Escocia", "cultura", "guía", "ruta", "viaje práctico"]
 image: "/images/editorial/edimburgo-en-72-horas-hero.svg"
-imageAlt: "Visual editorial de Edimburgo en 3 días: lo que ver antes de que lleguen los tours"
+imageAlt: "Ilustración editorial de Edimburgo en 3 días: lo que ver antes de que lleguen los tours: calles, siluetas urbanas y patrimonio"
 readingTime: 10
 affiliate: true
 featured: false
@@ -29,7 +29,7 @@ planner:
 
 Edimburgo en 72 horas no necesita una lista infinita de imprescindibles. Necesita una pregunta mejor: **qué tipo de viaje quieres tener allí**. Si buscas colinas, piedra volcánica y una ciudad que se entiende caminando, esta ruta tiene sentido. Si solo quieres tachar lugares, probablemente te cansará antes de empezar.
 
-![Visual editorial 1 de Edimburgo en 3 días: lo que ver antes de que lleguen los tours](/images/editorial/edimburgo-en-72-horas-panel-1.svg)
+![Ilustración 1 para Edimburgo en 3 días: lo que ver antes de que lleguen los tours: calles, siluetas urbanas y patrimonio](/images/editorial/edimburgo-en-72-horas-panel-1.svg)
 
 ## Resumen para decidir rápido
 
@@ -45,7 +45,7 @@ Edimburgo en 72 horas no necesita una lista infinita de imprescindibles. Necesit
 
 Empieza por una base clara y dibuja un círculo sencillo alrededor. El error habitual es poner todos los lugares bonitos en una misma ruta sin mirar carreteras, horarios o cansancio. En Edimburgo en 72 horas, la experiencia mejora cuando dejas huecos.
 
-![Visual editorial 2 de Edimburgo en 3 días: lo que ver antes de que lleguen los tours](/images/editorial/edimburgo-en-72-horas-panel-2.svg)
+![Ilustración 2 para Edimburgo en 3 días: lo que ver antes de que lleguen los tours: calles, siluetas urbanas y patrimonio](/images/editorial/edimburgo-en-72-horas-panel-2.svg)
 
 ### Día 1: entender el lugar
 
@@ -59,13 +59,13 @@ El plan fuerte debe elegirse por una razón concreta en Edimburgo en 3 días: lo
 
 Deja una franja para el detalle local de Edimburgo en 3 días: lo que ver antes de que lleguen los tours: una parada pequeña, una comida sencilla o un paseo que no necesite reserva. Ahí se nota si el itinerario respira.
 
-![Visual editorial 3 de Edimburgo en 3 días: lo que ver antes de que lleguen los tours](/images/editorial/edimburgo-en-72-horas-panel-3.svg)
+![Ilustración 3 para Edimburgo en 3 días: lo que ver antes de que lleguen los tours: calles, siluetas urbanas y patrimonio](/images/editorial/edimburgo-en-72-horas-panel-3.svg)
 
 ## Cuándo ir
 
 La temporada ideal para Edimburgo en 3 días: lo que ver antes de que lleguen los tours depende menos de la postal y más de la fricción: horarios, calor, viento, ferris, carreteras y precio del alojamiento.
 
-![Visual editorial 4 de Edimburgo en 3 días: lo que ver antes de que lleguen los tours](/images/editorial/edimburgo-en-72-horas-panel-4.svg)
+![Ilustración 4 para Edimburgo en 3 días: lo que ver antes de que lleguen los tours: calles, siluetas urbanas y patrimonio](/images/editorial/edimburgo-en-72-horas-panel-4.svg)
 
 ## Presupuesto sin prometer milagros
 

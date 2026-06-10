@@ -4,19 +4,19 @@ const panels = [
     title: "Rutas con mapa mental",
     note: "Cada guía separa base, excursiones y margen libre para que el viaje no se convierta en una mudanza diaria.",
     image: "/images/route-map.svg",
-    alt: "Mapa editorial de ruta con paradas marcadas",
+    alt: "Lámina de ruta con paradas marcadas",
   },
   {
     title: "Visuales que explican la ruta",
     note: "No usamos imágenes como relleno: el mapa, el ritmo y la temporada ayudan a decidir si el destino encaja contigo.",
     image: "/images/route-mountain.svg",
-    alt: "Visual editorial de una ruta de montaña",
+    alt: "Relieve ilustrado con una ruta marcada entre miradores y bases de viaje",
   },
   {
     title: "Guías para elegir, no para acumular",
     note: "Presupuesto, transporte, compañía y ritmo pesan más que una lista interminable de imprescindibles.",
     image: "/images/route-coast.svg",
-    alt: "Visual editorial de una ruta costera",
+    alt: "Costa ilustrada con paradas, faro y margen para cambiar el ritmo del viaje",
   },
 ];
 ---
@@ -40,8 +40,8 @@ const panels = [
       <div class="grid gap-4 sm:grid-cols-3">
         {panels.map((item, index) => (
           <article class={`group overflow-hidden rounded-3xl border border-rw-white/10 bg-rw-white/8 shadow-2xl shadow-rw-ink/20 ${index === 1 ? "sm:mt-12" : ""}`}>
-            <div class="aspect-[3/4] overflow-hidden">
-              <img src={item.image} alt={item.alt} loading="lazy" class="h-full w-full object-cover transition duration-700 group-hover:scale-105" />
+            <div class="aspect-[4/3] overflow-hidden">
+              <img src={item.image} alt={item.alt} loading="eager" class="h-full w-full object-cover object-center transition duration-700 group-hover:scale-105" />
             </div>
             <div class="p-5">
               <h3 class="font-display text-2xl font-bold">{item.title}</h3>

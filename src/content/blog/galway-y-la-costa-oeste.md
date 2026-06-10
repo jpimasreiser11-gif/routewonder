@@ -7,7 +7,7 @@ author: "Marco Vidal"
 category: "rutas-sorprendentes"
 tags: ["Irlanda", "cultura", "guía", "ruta", "viaje práctico"]
 image: "/images/editorial/galway-y-la-costa-oeste-hero.svg"
-imageAlt: "Visual editorial de Irlanda sin alquiler de coche: Galway y la costa oeste en bus"
+imageAlt: "Ilustración editorial de Irlanda sin alquiler de coche: Galway y la costa oeste en bus: mar, faros y línea de costa"
 readingTime: 10
 affiliate: true
 featured: false
@@ -29,7 +29,7 @@ planner:
 
 Galway y la costa oeste no necesita una lista infinita de imprescindibles. Necesita una pregunta mejor: **qué tipo de viaje quieres tener allí**. Si buscas música, acantilados y carreteras lentas hacia el Atlántico, esta ruta tiene sentido. Si solo quieres tachar lugares, probablemente te cansará antes de empezar.
 
-![Visual editorial 1 de Irlanda sin alquiler de coche: Galway y la costa oeste en bus](/images/editorial/galway-y-la-costa-oeste-panel-1.svg)
+![Ilustración 1 para Irlanda sin alquiler de coche: Galway y la costa oeste en bus: mar, faros y línea de costa](/images/editorial/galway-y-la-costa-oeste-panel-1.svg)
 
 ## Resumen para decidir rápido
 
@@ -45,7 +45,7 @@ Galway y la costa oeste no necesita una lista infinita de imprescindibles. Neces
 
 Empieza por una base clara y dibuja un círculo sencillo alrededor. El error habitual es poner todos los lugares bonitos en una misma ruta sin mirar carreteras, horarios o cansancio. En Galway y la costa oeste, la experiencia mejora cuando dejas huecos.
 
-![Visual editorial 2 de Irlanda sin alquiler de coche: Galway y la costa oeste en bus](/images/editorial/galway-y-la-costa-oeste-panel-2.svg)
+![Ilustración 2 para Irlanda sin alquiler de coche: Galway y la costa oeste en bus: mar, faros y línea de costa](/images/editorial/galway-y-la-costa-oeste-panel-2.svg)
 
 ### Día 1: entender el lugar
 
@@ -59,13 +59,13 @@ El plan fuerte debe elegirse por una razón concreta en Irlanda sin alquiler de 
 
 Deja una franja para el detalle local de Irlanda sin alquiler de coche: Galway y la costa oeste en bus: una parada pequeña, una comida sencilla o un paseo que no necesite reserva. Ahí se nota si el itinerario respira.
 
-![Visual editorial 3 de Irlanda sin alquiler de coche: Galway y la costa oeste en bus](/images/editorial/galway-y-la-costa-oeste-panel-3.svg)
+![Ilustración 3 para Irlanda sin alquiler de coche: Galway y la costa oeste en bus: mar, faros y línea de costa](/images/editorial/galway-y-la-costa-oeste-panel-3.svg)
 
 ## Cuándo ir
 
 La temporada ideal para Irlanda sin alquiler de coche: Galway y la costa oeste en bus depende menos de la postal y más de la fricción: horarios, calor, viento, ferris, carreteras y precio del alojamiento.
 
-![Visual editorial 4 de Irlanda sin alquiler de coche: Galway y la costa oeste en bus](/images/editorial/galway-y-la-costa-oeste-panel-4.svg)
+![Ilustración 4 para Irlanda sin alquiler de coche: Galway y la costa oeste en bus: mar, faros y línea de costa](/images/editorial/galway-y-la-costa-oeste-panel-4.svg)
 
 ## Presupuesto sin prometer milagros
 

@@ -7,7 +7,7 @@ author: "Marco Vidal"
 category: "lugares-de-pelicula"
 tags: ["Italia", "cultura", "guía", "ruta", "viaje práctico"]
 image: "/images/editorial/sicilia-oriental-hero.svg"
-imageAlt: "Visual editorial de Sicilia oriental: Siracusa, Noto y Ragusa en una sola ruta"
+imageAlt: "Ilustración editorial de Sicilia oriental: Siracusa, Noto y Ragusa en una sola ruta: islas, costa y horizonte mediterráneo"
 readingTime: 10
 affiliate: true
 featured: false
@@ -29,7 +29,7 @@ planner:
 
 Sicilia oriental no necesita una lista infinita de imprescindibles. Necesita una pregunta mejor: **qué tipo de viaje quieres tener allí**. Si buscas volcán, barroco y costa en una ruta con mucho carácter, esta ruta tiene sentido. Si solo quieres tachar lugares, probablemente te cansará antes de empezar.
 
-![Visual editorial 1 de Sicilia oriental: Siracusa, Noto y Ragusa en una sola ruta](/images/editorial/sicilia-oriental-panel-1.svg)
+![Ilustración 1 para Sicilia oriental: Siracusa, Noto y Ragusa en una sola ruta: islas, costa y horizonte mediterráneo](/images/editorial/sicilia-oriental-panel-1.svg)
 
 ## Resumen para decidir rápido
 
@@ -45,7 +45,7 @@ Sicilia oriental no necesita una lista infinita de imprescindibles. Necesita una
 
 Empieza por una base clara y dibuja un círculo sencillo alrededor. El error habitual es poner todos los lugares bonitos en una misma ruta sin mirar carreteras, horarios o cansancio. En Sicilia oriental, la experiencia mejora cuando dejas huecos.
 
-![Visual editorial 2 de Sicilia oriental: Siracusa, Noto y Ragusa en una sola ruta](/images/editorial/sicilia-oriental-panel-2.svg)
+![Ilustración 2 para Sicilia oriental: Siracusa, Noto y Ragusa en una sola ruta: islas, costa y horizonte mediterráneo](/images/editorial/sicilia-oriental-panel-2.svg)
 
 ### Día 1: entender el lugar
 
@@ -59,13 +59,13 @@ El plan fuerte debe elegirse por una razón concreta en Sicilia oriental: Siracu
 
 Deja una franja para el detalle local de Sicilia oriental: Siracusa, Noto y Ragusa en una sola ruta: una parada pequeña, una comida sencilla o un paseo que no necesite reserva. Ahí se nota si el itinerario respira.
 
-![Visual editorial 3 de Sicilia oriental: Siracusa, Noto y Ragusa en una sola ruta](/images/editorial/sicilia-oriental-panel-3.svg)
+![Ilustración 3 para Sicilia oriental: Siracusa, Noto y Ragusa en una sola ruta: islas, costa y horizonte mediterráneo](/images/editorial/sicilia-oriental-panel-3.svg)
 
 ## Cuándo ir
 
 La temporada ideal para Sicilia oriental: Siracusa, Noto y Ragusa en una sola ruta depende menos de la postal y más de la fricción: horarios, calor, viento, ferris, carreteras y precio del alojamiento.
 
-![Visual editorial 4 de Sicilia oriental: Siracusa, Noto y Ragusa en una sola ruta](/images/editorial/sicilia-oriental-panel-4.svg)
+![Ilustración 4 para Sicilia oriental: Siracusa, Noto y Ragusa en una sola ruta: islas, costa y horizonte mediterráneo](/images/editorial/sicilia-oriental-panel-4.svg)
 
 ## Presupuesto sin prometer milagros
 

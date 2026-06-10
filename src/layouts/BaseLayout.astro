@@ -5,7 +5,7 @@ import Header from "../components/layout/Header.astro";
 import Footer from "../components/layout/Footer.astro";
 import MobileMenu from "../components/layout/MobileMenu.astro";
 import CookieBanner from "../components/ui/CookieBanner.astro";
-import { ViewTransitions } from "astro:transitions";
+import { ClientRouter } from "astro:transitions";
 import "../styles/global.css";
 
 export interface Props {
@@ -23,7 +23,7 @@ const { title, description, image, imageAlt, type } = Astro.props;
   <head>
     <SEOHead {title} {description} {image} {imageAlt} {type} />
     <ConsentScripts />
-    <ViewTransitions />
+    <ClientRouter />
     
     <!-- Script to handle dark mode toggle local storage before rendering page -->
     <script is:inline>

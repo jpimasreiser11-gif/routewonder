@@ -7,7 +7,7 @@ author: "Marco Vidal"
 category: "rutas-sorprendentes"
 tags: ["Japón", "tren", "viaje lento", "rutas", "cultura"]
 image: "/images/editorial/japon-rural-sin-correr-hero.svg"
-imageAlt: "Visual editorial de Japón rural sin correr: cómo salir de Tokio y Kioto con sentido"
+imageAlt: "Ilustración editorial de Japón rural sin correr: cómo salir de Tokio y Kioto con sentido: trenes, estaciones y relieve alpino"
 readingTime: 11
 affiliate: true
 featured: false
@@ -29,7 +29,7 @@ planner:
 
 Japón rural no es un añadido decorativo al viaje clásico. Es otra forma de entender el país: estaciones pequeñas, baños termales, valles donde el tren marca el ritmo y pueblos que no parecen diseñados para visitantes con prisa.
 
-![Visual editorial 1 de Japón rural sin correr: cómo salir de Tokio y Kioto con sentido](/images/editorial/japon-rural-sin-correr-panel-1.svg)
+![Ilustración 1 para Japón rural sin correr: cómo salir de Tokio y Kioto con sentido: trenes, estaciones y relieve alpino](/images/editorial/japon-rural-sin-correr-panel-1.svg)
 
 ## La idea de ruta
 
@@ -39,7 +39,7 @@ No intentes meter medio país en una semana. Elige una zona y quédate allí el 
 
 El tren sigue siendo la columna vertebral, pero no todos los trayectos rurales son rápidos. A veces el encanto está precisamente en que tardas más. Reserva margen entre conexiones y no diseñes días con tres cambios críticos.
 
-![Visual editorial 2 de Japón rural sin correr: cómo salir de Tokio y Kioto con sentido](/images/editorial/japon-rural-sin-correr-panel-2.svg)
+![Ilustración 2 para Japón rural sin correr: cómo salir de Tokio y Kioto con sentido: trenes, estaciones y relieve alpino](/images/editorial/japon-rural-sin-correr-panel-2.svg)
 
 ## Qué buscar
 
@@ -53,7 +53,7 @@ El tren sigue siendo la columna vertebral, pero no todos los trayectos rurales s
 
 Primavera y otoño son las estaciones más fáciles por luz, temperatura y paisaje. En invierno, algunas zonas rurales ganan carácter, pero la logística puede exigir más atención. En verano conviene buscar montaña o costa y aceptar humedad.
 
-![Visual editorial 3 de Japón rural sin correr: cómo salir de Tokio y Kioto con sentido](/images/editorial/japon-rural-sin-correr-panel-3.svg)
+![Ilustración 3 para Japón rural sin correr: cómo salir de Tokio y Kioto con sentido: trenes, estaciones y relieve alpino](/images/editorial/japon-rural-sin-correr-panel-3.svg)
 
 ## Error común
 

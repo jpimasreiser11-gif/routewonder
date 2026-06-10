@@ -7,7 +7,7 @@ author: "Marco Vidal"
 category: "rutas-sorprendentes"
 tags: ["Grecia", "gastronomía", "guía", "ruta", "viaje práctico"]
 image: "/images/editorial/creta-por-el-oeste-hero.svg"
-imageAlt: "Visual editorial de Creta por el oeste: playas, gargantas y pueblos sin cambiar cada noche"
+imageAlt: "Ilustración editorial de Creta por el oeste: playas, gargantas y pueblos sin cambiar cada noche: islas, costa y horizonte mediterráneo"
 readingTime: 10
 affiliate: true
 featured: false
@@ -29,7 +29,7 @@ planner:
 
 Creta por el oeste no necesita una lista infinita de imprescindibles. Necesita una pregunta mejor: **qué tipo de viaje quieres tener allí**. Si buscas playas, garganta, pueblos y comida sin saltar de isla en isla, esta ruta tiene sentido. Si solo quieres tachar lugares, probablemente te cansará antes de empezar.
 
-![Visual editorial 1 de Creta por el oeste: playas, gargantas y pueblos sin cambiar cada noche](/images/editorial/creta-por-el-oeste-panel-1.svg)
+![Ilustración 1 para Creta por el oeste: playas, gargantas y pueblos sin cambiar cada noche: islas, costa y horizonte mediterráneo](/images/editorial/creta-por-el-oeste-panel-1.svg)
 
 ## Resumen para decidir rápido
 
@@ -45,7 +45,7 @@ Creta por el oeste no necesita una lista infinita de imprescindibles. Necesita u
 
 Empieza por una base clara y dibuja un círculo sencillo alrededor. El error habitual es poner todos los lugares bonitos en una misma ruta sin mirar carreteras, horarios o cansancio. En Creta por el oeste, la experiencia mejora cuando dejas huecos.
 
-![Visual editorial 2 de Creta por el oeste: playas, gargantas y pueblos sin cambiar cada noche](/images/editorial/creta-por-el-oeste-panel-2.svg)
+![Ilustración 2 para Creta por el oeste: playas, gargantas y pueblos sin cambiar cada noche: islas, costa y horizonte mediterráneo](/images/editorial/creta-por-el-oeste-panel-2.svg)
 
 ### Día 1: entender el lugar
 
@@ -59,13 +59,13 @@ El plan fuerte debe elegirse por una razón concreta en Creta por el oeste: play
 
 Deja una franja para el detalle local de Creta por el oeste: playas, gargantas y pueblos sin cambiar cada noche: una parada pequeña, una comida sencilla o un paseo que no necesite reserva. Ahí se nota si el itinerario respira.
 
-![Visual editorial 3 de Creta por el oeste: playas, gargantas y pueblos sin cambiar cada noche](/images/editorial/creta-por-el-oeste-panel-3.svg)
+![Ilustración 3 para Creta por el oeste: playas, gargantas y pueblos sin cambiar cada noche: islas, costa y horizonte mediterráneo](/images/editorial/creta-por-el-oeste-panel-3.svg)
 
 ## Cuándo ir
 
 La temporada ideal para Creta por el oeste: playas, gargantas y pueblos sin cambiar cada noche depende menos de la postal y más de la fricción: horarios, calor, viento, ferris, carreteras y precio del alojamiento.
 
-![Visual editorial 4 de Creta por el oeste: playas, gargantas y pueblos sin cambiar cada noche](/images/editorial/creta-por-el-oeste-panel-4.svg)
+![Ilustración 4 para Creta por el oeste: playas, gargantas y pueblos sin cambiar cada noche: islas, costa y horizonte mediterráneo](/images/editorial/creta-por-el-oeste-panel-4.svg)
 
 ## Presupuesto sin prometer milagros
 

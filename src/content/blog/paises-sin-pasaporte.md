@@ -6,7 +6,7 @@ author: "Marco Vidal"
 category: "viaje-economico"
 tags: ["documentación", "DNI", "Europa", "viajes baratos", "sin pasaporte", "consejos"]
 image: "/images/editorial/paises-sin-pasaporte-hero.svg"
-imageAlt: "Visual editorial de Países a los que puedes viajar desde España sin pasaporte"
+imageAlt: "Ilustración editorial de Países a los que puedes viajar desde España sin pasaporte: mapa editorial, marcas de ruta y decisiones prácticas"
 readingTime: 6
 affiliate: true
 featured: true

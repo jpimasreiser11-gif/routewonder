@@ -1,1 +1,29 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900" role="img" aria-labelledby="title desc"><title id="title">Alquilar coche en un viaje: errores que te cuestan dinero y tranquilidad</title><desc id="desc">Visual único 11 para Alquilar coche en un viaje: errores que te cuestan dinero y tranquilidad.</desc><defs><pattern id="g" width="90" height="90" patternUnits="userSpaceOnUse"><path d="M90 0H0v90" fill="none" stroke="#18231f" stroke-width="1" opacity=".08"/></pattern></defs><rect width="1400" height="900" fill="#f8f5eb"/><rect width="1400" height="900" fill="url(#g)"/><path d="M0 640 230 370l96 126 92-178 174 290 148-226 126 153 183-244 351 398v211H0z" fill="#263a34"/><path d="M170 680c142-78 270-88 404-36 126 49 218 34 320-42 113-84 220-91 338-30" fill="none" stroke="#b15f3e" stroke-width="14" stroke-linecap="round"/><path d="M170 680c142-78 270-88 404-36 126 49 218 34 320-42 113-84 220-91 338-30" fill="none" stroke="#f8f5eb" stroke-width="4" stroke-linecap="round"/><rect x="96" y="96" width="680" height="158" rx="22" fill="#f8f5eb" opacity=".92" stroke="#b15f3e" stroke-opacity=".22"/><text x="126" y="154" font-family="Inter, sans-serif" font-size="18" font-weight="800" fill="#b15f3e">ATLAS EDITORIAL · 11</text><text x="126" y="215" font-family="Georgia, serif" font-size="42" font-weight="700" fill="#18231f">Alquilar coche en un viaje: errores que te cuest</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900" role="img" aria-labelledby="title desc">
+  <title id="title">RouteWonder: Alquilar coche en un viaje: errores que te cuestan dinero y tranquilidad</title>
+  <desc id="desc">Ilustración editorial 11 para Alquilar coche en un viaje: errores que te cuestan dinero y tranquilidad, con motivo road.</desc>
+  
+  <defs>
+    <pattern id="grid" width="78" height="68" patternUnits="userSpaceOnUse">
+      <path d="M0 .5H80M.5 0V80" stroke="#29352f" stroke-opacity=".08" fill="none"/>
+    </pattern>
+    <filter id="noise">
+      <feTurbulence type="fractalNoise" baseFrequency=".75" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="table" tableValues="0 0.14"/></feComponentTransfer>
+    </filter>
+    <linearGradient id="wash" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f7f1e7"/>
+      <stop offset=".58" stop-color="#6f7d59" stop-opacity=".18"/>
+      <stop offset="1" stop-color="#d6c29a" stop-opacity=".55"/>
+    </linearGradient>
+  </defs>
+  <rect width="1400" height="900" fill="url(#wash)"/>
+  <rect width="1400" height="900" fill="url(#grid)"/>
+  <rect width="1400" height="900" filter="url(#noise)" opacity=".58"/>
+  
+    <path d="M0 700 C210 610 350 620 520 690 C690 760 800 525 1020 565 C1180 595 1270 715 1400 675 V900 H0Z" fill="#d6c29a" opacity=".6"/>
+    <path d="M630 900 C620 760 690 650 790 580 C920 490 930 390 850 270" fill="none" stroke="#29352f" stroke-width="118" stroke-linecap="round"/>
+    <path d="M630 900 C620 760 690 650 790 580 C920 490 930 390 850 270" fill="none" stroke="#f7f1e7" stroke-width="12" stroke-dasharray="34 34" stroke-linecap="round"/>
+    <circle cx="994" cy="352" r="72" fill="#b15f3e" opacity=".85"/>
+    <path d="M130 620 L280 395 L405 620 ZM940 640 L1090 380 L1260 640 Z" fill="#29352f" opacity=".2"/>
+</svg>

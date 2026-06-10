@@ -1,1 +1,30 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900" role="img" aria-labelledby="title desc"><title id="title">Bergen es una trampa para turistas. A no ser que hagas esto</title><desc id="desc">Visual único 10 para Bergen es una trampa para turistas. A no ser que hagas esto.</desc><defs><pattern id="g" width="90" height="90" patternUnits="userSpaceOnUse"><path d="M90 0H0v90" fill="none" stroke="#18231f" stroke-width="1" opacity=".08"/></pattern></defs><rect width="1400" height="900" fill="#f8f5eb"/><rect width="1400" height="900" fill="url(#g)"/><path d="M0 640 230 370l96 126 92-178 174 290 148-226 126 153 183-244 351 398v211H0z" fill="#263a34"/><path d="M170 680c142-78 270-88 404-36 126 49 218 34 320-42 113-84 220-91 338-30" fill="none" stroke="#b15f3e" stroke-width="14" stroke-linecap="round"/><path d="M170 680c142-78 270-88 404-36 126 49 218 34 320-42 113-84 220-91 338-30" fill="none" stroke="#f8f5eb" stroke-width="4" stroke-linecap="round"/><rect x="96" y="96" width="680" height="158" rx="22" fill="#f8f5eb" opacity=".92" stroke="#b15f3e" stroke-opacity=".22"/><text x="126" y="154" font-family="Inter, sans-serif" font-size="18" font-weight="800" fill="#b15f3e">ATLAS EDITORIAL · 10</text><text x="126" y="215" font-family="Georgia, serif" font-size="42" font-weight="700" fill="#18231f">Bergen es una trampa para turistas. A no ser que</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900" role="img" aria-labelledby="title desc">
+  <title id="title">RouteWonder: Bergen es una trampa para turistas. A no ser que hagas esto</title>
+  <desc id="desc">Ilustración editorial 10 para Bergen es una trampa para turistas. A no ser que hagas esto, con motivo coast.</desc>
+  
+  <defs>
+    <pattern id="grid" width="77" height="71" patternUnits="userSpaceOnUse">
+      <path d="M0 .5H80M.5 0V80" stroke="#1f4657" stroke-opacity=".08" fill="none"/>
+    </pattern>
+    <filter id="noise">
+      <feTurbulence type="fractalNoise" baseFrequency=".75" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="table" tableValues="0 0.13"/></feComponentTransfer>
+    </filter>
+    <linearGradient id="wash" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5efe3"/>
+      <stop offset=".58" stop-color="#f0dcc4" stop-opacity=".18"/>
+      <stop offset="1" stop-color="#d8b15f" stop-opacity=".55"/>
+    </linearGradient>
+  </defs>
+  <rect width="1400" height="900" fill="url(#wash)"/>
+  <rect width="1400" height="900" fill="url(#grid)"/>
+  <rect width="1400" height="900" filter="url(#noise)" opacity=".58"/>
+  
+      <rect y="560" width="1400" height="340" fill="#f0dcc4" opacity=".35"/>
+      <path d="M70 700 C215 610 320 640 460 565 C640 470 850 520 1055 450 C1215 395 1330 425 1400 470 V900 H0Z" fill="#d8b15f" opacity=".54"/>
+      <path d="M0 625 C210 590 350 665 545 620 S890 560 1400 615" fill="none" stroke="#1f4657" stroke-width="12" stroke-opacity=".24"/>
+      <path d="M240 535 C360 430 505 445 605 555" fill="none" stroke="#1f4657" stroke-width="10"/>
+      <g transform="translate(545 510)"><rect width="118" height="138" rx="8" fill="#71a4a8" opacity=".82"/><path d="M0 0 L59 -45 L118 0Z" fill="#d8b15f"/></g><g transform="translate(735 488)"><rect width="132" height="158" rx="8" fill="#f5efe3" opacity=".86" stroke="#1f4657" stroke-opacity=".14"/><path d="M0 0 L66 -48 L132 0Z" fill="#d8b15f"/></g>
+      <circle cx="1028" cy="305" r="86" fill="#d8b15f" opacity=".8"/>
+</svg>

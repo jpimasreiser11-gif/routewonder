@@ -6,7 +6,7 @@ author: "Marco Vidal"
 category: "curiosidades-geograficas"
 tags: ["España", "pueblos abandonados", "embalses", "La Rioja", "historia", "curiosidades"]
 image: "/images/editorial/pueblo-bajo-el-agua-hero.svg"
-imageAlt: "Visual editorial de El pueblo español que volvió a aparecer cuando bajó el embalse"
+imageAlt: "Ilustración editorial de El pueblo español que volvió a aparecer cuando bajó el embalse: agua, puentes y arquitectura junto al lago o canal"
 readingTime: 7
 affiliate: true
 featured: true

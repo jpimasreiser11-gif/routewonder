@@ -7,7 +7,7 @@ author: "Marco Vidal"
 category: "destinos-secretos"
 tags: ["España", "naturaleza", "guía", "ruta", "viaje práctico"]
 image: "/images/editorial/costa-da-morte-hero.svg"
-imageAlt: "Visual editorial de Costa da Morte: la costa gallega que se llama así por algo real"
+imageAlt: "Ilustración editorial de Costa da Morte: la costa gallega que se llama así por algo real: mar, faros y línea de costa"
 readingTime: 10
 affiliate: true
 featured: false
@@ -29,7 +29,7 @@ planner:
 
 Costa da Morte no necesita una lista infinita de imprescindibles. Necesita una pregunta mejor: **qué tipo de viaje quieres tener allí**. Si buscas faros, viento y una costa que no intenta ser cómoda, esta ruta tiene sentido. Si solo quieres tachar lugares, probablemente te cansará antes de empezar.
 
-![Visual editorial 1 de Costa da Morte: la costa gallega que se llama así por algo real](/images/editorial/costa-da-morte-panel-1.svg)
+![Ilustración 1 para Costa da Morte: la costa gallega que se llama así por algo real: mar, faros y línea de costa](/images/editorial/costa-da-morte-panel-1.svg)
 
 ## Resumen para decidir rápido
 
@@ -45,7 +45,7 @@ Costa da Morte no necesita una lista infinita de imprescindibles. Necesita una p
 
 Empieza por una base clara y dibuja un círculo sencillo alrededor. El error habitual es poner todos los lugares bonitos en una misma ruta sin mirar carreteras, horarios o cansancio. En Costa da Morte, la experiencia mejora cuando dejas huecos.
 
-![Visual editorial 2 de Costa da Morte: la costa gallega que se llama así por algo real](/images/editorial/costa-da-morte-panel-2.svg)
+![Ilustración 2 para Costa da Morte: la costa gallega que se llama así por algo real: mar, faros y línea de costa](/images/editorial/costa-da-morte-panel-2.svg)
 
 ### Día 1: entender el lugar
 
@@ -59,13 +59,13 @@ El plan fuerte debe elegirse por una razón concreta en Costa da Morte: la costa
 
 Deja una franja para el detalle local de Costa da Morte: la costa gallega que se llama así por algo real: una parada pequeña, una comida sencilla o un paseo que no necesite reserva. Ahí se nota si el itinerario respira.
 
-![Visual editorial 3 de Costa da Morte: la costa gallega que se llama así por algo real](/images/editorial/costa-da-morte-panel-3.svg)
+![Ilustración 3 para Costa da Morte: la costa gallega que se llama así por algo real: mar, faros y línea de costa](/images/editorial/costa-da-morte-panel-3.svg)
 
 ## Cuándo ir
 
 La temporada ideal para Costa da Morte: la costa gallega que se llama así por algo real depende menos de la postal y más de la fricción: horarios, calor, viento, ferris, carreteras y precio del alojamiento.
 
-![Visual editorial 4 de Costa da Morte: la costa gallega que se llama así por algo real](/images/editorial/costa-da-morte-panel-4.svg)
+![Ilustración 4 para Costa da Morte: la costa gallega que se llama así por algo real: mar, faros y línea de costa](/images/editorial/costa-da-morte-panel-4.svg)
 
 ## Presupuesto sin prometer milagros
 

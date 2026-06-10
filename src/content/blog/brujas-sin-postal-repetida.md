@@ -7,7 +7,7 @@ author: "Marco Vidal"
 category: "viaje-rapido"
 tags: ["Bélgica", "cultura", "guía", "ruta", "viaje práctico"]
 image: "/images/editorial/brujas-sin-postal-repetida-hero.svg"
-imageAlt: "Visual editorial de Brujas en 2 días sin caer en la misma foto de todos"
+imageAlt: "Ilustración editorial de Brujas en 2 días sin caer en la misma foto de todos: agua, puentes y arquitectura junto al lago o canal"
 readingTime: 10
 affiliate: true
 featured: false
@@ -29,7 +29,7 @@ planner:
 
 Brujas sin postal repetida no necesita una lista infinita de imprescindibles. Necesita una pregunta mejor: **qué tipo de viaje quieres tener allí**. Si buscas cómo disfrutarla sin quedarse solo en las fotos obvias, esta ruta tiene sentido. Si solo quieres tachar lugares, probablemente te cansará antes de empezar.
 
-![Visual editorial 1 de Brujas en 2 días sin caer en la misma foto de todos](/images/editorial/brujas-sin-postal-repetida-panel-1.svg)
+![Ilustración 1 para Brujas en 2 días sin caer en la misma foto de todos: agua, puentes y arquitectura junto al lago o canal](/images/editorial/brujas-sin-postal-repetida-panel-1.svg)
 
 ## Resumen para decidir rápido
 
@@ -46,7 +46,7 @@ Brujas sin postal repetida no necesita una lista infinita de imprescindibles. Ne
 
 Empieza por una base clara y dibuja un círculo sencillo alrededor. El error habitual es poner todos los lugares bonitos en una misma ruta sin mirar carreteras, horarios o cansancio. En Brujas sin postal repetida, la experiencia mejora cuando dejas huecos.
 
-![Visual editorial 2 de Brujas en 2 días sin caer en la misma foto de todos](/images/editorial/brujas-sin-postal-repetida-panel-2.svg)
+![Ilustración 2 para Brujas en 2 días sin caer en la misma foto de todos: agua, puentes y arquitectura junto al lago o canal](/images/editorial/brujas-sin-postal-repetida-panel-2.svg)
 
 ### Día 1: entender el lugar
 
@@ -60,13 +60,13 @@ El plan fuerte debe elegirse por una razón concreta en Brujas en 2 días sin ca
 
 Deja una franja para el detalle local de Brujas en 2 días sin caer en la misma foto de todos: una parada pequeña, una comida sencilla o un paseo que no necesite reserva. Ahí se nota si el itinerario respira.
 
-![Visual editorial 3 de Brujas en 2 días sin caer en la misma foto de todos](/images/editorial/brujas-sin-postal-repetida-panel-3.svg)
+![Ilustración 3 para Brujas en 2 días sin caer en la misma foto de todos: agua, puentes y arquitectura junto al lago o canal](/images/editorial/brujas-sin-postal-repetida-panel-3.svg)
 
 ## Cuándo ir
 
 La temporada ideal para Brujas en 2 días sin caer en la misma foto de todos depende menos de la postal y más de la fricción: horarios, calor, viento, ferris, carreteras y precio del alojamiento.
 
-![Visual editorial 4 de Brujas en 2 días sin caer en la misma foto de todos](/images/editorial/brujas-sin-postal-repetida-panel-4.svg)
+![Ilustración 4 para Brujas en 2 días sin caer en la misma foto de todos: agua, puentes y arquitectura junto al lago o canal](/images/editorial/brujas-sin-postal-repetida-panel-4.svg)
 
 ## Presupuesto sin prometer milagros
 

@@ -5,6 +5,9 @@ import rehypeExternalLinks from './src/lib/rehype-external-links.mjs';
 
 export default defineConfig({
   site: 'https://routewonder.studio',
+  legacy: {
+    collectionsBackwardsCompat: true,
+  },
   devToolbar: {
     enabled: false,
   },

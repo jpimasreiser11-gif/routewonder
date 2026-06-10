@@ -7,7 +7,7 @@ author: "Marco Vidal"
 category: "viaje-economico"
 tags: ["Francia", "gastronomía", "guía", "ruta", "viaje práctico"]
 image: "/images/editorial/burdeos-con-trenes-regionales-hero.svg"
-imageAlt: "Visual editorial de Burdeos sin coche propio: la ruta en tren que casi nadie hace"
+imageAlt: "Ilustración editorial de Burdeos sin coche propio: la ruta en tren que casi nadie hace: trenes, estaciones y relieve alpino"
 readingTime: 10
 affiliate: true
 featured: false
@@ -29,7 +29,7 @@ planner:
 
 Burdeos con trenes regionales no necesita una lista infinita de imprescindibles. Necesita una pregunta mejor: **qué tipo de viaje quieres tener allí**. Si buscas una base cómoda para comer, moverse y no gastar en coche, esta ruta tiene sentido. Si solo quieres tachar lugares, probablemente te cansará antes de empezar.
 
-![Visual editorial 1 de Burdeos sin coche propio: la ruta en tren que casi nadie hace](/images/editorial/burdeos-con-trenes-regionales-panel-1.svg)
+![Ilustración 1 para Burdeos sin coche propio: la ruta en tren que casi nadie hace: trenes, estaciones y relieve alpino](/images/editorial/burdeos-con-trenes-regionales-panel-1.svg)
 
 ## Resumen para decidir rápido
 
@@ -45,7 +45,7 @@ Burdeos con trenes regionales no necesita una lista infinita de imprescindibles.
 
 Empieza por una base clara y dibuja un círculo sencillo alrededor. El error habitual es poner todos los lugares bonitos en una misma ruta sin mirar carreteras, horarios o cansancio. En Burdeos con trenes regionales, la experiencia mejora cuando dejas huecos.
 
-![Visual editorial 2 de Burdeos sin coche propio: la ruta en tren que casi nadie hace](/images/editorial/burdeos-con-trenes-regionales-panel-2.svg)
+![Ilustración 2 para Burdeos sin coche propio: la ruta en tren que casi nadie hace: trenes, estaciones y relieve alpino](/images/editorial/burdeos-con-trenes-regionales-panel-2.svg)
 
 ### Día 1: entender el lugar
 
@@ -59,13 +59,13 @@ El plan fuerte debe elegirse por una razón concreta en Burdeos sin coche propio
 
 Deja una franja para el detalle local de Burdeos sin coche propio: la ruta en tren que casi nadie hace: una parada pequeña, una comida sencilla o un paseo que no necesite reserva. Ahí se nota si el itinerario respira.
 
-![Visual editorial 3 de Burdeos sin coche propio: la ruta en tren que casi nadie hace](/images/editorial/burdeos-con-trenes-regionales-panel-3.svg)
+![Ilustración 3 para Burdeos sin coche propio: la ruta en tren que casi nadie hace: trenes, estaciones y relieve alpino](/images/editorial/burdeos-con-trenes-regionales-panel-3.svg)
 
 ## Cuándo ir
 
 La temporada ideal para Burdeos sin coche propio: la ruta en tren que casi nadie hace depende menos de la postal y más de la fricción: horarios, calor, viento, ferris, carreteras y precio del alojamiento.
 
-![Visual editorial 4 de Burdeos sin coche propio: la ruta en tren que casi nadie hace](/images/editorial/burdeos-con-trenes-regionales-panel-4.svg)
+![Ilustración 4 para Burdeos sin coche propio: la ruta en tren que casi nadie hace: trenes, estaciones y relieve alpino](/images/editorial/burdeos-con-trenes-regionales-panel-4.svg)
 
 ## Presupuesto sin prometer milagros
 

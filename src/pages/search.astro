@@ -2,19 +2,23 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import AfsSearchBlock from "../components/ads/AfsSearchBlock.astro";
 import { getCollection } from "astro:content";
+import { getContentSlug } from "../lib/contentSlug";
 
 const posts = await getCollection("blog", ({ data }) => !data.draft);
 const searchIndex = posts
   .sort((a, b) => b.data.publishedDate.valueOf() - a.data.publishedDate.valueOf())
-  .map((post) => ({
+  .map((post) => {
+    const slug = getContentSlug(post);
+    return {
     title: post.data.title,
     description: post.data.description,
     category: post.data.category?.replace(/-/g, " ") || "Ruta",
-    url: `/blog/${post.slug}/`,
+    url: `/blog/${slug}/`,
     image: post.data.image || "/images/route-map.svg",
     imageAlt: post.data.imageAlt || post.data.title,
     tags: post.data.tags || [],
-  }));
+    };
+  });
 ---
 
 <BaseLayout

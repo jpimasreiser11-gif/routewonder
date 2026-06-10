@@ -11,6 +11,7 @@ import SchemaOrg from "../components/seo/SchemaOrg.astro";
 import ProgressBar from "../components/ui/ProgressBar.astro";
 import Breadcrumbs from "../components/ui/Breadcrumbs.astro";
 import type { CollectionEntry } from "astro:content";
+import { getContentSlug } from "../lib/contentSlug";
 
 export interface Props {
   post: CollectionEntry<"blog">;
@@ -19,6 +20,7 @@ export interface Props {
 
 const { post, headings } = Astro.props;
 const { title, description, publishedDate, updatedDate, author, category, tags, image, imageAlt, readingTime, affiliate, affiliateProgram, planner } = post.data;
+const slug = getContentSlug(post);
 const destination = planner?.destination ?? title.split(":")[0];
 const usesCar = planner?.transport?.includes("car") ?? false;
 
@@ -94,7 +96,7 @@ const breadcrumbItems = [
         <!-- Author bio panel -->
         <AuthorBox authorName={author} />
 
-        <RelatedArticles currentSlug={post.slug} {category} {tags} />
+        <RelatedArticles currentSlug={slug} {category} {tags} />
       </article>
 
     </div>

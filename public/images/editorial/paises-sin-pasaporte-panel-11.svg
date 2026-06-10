@@ -1,1 +1,27 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900" role="img" aria-labelledby="title desc"><title id="title">Países a los que puedes viajar desde España sin pasaporte</title><desc id="desc">Visual único 11 para Países a los que puedes viajar desde España sin pasaporte.</desc><defs><pattern id="g" width="90" height="90" patternUnits="userSpaceOnUse"><path d="M90 0H0v90" fill="none" stroke="#18231f" stroke-width="1" opacity=".08"/></pattern></defs><rect width="1400" height="900" fill="#f8f5eb"/><rect width="1400" height="900" fill="url(#g)"/><path d="M0 640 230 370l96 126 92-178 174 290 148-226 126 153 183-244 351 398v211H0z" fill="#263a34"/><path d="M170 680c142-78 270-88 404-36 126 49 218 34 320-42 113-84 220-91 338-30" fill="none" stroke="#b15f3e" stroke-width="14" stroke-linecap="round"/><path d="M170 680c142-78 270-88 404-36 126 49 218 34 320-42 113-84 220-91 338-30" fill="none" stroke="#f8f5eb" stroke-width="4" stroke-linecap="round"/><rect x="96" y="96" width="680" height="158" rx="22" fill="#f8f5eb" opacity=".92" stroke="#b15f3e" stroke-opacity=".22"/><text x="126" y="154" font-family="Inter, sans-serif" font-size="18" font-weight="800" fill="#b15f3e">ATLAS EDITORIAL · 11</text><text x="126" y="215" font-family="Georgia, serif" font-size="42" font-weight="700" fill="#18231f">Países a los que puedes viajar desde España sin </text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900" role="img" aria-labelledby="title desc">
+  <title id="title">RouteWonder: Países a los que puedes viajar desde España sin pasaporte</title>
+  <desc id="desc">Ilustración editorial 11 para Países a los que puedes viajar desde España sin pasaporte, con motivo atlas.</desc>
+  
+  <defs>
+    <pattern id="grid" width="62" height="58" patternUnits="userSpaceOnUse">
+      <path d="M0 .5H80M.5 0V80" stroke="#1f2b27" stroke-opacity=".08" fill="none"/>
+    </pattern>
+    <filter id="noise">
+      <feTurbulence type="fractalNoise" baseFrequency=".75" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="table" tableValues="0 0.14"/></feComponentTransfer>
+    </filter>
+    <linearGradient id="wash" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f8f4ea"/>
+      <stop offset=".58" stop-color="#657a6a" stop-opacity=".18"/>
+      <stop offset="1" stop-color="#d7c5a1" stop-opacity=".55"/>
+    </linearGradient>
+  </defs>
+  <rect width="1400" height="900" fill="url(#wash)"/>
+  <rect width="1400" height="900" fill="url(#grid)"/>
+  <rect width="1400" height="900" filter="url(#noise)" opacity=".58"/>
+  
+    <path d="M190 250 C340 180 490 205 610 300 C760 420 960 300 1150 370 C1250 408 1300 510 1270 620 C1120 560 945 615 820 710 C640 848 390 780 240 690 C120 620 85 405 190 250Z" fill="#d7c5a1" opacity=".55" stroke="#1f2b27" stroke-opacity=".18" stroke-width="6"/>
+    <circle cx="950" cy="435" r="24" fill="#657a6a" opacity=".88"/><circle cx="1131" cy="532" r="25" fill="#bd6646" opacity=".88"/><circle cx="422" cy="629" r="26" fill="#657a6a" opacity=".88"/><circle cx="603" cy="366" r="27" fill="#bd6646" opacity=".88"/><circle cx="784" cy="463" r="28" fill="#657a6a" opacity=".88"/><circle cx="965" cy="560" r="29" fill="#bd6646" opacity=".88"/>
+    <path d="M260 650 C420 520 555 540 690 440 S960 350 1160 485" fill="none" stroke="#1f2b27" stroke-width="12" stroke-dasharray="28 24" stroke-linecap="round"/>
+</svg>

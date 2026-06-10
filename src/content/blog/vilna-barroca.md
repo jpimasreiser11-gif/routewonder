@@ -7,7 +7,7 @@ author: "Marco Vidal"
 category: "destinos-secretos"
 tags: ["Lituania", "cultura", "guía", "ruta", "viaje práctico"]
 image: "/images/editorial/vilna-barroca-hero.svg"
-imageAlt: "Visual editorial de Vilna: la capital europea menos visitada con el casco histórico más grande"
+imageAlt: "Ilustración editorial de Vilna: la capital europea menos visitada con el casco histórico más grande: calles, siluetas urbanas y patrimonio"
 readingTime: 10
 affiliate: true
 featured: false
@@ -29,7 +29,7 @@ planner:
 
 Vilna barroca no necesita una lista infinita de imprescindibles. Necesita una pregunta mejor: **qué tipo de viaje quieres tener allí**. Si buscas iglesias, república artística y una capital tranquila, esta ruta tiene sentido. Si solo quieres tachar lugares, probablemente te cansará antes de empezar.
 
-![Visual editorial 1 de Vilna: la capital europea menos visitada con el casco histórico más grande](/images/editorial/vilna-barroca-panel-1.svg)
+![Ilustración 1 para Vilna: la capital europea menos visitada con el casco histórico más grande: calles, siluetas urbanas y patrimonio](/images/editorial/vilna-barroca-panel-1.svg)
 
 ## Resumen para decidir rápido
 
@@ -45,7 +45,7 @@ Vilna barroca no necesita una lista infinita de imprescindibles. Necesita una pr
 
 Empieza por una base clara y dibuja un círculo sencillo alrededor. El error habitual es poner todos los lugares bonitos en una misma ruta sin mirar carreteras, horarios o cansancio. En Vilna barroca, la experiencia mejora cuando dejas huecos.
 
-![Visual editorial 2 de Vilna: la capital europea menos visitada con el casco histórico más grande](/images/editorial/vilna-barroca-panel-2.svg)
+![Ilustración 2 para Vilna: la capital europea menos visitada con el casco histórico más grande: calles, siluetas urbanas y patrimonio](/images/editorial/vilna-barroca-panel-2.svg)
 
 ### Día 1: entender el lugar
 
@@ -59,13 +59,13 @@ El plan fuerte debe elegirse por una razón concreta en Vilna: la capital europe
 
 Deja una franja para el detalle local de Vilna: la capital europea menos visitada con el casco histórico más grande: una parada pequeña, una comida sencilla o un paseo que no necesite reserva. Ahí se nota si el itinerario respira.
 
-![Visual editorial 3 de Vilna: la capital europea menos visitada con el casco histórico más grande](/images/editorial/vilna-barroca-panel-3.svg)
+![Ilustración 3 para Vilna: la capital europea menos visitada con el casco histórico más grande: calles, siluetas urbanas y patrimonio](/images/editorial/vilna-barroca-panel-3.svg)
 
 ## Cuándo ir
 
 La temporada ideal para Vilna: la capital europea menos visitada con el casco histórico más grande depende menos de la postal y más de la fricción: horarios, calor, viento, ferris, carreteras y precio del alojamiento.
 
-![Visual editorial 4 de Vilna: la capital europea menos visitada con el casco histórico más grande](/images/editorial/vilna-barroca-panel-4.svg)
+![Ilustración 4 para Vilna: la capital europea menos visitada con el casco histórico más grande: calles, siluetas urbanas y patrimonio](/images/editorial/vilna-barroca-panel-4.svg)
 
 ## Presupuesto sin prometer milagros
 
@@ -73,7 +73,7 @@ Para presupuestar Vilna: la capital europea menos visitada con el casco históri
 
 ## Mini mapa de decisiones
 
-- Si tienes poco tiempo en Vilna: la capital europea menos visitada con el casco histórico más...: una base, una excursión y una mañana libre.
+- Si tienes poco tiempo: una base, una excursión y una mañana libre.
 - Si viajas con familia: alojamiento cerca del transporte y planes cortos.
 - Si vas con amigos: prioriza comida, ruta visual y una noche sin desplazamientos.
 - Si vas solo: elige lugares con buena movilidad y cafés donde descansar.
@@ -95,7 +95,7 @@ Iría más lento. La mayoría de rutas fallan por exceso, no por falta de opcion
 
 ## Lo que nadie te cuenta sobre Vilna
 
-Antes de cerrar Vilna: la capital europea menos visitada con el casco histórico más..., revisa horarios oficiales, estado de carreteras o senderos y el último transporte de vuelta. En esta ruta, un cierre cambia más que el precio de una entrada.
+Antes de cerrar la ruta, revisa horarios oficiales, estado de carreteras o senderos y el último transporte de vuelta. En esta ruta, un cierre cambia más que el precio de una entrada.
 
 
 ## ¿Cuánto cuesta viajar a Vilna?
@@ -114,7 +114,7 @@ Precios orientativos. Verifica siempre antes de reservar.
 
 ## Dato verificado
 
-La información práctica de Vilna: la capital europea menos visitada con el casco histórico más... debe contrastarse con fuentes oficiales de transporte, turismo local o patrimonio antes del viaje. Horarios, cierres y precios cambian sin pedir permiso.
+La información práctica debe contrastarse con fuentes oficiales de transporte, turismo local o patrimonio antes del viaje. Horarios, cierres y precios cambian sin pedir permiso.
 
 <!-- hermes-editorial-depth-pass:2026-06-06 -->
 
@@ -122,6 +122,6 @@ La información práctica de Vilna: la capital europea menos visitada con el cas
 
 La forma más honesta de probar Vilna: la capital europea menos visitada con el casco histórico más grande no es añadir más paradas, sino quitar dos. Si el viaje sigue teniendo sentido con menos cosas, probablemente está bien planteado. Si se cae entero, dependía demasiado de una foto o de una expectativa ajena.
 
-En Vilna: la capital europea menos visitada con el casco histórico más..., también conviene decidir qué no vas a hacer. Saltarse una parada puede mejorar el viaje si evita que cada día compita con el anterior.
+En Vilna, decidir qué no haces también cuenta. Quitar una parada puede mejorar el viaje si evita que cada día compita con el anterior.
 
-La guía de Vilna: la capital europea menos visitada con el casco histórico más... debe servirte como brújula, no como contrato. Si al llegar el lugar pide otro ritmo, cambia el orden sin culpa.
+Usa esta guía de Vilna como brújula, no como contrato. Si el lugar pide otro ritmo al llegar, cambia el orden sin culpa.

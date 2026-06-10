@@ -1,1 +1,28 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900" role="img" aria-labelledby="title desc"><title id="title">Isla de Skye: la ruta de Escocia que necesita planificación real</title><desc id="desc">Visual único 9 para Isla de Skye: la ruta de Escocia que necesita planificación real.</desc><defs><pattern id="g" width="90" height="90" patternUnits="userSpaceOnUse"><path d="M90 0H0v90" fill="none" stroke="#18231f" stroke-width="1" opacity=".08"/></pattern></defs><rect width="1400" height="900" fill="#f8f5eb"/><rect width="1400" height="900" fill="url(#g)"/><path d="M0 640 230 370l96 126 92-178 174 290 148-226 126 153 183-244 351 398v211H0z" fill="#263a34"/><path d="M170 680c142-78 270-88 404-36 126 49 218 34 320-42 113-84 220-91 338-30" fill="none" stroke="#b15f3e" stroke-width="14" stroke-linecap="round"/><path d="M170 680c142-78 270-88 404-36 126 49 218 34 320-42 113-84 220-91 338-30" fill="none" stroke="#f8f5eb" stroke-width="4" stroke-linecap="round"/><rect x="96" y="96" width="680" height="158" rx="22" fill="#f8f5eb" opacity=".92" stroke="#b15f3e" stroke-opacity=".22"/><text x="126" y="154" font-family="Inter, sans-serif" font-size="18" font-weight="800" fill="#b15f3e">ATLAS EDITORIAL · 9</text><text x="126" y="215" font-family="Georgia, serif" font-size="42" font-weight="700" fill="#18231f">Isla de Skye: la ruta de Escocia que necesita pl</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900" role="img" aria-labelledby="title desc">
+  <title id="title">RouteWonder: Isla de Skye: la ruta de Escocia que necesita planificación real</title>
+  <desc id="desc">Ilustración editorial 9 para Isla de Skye: la ruta de Escocia que necesita planificación real, con motivo island.</desc>
+  
+  <defs>
+    <pattern id="grid" width="67" height="59" patternUnits="userSpaceOnUse">
+      <path d="M0 .5H80M.5 0V80" stroke="#1d4b4d" stroke-opacity=".08" fill="none"/>
+    </pattern>
+    <filter id="noise">
+      <feTurbulence type="fractalNoise" baseFrequency=".75" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="table" tableValues="0 0.15000000000000002"/></feComponentTransfer>
+    </filter>
+    <linearGradient id="wash" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f8f1df"/>
+      <stop offset=".58" stop-color="#efe2c3" stop-opacity=".18"/>
+      <stop offset="1" stop-color="#d69a4d" stop-opacity=".55"/>
+    </linearGradient>
+  </defs>
+  <rect width="1400" height="900" fill="url(#wash)"/>
+  <rect width="1400" height="900" fill="url(#grid)"/>
+  <rect width="1400" height="900" filter="url(#noise)" opacity=".58"/>
+  
+    <rect y="560" width="1400" height="340" fill="#efe2c3" opacity=".34"/>
+    <path d="M0 585 C170 543 330 633 520 585 S865 535 1400 577" fill="none" stroke="#1d4b4d" stroke-opacity=".16" stroke-width="5"/><path d="M0 655 C170 613 330 703 520 655 S865 605 1400 665" fill="none" stroke="#f8f1df" stroke-opacity=".58" stroke-width="9"/><path d="M0 732 C170 690 330 780 520 732 S865 682 1400 724" fill="none" stroke="#1d4b4d" stroke-opacity=".16" stroke-width="5"/><path d="M0 805 C170 763 330 853 520 805 S865 755 1400 815" fill="none" stroke="#f8f1df" stroke-opacity=".58" stroke-width="9"/>
+    <path d="M280 589 C368 419 510 463 595 568 C490 627 370 601 280 589Z" fill="#85a98a" opacity=".82"/><path d="M575 570 C663 406 805 440 890 577 C785 614 665 612 575 570Z" fill="#d69a4d" opacity=".82"/><path d="M900 593 C988 429 1130 457 1215 586 C1110 625 990 605 900 593Z" fill="#85a98a" opacity=".82"/>
+    <path d="M210 655 C365 610 515 680 690 625 S1010 575 1225 650" fill="none" stroke="#1d4b4d" stroke-width="8" stroke-dasharray="18 22" stroke-linecap="round"/>
+</svg>

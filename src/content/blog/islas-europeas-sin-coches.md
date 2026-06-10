@@ -7,7 +7,7 @@ author: Marco Vidal
 category: "destinos-secretos"
 tags: ["islas", "europa", "viaje-lento", "rutas"]
 image: "/images/editorial/islas-europeas-sin-coches-hero.svg"
-imageAlt: "Visual editorial de Islas europeas sin coches: cómo pensar un viaje más lento"
+imageAlt: "Ilustración editorial de Islas europeas sin coches: cómo pensar un viaje más lento: islas, costa y horizonte mediterráneo"
 readingTime: 7
 affiliate: true
 featured: false
@@ -30,7 +30,7 @@ planner:
 
 Una isla sin coches cambia el viaje antes de llegar. Obliga a pensar en ferry, equipaje, horarios, alojamiento cerca del puerto y distancias a pie. Esa incomodidad inicial es precisamente lo que filtra el destino: viajas más lento, dependes menos de aparcamientos y miras mejor el lugar.
 
-![Visual editorial 1 de Islas europeas sin coches: cómo pensar un viaje más lento](/images/editorial/islas-europeas-sin-coches-panel-1.svg)
+![Ilustración 1 para Islas europeas sin coches: cómo pensar un viaje más lento: islas, costa y horizonte mediterráneo](/images/editorial/islas-europeas-sin-coches-panel-1.svg)
 
 No todas las islas sin coches son iguales. Algunas permiten vehículos de residentes. Otras tienen pequeños transportes eléctricos. Algunas son fáciles de visitar en un día y otras requieren dormir allí para no pasar más tiempo esperando barcos que explorando.
 
@@ -44,7 +44,7 @@ También importa el tipo de alojamiento. En islas pequeñas, la disponibilidad c
 
 Una buena isla sin coches tiene tres cosas: una llegada clara, un recorrido natural y un motivo para quedarse más de dos horas. Puede ser una playa, un sendero, un pueblo, un faro o una historia local. Si solo hay una foto bonita, el viaje puede quedarse corto.
 
-![Visual editorial 2 de Islas europeas sin coches: cómo pensar un viaje más lento](/images/editorial/islas-europeas-sin-coches-panel-2.svg)
+![Ilustración 2 para Islas europeas sin coches: cómo pensar un viaje más lento: islas, costa y horizonte mediterráneo](/images/editorial/islas-europeas-sin-coches-panel-2.svg)
 
 Para planificar, usamos mapas abiertos como [OpenStreetMap](https://www.openstreetmap.org/) y guías de contexto como [Wikivoyage](https://www.wikivoyage.org/). Cuando hay información turística oficial, esa fuente manda sobre cualquier recomendación antigua.
 

@@ -7,7 +7,7 @@ author: "Marco Vidal"
 category: "ciudades-extranas"
 tags: ["Países Bajos", "cultura", "guía", "ruta", "viaje práctico"]
 image: "/images/editorial/utrecht-en-fin-de-semana-hero.svg"
-imageAlt: "Visual editorial de Utrecht no es Amsterdam: por qué eso es exactamente lo bueno"
+imageAlt: "Ilustración editorial de Utrecht no es Amsterdam: por qué eso es exactamente lo bueno: agua, puentes y arquitectura junto al lago o canal"
 readingTime: 10
 affiliate: true
 featured: false
@@ -29,7 +29,7 @@ planner:
 
 Utrecht en fin de semana no necesita una lista infinita de imprescindibles. Necesita una pregunta mejor: **qué tipo de viaje quieres tener allí**. Si buscas canales bajos, bicicletas y una alternativa más tranquila a Ámsterdam, esta ruta tiene sentido. Si solo quieres tachar lugares, probablemente te cansará antes de empezar.
 
-![Visual editorial 1 de Utrecht no es Amsterdam: por qué eso es exactamente lo bueno](/images/editorial/utrecht-en-fin-de-semana-panel-1.svg)
+![Ilustración 1 para Utrecht no es Amsterdam: por qué eso es exactamente lo bueno: agua, puentes y arquitectura junto al lago o canal](/images/editorial/utrecht-en-fin-de-semana-panel-1.svg)
 
 ## Resumen para decidir rápido
 
@@ -45,7 +45,7 @@ Utrecht en fin de semana no necesita una lista infinita de imprescindibles. Nece
 
 Empieza por una base clara y dibuja un círculo sencillo alrededor. El error habitual es poner todos los lugares bonitos en una misma ruta sin mirar carreteras, horarios o cansancio. En Utrecht en fin de semana, la experiencia mejora cuando dejas huecos.
 
-![Visual editorial 2 de Utrecht no es Amsterdam: por qué eso es exactamente lo bueno](/images/editorial/utrecht-en-fin-de-semana-panel-2.svg)
+![Ilustración 2 para Utrecht no es Amsterdam: por qué eso es exactamente lo bueno: agua, puentes y arquitectura junto al lago o canal](/images/editorial/utrecht-en-fin-de-semana-panel-2.svg)
 
 ### Día 1: entender el lugar
 
@@ -59,13 +59,13 @@ El plan fuerte debe elegirse por una razón concreta en Utrecht no es Amsterdam:
 
 Deja una franja para el detalle local de Utrecht no es Amsterdam: por qué eso es exactamente lo bueno: una parada pequeña, una comida sencilla o un paseo que no necesite reserva. Ahí se nota si el itinerario respira.
 
-![Visual editorial 3 de Utrecht no es Amsterdam: por qué eso es exactamente lo bueno](/images/editorial/utrecht-en-fin-de-semana-panel-3.svg)
+![Ilustración 3 para Utrecht no es Amsterdam: por qué eso es exactamente lo bueno: agua, puentes y arquitectura junto al lago o canal](/images/editorial/utrecht-en-fin-de-semana-panel-3.svg)
 
 ## Cuándo ir
 
 La temporada ideal para Utrecht no es Amsterdam: por qué eso es exactamente lo bueno depende menos de la postal y más de la fricción: horarios, calor, viento, ferris, carreteras y precio del alojamiento.
 
-![Visual editorial 4 de Utrecht no es Amsterdam: por qué eso es exactamente lo bueno](/images/editorial/utrecht-en-fin-de-semana-panel-4.svg)
+![Ilustración 4 para Utrecht no es Amsterdam: por qué eso es exactamente lo bueno: agua, puentes y arquitectura junto al lago o canal](/images/editorial/utrecht-en-fin-de-semana-panel-4.svg)
 
 ## Presupuesto sin prometer milagros
 

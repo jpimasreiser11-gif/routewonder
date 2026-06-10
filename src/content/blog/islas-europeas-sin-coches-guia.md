@@ -7,7 +7,7 @@ author: "Marco Vidal"
 category: "destinos-secretos"
 tags: ["islas", "Europa", "viaje lento", "sin coches", "sostenible"]
 image: "/images/editorial/islas-europeas-sin-coches-guia-hero.svg"
-imageAlt: "Visual editorial de Islas europeas sin coches: 9 lugares para viajar más lento"
+imageAlt: "Ilustración editorial de Islas europeas sin coches: 9 lugares para viajar más lento: islas, costa y horizonte mediterráneo"
 readingTime: 9
 affiliate: true
 featured: false
@@ -28,7 +28,7 @@ planner:
 
 Quitar el coche cambia un destino entero. De repente escuchas el puerto, calculas distancias reales y eliges mejor dónde dormir.
 
-![Visual editorial 1 de Islas europeas sin coches: 9 lugares para viajar más lento](/images/editorial/islas-europeas-sin-coches-guia-panel-1.svg)
+![Ilustración 1 para Islas europeas sin coches: 9 lugares para viajar más lento: islas, costa y horizonte mediterráneo](/images/editorial/islas-europeas-sin-coches-guia-panel-1.svg)
 
 ## Resumen rápido
 
@@ -49,7 +49,7 @@ La regla editorial para Islas europeas sin coches: 9 lugares para viajar más le
 
 Sin coches privados y con un puerto muy fotogénico. Es buena para caminar, nadar y desconectar sin convertir el viaje en logística.
 
-![Visual editorial 2 de Islas europeas sin coches: 9 lugares para viajar más lento](/images/editorial/islas-europeas-sin-coches-guia-panel-2.svg)
+![Ilustración 2 para Islas europeas sin coches: 9 lugares para viajar más lento: islas, costa y horizonte mediterráneo](/images/editorial/islas-europeas-sin-coches-guia-panel-2.svg)
 
 **Consejo de ruta:** El primer contacto debe ser el puerto o la estación correcta; en una isla sin coche equivocarte de llegada pesa mucho.
 
@@ -57,7 +57,7 @@ Sin coches privados y con un puerto muy fotogénico. Es buena para caminar, nada
 
 Arena, pistas, bicicleta y playas amplias. Conviene reservar alojamiento con antelación porque la capacidad es limitada.
 
-![Visual editorial 3 de Islas europeas sin coches: 9 lugares para viajar más lento](/images/editorial/islas-europeas-sin-coches-guia-panel-3.svg)
+![Ilustración 3 para Islas europeas sin coches: 9 lugares para viajar más lento: islas, costa y horizonte mediterráneo](/images/editorial/islas-europeas-sin-coches-guia-panel-3.svg)
 
 **Consejo de ruta:** Reserva actividades cerca de tu base, no en el extremo opuesto: los horarios mandan.
 
@@ -65,7 +65,7 @@ Arena, pistas, bicicleta y playas amplias. Conviene reservar alojamiento con ant
 
 Naturaleza protegida, calas y rutas en bici. Ideal si quieres Mediterráneo sin el ritmo de una ciudad costera.
 
-![Visual editorial 4 de Islas europeas sin coches: 9 lugares para viajar más lento](/images/editorial/islas-europeas-sin-coches-guia-panel-4.svg)
+![Ilustración 4 para Islas europeas sin coches: 9 lugares para viajar más lento: islas, costa y horizonte mediterráneo](/images/editorial/islas-europeas-sin-coches-guia-panel-4.svg)
 
 **Consejo de ruta:** Verifica ferris, consigna y último bus; ahí se decide si la isla es cómoda o una trampa logística.
 
@@ -73,7 +73,7 @@ Naturaleza protegida, calas y rutas en bici. Ideal si quieres Mediterráneo sin 
 
 Acantilados, piedra, viento y una sensación muy distinta de isla. Aquí la gracia no es el sol, sino el carácter del lugar.
 
-![Visual editorial 5 de Islas europeas sin coches: 9 lugares para viajar más lento](/images/editorial/islas-europeas-sin-coches-guia-panel-5.svg)
+![Ilustración 5 para Islas europeas sin coches: 9 lugares para viajar más lento: islas, costa y horizonte mediterráneo](/images/editorial/islas-europeas-sin-coches-guia-panel-5.svg)
 
 **Consejo de ruta:** Ten una alternativa caminable desde el alojamiento por si viento o marea cancelan salidas.
 
@@ -82,8 +82,8 @@ Acantilados, piedra, viento y una sensación muy distinta de isla. Aquí la grac
 Los precios de Islas europeas sin coches: 9 lugares para viajar más lento cambian por temporada, eventos y antelación. En vez de prometer una cifra exacta, usa estas tres franjas:
 
 - **Bajo en Islas europeas sin coches: 9 lugares para viajar más lento:** alojamiento simple, transporte público cuando sea posible y una comida principal fuera al día.
-- **Medio:** coche o excursión puntual, alojamiento bien situado y margen para entradas.
-- **Alto:** hoteles con vistas, restaurantes reservados y menos fricción logística.
+- **Medio:** mejor base, alguna actividad reservada y margen para cambiar el plan si el tiempo aprieta.
+- **Alto:** hoteles mejor situados, reservas con cancelación flexible y menos tiempo perdido en traslados.
 
 Comprueba siempre horarios, cierres y condiciones oficiales antes de salir hacia Islas europeas sin coches: 9 lugares para viajar más lento. Una guía útil no sustituye la verificación final.
 

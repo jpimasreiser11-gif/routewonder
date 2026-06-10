@@ -1,1 +1,27 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900" role="img" aria-labelledby="title desc"><title id="title">Marruecos por primera vez desde España: ruta fácil sin caer en tópicos</title><desc id="desc">Visual único 4 para Marruecos por primera vez desde España: ruta fácil sin caer en tópicos.</desc><defs><pattern id="g" width="90" height="90" patternUnits="userSpaceOnUse"><path d="M90 0H0v90" fill="none" stroke="#18231f" stroke-width="1" opacity=".08"/></pattern></defs><rect width="1400" height="900" fill="#f8f5eb"/><rect width="1400" height="900" fill="url(#g)"/><path d="M0 640 230 370l96 126 92-178 174 290 148-226 126 153 183-244 351 398v211H0z" fill="#263a34"/><path d="M170 680c142-78 270-88 404-36 126 49 218 34 320-42 113-84 220-91 338-30" fill="none" stroke="#b15f3e" stroke-width="14" stroke-linecap="round"/><path d="M170 680c142-78 270-88 404-36 126 49 218 34 320-42 113-84 220-91 338-30" fill="none" stroke="#f8f5eb" stroke-width="4" stroke-linecap="round"/><rect x="96" y="96" width="680" height="158" rx="22" fill="#f8f5eb" opacity=".92" stroke="#b15f3e" stroke-opacity=".22"/><text x="126" y="154" font-family="Inter, sans-serif" font-size="18" font-weight="800" fill="#b15f3e">ATLAS EDITORIAL · 4</text><text x="126" y="215" font-family="Georgia, serif" font-size="42" font-weight="700" fill="#18231f">Marruecos por primera vez desde España: ruta fác</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900" role="img" aria-labelledby="title desc">
+  <title id="title">RouteWonder: Marruecos por primera vez desde España: ruta fácil sin caer en tópicos</title>
+  <desc id="desc">Ilustración editorial 4 para Marruecos por primera vez desde España: ruta fácil sin caer en tópicos, con motivo city.</desc>
+  
+  <defs>
+    <pattern id="grid" width="61" height="59" patternUnits="userSpaceOnUse">
+      <path d="M0 .5H80M.5 0V80" stroke="#26262b" stroke-opacity=".08" fill="none"/>
+    </pattern>
+    <filter id="noise">
+      <feTurbulence type="fractalNoise" baseFrequency=".75" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="table" tableValues="0 0.13"/></feComponentTransfer>
+    </filter>
+    <linearGradient id="wash" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f7f2ea"/>
+      <stop offset=".58" stop-color="#57616f" stop-opacity=".18"/>
+      <stop offset="1" stop-color="#d4b77b" stop-opacity=".55"/>
+    </linearGradient>
+  </defs>
+  <rect width="1400" height="900" fill="url(#wash)"/>
+  <rect width="1400" height="900" fill="url(#grid)"/>
+  <rect width="1400" height="900" filter="url(#noise)" opacity=".58"/>
+  
+    <rect y="585" width="1400" height="315" fill="#26262b" opacity=".12"/>
+    <g transform="translate(90 353)"><rect width="82" height="317" rx="6" fill="#9f563a" opacity=".64"/><path d="M0 0 L41 -54 L82 0Z" fill="#d4b77b" opacity=".8"/><circle cx="35" cy="88" r="11" fill="#f7f2ea" opacity=".6"/></g><g transform="translate(210 322)"><rect width="106" height="334" rx="18" fill="#26262b" opacity=".78"/><path d="M0 0 L53 -54 L106 0Z" fill="#d4b77b" opacity=".8"/><circle cx="35" cy="88" r="11" fill="#f7f2ea" opacity=".6"/></g><g transform="translate(340 291)"><rect width="130" height="351" rx="6" fill="#9f563a" opacity=".64"/><path d="M0 0 L65 -54 L130 0Z" fill="#d4b77b" opacity=".8"/><circle cx="35" cy="88" r="11" fill="#f7f2ea" opacity=".6"/></g><g transform="translate(470 260)"><rect width="82" height="368" rx="18" fill="#26262b" opacity=".78"/><path d="M0 0 L41 -54 L82 0Z" fill="#d4b77b" opacity=".8"/><circle cx="35" cy="88" r="11" fill="#f7f2ea" opacity=".6"/></g><g transform="translate(620 339)"><rect width="106" height="385" rx="6" fill="#9f563a" opacity=".64"/><path d="M0 0 L53 -54 L106 0Z" fill="#d4b77b" opacity=".8"/><circle cx="35" cy="88" r="11" fill="#f7f2ea" opacity=".6"/></g><g transform="translate(760 308)"><rect width="130" height="282" rx="18" fill="#26262b" opacity=".78"/><path d="M0 0 L65 -54 L130 0Z" fill="#d4b77b" opacity=".8"/><circle cx="35" cy="88" r="11" fill="#f7f2ea" opacity=".6"/></g><g transform="translate(900 277)"><rect width="82" height="299" rx="6" fill="#9f563a" opacity=".64"/><path d="M0 0 L41 -54 L82 0Z" fill="#d4b77b" opacity=".8"/><circle cx="35" cy="88" r="11" fill="#f7f2ea" opacity=".6"/></g><g transform="translate(1040 356)"><rect width="106" height="316" rx="18" fill="#26262b" opacity=".78"/><path d="M0 0 L53 -54 L106 0Z" fill="#d4b77b" opacity=".8"/><circle cx="35" cy="88" r="11" fill="#f7f2ea" opacity=".6"/></g><g transform="translate(1180 325)"><rect width="130" height="333" rx="6" fill="#9f563a" opacity=".64"/><path d="M0 0 L65 -54 L130 0Z" fill="#d4b77b" opacity=".8"/><circle cx="35" cy="88" r="11" fill="#f7f2ea" opacity=".6"/></g>
+    <path d="M0 742 C250 690 420 720 650 690 C870 662 1050 705 1400 650 V900 H0Z" fill="#d4b77b" opacity=".38"/>
+</svg>

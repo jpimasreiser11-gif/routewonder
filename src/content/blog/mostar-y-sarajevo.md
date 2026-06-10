@@ -7,7 +7,7 @@ author: "Marco Vidal"
 category: "rutas-sorprendentes"
 tags: ["Bosnia", "cultura", "guía", "ruta", "viaje práctico"]
 image: "/images/editorial/mostar-y-sarajevo-hero.svg"
-imageAlt: "Visual editorial de Bosnia en una semana: Mostar, Sarajevo y lo que cuentan las paredes"
+imageAlt: "Ilustración editorial de Bosnia en una semana: Mostar, Sarajevo y lo que cuentan las paredes: calles, siluetas urbanas y patrimonio"
 readingTime: 10
 affiliate: true
 featured: false
@@ -29,7 +29,7 @@ planner:
 
 Mostar y Sarajevo no necesita una lista infinita de imprescindibles. Necesita una pregunta mejor: **qué tipo de viaje quieres tener allí**. Si buscas historia reciente, puentes y montañas en una ruta emocional, esta ruta tiene sentido. Si solo quieres tachar lugares, probablemente te cansará antes de empezar.
 
-![Visual editorial 1 de Bosnia en una semana: Mostar, Sarajevo y lo que cuentan las paredes](/images/editorial/mostar-y-sarajevo-panel-1.svg)
+![Ilustración 1 para Bosnia en una semana: Mostar, Sarajevo y lo que cuentan las paredes: calles, siluetas urbanas y patrimonio](/images/editorial/mostar-y-sarajevo-panel-1.svg)
 
 ## Resumen para decidir rápido
 
@@ -45,7 +45,7 @@ Mostar y Sarajevo no necesita una lista infinita de imprescindibles. Necesita un
 
 Empieza por una base clara y dibuja un círculo sencillo alrededor. El error habitual es poner todos los lugares bonitos en una misma ruta sin mirar carreteras, horarios o cansancio. En Mostar y Sarajevo, la experiencia mejora cuando dejas huecos.
 
-![Visual editorial 2 de Bosnia en una semana: Mostar, Sarajevo y lo que cuentan las paredes](/images/editorial/mostar-y-sarajevo-panel-2.svg)
+![Ilustración 2 para Bosnia en una semana: Mostar, Sarajevo y lo que cuentan las paredes: calles, siluetas urbanas y patrimonio](/images/editorial/mostar-y-sarajevo-panel-2.svg)
 
 ### Día 1: entender el lugar
 
@@ -59,13 +59,13 @@ El plan fuerte debe elegirse por una razón concreta en Bosnia en una semana: Mo
 
 Deja una franja para el detalle local de Bosnia en una semana: Mostar, Sarajevo y lo que cuentan las paredes: una parada pequeña, una comida sencilla o un paseo que no necesite reserva. Ahí se nota si el itinerario respira.
 
-![Visual editorial 3 de Bosnia en una semana: Mostar, Sarajevo y lo que cuentan las paredes](/images/editorial/mostar-y-sarajevo-panel-3.svg)
+![Ilustración 3 para Bosnia en una semana: Mostar, Sarajevo y lo que cuentan las paredes: calles, siluetas urbanas y patrimonio](/images/editorial/mostar-y-sarajevo-panel-3.svg)
 
 ## Cuándo ir
 
 La temporada ideal para Bosnia en una semana: Mostar, Sarajevo y lo que cuentan las paredes depende menos de la postal y más de la fricción: horarios, calor, viento, ferris, carreteras y precio del alojamiento.
 
-![Visual editorial 4 de Bosnia en una semana: Mostar, Sarajevo y lo que cuentan las paredes](/images/editorial/mostar-y-sarajevo-panel-4.svg)
+![Ilustración 4 para Bosnia en una semana: Mostar, Sarajevo y lo que cuentan las paredes: calles, siluetas urbanas y patrimonio](/images/editorial/mostar-y-sarajevo-panel-4.svg)
 
 ## Presupuesto sin prometer milagros
 

@@ -7,7 +7,7 @@ author: "Marco Vidal"
 category: "rutas-sorprendentes"
 tags: ["España", "naturaleza", "guía", "ruta", "viaje práctico"]
 image: "/images/editorial/picos-de-europa-sin-correr-hero.svg"
-imageAlt: "Visual editorial de Picos de Europa: la montaña española más accesible y subestimada"
+imageAlt: "Ilustración editorial de Picos de Europa: la montaña española más accesible y subestimada: carretera, curvas y paisaje de ruta"
 readingTime: 10
 affiliate: true
 featured: false
@@ -29,7 +29,7 @@ planner:
 
 Picos de Europa sin correr no necesita una lista infinita de imprescindibles. Necesita una pregunta mejor: **qué tipo de viaje quieres tener allí**. Si buscas lagos, desfiladeros y pueblos de montaña con logística clara, esta ruta tiene sentido. Si solo quieres tachar lugares, probablemente te cansará antes de empezar.
 
-![Visual editorial 1 de Picos de Europa: la montaña española más accesible y subestimada](/images/editorial/picos-de-europa-sin-correr-panel-1.svg)
+![Ilustración 1 para Picos de Europa: la montaña española más accesible y subestimada: carretera, curvas y paisaje de ruta](/images/editorial/picos-de-europa-sin-correr-panel-1.svg)
 
 ## Resumen para decidir rápido
 
@@ -45,7 +45,7 @@ Picos de Europa sin correr no necesita una lista infinita de imprescindibles. Ne
 
 Empieza por una base clara y dibuja un círculo sencillo alrededor. El error habitual es poner todos los lugares bonitos en una misma ruta sin mirar carreteras, horarios o cansancio. En Picos de Europa sin correr, la experiencia mejora cuando dejas huecos.
 
-![Visual editorial 2 de Picos de Europa: la montaña española más accesible y subestimada](/images/editorial/picos-de-europa-sin-correr-panel-2.svg)
+![Ilustración 2 para Picos de Europa: la montaña española más accesible y subestimada: carretera, curvas y paisaje de ruta](/images/editorial/picos-de-europa-sin-correr-panel-2.svg)
 
 ### Día 1: entender el lugar
 
@@ -59,13 +59,13 @@ El plan fuerte debe elegirse por una razón concreta en Picos de Europa: la mont
 
 Deja una franja para el detalle local de Picos de Europa: la montaña española más accesible y subestimada: una parada pequeña, una comida sencilla o un paseo que no necesite reserva. Ahí se nota si el itinerario respira.
 
-![Visual editorial 3 de Picos de Europa: la montaña española más accesible y subestimada](/images/editorial/picos-de-europa-sin-correr-panel-3.svg)
+![Ilustración 3 para Picos de Europa: la montaña española más accesible y subestimada: carretera, curvas y paisaje de ruta](/images/editorial/picos-de-europa-sin-correr-panel-3.svg)
 
 ## Cuándo ir
 
 La temporada ideal para Picos de Europa: la montaña española más accesible y subestimada depende menos de la postal y más de la fricción: horarios, calor, viento, ferris, carreteras y precio del alojamiento.
 
-![Visual editorial 4 de Picos de Europa: la montaña española más accesible y subestimada](/images/editorial/picos-de-europa-sin-correr-panel-4.svg)
+![Ilustración 4 para Picos de Europa: la montaña española más accesible y subestimada: carretera, curvas y paisaje de ruta](/images/editorial/picos-de-europa-sin-correr-panel-4.svg)
 
 ## Presupuesto sin prometer milagros
 

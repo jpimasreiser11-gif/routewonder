@@ -2,10 +2,11 @@
 import { originCities, routeDestinations } from "../../data/routePlannerData";
 import { getCollection } from "astro:content";
 import { getRouteVisualSet } from "../../lib/routeVisuals";
+import { getContentSlug } from "../../lib/contentSlug";
 
 const publishedPosts = await getCollection("blog", ({ data }) => !data.draft);
 const plannerPosts = publishedPosts.filter((post) => post.data.planner);
-const postBySlug = new Map(plannerPosts.map((post) => [post.slug, post]));
+const postBySlug = new Map(plannerPosts.map((post) => [getContentSlug(post), post]));
 
 const budgetMap = { low: "bajo", medium: "medio", high: "alto" };
 const transportMap = { car: "coche", train: "tren", flight: "avion", ferry: "ferry", bus: "bus" };
@@ -30,18 +31,19 @@ function normalizeSlug(value: string) {
 
 function fromPlanner(post: (typeof plannerPosts)[number]) {
   const planner = post.data.planner!;
+  const slug = getContentSlug(post);
   const interests = Array.from(new Set([
     ...planner.interests.map((item) => interestMap[item as keyof typeof interestMap] ?? item),
     ...planner.companion.map((item) => companionInterestMap[item as keyof typeof companionInterestMap] ?? item),
   ]));
-  const fallbackVisuals = getRouteVisualSet(`${post.slug} ${post.data.category} ${planner.destination} ${planner.country}`);
+  const fallbackVisuals = getRouteVisualSet(`${slug} ${post.data.category} ${planner.destination} ${planner.country}`);
   const visuals = [
     post.data.image || fallbackVisuals[0],
-    `/images/editorial/${post.slug}-panel-1.svg`,
-    `/images/editorial/${post.slug}-panel-2.svg`,
+    `/images/editorial/${slug}-panel-1.svg`,
+    `/images/editorial/${slug}-panel-2.svg`,
   ];
   return {
-    id: post.slug,
+    id: slug,
     name: planner.destination,
     country: planner.country,
     lat: 40.42,
@@ -51,7 +53,7 @@ function fromPlanner(post: (typeof plannerPosts)[number]) {
     budget: budgetMap[planner.budget],
     seasons: planner.season.map((item) => seasonMap[item]),
     days: `${planner.duration} días`,
-    article: `/blog/${post.slug}/`,
+    article: `/blog/${slug}/`,
     photos: visuals,
     highlights: post.data.tags?.slice(0, 3).map((tag) => tag.replace(/-/g, " ")) ?? [planner.destination],
     food: ["mercado local", "plato típico", "café de barrio"],
@@ -439,11 +441,11 @@ const totalPlaces = plannerDestinations.reduce((sum, item) => sum + item.highlig
       return `
         <div class="mt-5 border-t border-rw-mist/20 pt-5">
           <div class="rw-route-atlas overflow-hidden rounded-2xl">
-            <img src="${item.photos[0]}" alt="Mapa editorial de ${item.name}" loading="lazy">
+            <img src="${item.photos[0]}" alt="Lámina de ruta de ${item.name}" loading="eager">
             <div class="rw-route-atlas__notes">
               <span class="rw-route-atlas__label">Atlas editorial</span>
               <p class="font-display text-2xl font-black leading-tight text-rw-ink">${item.name}</p>
-              <p class="font-ui text-sm leading-relaxed text-rw-ocean/76">Visual orientativo, no foto de stock: resume el tipo de ruta para evitar imágenes bonitas que no pertenecen al lugar.</p>
+              <p class="font-ui text-sm leading-relaxed text-rw-ocean/76">Lámina editorial con el ritmo del viaje, las paradas principales y el tipo de paisaje que vas a encontrar.</p>
               <div class="flex flex-wrap gap-2">
                 ${item.transport.map((mode) => `<span class="rounded-full border border-rw-ink/10 px-3 py-1 font-mono text-xs font-bold text-rw-ocean">${mode}</span>`).join('')}
               </div>
@@ -509,7 +511,7 @@ const totalPlaces = plannerDestinations.reduce((sum, item) => sum + item.highlig
         article.className = 'rw-result-card';
         setTrustedHTML(article, `
           <div class="rw-result-shell">
-            <img src="${item.photos[0]}" alt="Mapa editorial de ${item.name}" loading="lazy" class="rw-result-art">
+            <img src="${item.photos[0]}" alt="Lámina de ruta de ${item.name}" loading="eager" class="rw-result-art">
             <div class="rw-result-body">
               <div class="flex items-start justify-between gap-3">
                 <div>

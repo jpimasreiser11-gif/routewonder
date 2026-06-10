@@ -7,7 +7,7 @@ author: "Marco Vidal"
 category: "ciudades-extranas"
 tags: ["canales", "Europa", "ciudades", "fin de semana", "rutas urbanas"]
 image: "/images/editorial/ciudades-con-canales-que-no-son-venecia-hero.svg"
-imageAlt: "Visual editorial de Ciudades con canales que no son Venecia y sí merecen viaje"
+imageAlt: "Ilustración editorial de Ciudades con canales que no son Venecia y sí merecen viaje: agua, puentes y arquitectura junto al lago o canal"
 readingTime: 9
 affiliate: true
 featured: false
@@ -28,7 +28,7 @@ planner:
 
 Venecia es única, pero no es la única forma de viajar por una ciudad de agua. Algunas alternativas son más fáciles, más baratas y más respirables.
 
-![Visual editorial 1 de Ciudades con canales que no son Venecia y sí merecen viaje](/images/editorial/ciudades-con-canales-que-no-son-venecia-panel-1.svg)
+![Ilustración 1 para Ciudades con canales que no son Venecia y sí merecen viaje: agua, puentes y arquitectura junto al lago o canal](/images/editorial/ciudades-con-canales-que-no-son-venecia-panel-1.svg)
 
 ## Resumen rápido
 
@@ -49,7 +49,7 @@ La regla editorial para Ciudades con canales que no son Venecia y sí merecen vi
 
 Sus muelles bajos hacen que el canal se viva a otra altura. Es una ciudad cómoda para caminar, comer junto al agua y moverse en tren por Países Bajos.
 
-![Visual editorial 2 de Ciudades con canales que no son Venecia y sí merecen viaje](/images/editorial/ciudades-con-canales-que-no-son-venecia-panel-2.svg)
+![Ilustración 2 para Ciudades con canales que no son Venecia y sí merecen viaje: agua, puentes y arquitectura junto al lago o canal](/images/editorial/ciudades-con-canales-que-no-son-venecia-panel-2.svg)
 
 **Consejo de ruta:** En ciudades de canales, madruga para caminar muelles antes de que lleguen excursiones y bicicletas.
 
@@ -57,7 +57,7 @@ Sus muelles bajos hacen que el canal se viva a otra altura. Es una ciudad cómod
 
 No es una Venecia portuguesa, y precisamente por eso funciona: salinas, casas de colores y una escala fácil desde Oporto.
 
-![Visual editorial 3 de Ciudades con canales que no son Venecia y sí merecen viaje](/images/editorial/ciudades-con-canales-que-no-son-venecia-panel-3.svg)
+![Ilustración 3 para Ciudades con canales que no son Venecia y sí merecen viaje: agua, puentes y arquitectura junto al lago o canal](/images/editorial/ciudades-con-canales-que-no-son-venecia-panel-3.svg)
 
 **Consejo de ruta:** Reserva solo una actividad de agua; el resto se disfruta mejor caminando barrio por barrio.
 
@@ -65,7 +65,7 @@ No es una Venecia portuguesa, y precisamente por eso funciona: salinas, casas de
 
 Canales pequeños, lago alpino y montaña cerca. El viaje mejora si lo combinas con rutas suaves alrededor del lago.
 
-![Visual editorial 4 de Ciudades con canales que no son Venecia y sí merecen viaje](/images/editorial/ciudades-con-canales-que-no-son-venecia-panel-4.svg)
+![Ilustración 4 para Ciudades con canales que no son Venecia y sí merecen viaje: agua, puentes y arquitectura junto al lago o canal](/images/editorial/ciudades-con-canales-que-no-son-venecia-panel-4.svg)
 
 **Consejo de ruta:** Comprueba si los barcos paran por temporada; algunos canales turísticos reducen servicio fuera de verano.
 
@@ -73,7 +73,7 @@ Canales pequeños, lago alpino y montaña cerca. El viaje mejora si lo combinas 
 
 Más intensa que Brujas y menos postal. Sus canales encajan mejor con cerveza, historia medieval y planes nocturnos.
 
-![Visual editorial 5 de Ciudades con canales que no son Venecia y sí merecen viaje](/images/editorial/ciudades-con-canales-que-no-son-venecia-panel-5.svg)
+![Ilustración 5 para Ciudades con canales que no son Venecia y sí merecen viaje: agua, puentes y arquitectura junto al lago o canal](/images/editorial/ciudades-con-canales-que-no-son-venecia-panel-5.svg)
 
 **Consejo de ruta:** Guarda un café o museo cercano para cuando llueva; junto al agua el clima cambia rápido.
 
@@ -82,8 +82,8 @@ Más intensa que Brujas y menos postal. Sus canales encajan mejor con cerveza, h
 Los precios de Ciudades con canales que no son Venecia y sí merecen viaje cambian por temporada, eventos y antelación. En vez de prometer una cifra exacta, usa estas tres franjas:
 
 - **Bajo en Ciudades con canales que no son Venecia y sí merecen viaje:** alojamiento simple, transporte público cuando sea posible y una comida principal fuera al día.
-- **Medio:** coche o excursión puntual, alojamiento bien situado y margen para entradas.
-- **Alto:** hoteles con vistas, restaurantes reservados y menos fricción logística.
+- **Medio:** mejor base, alguna actividad reservada y margen para cambiar el plan si el tiempo aprieta.
+- **Alto:** hoteles mejor situados, reservas con cancelación flexible y menos tiempo perdido en traslados.
 
 Comprueba siempre horarios, cierres y condiciones oficiales antes de salir hacia Ciudades con canales que no son Venecia y sí merecen viaje. Una guía útil no sustituye la verificación final.
 

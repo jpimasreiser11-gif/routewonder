@@ -1,9 +1,12 @@
 import { getCollection } from "astro:content";
+import { getContentSlug } from "../../lib/contentSlug";
 
 export async function GET() {
   const posts = await getCollection("blog", ({ data }) => !data.draft);
-  const data = posts.map((post) => ({
-    slug: post.slug,
+  const data = posts.map((post) => {
+    const slug = getContentSlug(post);
+    return {
+    slug,
     title: post.data.title,
     description: post.data.description,
     category: post.data.category,
@@ -15,8 +18,9 @@ export async function GET() {
     readingTime: post.data.readingTime,
     affiliate: post.data.affiliate,
     planner: post.data.planner ?? null,
-    url: `/blog/${post.slug}/`,
-  }));
+    url: `/blog/${slug}/`,
+    };
+  });
 
   return new Response(JSON.stringify(data), {
     headers: {
