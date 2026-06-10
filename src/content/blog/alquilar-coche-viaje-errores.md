@@ -51,7 +51,7 @@ La cifra grande suele ocultar franquicia, política de combustible, kilometraje 
 
 ![Visual editorial 2 de Alquilar coche en un viaje: errores que te cuestan dinero y tranquilidad](/images/editorial/alquilar-coche-viaje-errores-panel-2.svg)
 
-**Consejo de ruta:** Dedícale más tiempo al primer contacto con el lugar; la primera impresión define cómo disfrutarás el resto del viaje.
+**Consejo de ruta:** Antes de firmar el alquiler, fotografía carrocería, combustible y kilometraje; te ahorra discusiones al devolverlo.
 
 ## El seguro no significa lo mismo en todas partes
 
@@ -59,7 +59,7 @@ Diferencia entre cobertura, franquicia y reembolso externo. Si no lo entiendes, 
 
 ![Visual editorial 3 de Alquilar coche en un viaje: errores que te cuestan dinero y tranquilidad](/images/editorial/alquilar-coche-viaje-errores-panel-3.svg)
 
-**Consejo de ruta:** No reserves todas las actividades por adelantado; deja hueco para descubrir algo por tu cuenta.
+**Consejo de ruta:** No reserves actividades pegadas a la hora de recogida del coche; las colas de mostrador rompen itinerarios perfectos.
 
 ## El tamaño del coche importa
 
@@ -67,7 +67,7 @@ En islas, pueblos antiguos o carreteras de montaña, un coche pequeño suele ser
 
 ![Visual editorial 4 de Alquilar coche en un viaje: errores que te cuestan dinero y tranquilidad](/images/editorial/alquilar-coche-viaje-errores-panel-4.svg)
 
-**Consejo de ruta:** Consulta horarios oficiales el día anterior — en destinos pequeños los cierres inesperados son frecuentes.
+**Consejo de ruta:** Revisa horarios de oficina y política fuera de horario; muchas sorpresas caras empiezan ahí.
 
 ## Documenta todo
 
@@ -75,7 +75,7 @@ Fotos, vídeo, contrato y recibos. No es desconfianza: es evitar discusiones cua
 
 ![Visual editorial 5 de Alquilar coche en un viaje: errores que te cuestan dinero y tranquilidad](/images/editorial/alquilar-coche-viaje-errores-panel-5.svg)
 
-**Consejo de ruta:** Si un plan depende del clima, ten siempre una alternativa interior que también te apetezca.
+**Consejo de ruta:** Ten un plan sin coche para el primer día si el vuelo llega tarde o el proveedor cambia condiciones.
 
 ## Presupuesto orientativo sin vender humo
 

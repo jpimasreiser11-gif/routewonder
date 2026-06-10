@@ -51,7 +51,7 @@ Una ciudad bien conectada ahorra dinero, tiempo y cansancio. Lucerna o Berna sue
 
 ![Visual editorial 2 de Suiza en tren sin arruinarte: cómo montar una ruta bonita y razonable](/images/editorial/rutas-tren-suiza-sin-arruinarte-panel-2.svg)
 
-**Consejo de ruta:** Dedícale más tiempo al primer contacto con el lugar; la primera impresión define cómo disfrutarás el resto del viaje.
+**Consejo de ruta:** En Suiza, dedica la primera tarde a entender tu pase y tus conexiones; evita comprar billetes duplicados.
 
 ## No todos los trenes escénicos son obligatorios
 
@@ -75,7 +75,7 @@ Dos montañas y una ciudad bien elegidas valen más que seis paradas apresuradas
 
 ![Visual editorial 5 de Suiza en tren sin arruinarte: cómo montar una ruta bonita y razonable](/images/editorial/rutas-tren-suiza-sin-arruinarte-panel-5.svg)
 
-**Consejo de ruta:** No reserves todas las actividades por adelantado; deja hueco para descubrir algo por tu cuenta.
+**Consejo de ruta:** Reserva pocas actividades fijas: el mejor tren del día puede depender del cielo.
 
 ## Presupuesto orientativo sin vender humo
 

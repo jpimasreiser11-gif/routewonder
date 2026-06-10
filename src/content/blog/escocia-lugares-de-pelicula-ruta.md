@@ -51,7 +51,7 @@ Dedica al menos un día completo. La ciudad ayuda a entender el tono del viaje: 
 
 ![Visual editorial 2 de Escocia de película: ruta visual por castillos, valles y carreteras míticas](/images/editorial/escocia-lugares-de-pelicula-ruta-panel-2.svg)
 
-**Consejo de ruta:** Dedícale más tiempo al primer contacto con el lugar; la primera impresión define cómo disfrutarás el resto del viaje.
+**Consejo de ruta:** En Escocia, deja que el primer día sea de adaptación; conducir por la izquierda y parar por fotos exige margen.
 
 ## Glencoe sin prisas
 
@@ -59,7 +59,7 @@ No lo conviertas en una parada de diez minutos. Es uno de esos valles que se ent
 
 ![Visual editorial 3 de Escocia de película: ruta visual por castillos, valles y carreteras míticas](/images/editorial/escocia-lugares-de-pelicula-ruta-panel-3.svg)
 
-**Consejo de ruta:** No reserves todas las actividades por adelantado; deja hueco para descubrir algo por tu cuenta.
+**Consejo de ruta:** No reserves castillos y miradores el mismo día si hay mucha carretera entre medias.
 
 ## Isla de Skye con margen
 
@@ -67,7 +67,7 @@ Reserva alojamiento pronto y acepta que el clima decide parte del itinerario. Ll
 
 ![Visual editorial 4 de Escocia de película: ruta visual por castillos, valles y carreteras míticas](/images/editorial/escocia-lugares-de-pelicula-ruta-panel-4.svg)
 
-**Consejo de ruta:** Consulta horarios oficiales el día anterior — en destinos pequeños los cierres inesperados son frecuentes.
+**Consejo de ruta:** Revisa horarios de ferris y carreteras escénicas la víspera; el viento decide más de lo que parece.
 
 ## Castillos con contexto
 
@@ -75,7 +75,7 @@ Elige pocos y lee un poco antes. Un castillo sin historia puede ser solo piedra 
 
 ![Visual editorial 5 de Escocia de película: ruta visual por castillos, valles y carreteras míticas](/images/editorial/escocia-lugares-de-pelicula-ruta-panel-5.svg)
 
-**Consejo de ruta:** Si un plan depende del clima, ten siempre una alternativa interior que también te apetezca.
+**Consejo de ruta:** Lleva siempre un plan interior: destilería, pub histórico o museo pequeño salvan un día de lluvia horizontal.
 
 ## Presupuesto orientativo sin vender humo
 

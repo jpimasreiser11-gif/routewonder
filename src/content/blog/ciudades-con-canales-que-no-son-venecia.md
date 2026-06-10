@@ -51,7 +51,7 @@ Sus muelles bajos hacen que el canal se viva a otra altura. Es una ciudad cómod
 
 ![Visual editorial 2 de Ciudades con canales que no son Venecia y sí merecen viaje](/images/editorial/ciudades-con-canales-que-no-son-venecia-panel-2.svg)
 
-**Consejo de ruta:** Dedícale más tiempo al primer contacto con el lugar; la primera impresión define cómo disfrutarás el resto del viaje.
+**Consejo de ruta:** En ciudades de canales, madruga para caminar muelles antes de que lleguen excursiones y bicicletas.
 
 ## Aveiro
 
@@ -59,7 +59,7 @@ No es una Venecia portuguesa, y precisamente por eso funciona: salinas, casas de
 
 ![Visual editorial 3 de Ciudades con canales que no son Venecia y sí merecen viaje](/images/editorial/ciudades-con-canales-que-no-son-venecia-panel-3.svg)
 
-**Consejo de ruta:** No reserves todas las actividades por adelantado; deja hueco para descubrir algo por tu cuenta.
+**Consejo de ruta:** Reserva solo una actividad de agua; el resto se disfruta mejor caminando barrio por barrio.
 
 ## Annecy
 
@@ -67,7 +67,7 @@ Canales pequeños, lago alpino y montaña cerca. El viaje mejora si lo combinas 
 
 ![Visual editorial 4 de Ciudades con canales que no son Venecia y sí merecen viaje](/images/editorial/ciudades-con-canales-que-no-son-venecia-panel-4.svg)
 
-**Consejo de ruta:** Consulta horarios oficiales el día anterior — en destinos pequeños los cierres inesperados son frecuentes.
+**Consejo de ruta:** Comprueba si los barcos paran por temporada; algunos canales turísticos reducen servicio fuera de verano.
 
 ## Gante
 
@@ -75,7 +75,7 @@ Más intensa que Brujas y menos postal. Sus canales encajan mejor con cerveza, h
 
 ![Visual editorial 5 de Ciudades con canales que no son Venecia y sí merecen viaje](/images/editorial/ciudades-con-canales-que-no-son-venecia-panel-5.svg)
 
-**Consejo de ruta:** Si un plan depende del clima, ten siempre una alternativa interior que también te apetezca.
+**Consejo de ruta:** Guarda un café o museo cercano para cuando llueva; junto al agua el clima cambia rápido.
 
 ## Presupuesto orientativo sin vender humo
 

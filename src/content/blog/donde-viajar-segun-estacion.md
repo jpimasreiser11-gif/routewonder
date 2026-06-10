@@ -51,7 +51,7 @@ La luz es buena, el calor no aprieta y muchas rutas todavía no están llenas.
 
 ![Visual editorial 2 de Dónde viajar según la estación: 24 ideas fáciles de elegir](/images/editorial/donde-viajar-segun-estacion-panel-2.svg)
 
-**Consejo de ruta:** Dedícale más tiempo al primer contacto con el lugar; la primera impresión define cómo disfrutarás el resto del viaje.
+**Consejo de ruta:** La primera decisión no es el destino, es la luz disponible: invierno y verano cambian totalmente el ritmo.
 
 ## Verano: Noruega, Escocia, Azores, Dolomitas
 
@@ -59,7 +59,7 @@ Busca norte, altura o islas con brisa. Evita ciudades interiores muy calientes s
 
 ![Visual editorial 3 de Dónde viajar según la estación: 24 ideas fáciles de elegir](/images/editorial/donde-viajar-segun-estacion-panel-3.svg)
 
-**Consejo de ruta:** No reserves todas las actividades por adelantado; deja hueco para descubrir algo por tu cuenta.
+**Consejo de ruta:** No llenes el calendario antes de mirar festivos locales y cierres de temporada.
 
 ## Otoño: Transilvania, Toscana, Selva Negra, Oporto
 
@@ -67,7 +67,7 @@ Es la estación de carreteras bonitas, bosques y precios algo más razonables.
 
 ![Visual editorial 4 de Dónde viajar según la estación: 24 ideas fáciles de elegir](/images/editorial/donde-viajar-segun-estacion-panel-4.svg)
 
-**Consejo de ruta:** Consulta horarios oficiales el día anterior — en destinos pequeños los cierres inesperados son frecuentes.
+**Consejo de ruta:** Consulta calendarios oficiales de parques, ferris y museos; la estación bonita no siempre es la más operativa.
 
 ## Invierno: Marruecos, Canarias, Estambul, Sicilia
 
@@ -75,7 +75,7 @@ Funcionan bien porque tienen vida urbana, clima manejable o paisajes que no depe
 
 ![Visual editorial 5 de Dónde viajar según la estación: 24 ideas fáciles de elegir](/images/editorial/donde-viajar-segun-estacion-panel-5.svg)
 
-**Consejo de ruta:** Si un plan depende del clima, ten siempre una alternativa interior que también te apetezca.
+**Consejo de ruta:** Para cada estación, elige un plan cubierto y otro exterior que te apetezcan por igual.
 
 ## Presupuesto orientativo sin vender humo
 

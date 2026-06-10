@@ -51,7 +51,7 @@ Sin coches privados y con un puerto muy fotogénico. Es buena para caminar, nada
 
 ![Visual editorial 2 de Islas europeas sin coches: 9 lugares para viajar más lento](/images/editorial/islas-europeas-sin-coches-guia-panel-2.svg)
 
-**Consejo de ruta:** Dedícale más tiempo al primer contacto con el lugar; la primera impresión define cómo disfrutarás el resto del viaje.
+**Consejo de ruta:** El primer contacto debe ser el puerto o la estación correcta; en una isla sin coche equivocarte de llegada pesa mucho.
 
 ## La Graciosa, España
 
@@ -59,7 +59,7 @@ Arena, pistas, bicicleta y playas amplias. Conviene reservar alojamiento con ant
 
 ![Visual editorial 3 de Islas europeas sin coches: 9 lugares para viajar más lento](/images/editorial/islas-europeas-sin-coches-guia-panel-3.svg)
 
-**Consejo de ruta:** No reserves todas las actividades por adelantado; deja hueco para descubrir algo por tu cuenta.
+**Consejo de ruta:** Reserva actividades cerca de tu base, no en el extremo opuesto: los horarios mandan.
 
 ## Porquerolles, Francia
 
@@ -67,7 +67,7 @@ Naturaleza protegida, calas y rutas en bici. Ideal si quieres Mediterráneo sin 
 
 ![Visual editorial 4 de Islas europeas sin coches: 9 lugares para viajar más lento](/images/editorial/islas-europeas-sin-coches-guia-panel-4.svg)
 
-**Consejo de ruta:** Consulta horarios oficiales el día anterior — en destinos pequeños los cierres inesperados son frecuentes.
+**Consejo de ruta:** Verifica ferris, consigna y último bus; ahí se decide si la isla es cómoda o una trampa logística.
 
 ## Inis Mór, Irlanda
 
@@ -75,7 +75,7 @@ Acantilados, piedra, viento y una sensación muy distinta de isla. Aquí la grac
 
 ![Visual editorial 5 de Islas europeas sin coches: 9 lugares para viajar más lento](/images/editorial/islas-europeas-sin-coches-guia-panel-5.svg)
 
-**Consejo de ruta:** Si un plan depende del clima, ten siempre una alternativa interior que también te apetezca.
+**Consejo de ruta:** Ten una alternativa caminable desde el alojamiento por si viento o marea cancelan salidas.
 
 ## Presupuesto orientativo sin vender humo
 
