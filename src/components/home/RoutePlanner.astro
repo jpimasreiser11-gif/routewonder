@@ -38,9 +38,9 @@ function fromPlanner(post: (typeof plannerPosts)[number]) {
   ]));
   const fallbackVisuals = getRouteVisualSet(`${slug} ${post.data.category} ${planner.destination} ${planner.country}`);
   const visuals = [
-    post.data.image || fallbackVisuals[0],
     `/images/editorial/${slug}-panel-1.svg`,
     `/images/editorial/${slug}-panel-2.svg`,
+    post.data.image || fallbackVisuals[0],
   ];
   return {
     id: slug,
@@ -438,10 +438,11 @@ const totalPlaces = plannerDestinations.reduce((sum, item) => sum + item.highlig
     }
 
     function renderDetails(item) {
+      const detailPhoto = item.photos[1] || item.photos[0];
       return `
         <div class="mt-5 border-t border-rw-mist/20 pt-5">
           <div class="rw-route-atlas overflow-hidden rounded-2xl">
-            <img src="${item.photos[0]}" alt="Lámina de ruta de ${item.name}" loading="eager">
+            <img src="${detailPhoto}" alt="Lámina de detalle de ${item.name}" loading="eager">
             <div class="rw-route-atlas__notes">
               <span class="rw-route-atlas__label">Atlas editorial</span>
               <p class="font-display text-2xl font-black leading-tight text-rw-ink">${item.name}</p>
